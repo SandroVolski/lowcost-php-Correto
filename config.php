@@ -1,8 +1,9 @@
 <?php
 $host = "localhost";
-$user = "root";  
-$pass = "251103";      
-$dbname = "backup_bdservico"; 
+$user = "douglas";  
+$pass = "Douglas193";      
+$dbname = "bd_servico"; 
+$port = "3307";
 
 // Configurar modo de erro para mysqli
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);

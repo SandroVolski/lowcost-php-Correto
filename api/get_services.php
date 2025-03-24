@@ -62,7 +62,7 @@ $allowedFields = [
     'UnidadeFracionamento' => 's.UnidadeFracionamento',
     'Fracionamento' => 's.Fracionamento',
     'Laboratorio' => 's.Laboratorio',
-    'Revisado' => 's.Revisado',
+    'Revisado_Farma' => 's.Revisado_Farma',
     // Registro Visa
     'RegistroVisa' => 'r.RegistroVisa',
     'Cod_Ggrem' => 'r.Cod_Ggrem',
@@ -125,7 +125,7 @@ $sqlBase = "SELECT DISTINCT
     s.UnidadeFracionamento,
     s.Fracionamento,
     s.Laboratorio,
-    s.Revisado,
+    s.Revisado_Farma,
     s.idPrincipioAtivo,
     -- Registro Visa
     r.RegistroVisa,
@@ -173,17 +173,17 @@ $sqlBase = "SELECT DISTINCT
     x.tipo_taxa,
     x.finalidade AS TaxaFinalidade,
     x.tempo_infusao
-FROM dservicorelacionada s
-LEFT JOIN dregistro_anvisa r ON s.idRegistroVisa = r.RegistroVisa
-LEFT JOIN dtabela t ON s.idTabela = t.id_tabela
-LEFT JOIN dviaadministracao v ON s.idViaAdministracao = v.idviaadministracao
-LEFT JOIN dclassefarmaceutica c ON s.idClasseFarmaceutica = c.id_medicamento
-LEFT JOIN dprincipioativo p ON s.idPrincipioAtivo = p.idPrincipioAtivo
-LEFT JOIN darmazenamento a ON s.idArmazenamento = a.idArmazenamento
-LEFT JOIN dtipo_medicamento m ON s.idMedicamento = m.id_medicamento
-LEFT JOIN dunidadefracionamento u ON s.idUnidadeFracionamento = u.id_unidadefracionamento
-LEFT JOIN dfatorconversao f ON s.idFatorConversao = f.id_fatorconversao
-LEFT JOIN dtaxas x ON s.idTaxas = x.id_taxas";
+FROM dServicoRelacionada s
+LEFT JOIN dRegistro_anvisa r ON s.idRegistroVisa = r.RegistroVisa
+LEFT JOIN dTabela t ON s.idTabela = t.id_tabela
+LEFT JOIN dViaadministracao v ON s.idViaAdministracao = v.idviaadministracao
+LEFT JOIN dClasseFarmaceutica c ON s.idClasseFarmaceutica = c.id_medicamento
+LEFT JOIN dPrincipioativo p ON s.idPrincipioAtivo = p.idPrincipioAtivo
+LEFT JOIN dArmazenamento a ON s.idArmazenamento = a.idArmazenamento
+LEFT JOIN dTipo_medicamento m ON s.idMedicamento = m.id_medicamento
+LEFT JOIN dUnidadeFracionamento u ON s.idUnidadeFracionamento = u.id_unidadefracionamento
+LEFT JOIN dFatorConversao f ON s.idFatorConversao = f.id_fatorconversao
+LEFT JOIN dTaxas x ON s.idTaxas = x.id_taxas";
 
 // Condição WHERE para pesquisa com base no tipo de pesquisa
 if (!empty($searchTerm)) {

@@ -23,7 +23,7 @@ if ($id <= 0) {
 }
 
 // Prepara a query de exclusão
-$sql = "DELETE FROM dservicorelacionada WHERE id = ?";
+$sql = "DELETE FROM dServicoRelacionada WHERE id = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $id);
 
