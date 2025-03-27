@@ -33,7 +33,7 @@ try {
                 classificacao_tipo, 
                 finalidade, 
                 objetivo 
-            FROM dtabela 
+            FROM dTabela 
             ORDER BY tabela ASC";
 
     $result = $conn->query($sql);

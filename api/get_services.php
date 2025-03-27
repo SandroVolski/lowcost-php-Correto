@@ -66,7 +66,7 @@ $allowedFields = [
     // Registro Visa
     'RegistroVisa' => 'r.RegistroVisa',
     'Cod_Ggrem' => 'r.Cod_Ggrem',
-    'Principio_Ativo' => 'r.Principio_Ativo',
+    'PrincipioAtivo' => 'r.PrincipioAtivo',
     'Lab' => 'r.Lab',
     'cnpj_lab' => 'r.cnpj_lab',
     'Classe_Terapeutica' => 'r.Classe_Terapeutica',
@@ -130,7 +130,7 @@ $sqlBase = "SELECT DISTINCT
     -- Registro Visa
     r.RegistroVisa,
     r.Cod_Ggrem,
-    r.Principio_Ativo,
+    r.PrincipioAtivo,
     r.Lab,
     r.cnpj_lab,
     r.Classe_Terapeutica,
@@ -210,9 +210,9 @@ if (!empty($searchTerm)) {
             break;
             
         case 'active_visa':
-            // Pesquisar apenas no campo Principio_Ativo do Registro Visa
+            // Pesquisar apenas no campo PrincipioAtivo do Registro Visa
             $sqlBase .= " WHERE (
-                r.Principio_Ativo IS NOT NULL AND LOWER(r.Principio_Ativo) LIKE ?
+                r.PrincipioAtivo IS NOT NULL AND LOWER(r.PrincipioAtivo) LIKE ?
             )";
             break;
             
@@ -240,7 +240,7 @@ if (!empty($searchTerm)) {
                 $sqlBase .= " WHERE (
                     (p.PrincipioAtivo IS NOT NULL AND LOWER(p.PrincipioAtivo) LIKE ?) OR
                     (p.PrincipioAtivoClassificado IS NOT NULL AND LOWER(p.PrincipioAtivoClassificado) LIKE ?) OR
-                    (r.Principio_Ativo IS NOT NULL AND LOWER(r.Principio_Ativo) LIKE ?)
+                    (r.PrincipioAtivo IS NOT NULL AND LOWER(r.PrincipioAtivo) LIKE ?)
                 )";
             }
             break;
@@ -256,7 +256,7 @@ if (!empty($searchTerm)) {
                 LOWER(s.Descricao_Comercial) LIKE ? OR
                 (p.PrincipioAtivo IS NOT NULL AND LOWER(p.PrincipioAtivo) LIKE ?) OR
                 (p.PrincipioAtivoClassificado IS NOT NULL AND LOWER(p.PrincipioAtivoClassificado) LIKE ?) OR
-                (r.Principio_Ativo IS NOT NULL AND LOWER(r.Principio_Ativo) LIKE ?)
+                (r.PrincipioAtivo IS NOT NULL AND LOWER(r.PrincipioAtivo) LIKE ?)
             )";
             break;
     }
@@ -302,7 +302,7 @@ if ($loadAll) {
                 
             case 'active_visa':
                 $stmt->bind_param("s", 
-                    $searchTermWildcard    // Principio_Ativo (Registro Visa)
+                    $searchTermWildcard    // PrincipioAtivo (Registro Visa)
                 );
                 break;
                 
@@ -329,7 +329,7 @@ if ($loadAll) {
                     $stmt->bind_param("sss", 
                         $searchTermWildcard,   // PrincipioAtivo
                         $searchTermWildcard,   // PrincipioAtivoClassificado
-                        $searchTermWildcard    // Principio_Ativo (Registro Visa)
+                        $searchTermWildcard    // PrincipioAtivo (Registro Visa)
                     );
                 }
                 break;
@@ -344,7 +344,7 @@ if ($loadAll) {
                     $searchTermWildcard,   // Descricao_Comercial
                     $searchTermWildcard,   // PrincipioAtivo
                     $searchTermWildcard,   // PrincipioAtivoClassificado
-                    $searchTermWildcard    // Principio_Ativo (Registro Visa)
+                    $searchTermWildcard    // PrincipioAtivo (Registro Visa)
                 );
                 break;
         }
@@ -384,7 +384,7 @@ if ($loadAll) {
                 
             case 'active_visa':
                 $stmt->bind_param("sii", 
-                    $searchTermWildcard,   // Principio_Ativo (Registro Visa)
+                    $searchTermWildcard,   // PrincipioAtivo (Registro Visa)
                     $limit, 
                     $offset
                 );
@@ -417,7 +417,7 @@ if ($loadAll) {
                     $stmt->bind_param("sssii", 
                         $searchTermWildcard,   // PrincipioAtivo
                         $searchTermWildcard,   // PrincipioAtivoClassificado
-                        $searchTermWildcard,   // Principio_Ativo (Registro Visa)
+                        $searchTermWildcard,   // PrincipioAtivo (Registro Visa)
                         $limit, 
                         $offset
                     );
@@ -434,7 +434,7 @@ if ($loadAll) {
                     $searchTermWildcard,   // Descricao_Comercial
                     $searchTermWildcard,   // PrincipioAtivo
                     $searchTermWildcard,   // PrincipioAtivoClassificado
-                    $searchTermWildcard,   // Principio_Ativo (Registro Visa)
+                    $searchTermWildcard,   // PrincipioAtivo (Registro Visa)
                     $limit, 
                     $offset
                 );

@@ -32,12 +32,12 @@ try {
     }
 
     // Verificar se a tabela existe
-    $checkTableQuery = "SHOW TABLES LIKE 'dfatorconversao'";
+    $checkTableQuery = "SHOW TABLES LIKE 'dFatorConversao'";
     $tableExists = $conn->query($checkTableQuery);
     
     if ($tableExists->num_rows == 0) {
         // Se a tabela não existir, retornar dados estáticos em vez de erro
-        error_log("Tabela dfatorconversao não existe no banco de dados");
+        error_log("Tabela dFatorConversao não existe no banco de dados");
         
         $staticData = [
             ["id_fatorconversao" => 0, "fator" => "0"],
@@ -52,15 +52,15 @@ try {
     }
 
     // Verificar a estrutura da tabela
-    $checkColumnsQuery = "SHOW COLUMNS FROM dfatorconversao LIKE 'id_fatorconversao'";
+    $checkColumnsQuery = "SHOW COLUMNS FROM dFatorConversao LIKE 'id_fatorconversao'";
     $idColumnExists = $conn->query($checkColumnsQuery);
     
-    $checkFatorQuery = "SHOW COLUMNS FROM dfatorconversao LIKE 'fator'";
+    $checkFatorQuery = "SHOW COLUMNS FROM dFatorConversao LIKE 'fator'";
     $fatorColumnExists = $conn->query($checkFatorQuery);
     
     if ($idColumnExists->num_rows == 0 || $fatorColumnExists->num_rows == 0) {
         // Se as colunas necessárias não existirem, retornar dados estáticos
-        error_log("Colunas necessárias não existem na tabela dfatorconversao");
+        error_log("Colunas necessárias não existem na tabela dFatorConversao");
         
         $staticData = [
             ["id_fatorconversao" => 0, "fator" => "0"],
@@ -75,7 +75,7 @@ try {
     }
 
     // Se chegou até aqui, a tabela e as colunas existem, então prosseguir com a consulta
-    $sql = "SELECT id_fatorconversao, fator FROM dfatorconversao ORDER BY id_fatorconversao";
+    $sql = "SELECT id_fatorconversao, fator FROM dFatorConversao ORDER BY id_fatorconversao";
     
     error_log("Executando consulta: " . $sql);
     

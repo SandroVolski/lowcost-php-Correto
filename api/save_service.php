@@ -49,7 +49,7 @@ try {
     }
 
     // Preparar a consulta SQL para inserir dados
-    $sql = "INSERT INTO dservicorelacionada (
+    $sql = "INSERT INTO dServicoRelacionada (
         Codigo_TUSS, 
 
         Descricao_Apresentacao, 
@@ -59,7 +59,7 @@ try {
         UnidadeFracionamento, 
         Fracionamento, 
         Laboratorio, 
-        Revisado,
+        Revisado_Farma,
         idRegistroVisa, 
         idTabela, 
         idViaAdministracao, 
@@ -87,7 +87,7 @@ try {
     $unidadeFracionamento = isset($data->UnidadeFracionamento) && $data->UnidadeFracionamento !== "" ? $data->UnidadeFracionamento : null;
     $fracionamento = isset($data->Fracionamento) && $data->Fracionamento !== "" ? $data->Fracionamento : null;
     $laboratorio = isset($data->Laboratorio) && $data->Laboratorio !== "" ? $data->Laboratorio : null;
-    $revisado = isset($data->Revisado) && $data->Revisado !== "" ? (int)$data->Revisado : 0;
+    $revisado_Farma = isset($data->Revisado_Farma) && $data->Revisado_Farma !== "" ? (int)$data->Revisado_Farma : 0;
     $idRegistroVisa = isset($data->idRegistroVisa) && $data->idRegistroVisa !== "" ? (int)$data->idRegistroVisa : null;
     $idTabela = isset($data->idTabela) && $data->idTabela !== "" ? (int)$data->idTabela : null;
     $idViaAdministracao = isset($data->idViaAdministracao) && $data->idViaAdministracao !== "" ? (int)$data->idViaAdministracao : null;
@@ -110,7 +110,7 @@ try {
         $unidadeFracionamento,
         $fracionamento,
         $laboratorio,
-        $revisado,
+        $revisado_Farma,
         $idRegistroVisa,
         $idTabela,
         $idViaAdministracao,

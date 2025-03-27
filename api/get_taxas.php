@@ -17,7 +17,7 @@ try {
         throw new Exception("Erro de conexão com o banco de dados: " . ($conn->connect_error ?? "Conexão não estabelecida"));
     }
 
-    $sql = "SELECT id_taxas, finalidade, tipo_taxa, tempo_infusao FROM dtaxas ORDER BY finalidade";
+    $sql = "SELECT id_taxas, finalidade, tipo_taxa, tempo_infusao FROM dTaxas ORDER BY finalidade";
     $result = $conn->query($sql);
 
     if (!$result) {

@@ -21,27 +21,27 @@ try {
         throw new Exception("Erro de conexão com o banco de dados: " . $conn->connect_error);
     }
 
-    echo "<h1>Verificando tabela dfatorconversao</h1>";
+    echo "<h1>Verificando tabela dFatorConversao</h1>";
 
     // Verificar se a tabela existe
-    $checkTableQuery = "SHOW TABLES LIKE 'dfatorconversao'";
+    $checkTableQuery = "SHOW TABLES LIKE 'dFatorConversao'";
     $tableExists = $conn->query($checkTableQuery);
     
     if ($tableExists->num_rows == 0) {
-        echo "<p>Tabela dfatorconversao não existe. Criando tabela...</p>";
+        echo "<p>Tabela dFatorConversao não existe. Criando tabela...</p>";
         
         // Criar a tabela
-        $createTableQuery = "CREATE TABLE dfatorconversao (
+        $createTableQuery = "CREATE TABLE dFatorConversao (
             id_fatorconversao INT AUTO_INCREMENT PRIMARY KEY,
             fator VARCHAR(50) NOT NULL,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )";
         
         if ($conn->query($createTableQuery) === TRUE) {
-            echo "<p>Tabela dfatorconversao criada com sucesso!</p>";
+            echo "<p>Tabela dFatorConversao criada com sucesso!</p>";
             
             // Inserir dados iniciais
-            $insertDataQuery = "INSERT INTO dfatorconversao (id_fatorconversao, fator) VALUES 
+            $insertDataQuery = "INSERT INTO dFatorConversao (id_fatorconversao, fator) VALUES 
                 (0, '0'),
                 (1, '1'),
                 (2, '1'),
@@ -57,35 +57,35 @@ try {
             echo "<p>Erro ao criar tabela: " . $conn->error . "</p>";
         }
     } else {
-        echo "<p>Tabela dfatorconversao já existe.</p>";
+        echo "<p>Tabela dFatorConversao já existe.</p>";
         
         // Verificar estrutura da tabela
-        $checkColumnsQuery = "SHOW COLUMNS FROM dfatorconversao LIKE 'id_fatorconversao'";
+        $checkColumnsQuery = "SHOW COLUMNS FROM dFatorConversao LIKE 'id_fatorconversao'";
         $idColumnExists = $conn->query($checkColumnsQuery);
         
-        $checkFatorQuery = "SHOW COLUMNS FROM dfatorconversao LIKE 'fator'";
+        $checkFatorQuery = "SHOW COLUMNS FROM dFatorConversao LIKE 'fator'";
         $fatorColumnExists = $conn->query($checkFatorQuery);
         
         if ($idColumnExists->num_rows == 0 || $fatorColumnExists->num_rows == 0) {
-            echo "<p>A estrutura da tabela dfatorconversao está incorreta. Recriando tabela...</p>";
+            echo "<p>A estrutura da tabela dFatorConversao está incorreta. Recriando tabela...</p>";
             
             // Dropar a tabela existente
-            $dropTableQuery = "DROP TABLE dfatorconversao";
+            $dropTableQuery = "DROP TABLE dFatorConversao";
             if ($conn->query($dropTableQuery) === TRUE) {
-                echo "<p>Tabela dfatorconversao existente removida.</p>";
+                echo "<p>Tabela dFatorConversao existente removida.</p>";
                 
                 // Criar a tabela com a estrutura correta
-                $createTableQuery = "CREATE TABLE dfatorconversao (
+                $createTableQuery = "CREATE TABLE dFatorConversao (
                     id_fatorconversao INT AUTO_INCREMENT PRIMARY KEY,
                     fator VARCHAR(50) NOT NULL,
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )";
                 
                 if ($conn->query($createTableQuery) === TRUE) {
-                    echo "<p>Tabela dfatorconversao recriada com sucesso!</p>";
+                    echo "<p>Tabela dFatorConversao recriada com sucesso!</p>";
                     
                     // Inserir dados iniciais
-                    $insertDataQuery = "INSERT INTO dfatorconversao (id_fatorconversao, fator) VALUES 
+                    $insertDataQuery = "INSERT INTO dFatorConversao (id_fatorconversao, fator) VALUES 
                         (0, '0'),
                         (1, '1'),
                         (2, '1'),
@@ -104,10 +104,10 @@ try {
                 echo "<p>Erro ao remover tabela existente: " . $conn->error . "</p>";
             }
         } else {
-            echo "<p>A estrutura da tabela dfatorconversao está correta.</p>";
+            echo "<p>A estrutura da tabela dFatorConversao está correta.</p>";
             
             // Mostrar os dados atuais
-            $selectDataQuery = "SELECT id_fatorconversao, fator FROM dfatorconversao ORDER BY id_fatorconversao";
+            $selectDataQuery = "SELECT id_fatorconversao, fator FROM dFatorConversao ORDER BY id_fatorconversao";
             $result = $conn->query($selectDataQuery);
             
             if ($result->num_rows > 0) {
@@ -127,7 +127,7 @@ try {
                 echo "<p>Não há dados na tabela. Inserindo dados iniciais...</p>";
                 
                 // Inserir dados iniciais
-                $insertDataQuery = "INSERT INTO dfatorconversao (id_fatorconversao, fator) VALUES 
+                $insertDataQuery = "INSERT INTO dFatorConversao (id_fatorconversao, fator) VALUES 
                     (0, '0'),
                     (1, '1'),
                     (2, '1'),

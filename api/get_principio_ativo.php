@@ -17,7 +17,7 @@ try {
         throw new Exception("Erro de conexão com o banco de dados: " . ($conn->connect_error ?? "Conexão não estabelecida"));
     }
 
-    $sql = "SELECT idPrincipioAtivo, PrincipioAtivo FROM dprincipioativo ORDER BY PrincipioAtivo";
+    $sql = "SELECT idPrincipioAtivo, PrincipioAtivo FROM dPrincipioativo ORDER BY PrincipioAtivo";
     $result = $conn->query($sql);
 
     if (!$result) {

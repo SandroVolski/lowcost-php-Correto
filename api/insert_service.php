@@ -54,7 +54,7 @@ try {
     
     if ($hasRegistroVisaData) {
         // Verificar primeiro se o RegistroVisa já existe
-        $checkSql = "SELECT RegistroVisa FROM dregistro_anvisa WHERE RegistroVisa = ?";
+        $checkSql = "SELECT RegistroVisa FROM dRegistro_anvisa WHERE RegistroVisa = ?";
         $checkStmt = $conn->prepare($checkSql);
         if (!$checkStmt) {
             throw new Exception("Erro ao preparar a consulta para verificar RegistroVisa: " . $conn->error);
@@ -72,10 +72,10 @@ try {
             $checkStmt->close();
             
             // Inserir na tabela dregistro_anvisa primeiro
-            $sqlRegistro = "INSERT INTO dregistro_anvisa (
+            $sqlRegistro = "INSERT INTO dRegistro_anvisa (
                 RegistroVisa,
                 Cod_Ggrem,
-                Principio_Ativo,
+                PrincipioAtivo,
                 Lab,
                 cnpj_lab,
                 Classe_Terapeutica,
@@ -97,7 +97,7 @@ try {
             // Converter valores vazios para strings vazias (não NULL) para campos NOT NULL
             $registroVisa = $data->RegistroVisa;
             $codGgrem = isset($data->Cod_Ggrem) && $data->Cod_Ggrem !== "" ? $data->Cod_Ggrem : '';
-            $principioAtivo = isset($data->Principio_Ativo) && $data->Principio_Ativo !== "" ? $data->Principio_Ativo : 'Não informado';
+            $principioAtivo = isset($data->PrincipioAtivo) && $data->PrincipioAtivo !== "" ? $data->PrincipioAtivo : 'Não informado';
             $lab = isset($data->Lab) && $data->Lab !== "" ? $data->Lab : '';
             $cnpjLab = isset($data->cnpj_lab) && $data->cnpj_lab !== "" ? $data->cnpj_lab : '';
             $classeTerapeutica = isset($data->Classe_Terapeutica) && $data->Classe_Terapeutica !== "" ? $data->Classe_Terapeutica : '';
@@ -146,7 +146,7 @@ try {
 
     // Agora inserir na tabela dservicorelacionada
     // Vamos contar explicitamente o número de campos e valores na consulta
-    $sql = "INSERT INTO dservicorelacionada (
+    $sql = "INSERT INTO dServicoRelacionada (
         Cod,                  -- 1 (string)
         Codigo_TUSS,          -- 2 (string)
         Descricao_Apresentacao, -- 3 (string)
@@ -156,7 +156,7 @@ try {
         UnidadeFracionamento, -- 7 (string)
         Fracionamento,        -- 8 (string)
         Laboratorio,          -- 9 (string)
-        Revisado,             -- 10 (integer)
+        Revisado_Farma,             -- 10 (integer)
         idViaAdministracao,   -- 11 (integer)
         idClasseFarmaceutica, -- 12 (integer)
         idPrincipioAtivo,     -- 13 (integer)
@@ -187,7 +187,7 @@ try {
     $unidadeFracionamento = isset($data->UnidadeFracionamento) && $data->UnidadeFracionamento !== "" ? $data->UnidadeFracionamento : null;
     $fracionamento = isset($data->Fracionamento) && $data->Fracionamento !== "" ? $data->Fracionamento : null;
     $laboratorio = isset($data->Laboratorio) && $data->Laboratorio !== "" ? $data->Laboratorio : null;
-    $revisado = isset($data->Revisado) && $data->Revisado !== "" ? intval($data->Revisado) : 0;
+    $revisado_Farma = isset($data->Revisado_Farma) && $data->Revisado_Farma !== "" ? intval($data->Revisado_Farma) : 0;
     
     // IDs dos campos relacionados
     $idViaAdministracao = isset($data->idViaAdministracao) && $data->idViaAdministracao !== "" ? intval($data->idViaAdministracao) : null;
@@ -236,7 +236,7 @@ try {
         $unidadeFracionamento,
         $fracionamento,
         $laboratorio,
-        $revisado,
+        $revisado_Farma,
         $idViaAdministracao,
         $idClasseFarmaceutica,
         $idPrincipioAtivo,

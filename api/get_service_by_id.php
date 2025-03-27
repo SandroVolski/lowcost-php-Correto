@@ -43,7 +43,7 @@ try {
         UnidadeFracionamento,
         Fracionamento,
         Laboratorio,
-        Revisado,
+        Revisado_Farma,
         
         -- IDs dos campos relacionados
         idViaAdministracao,
@@ -93,7 +93,7 @@ try {
         TaxaFinalidade,
         tempo_infusao
         
-    FROM dservicorelacionada WHERE id = ?";
+    FROM dServicoRelacionada WHERE id = ?";
 
     $stmt = $conn->prepare($sql);
     if (!$stmt) {
@@ -116,7 +116,7 @@ try {
     
     // Via Administração
     if (!empty($service['idViaAdministracao'])) {
-        $viaQuery = "SELECT Via_administracao FROM dviaadministracao WHERE idviaadministracao = ?";
+        $viaQuery = "SELECT Via_administracao FROM dViaadministracao WHERE idviaadministracao = ?";
         $viaStmt = $conn->prepare($viaQuery);
         $viaStmt->bind_param("i", $service['idViaAdministracao']);
         $viaStmt->execute();
@@ -130,7 +130,7 @@ try {
     
     // Classe Farmacêutica
     if (!empty($service['idClasseFarmaceutica'])) {
-        $classeQuery = "SELECT ClasseFarmaceutica FROM dclassefarmaceutica WHERE id_medicamento = ?";
+        $classeQuery = "SELECT ClasseFarmaceutica FROM dClasseFarmaceutica WHERE id_medicamento = ?";
         $classeStmt = $conn->prepare($classeQuery);
         $classeStmt->bind_param("i", $service['idClasseFarmaceutica']);
         $classeStmt->execute();
@@ -144,7 +144,7 @@ try {
     
     // Princípio Ativo
     if (!empty($service['idPrincipioAtivo'])) {
-        $principioQuery = "SELECT PrincipioAtivo, PrincipioAtivoClassificado, FaseUGF FROM dprincipioativo WHERE idPrincipioAtivo = ?";
+        $principioQuery = "SELECT PrincipioAtivo, PrincipioAtivoClassificado, FaseUGF FROM dPrincipioativo WHERE idPrincipioAtivo = ?";
         $principioStmt = $conn->prepare($principioQuery);
         $principioStmt->bind_param("i", $service['idPrincipioAtivo']);
         $principioStmt->execute();
@@ -160,7 +160,7 @@ try {
     
     // Armazenamento
     if (!empty($service['idArmazenamento'])) {
-        $armazeamentoQuery = "SELECT Armazenamento FROM darmazenamento WHERE idArmazenamento = ?";
+        $armazeamentoQuery = "SELECT Armazenamento FROM dArmazenamento WHERE idArmazenamento = ?";
         $armazenamentoStmt = $conn->prepare($armazeamentoQuery);
         $armazenamentoStmt->bind_param("i", $service['idArmazenamento']);
         $armazenamentoStmt->execute();
@@ -174,7 +174,7 @@ try {
     
     // Tipo Medicamento
     if (!empty($service['idMedicamento'])) {
-        $medicamentoQuery = "SELECT tipo_medicamento FROM dtipo_medicamento WHERE id_medicamento = ?";
+        $medicamentoQuery = "SELECT tipo_medicamento FROM dTipo_medicamento WHERE id_medicamento = ?";
         $medicamentoStmt = $conn->prepare($medicamentoQuery);
         $medicamentoStmt->bind_param("i", $service['idMedicamento']);
         $medicamentoStmt->execute();
@@ -188,7 +188,7 @@ try {
     
     // Unidade de Fracionamento
     if (!empty($service['idUnidadeFracionamento'])) {
-        $unidadeQuery = "SELECT UnidadeFracionamento, Descricao, Divisor FROM dunidadefracionamento WHERE id_unidadefracionamento = ?";
+        $unidadeQuery = "SELECT UnidadeFracionamento, Descricao, Divisor FROM dUnidadeFracionamento WHERE id_unidadefracionamento = ?";
         $unidadeStmt = $conn->prepare($unidadeQuery);
         $unidadeStmt->bind_param("i", $service['idUnidadeFracionamento']);
         $unidadeStmt->execute();
@@ -204,7 +204,7 @@ try {
     
     // Fator de Conversão
     if (!empty($service['idFatorConversao'])) {
-        $fatorQuery = "SELECT fator FROM dfatorconversao WHERE id_fatorconversao = ?";
+        $fatorQuery = "SELECT fator FROM dFatorConversao WHERE id_fatorconversao = ?";
         $fatorStmt = $conn->prepare($fatorQuery);
         $fatorStmt->bind_param("i", $service['idFatorConversao']);
         $fatorStmt->execute();
@@ -218,7 +218,7 @@ try {
     
     // Taxas
     if (!empty($service['idTaxas'])) {
-        $taxasQuery = "SELECT finalidade, tipo_taxa, tempo_infusao FROM dtaxas WHERE id_taxas = ?";
+        $taxasQuery = "SELECT finalidade, tipo_taxa, tempo_infusao FROM dTaxas WHERE id_taxas = ?";
         $taxasStmt = $conn->prepare($taxasQuery);
         $taxasStmt->bind_param("i", $service['idTaxas']);
         $taxasStmt->execute();

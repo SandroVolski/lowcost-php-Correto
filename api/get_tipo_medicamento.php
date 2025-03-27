@@ -17,7 +17,7 @@ try {
         throw new Exception("Erro de conexão com o banco de dados: " . ($conn->connect_error ?? "Conexão não estabelecida"));
     }
 
-    $sql = "SELECT id_medicamento, tipo_medicamento FROM dtipo_medicamento ORDER BY tipo_medicamento";
+    $sql = "SELECT id_medicamento, tipo_medicamento FROM dTipo_medicamento ORDER BY tipo_medicamento";
     $result = $conn->query($sql);
 
     if (!$result) {

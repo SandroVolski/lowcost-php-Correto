@@ -63,7 +63,7 @@ try {
     
     if ($hasRegistroVisaData) {
         // Verificar primeiro se o RegistroVisa já existe
-        $checkSql = "SELECT RegistroVisa FROM dregistro_anvisa WHERE RegistroVisa = ?";
+        $checkSql = "SELECT RegistroVisa FROM dRegistro_anvisa WHERE RegistroVisa = ?";
         $checkStmt = $conn->prepare($checkSql);
         if (!$checkStmt) {
             throw new Exception("Erro ao preparar a consulta para verificar RegistroVisa: " . $conn->error);
@@ -79,9 +79,9 @@ try {
             $checkStmt->close();
             
             // Atualizar na tabela dregistro_anvisa
-            $sqlRegistro = "UPDATE dregistro_anvisa SET
+            $sqlRegistro = "UPDATE dRegistro_anvisa SET
                 Cod_Ggrem = ?,
-                Principio_Ativo = ?,
+                PrincipioAtivo = ?,
                 Lab = ?,
                 cnpj_lab = ?,
                 Classe_Terapeutica = ?,
@@ -102,7 +102,7 @@ try {
 
             // Converter valores vazios para strings vazias (não NULL) para campos NOT NULL
             $codGgrem = isset($data->Cod_Ggrem) && $data->Cod_Ggrem !== "" ? $data->Cod_Ggrem : '';
-            $principioAtivo = isset($data->Principio_Ativo) && $data->Principio_Ativo !== "" ? $data->Principio_Ativo : 'Não informado';
+            $principioAtivo = isset($data->PrincipioAtivo) && $data->PrincipioAtivo !== "" ? $data->PrincipioAtivo : 'Não informado';
             $lab = isset($data->Lab) && $data->Lab !== "" ? $data->Lab : '';
             $cnpjLab = isset($data->cnpj_lab) && $data->cnpj_lab !== "" ? $data->cnpj_lab : '';
             $classeTerapeutica = isset($data->Classe_Terapeutica) && $data->Classe_Terapeutica !== "" ? $data->Classe_Terapeutica : '';
@@ -148,10 +148,10 @@ try {
             $checkStmt->close();
             
             // Inserir novo registro na tabela dregistro_anvisa
-            $sqlRegistro = "INSERT INTO dregistro_anvisa (
+            $sqlRegistro = "INSERT INTO dRegistro_anvisa (
                 RegistroVisa,
                 Cod_Ggrem,
-                Principio_Ativo,
+                PrincipioAtivo,
                 Lab,
                 cnpj_lab,
                 Classe_Terapeutica,
@@ -173,7 +173,7 @@ try {
             // Converter valores vazios para strings vazias (não NULL) para campos NOT NULL
             $registroVisa = $data->RegistroVisa;
             $codGgrem = isset($data->Cod_Ggrem) && $data->Cod_Ggrem !== "" ? $data->Cod_Ggrem : '';
-            $principioAtivo = isset($data->Principio_Ativo) && $data->Principio_Ativo !== "" ? $data->Principio_Ativo : 'Não informado';
+            $principioAtivo = isset($data->PrincipioAtivo) && $data->PrincipioAtivo !== "" ? $data->PrincipioAtivo : 'Não informado';
             $lab = isset($data->Lab) && $data->Lab !== "" ? $data->Lab : '';
             $cnpjLab = isset($data->cnpj_lab) && $data->cnpj_lab !== "" ? $data->cnpj_lab : '';
             $classeTerapeutica = isset($data->Classe_Terapeutica) && $data->Classe_Terapeutica !== "" ? $data->Classe_Terapeutica : '';
@@ -221,7 +221,7 @@ try {
     }
 
     // Agora atualizar na tabela dservicorelacionada
-    $sql = "UPDATE dservicorelacionada SET
+    $sql = "UPDATE dServicoRelacionada SET
         Cod = ?,
         Codigo_TUSS = ?,
         Descricao_Apresentacao = ?,
@@ -231,7 +231,7 @@ try {
         UnidadeFracionamento = ?,
         Fracionamento = ?,
         Laboratorio = ?,
-        Revisado = ?,
+        Revisado_Farma = ?,
         idViaAdministracao = ?,
         idClasseFarmaceutica = ?,
         idPrincipioAtivo = ?,
@@ -272,7 +272,7 @@ try {
     $laboratorio = isset($data->Laboratorio) && $data->Laboratorio !== "" ? $data->Laboratorio : 
                   (isset($data->Laboratório) && $data->Laboratório !== "" ? $data->Laboratório : null);
     
-    $revisado = isset($data->Revisado) && $data->Revisado !== "" ? intval($data->Revisado) : 0;
+    $revisado_Farma = isset($data->Revisado_Farma) && $data->Revisado_Farma !== "" ? intval($data->Revisado_Farma) : 0;
     
     // IDs dos campos relacionados
     $idViaAdministracao = isset($data->idViaAdministracao) && $data->idViaAdministracao !== "" ? intval($data->idViaAdministracao) : null;
@@ -339,7 +339,7 @@ try {
         $unidadeFracionamento,
         $fracionamento,
         $laboratorio,
-        $revisado,
+        $revisado_Farma,
         $idViaAdministracao,
         $idClasseFarmaceutica,
         $idPrincipioAtivo,
@@ -364,7 +364,7 @@ try {
         'unidadeFracionamento' => $unidadeFracionamento,
         'fracionamento' => $fracionamento,
         'laboratorio' => $laboratorio,
-        'revisado' => $revisado,
+        'revisado_Farma' => $revisado_Farma,
         'idViaAdministracao' => $idViaAdministracao,
         'idClasseFarmaceutica' => $idClasseFarmaceutica,
         'idPrincipioAtivo' => $idPrincipioAtivo,
@@ -389,7 +389,7 @@ try {
         $unidadeFracionamento,
         $fracionamento,
         $laboratorio,
-        $revisado,
+        $revisado_Farma,
         $idViaAdministracao,
         $idClasseFarmaceutica,
         $idPrincipioAtivo,

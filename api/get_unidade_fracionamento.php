@@ -17,7 +17,7 @@ try {
         throw new Exception("Erro de conexão com o banco de dados: " . ($conn->connect_error ?? "Conexão não estabelecida"));
     }
 
-    $sql = "SELECT id_unidadefracionamento, UnidadeFracionamento, Descricao, Divisor FROM dunidadefracionamento ORDER BY UnidadeFracionamento";
+    $sql = "SELECT id_unidadefracionamento, UnidadeFracionamento, Descricao, Divisor FROM dUnidadeFracionamento ORDER BY UnidadeFracionamento";
     $result = $conn->query($sql);
 
     if (!$result) {
