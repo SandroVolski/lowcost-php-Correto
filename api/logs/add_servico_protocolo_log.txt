@@ -1,0 +1,23 @@
+[2025-04-03 18:37:44] Erro em add_servico_protocolo.php: Unknown column 'Servico_Codigo' in 'field list'
+[2025-04-03 18:41:11] ID do protocolo recebido: 1
+[2025-04-03 18:41:11] Colunas existentes: id, id_protocolo, id_servico, dose, dose_total, via_administracao, dias_aplicacao, observacoes
+[2025-04-03 18:41:11] Adicionando colunas faltantes: ALTER TABLE Protocolo_Servico ADD COLUMN Servico_Codigo VARCHAR(50), ADD COLUMN Dose_M DOUBLE, ADD COLUMN Dose_Total DOUBLE, ADD COLUMN Dias_de_Aplic INT, ADD COLUMN Via_de_Adm VARCHAR(50)
+[2025-04-03 18:41:11] Erro em add_servico_protocolo.php: Duplicate column name 'Dose_Total'
+[2025-04-03 19:02:04] Iniciando add_servico_protocolo.php
+[2025-04-03 19:02:04] Raw data: {"Servico_Codigo":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 19:02:04] Conexão estabelecida
+[2025-04-03 19:02:04] ID do protocolo: 1
+[2025-04-03 19:02:04] Dados decodificados: {"Servico_Codigo":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 19:02:04] Tabela Protocolo_Servico já existe
+[2025-04-03 19:02:04] Preparando inserção
+[2025-04-03 19:02:04] Erro: Unknown column 'Servico_Codigo' in 'field list'
+[2025-04-03 19:02:04] Finalizado add_servico_protocolo.php
+[2025-04-03 19:04:39] Iniciando add_servico_protocolo.php
+[2025-04-03 19:04:39] Raw data: {"Servico_Codigo":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 19:04:39] Conexão estabelecida
+[2025-04-03 19:04:39] ID do protocolo: 5
+[2025-04-03 19:04:39] Dados decodificados: {"Servico_Codigo":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 19:04:39] Tabela Protocolo_Servico já existe
+[2025-04-03 19:04:39] Preparando inserção
+[2025-04-03 19:04:39] Erro: Unknown column 'Servico_Codigo' in 'field list'
+[2025-04-03 19:04:39] Finalizado add_servico_protocolo.php

@@ -1,0 +1,20 @@
+[2025-04-03 21:48:19] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 21:48:19] Iniciando update_protocolo.php
+[2025-04-03 21:48:19] Carregando configuração
+[2025-04-03 21:48:19] Verificando ID na URL
+[2025-04-03 21:48:19] ID a ser atualizado: 3
+[2025-04-03 21:48:19] Obtendo dados da requisição
+[2025-04-03 21:48:19] Dados brutos: {"Protocolo_Nome":"Protocolo de Imunoterapia Avançadassssss","Protocolo_Sigla":"PIASSS","Protocolo_Dose_M":200,"Protocolo_Dose_Total":1000,"Protocolo_Dias_de_Aplicacao":10,"CID":"","Protocolo_ViaAdm":1,"Linha":1}
+[2025-04-03 21:48:19] Dados decodificados: {"Protocolo_Nome":"Protocolo de Imunoterapia Avan\u00e7adassssss","Protocolo_Sigla":"PIASSS","Protocolo_Dose_M":200,"Protocolo_Dose_Total":1000,"Protocolo_Dias_de_Aplicacao":10,"CID":"","Protocolo_ViaAdm":1,"Linha":1}
+[2025-04-03 21:48:19] Estabelecendo conexão com o banco
+[2025-04-03 21:48:19] Conexão estabelecida
+[2025-04-03 21:48:19] Verificando estrutura da tabela Protocolo
+[2025-04-03 21:48:19] Encontrado campo ID alternativo: 'id_protocolo'
+[2025-04-03 21:48:19] Colunas na tabela: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha
+[2025-04-03 21:48:19] Verificando se o protocolo existe
+[2025-04-03 21:48:19] Query de atualização: UPDATE Protocolo SET Protocolo_Nome = 'Protocolo de Imunoterapia Avançadassssss', Protocolo_Sigla = 'PIASSS', Protocolo_Dose_M = 200, Protocolo_Dose_Total = 1000, Protocolo_Dias_de_Aplicacao = 10, Protocolo_ViaAdm = 1, Linha = 1, CID = NULL WHERE id_protocolo = 3
+[2025-04-03 21:48:19] ERRO: Unknown column 'CID' in 'field list'
+[2025-04-03 21:48:19] Trace: #0 C:\xampp\htdocs\backend-php\api\PacientesEmTratamento\update_protocolo.php(172): mysqli->query('UPDATE Protocol...')
+#1 {main}
+[2025-04-03 21:48:19] Conexão fechada
+[2025-04-03 21:48:19] Script finalizado

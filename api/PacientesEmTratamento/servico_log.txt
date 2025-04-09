@@ -1,0 +1,64 @@
+[2025-04-04 18:57:43] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 18:57:43] Iniciando add_servico_protocolo.php
+[2025-04-04 18:57:43] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"321","Dose":"321","Dose_M":"321","Dose_Total":"321","Dias_de_Aplic":"321","Via_de_Adm":"321","observacoes":"321"}
+[2025-04-04 18:57:43] Conexão estabelecida
+[2025-04-04 18:57:43] ID do protocolo: 13
+[2025-04-04 18:57:43] Tabela Protocolo_Servico já existe. Verificando colunas...
+[2025-04-04 18:57:43] Coluna encontrada: id
+[2025-04-04 18:57:43] Coluna encontrada: id_protocolo
+[2025-04-04 18:57:43] Coluna encontrada: id_servico
+[2025-04-04 18:57:43] Coluna encontrada: dose
+[2025-04-04 18:57:43] Coluna encontrada: dose_total
+[2025-04-04 18:57:43] Coluna encontrada: via_administracao
+[2025-04-04 18:57:43] Coluna encontrada: dias_aplicacao
+[2025-04-04 18:57:43] Coluna encontrada: observacoes
+[2025-04-04 18:57:43] Coluna encontrada: Servico_Codigo
+[2025-04-04 18:57:43] Coluna encontrada: Dose_M
+[2025-04-04 18:57:43] Coluna encontrada: Dias_de_Aplic
+[2025-04-04 18:57:43] Coluna encontrada: Via_de_Adm
+[2025-04-04 18:57:43] Coluna para ID do protocolo identificada: id_protocolo
+[2025-04-04 18:57:43] SQL preparado: INSERT INTO Protocolo_Servico (id_protocolo, id_servico, Servico_Codigo, Dose, Dose_M, Dose_Total, Dias_de_Aplic, Via_de_Adm, observacoes) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2025-04-04 18:57:43] Executando query de inserção com os seguintes valores:
+[2025-04-04 18:57:43] - id_protocolo: 13
+[2025-04-04 18:57:43] - id_servico: 1
+[2025-04-04 18:57:43] - Servico_Codigo: 321
+[2025-04-04 18:57:43] - Dose: 321
+[2025-04-04 18:57:43] - Dose_M: 321
+[2025-04-04 18:57:43] - Dose_Total: 321
+[2025-04-04 18:57:43] - Dias_de_Aplic: 321
+[2025-04-04 18:57:43] - Via_de_Adm: 321
+[2025-04-04 18:57:43] - observacoes: 321
+[2025-04-04 18:57:43] Serviço inserido com sucesso. ID: 9
+[2025-04-04 18:57:43] Finalizado add_servico_protocolo.php
+[2025-04-04 19:14:35] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 19:14:35] Iniciando add_servico_protocolo.php
+[2025-04-04 19:14:35] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"890","Dose":"890","Dose_M":"890","Dose_Total":"890","Dias_de_Aplic":"890","Via_de_Adm":"890","observacoes":"890"}
+[2025-04-04 19:14:35] Conexão estabelecida
+[2025-04-04 19:14:35] ID do protocolo: 9
+[2025-04-04 19:14:35] Tabela Protocolo_Servico já existe. Verificando colunas...
+[2025-04-04 19:14:35] Coluna encontrada: id
+[2025-04-04 19:14:35] Coluna encontrada: id_protocolo
+[2025-04-04 19:14:35] Coluna encontrada: id_servico
+[2025-04-04 19:14:35] Coluna encontrada: dose
+[2025-04-04 19:14:35] Coluna encontrada: dose_total
+[2025-04-04 19:14:35] Coluna encontrada: via_administracao
+[2025-04-04 19:14:35] Coluna encontrada: dias_aplicacao
+[2025-04-04 19:14:35] Coluna encontrada: observacoes
+[2025-04-04 19:14:35] Coluna encontrada: Servico_Codigo
+[2025-04-04 19:14:35] Coluna encontrada: Dose_M
+[2025-04-04 19:14:35] Coluna encontrada: Dias_de_Aplic
+[2025-04-04 19:14:35] Coluna encontrada: Via_de_Adm
+[2025-04-04 19:14:35] Coluna para ID do protocolo identificada: id_protocolo
+[2025-04-04 19:14:35] SQL preparado: INSERT INTO Protocolo_Servico (id_protocolo, id_servico, Servico_Codigo, Dose, Dose_M, Dose_Total, Dias_de_Aplic, Via_de_Adm, observacoes) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2025-04-04 19:14:35] Executando query de inserção com os seguintes valores:
+[2025-04-04 19:14:35] - id_protocolo: 9
+[2025-04-04 19:14:35] - id_servico: 1
+[2025-04-04 19:14:35] - Servico_Codigo: 890
+[2025-04-04 19:14:35] - Dose: 890
+[2025-04-04 19:14:35] - Dose_M: 890
+[2025-04-04 19:14:35] - Dose_Total: 890
+[2025-04-04 19:14:35] - Dias_de_Aplic: 890
+[2025-04-04 19:14:35] - Via_de_Adm: 890
+[2025-04-04 19:14:35] - observacoes: 890
+[2025-04-04 19:14:35] Serviço inserido com sucesso. ID: 10
+[2025-04-04 19:14:35] Finalizado add_servico_protocolo.php

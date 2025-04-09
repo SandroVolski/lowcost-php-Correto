@@ -1,0 +1,109 @@
+[2025-04-03 21:47:13] Iniciando diagnóstico de banco de dados
+[2025-04-03 21:47:13] Conexão estabelecida
+[2025-04-03 21:47:13] Informações coletadas: {
+    "server": {
+        "version": "8.0.41",
+        "host": "localhost via TCP\/IP"
+    },
+    "tables": {
+        "Protocolo": {
+            "structure": [
+                {
+                    "name": "id_protocolo",
+                    "type": "int",
+                    "nullable": "NO",
+                    "key": "PRI",
+                    "default": null,
+                    "extra": "auto_increment"
+                },
+                {
+                    "name": "Servico_Codigo",
+                    "type": "int",
+                    "nullable": "YES",
+                    "key": "",
+                    "default": null,
+                    "extra": ""
+                },
+                {
+                    "name": "Protocolo_Nome",
+                    "type": "varchar(50)",
+                    "nullable": "YES",
+                    "key": "",
+                    "default": null,
+                    "extra": ""
+                },
+                {
+                    "name": "Protocolo_Sigla",
+                    "type": "varchar(50)",
+                    "nullable": "YES",
+                    "key": "",
+                    "default": null,
+                    "extra": ""
+                },
+                {
+                    "name": "Protocolo_Dose_M",
+                    "type": "varchar(50)",
+                    "nullable": "YES",
+                    "key": "",
+                    "default": null,
+                    "extra": ""
+                },
+                {
+                    "name": "Protocolo_Dose_Total",
+                    "type": "int",
+                    "nullable": "YES",
+                    "key": "",
+                    "default": null,
+                    "extra": ""
+                },
+                {
+                    "name": "Protocolo_Dias_de_Aplicacao",
+                    "type": "varchar(50)",
+                    "nullable": "YES",
+                    "key": "",
+                    "default": null,
+                    "extra": ""
+                },
+                {
+                    "name": "Protocolo_ViaAdm",
+                    "type": "int",
+                    "nullable": "YES",
+                    "key": "",
+                    "default": null,
+                    "extra": ""
+                },
+                {
+                    "name": "Linha",
+                    "type": "int",
+                    "nullable": "YES",
+                    "key": "",
+                    "default": null,
+                    "extra": ""
+                }
+            ],
+            "sample_data": [
+                {
+                    "id_protocolo": "3",
+                    "Servico_Codigo": "1003",
+                    "Protocolo_Nome": "Protocolo de Imunoterapia Avan\u00e7ada",
+                    "Protocolo_Sigla": "PIA",
+                    "Protocolo_Dose_M": "200",
+                    "Protocolo_Dose_Total": "1000",
+                    "Protocolo_Dias_de_Aplicacao": "10",
+                    "Protocolo_ViaAdm": "1",
+                    "Linha": "1"
+                }
+            ],
+            "total_records": "1"
+        }
+    }
+}
+[2025-04-03 21:47:13] Diagnóstico finalizado
+[2025-04-03 21:47:29] Iniciando diagnóstico de banco de dados
+[2025-04-03 21:47:29] Conexão estabelecida
+[2025-04-03 21:47:29] Erro: Unknown column 'id' in 'where clause'
+[2025-04-03 21:47:29] Diagnóstico finalizado
+[2025-04-03 21:48:25] Iniciando diagnóstico de banco de dados
+[2025-04-03 21:48:25] Conexão estabelecida
+[2025-04-03 21:48:25] Erro: Unknown column 'id' in 'where clause'
+[2025-04-03 21:48:25] Diagnóstico finalizado

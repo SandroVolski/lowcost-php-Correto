@@ -1,0 +1,36 @@
+[2025-04-03 19:09:01] Iniciando add_servico_protocolo.php
+[2025-04-03 19:09:01] Dados brutos recebidos: {"Servico_Codigo":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"1231","Via_de_Adm":"23"}
+[2025-04-03 19:09:01] Configuração incluída
+[2025-04-03 19:09:01] Conexão com banco de dados estabelecida
+[2025-04-03 19:09:01] ID do protocolo: 1
+[2025-04-03 19:09:01] Protocolo encontrado
+[2025-04-03 19:09:01] Dados decodificados: {"Servico_Codigo":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"1231","Via_de_Adm":"23"}
+[2025-04-03 19:09:01] Preparando declaração SQL
+[2025-04-03 19:09:01] Instrução SQL: INSERT INTO Protocolo_Servico (id_protocolo, Servico_Codigo, Dose_M, Dose_Total, Dias_de_Aplic, Via_de_Adm) VALUES (1, '123', 123, 123, 1231, '23')
+[2025-04-03 19:09:01] Erro: Unknown column 'Servico_Codigo' in 'field list'
+[2025-04-03 19:09:01] Conexão com banco de dados fechada
+[2025-04-03 19:09:01] Execução do script concluída
+[2025-04-03 19:55:56] Iniciando add_servico_protocolo.php
+[2025-04-03 19:55:56] Dados brutos recebidos: {"Servico_Codigo":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 19:55:56] Configuração incluída
+[2025-04-03 19:55:56] Conexão com banco de dados estabelecida
+[2025-04-03 19:55:56] ID do protocolo: 3
+[2025-04-03 19:55:56] Protocolo encontrado
+[2025-04-03 19:55:56] Dados decodificados: {"Servico_Codigo":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 19:55:56] Preparando declaração SQL
+[2025-04-03 19:55:56] Instrução SQL: INSERT INTO Protocolo_Servico (id_protocolo, Servico_Codigo, Dose_M, Dose_Total, Dias_de_Aplic, Via_de_Adm) VALUES (3, '123', 123, 123, 123, '123')
+[2025-04-03 19:55:56] Erro: Unknown column 'Servico_Codigo' in 'field list'
+[2025-04-03 19:55:56] Conexão com banco de dados fechada
+[2025-04-03 19:55:56] Execução do script concluída
+[2025-04-03 20:01:27] Iniciando add_servico_protocolo.php
+[2025-04-03 20:01:27] Dados brutos recebidos: {"Servico_Codigo":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 20:01:27] Configuração incluída
+[2025-04-03 20:01:27] Conexão com banco de dados estabelecida
+[2025-04-03 20:01:27] ID do protocolo: 1
+[2025-04-03 20:01:27] Protocolo encontrado
+[2025-04-03 20:01:27] Dados decodificados: {"Servico_Codigo":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 20:01:27] Preparando declaração SQL
+[2025-04-03 20:01:27] Instrução SQL: INSERT INTO Protocolo_Servico (id_protocolo, Servico_Codigo, Dose_M, Dose_Total, Dias_de_Aplic, Via_de_Adm) VALUES (1, '123', 123, 123, 123, '123')
+[2025-04-03 20:01:27] Erro: Unknown column 'Servico_Codigo' in 'field list'
+[2025-04-03 20:01:27] Conexão com banco de dados fechada
+[2025-04-03 20:01:27] Execução do script concluída

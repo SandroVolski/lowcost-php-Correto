@@ -1,0 +1,115 @@
+[2025-04-03 20:04:39] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 20:04:39] Iniciando add_servico_protocolo.php
+[2025-04-03 20:04:39] Dados brutos recebidos: {"id_servico":null,"Servico_Codigo":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 20:04:39] Configuração incluída
+[2025-04-03 20:04:39] Conexão com banco de dados estabelecida
+[2025-04-03 20:04:39] ID do protocolo: 1
+[2025-04-03 20:04:39] Protocolo encontrado
+[2025-04-03 20:04:39] Dados decodificados: {"id_servico":null,"Servico_Codigo":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 20:04:39] Colunas existentes: id, id_protocolo, id_servico, dose, dose_total, via_administracao, dias_aplicacao, observacoes
+[2025-04-03 20:04:39] Adicionando coluna faltante Servico_Codigo: VARCHAR(100)
+[2025-04-03 20:04:39] Coluna Servico_Codigo adicionada com sucesso
+[2025-04-03 20:04:39] Adicionando coluna faltante Dose_M: DOUBLE
+[2025-04-03 20:04:39] Coluna Dose_M adicionada com sucesso
+[2025-04-03 20:04:39] Adicionando coluna faltante Dose_Total: DOUBLE
+[2025-04-03 20:04:39] Erro: Duplicate column name 'Dose_Total'
+[2025-04-03 20:04:39] Conexão com banco de dados fechada
+[2025-04-03 20:04:39] Execução do script concluída
+[2025-04-03 20:09:25] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 20:09:25] Iniciando add_servico_protocolo.php
+[2025-04-03 20:09:25] Dados brutos recebidos: {"id_servico":null,"Servico_Codigo":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 20:09:25] Configuração incluída
+[2025-04-03 20:09:25] Conexão com banco de dados estabelecida
+[2025-04-03 20:09:25] ID do protocolo: 1
+[2025-04-03 20:09:25] Protocolo encontrado
+[2025-04-03 20:09:25] Dados decodificados: {"id_servico":null,"Servico_Codigo":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 20:09:25] Colunas existentes: id, id_protocolo, id_servico, dose, dose_total, via_administracao, dias_aplicacao, observacoes, servico_codigo, dose_m
+[2025-04-03 20:09:25] Colunas finais: id, id_protocolo, id_servico, dose, dose_total, via_administracao, dias_aplicacao, observacoes, Servico_Codigo, Dose_M
+[2025-04-03 20:09:25] SQL preparado: INSERT INTO Protocolo_Servico (id_protocolo, Servico_Codigo, dose, dose_total, dias_aplicacao, via_administracao) VALUES (?, ?, ?, ?, ?, ?)
+[2025-04-03 20:09:25] Tipos de dados: isddis
+[2025-04-03 20:09:25] Valores: 1, '123', 123, 123, 123, '123'
+[2025-04-03 20:09:25] Erro: Field 'id_servico' doesn't have a default value
+[2025-04-03 20:09:25] Conexão com banco de dados fechada
+[2025-04-03 20:09:25] Execução do script concluída
+[2025-04-03 20:43:04] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 20:43:04] Iniciando add_servico_protocolo.php
+[2025-04-03 20:43:04] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"123","Dose":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123","observacoes":"123"}
+[2025-04-03 20:43:04] Conexão estabelecida
+[2025-04-03 20:43:04] ID do protocolo: 1
+[2025-04-03 20:43:04] Executando query de inserção
+[2025-04-03 20:43:04] Serviço inserido com sucesso. ID: 1
+[2025-04-03 20:43:04] Finalizado add_servico_protocolo.php
+[2025-04-03 20:43:14] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 20:43:14] Iniciando add_servico_protocolo.php
+[2025-04-03 20:43:14] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"321","Dose":"321","Dose_M":"321","Dose_Total":"321","Dias_de_Aplic":"321","Via_de_Adm":"321","observacoes":"321"}
+[2025-04-03 20:43:14] Conexão estabelecida
+[2025-04-03 20:43:14] ID do protocolo: 1
+[2025-04-03 20:43:14] Executando query de inserção
+[2025-04-03 20:43:14] Serviço inserido com sucesso. ID: 2
+[2025-04-03 20:43:14] Finalizado add_servico_protocolo.php
+[2025-04-03 21:52:48] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 21:52:48] Iniciando add_servico_protocolo.php
+[2025-04-03 21:52:48] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"123","Dose":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123","observacoes":""}
+[2025-04-03 21:52:48] Conexão estabelecida
+[2025-04-03 21:52:48] ID do protocolo: 3
+[2025-04-03 21:52:48] Executando query de inserção
+[2025-04-03 21:52:48] Serviço inserido com sucesso. ID: 3
+[2025-04-03 21:52:48] Finalizado add_servico_protocolo.php
+[2025-04-03 21:53:04] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 21:53:04] Iniciando add_servico_protocolo.php
+[2025-04-03 21:53:04] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"321","Dose":"321","Dose_M":"321","Dose_Total":"321","Dias_de_Aplic":"321","Via_de_Adm":"123","observacoes":""}
+[2025-04-03 21:53:04] Conexão estabelecida
+[2025-04-03 21:53:04] ID do protocolo: 3
+[2025-04-03 21:53:04] Executando query de inserção
+[2025-04-03 21:53:04] Serviço inserido com sucesso. ID: 4
+[2025-04-03 21:53:04] Finalizado add_servico_protocolo.php
+[2025-04-04 12:36:38] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 12:36:38] Iniciando add_servico_protocolo.php
+[2025-04-04 12:36:38] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"123","Dose":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123","observacoes":"123"}
+[2025-04-04 12:36:38] Conexão estabelecida
+[2025-04-04 12:36:38] ID do protocolo: 3
+[2025-04-04 12:36:38] Executando query de inserção
+[2025-04-04 12:36:38] Serviço inserido com sucesso. ID: 5
+[2025-04-04 12:36:38] Finalizado add_servico_protocolo.php
+[2025-04-04 13:40:19] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 13:40:19] Iniciando add_servico_protocolo.php
+[2025-04-04 13:40:19] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"123","Dose":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"1231","observacoes":"23"}
+[2025-04-04 13:40:19] Conexão estabelecida
+[2025-04-04 13:40:19] ID do protocolo: 6
+[2025-04-04 13:40:19] Erro: Unknown column 'id_protocolo' in 'field list'
+[2025-04-04 13:40:19] Finalizado add_servico_protocolo.php
+[2025-04-04 13:40:32] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 13:40:32] Iniciando add_servico_protocolo.php
+[2025-04-04 13:40:32] Dados brutos recebidos: 
+[2025-04-04 13:40:32] Conexão estabelecida
+[2025-04-04 13:40:32] ID do protocolo: 6
+[2025-04-04 13:40:32] Erro: Unknown column 'id_protocolo' in 'field list'
+[2025-04-04 13:40:32] Finalizado add_servico_protocolo.php
+[2025-04-04 13:44:07] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 13:44:07] Iniciando add_servico_protocolo.php
+[2025-04-04 13:44:07] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"54","Dose":"756","Dose_M":"765","Dose_Total":"765","Dias_de_Aplic":"765","Via_de_Adm":"765","observacoes":"765"}
+[2025-04-04 13:44:07] Conexão estabelecida
+[2025-04-04 13:44:07] ID do protocolo: 3
+[2025-04-04 13:44:07] Erro: Unknown column 'id_protocolo' in 'field list'
+[2025-04-04 13:44:07] Finalizado add_servico_protocolo.php
+[2025-04-04 13:48:17] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 13:48:17] Iniciando add_servico_protocolo.php
+[2025-04-04 13:48:17] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"3","Dose":"3","Dose_M":"3","Dose_Total":"3","Dias_de_Aplic":"3","Via_de_Adm":"3","observacoes":"3"}
+[2025-04-04 13:48:18] Conexão estabelecida
+[2025-04-04 13:48:18] ID do protocolo: 3
+[2025-04-04 13:48:18] Erro: Unknown column 'id_protocolo' in 'field list'
+[2025-04-04 13:48:18] Finalizado add_servico_protocolo.php
+[2025-04-04 18:29:26] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 18:29:26] Iniciando add_servico_protocolo.php
+[2025-04-04 18:29:26] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"123","Dose":"123","Dose_M":"123","Dose_Total":"123","Dias_de_Aplic":"123","Via_de_Adm":"123","observacoes":"123"}
+[2025-04-04 18:29:26] Conexão estabelecida
+[2025-04-04 18:29:26] ID do protocolo: 13
+[2025-04-04 18:29:26] Erro: Unknown column 'id_protocolo' in 'field list'
+[2025-04-04 18:29:26] Finalizado add_servico_protocolo.php
+[2025-04-04 18:40:55] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 18:40:55] Iniciando add_servico_protocolo.php
+[2025-04-04 18:40:55] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"123","Dose":"123","Dose_M":"1231","Dose_Total":"23","Dias_de_Aplic":"123","Via_de_Adm":"123","observacoes":"123"}
+[2025-04-04 18:40:55] Conexão estabelecida
+[2025-04-04 18:40:55] ID do protocolo: 13
+[2025-04-04 18:40:55] Erro: Unknown column 'id_protocolo' in 'field list'
+[2025-04-04 18:40:55] Finalizado add_servico_protocolo.php

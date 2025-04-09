@@ -1,0 +1,374 @@
+[2025-04-04 12:58:47] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 12:58:47] Método HTTP: GET
+[2025-04-04 12:58:47] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 12:58:47] Tentando incluir config.php...
+[2025-04-04 12:58:47] config.php incluído com sucesso
+[2025-04-04 12:58:47] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 12:58:47] Tentando conectar ao banco de dados principal...
+[2025-04-04 12:58:47] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 12:58:47] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 12:58:47] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 12:58:47] Tabela 'Protocolo' encontrada
+[2025-04-04 12:58:47] Estrutura da tabela Protocolo: [{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"CID","Type":"varchar(50)","Null":"YES","Key":"","Default":null}]
+[2025-04-04 12:58:47] Diagnóstico concluído para requisição GET
+[2025-04-04 12:58:47] Conexão principal fechada
+[2025-04-04 12:58:47] Conexão bd_pacientestto fechada
+[2025-04-04 12:58:47] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 12:58:47] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 12:58:47] Método HTTP: GET
+[2025-04-04 12:58:47] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 12:58:47] Tentando incluir config.php...
+[2025-04-04 12:58:47] config.php incluído com sucesso
+[2025-04-04 12:58:47] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 12:58:47] Tentando conectar ao banco de dados principal...
+[2025-04-04 12:58:47] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 12:58:47] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 12:58:47] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 12:58:47] Tabela 'Protocolo' encontrada
+[2025-04-04 12:58:47] Estrutura da tabela Protocolo: [{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"CID","Type":"varchar(50)","Null":"YES","Key":"","Default":null}]
+[2025-04-04 12:58:47] Diagnóstico concluído para requisição GET
+[2025-04-04 12:58:47] Conexão principal fechada
+[2025-04-04 12:58:47] Conexão bd_pacientestto fechada
+[2025-04-04 12:58:47] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 12:58:51] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 12:58:51] Método HTTP: GET
+[2025-04-04 12:58:51] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 12:58:51] Tentando incluir config.php...
+[2025-04-04 12:58:51] config.php incluído com sucesso
+[2025-04-04 12:58:51] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 12:58:51] Tentando conectar ao banco de dados principal...
+[2025-04-04 12:58:51] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 12:58:51] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 12:58:51] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 12:58:51] Tabela 'Protocolo' encontrada
+[2025-04-04 12:58:51] Estrutura da tabela Protocolo: [{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"CID","Type":"varchar(50)","Null":"YES","Key":"","Default":null}]
+[2025-04-04 12:58:51] Diagnóstico concluído para requisição GET
+[2025-04-04 12:58:51] Conexão principal fechada
+[2025-04-04 12:58:51] Conexão bd_pacientestto fechada
+[2025-04-04 12:58:51] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 12:58:51] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 12:58:51] Método HTTP: GET
+[2025-04-04 12:58:51] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 12:58:51] Tentando incluir config.php...
+[2025-04-04 12:58:51] config.php incluído com sucesso
+[2025-04-04 12:58:51] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 12:58:51] Tentando conectar ao banco de dados principal...
+[2025-04-04 12:58:51] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 12:58:51] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 12:58:51] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 12:58:51] Tabela 'Protocolo' encontrada
+[2025-04-04 12:58:51] Estrutura da tabela Protocolo: [{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"CID","Type":"varchar(50)","Null":"YES","Key":"","Default":null}]
+[2025-04-04 12:58:51] Diagnóstico concluído para requisição GET
+[2025-04-04 12:58:51] Conexão principal fechada
+[2025-04-04 12:58:51] Conexão bd_pacientestto fechada
+[2025-04-04 12:58:51] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 13:00:16] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 13:00:16] Método HTTP: GET
+[2025-04-04 13:00:16] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 13:00:16] Tentando incluir config.php...
+[2025-04-04 13:00:16] config.php incluído com sucesso
+[2025-04-04 13:00:16] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 13:00:16] Tentando conectar ao banco de dados principal...
+[2025-04-04 13:00:16] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 13:00:16] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 13:00:16] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 13:00:16] Tabela 'Protocolo' encontrada
+[2025-04-04 13:00:16] Estrutura da tabela Protocolo: [{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"CID","Type":"varchar(50)","Null":"YES","Key":"","Default":null}]
+[2025-04-04 13:00:16] Diagnóstico concluído para requisição GET
+[2025-04-04 13:00:16] Conexão principal fechada
+[2025-04-04 13:00:16] Conexão bd_pacientestto fechada
+[2025-04-04 13:00:16] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 13:00:16] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 13:00:16] Método HTTP: GET
+[2025-04-04 13:00:16] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 13:00:16] Tentando incluir config.php...
+[2025-04-04 13:00:16] config.php incluído com sucesso
+[2025-04-04 13:00:16] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 13:00:16] Tentando conectar ao banco de dados principal...
+[2025-04-04 13:00:16] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 13:00:16] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 13:00:16] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 13:00:16] Tabela 'Protocolo' encontrada
+[2025-04-04 13:00:16] Estrutura da tabela Protocolo: [{"Field":"id","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"CID","Type":"varchar(50)","Null":"YES","Key":"","Default":null}]
+[2025-04-04 13:00:16] Diagnóstico concluído para requisição GET
+[2025-04-04 13:00:16] Conexão principal fechada
+[2025-04-04 13:00:16] Conexão bd_pacientestto fechada
+[2025-04-04 13:00:16] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 22:33:40] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 22:33:40] Método HTTP: GET
+[2025-04-04 22:33:40] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 22:33:40] Tentando incluir config.php...
+[2025-04-04 22:33:41] config.php incluído com sucesso
+[2025-04-04 22:33:41] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 22:33:41] Tentando conectar ao banco de dados principal...
+[2025-04-04 22:33:42] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 22:33:42] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 22:33:42] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 22:33:42] Tabela 'Protocolo' encontrada
+[2025-04-04 22:33:42] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-04 22:33:42] Diagnóstico concluído para requisição GET
+[2025-04-04 22:33:42] Conexão principal fechada
+[2025-04-04 22:33:42] Conexão bd_pacientestto fechada
+[2025-04-04 22:33:42] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 22:33:42] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 22:33:42] Método HTTP: GET
+[2025-04-04 22:33:42] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 22:33:42] Tentando incluir config.php...
+[2025-04-04 22:33:43] config.php incluído com sucesso
+[2025-04-04 22:33:43] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 22:33:43] Tentando conectar ao banco de dados principal...
+[2025-04-04 22:33:44] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 22:33:44] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 22:33:44] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 22:33:44] Tabela 'Protocolo' encontrada
+[2025-04-04 22:33:45] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-04 22:33:45] Diagnóstico concluído para requisição GET
+[2025-04-04 22:33:45] Conexão principal fechada
+[2025-04-04 22:33:45] Conexão bd_pacientestto fechada
+[2025-04-04 22:33:45] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 22:36:50] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 22:36:50] Método HTTP: GET
+[2025-04-04 22:36:50] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 22:36:50] Tentando incluir config.php...
+[2025-04-04 22:36:51] config.php incluído com sucesso
+[2025-04-04 22:36:51] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 22:36:51] Tentando conectar ao banco de dados principal...
+[2025-04-04 22:36:51] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 22:36:51] Método HTTP: GET
+[2025-04-04 22:36:51] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 22:36:51] Tentando incluir config.php...
+[2025-04-04 22:36:52] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 22:36:52] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 22:36:52] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 22:36:52] Tabela 'Protocolo' encontrada
+[2025-04-04 22:36:52] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-04 22:36:52] Diagnóstico concluído para requisição GET
+[2025-04-04 22:36:52] Conexão principal fechada
+[2025-04-04 22:36:52] Conexão bd_pacientestto fechada
+[2025-04-04 22:36:52] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 22:36:52] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 22:36:52] Método HTTP: GET
+[2025-04-04 22:36:52] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 22:36:52] Tentando incluir config.php...
+[2025-04-04 22:36:52] config.php incluído com sucesso
+[2025-04-04 22:36:52] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 22:36:52] Tentando conectar ao banco de dados principal...
+[2025-04-04 22:36:53] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 22:36:53] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 22:36:53] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 22:36:53] Tabela 'Protocolo' encontrada
+[2025-04-04 22:36:53] config.php incluído com sucesso
+[2025-04-04 22:36:53] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 22:36:53] Tentando conectar ao banco de dados principal...
+[2025-04-04 22:36:53] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-04 22:36:53] Diagnóstico concluído para requisição GET
+[2025-04-04 22:36:53] Conexão principal fechada
+[2025-04-04 22:36:53] Conexão bd_pacientestto fechada
+[2025-04-04 22:36:53] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 22:36:53] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 22:36:53] Método HTTP: GET
+[2025-04-04 22:36:53] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 22:36:53] Tentando incluir config.php...
+[2025-04-04 22:36:54] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 22:36:54] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 22:36:54] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 22:36:54] Tabela 'Protocolo' encontrada
+[2025-04-04 22:36:54] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-04 22:36:54] Diagnóstico concluído para requisição GET
+[2025-04-04 22:36:54] Conexão principal fechada
+[2025-04-04 22:36:54] Conexão bd_pacientestto fechada
+[2025-04-04 22:36:54] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 22:36:54] config.php incluído com sucesso
+[2025-04-04 22:36:54] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 22:36:54] Tentando conectar ao banco de dados principal...
+[2025-04-04 22:36:55] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 22:36:55] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 22:36:55] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 22:36:55] Tabela 'Protocolo' encontrada
+[2025-04-04 22:36:55] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-04 22:36:55] Diagnóstico concluído para requisição GET
+[2025-04-04 22:36:55] Conexão principal fechada
+[2025-04-04 22:36:55] Conexão bd_pacientestto fechada
+[2025-04-04 22:36:55] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 22:43:39] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 22:43:39] Método HTTP: GET
+[2025-04-04 22:43:39] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 22:43:39] Tentando incluir config.php...
+[2025-04-04 22:43:40] config.php incluído com sucesso
+[2025-04-04 22:43:40] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 22:43:40] Tentando conectar ao banco de dados principal...
+[2025-04-04 22:43:40] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 22:43:40] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 22:43:40] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 22:43:41] Tabela 'Protocolo' encontrada
+[2025-04-04 22:43:41] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-04 22:43:41] Diagnóstico concluído para requisição GET
+[2025-04-04 22:43:41] Conexão principal fechada
+[2025-04-04 22:43:41] Conexão bd_pacientestto fechada
+[2025-04-04 22:43:41] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 22:43:51] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 22:43:51] Método HTTP: GET
+[2025-04-04 22:43:51] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 22:43:51] Tentando incluir config.php...
+[2025-04-04 22:43:52] config.php incluído com sucesso
+[2025-04-04 22:43:52] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 22:43:52] Tentando conectar ao banco de dados principal...
+[2025-04-04 22:43:53] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 22:43:53] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 22:43:53] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 22:43:53] Tabela 'Protocolo' encontrada
+[2025-04-04 22:43:53] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-04 22:43:53] Diagnóstico concluído para requisição GET
+[2025-04-04 22:43:53] Conexão principal fechada
+[2025-04-04 22:43:53] Conexão bd_pacientestto fechada
+[2025-04-04 22:43:53] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 22:44:53] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 22:44:53] Método HTTP: GET
+[2025-04-04 22:44:53] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 22:44:53] Tentando incluir config.php...
+[2025-04-04 22:44:54] config.php incluído com sucesso
+[2025-04-04 22:44:54] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 22:44:54] Tentando conectar ao banco de dados principal...
+[2025-04-04 22:44:54] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 22:44:54] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 22:44:55] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 22:44:55] Tabela 'Protocolo' encontrada
+[2025-04-04 22:44:55] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-04 22:44:55] Diagnóstico concluído para requisição GET
+[2025-04-04 22:44:55] Conexão principal fechada
+[2025-04-04 22:44:55] Conexão bd_pacientestto fechada
+[2025-04-04 22:44:55] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 22:47:49] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 22:47:49] Método HTTP: GET
+[2025-04-04 22:47:49] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 22:47:49] Tentando incluir config.php...
+[2025-04-04 22:47:50] config.php incluído com sucesso
+[2025-04-04 22:47:50] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 22:47:50] Tentando conectar ao banco de dados principal...
+[2025-04-04 22:47:50] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 22:47:50] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 22:47:51] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 22:47:51] Tabela 'Protocolo' encontrada
+[2025-04-04 22:47:51] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-04 22:47:51] Diagnóstico concluído para requisição GET
+[2025-04-04 22:47:51] Conexão principal fechada
+[2025-04-04 22:47:51] Conexão bd_pacientestto fechada
+[2025-04-04 22:47:51] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 22:49:16] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 22:49:16] Método HTTP: GET
+[2025-04-04 22:49:16] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 22:49:16] Tentando incluir config.php...
+[2025-04-04 22:49:17] config.php incluído com sucesso
+[2025-04-04 22:49:17] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 22:49:17] Tentando conectar ao banco de dados principal...
+[2025-04-04 22:49:17] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 22:49:17] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 22:49:18] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 22:49:18] Tabela 'Protocolo' encontrada
+[2025-04-04 22:49:18] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-04 22:49:18] Diagnóstico concluído para requisição GET
+[2025-04-04 22:49:18] Conexão principal fechada
+[2025-04-04 22:49:18] Conexão bd_pacientestto fechada
+[2025-04-04 22:49:18] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-04 22:49:24] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-04 22:49:24] Método HTTP: GET
+[2025-04-04 22:49:24] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-04 22:49:24] Tentando incluir config.php...
+[2025-04-04 22:49:25] config.php incluído com sucesso
+[2025-04-04 22:49:25] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-04 22:49:25] Tentando conectar ao banco de dados principal...
+[2025-04-04 22:49:25] Conexão com banco principal estabelecida com sucesso
+[2025-04-04 22:49:25] Tentando conectar ao banco bd_pacientestto...
+[2025-04-04 22:49:26] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-04 22:49:26] Tabela 'Protocolo' encontrada
+[2025-04-04 22:49:26] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-04 22:49:26] Diagnóstico concluído para requisição GET
+[2025-04-04 22:49:26] Conexão principal fechada
+[2025-04-04 22:49:26] Conexão bd_pacientestto fechada
+[2025-04-04 22:49:26] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-07 05:48:52] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-07 05:48:52] Método HTTP: GET
+[2025-04-07 05:48:52] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-07 05:48:52] Tentando incluir config.php...
+[2025-04-07 05:48:53] config.php incluído com sucesso
+[2025-04-07 05:48:53] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-07 05:48:53] Tentando conectar ao banco de dados principal...
+[2025-04-07 05:48:53] Conexão com banco principal estabelecida com sucesso
+[2025-04-07 05:48:53] Tentando conectar ao banco bd_pacientestto...
+[2025-04-07 05:48:54] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-07 05:48:54] Tabela 'Protocolo' encontrada
+[2025-04-07 05:48:54] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-07 05:48:54] Diagnóstico concluído para requisição GET
+[2025-04-07 05:48:54] Conexão principal fechada
+[2025-04-07 05:48:54] Conexão bd_pacientestto fechada
+[2025-04-07 05:48:54] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-07 05:50:05] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-07 05:50:05] Método HTTP: GET
+[2025-04-07 05:50:05] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-07 05:50:05] Tentando incluir config.php...
+[2025-04-07 05:50:06] config.php incluído com sucesso
+[2025-04-07 05:50:06] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-07 05:50:06] Tentando conectar ao banco de dados principal...
+[2025-04-07 05:50:06] Conexão com banco principal estabelecida com sucesso
+[2025-04-07 05:50:06] Tentando conectar ao banco bd_pacientestto...
+[2025-04-07 05:50:07] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-07 05:50:07] Tabela 'Protocolo' encontrada
+[2025-04-07 05:50:07] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-07 05:50:07] Diagnóstico concluído para requisição GET
+[2025-04-07 05:50:07] Conexão principal fechada
+[2025-04-07 05:50:07] Conexão bd_pacientestto fechada
+[2025-04-07 05:50:07] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-07 05:54:15] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-07 05:54:15] Método HTTP: GET
+[2025-04-07 05:54:15] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-07 05:54:15] Tentando incluir config.php...
+[2025-04-07 05:54:16] config.php incluído com sucesso
+[2025-04-07 05:54:16] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-07 05:54:16] Tentando conectar ao banco de dados principal...
+[2025-04-07 05:54:16] Conexão com banco principal estabelecida com sucesso
+[2025-04-07 05:54:16] Tentando conectar ao banco bd_pacientestto...
+[2025-04-07 05:54:17] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-07 05:54:17] Tabela 'Protocolo' encontrada
+[2025-04-07 05:54:17] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-07 05:54:17] Diagnóstico concluído para requisição GET
+[2025-04-07 05:54:17] Conexão principal fechada
+[2025-04-07 05:54:17] Conexão bd_pacientestto fechada
+[2025-04-07 05:54:17] ===== DIAGNÓSTICO FINALIZADO =====
+
+[2025-04-07 05:54:17] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-04-07 05:54:17] Método HTTP: GET
+[2025-04-07 05:54:17] Configurações PHP: {"version":"8.0.3","max_execution_time":"120","memory_limit":"512M","post_max_size":"40M","upload_max_filesize":"40M","display_errors":"1"}
+[2025-04-07 05:54:17] Tentando incluir config.php...
+[2025-04-07 05:54:18] config.php incluído com sucesso
+[2025-04-07 05:54:18] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-04-07 05:54:18] Tentando conectar ao banco de dados principal...
+[2025-04-07 05:54:18] Conexão com banco principal estabelecida com sucesso
+[2025-04-07 05:54:18] Tentando conectar ao banco bd_pacientestto...
+[2025-04-07 05:54:19] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-04-07 05:54:19] Tabela 'Protocolo' encontrada
+[2025-04-07 05:54:19] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null}]
+[2025-04-07 05:54:19] Diagnóstico concluído para requisição GET
+[2025-04-07 05:54:19] Conexão principal fechada
+[2025-04-07 05:54:19] Conexão bd_pacientestto fechada
+[2025-04-07 05:54:19] ===== DIAGNÓSTICO FINALIZADO =====
+

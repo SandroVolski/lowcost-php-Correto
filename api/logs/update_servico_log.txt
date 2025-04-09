@@ -1,0 +1,170 @@
+[2025-04-03 21:08:14] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 21:08:14] Iniciando update_servico_protocolo.php
+[2025-04-03 21:08:14] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"1234","Dose":123,"Dose_M":123,"Dose_Total":123,"Dias_de_Aplic":123,"Via_de_Adm":"123","observacoes":"123","id":1}
+[2025-04-03 21:08:14] Conexão estabelecida
+[2025-04-03 21:08:14] ID do protocolo: 1, ID do serviço: 1
+[2025-04-03 21:08:14] Finalizado update_servico_protocolo.php
+[2025-04-03 21:08:32] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 21:08:32] Iniciando update_servico_protocolo.php
+[2025-04-03 21:08:32] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"123","Dose":"1234","Dose_M":123,"Dose_Total":123,"Dias_de_Aplic":123,"Via_de_Adm":"123","observacoes":"123","id":1}
+[2025-04-03 21:08:32] Conexão estabelecida
+[2025-04-03 21:08:32] ID do protocolo: 1, ID do serviço: 1
+[2025-04-03 21:08:32] Finalizado update_servico_protocolo.php
+[2025-04-03 21:08:46] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 21:08:46] Iniciando update_servico_protocolo.php
+[2025-04-03 21:08:46] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"123","Dose":"1234","Dose_M":123,"Dose_Total":123,"Dias_de_Aplic":123,"Via_de_Adm":"123","observacoes":"123","id":1}
+[2025-04-03 21:08:46] Conexão estabelecida
+[2025-04-03 21:08:46] ID do protocolo: 1, ID do serviço: 1
+[2025-04-03 21:08:46] Finalizado update_servico_protocolo.php
+[2025-04-03 21:16:23] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 21:16:23] Iniciando update_servico_protocolo.php
+[2025-04-03 21:16:23] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"123","Dose":"1234","Dose_M":123,"Dose_Total":123,"Dias_de_Aplic":123,"Via_de_Adm":"123","observacoes":"123","id":1,"id_protocolo":"1"}
+[2025-04-03 21:16:23] Conexão estabelecida
+[2025-04-03 21:16:23] ID do protocolo: 1, ID do serviço: 1
+[2025-04-03 21:16:23] Executando consulta: SELECT * FROM Protocolo_Servico WHERE id = 1 AND id_protocolo = 1
+[2025-04-03 21:16:23] Serviço encontrado: {"id":"1","id_protocolo":"1","id_servico":"1","dose":"123","dose_total":"123","via_administracao":null,"dias_aplicacao":null,"observacoes":"123","Servico_Codigo":"123","Dose_M":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 21:16:23] Verificando estrutura da tabela Protocolo_Servico
+[2025-04-03 21:16:23] Colunas encontradas: id, id_protocolo, id_servico, dose, dose_total, via_administracao, dias_aplicacao, observacoes, Servico_Codigo, Dose_M, Dias_de_Aplic, Via_de_Adm
+[2025-04-03 21:16:23] Adicionando coluna Dose à tabela
+[2025-04-03 21:16:23] Erro: Duplicate column name 'Dose'
+[2025-04-03 21:16:23] Finalizado update_servico_protocolo.php
+[2025-04-03 21:21:59] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 21:21:59] Iniciando update_servico_protocolo.php
+[2025-04-03 21:21:59] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"123","Dose":123,"Dose_M":"1234","Dose_Total":123,"Dias_de_Aplic":123,"Via_de_Adm":"123","observacoes":"123","id":1,"id_protocolo":"1"}
+[2025-04-03 21:21:59] Conexão estabelecida
+[2025-04-03 21:21:59] ID do protocolo: 1, ID do serviço: 1
+[2025-04-03 21:21:59] Executando consulta: SELECT * FROM Protocolo_Servico WHERE id = 1 AND id_protocolo = 1
+[2025-04-03 21:21:59] Serviço encontrado: {"id":"1","id_protocolo":"1","id_servico":"1","dose":"123","dose_total":"123","via_administracao":null,"dias_aplicacao":null,"observacoes":"123","Servico_Codigo":"123","Dose_M":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 21:21:59] Verificando estrutura da tabela Protocolo_Servico
+[2025-04-03 21:21:59] Colunas encontradas: id, id_protocolo, id_servico, dose, dose_total, via_administracao, dias_aplicacao, observacoes, Servico_Codigo, Dose_M, Dias_de_Aplic, Via_de_Adm
+[2025-04-03 21:21:59] Adicionando coluna Dose à tabela
+[2025-04-03 21:21:59] Erro: Duplicate column name 'Dose'
+[2025-04-03 21:21:59] Finalizado update_servico_protocolo.php
+[2025-04-03 21:26:57] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 21:26:57] Iniciando update_servico_protocolo.php
+[2025-04-03 21:26:57] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"123","Dose":"1234","Dose_M":123,"Dose_Total":123,"Dias_de_Aplic":123,"Via_de_Adm":"123","observacoes":"123","id":1,"id_protocolo":"1"}
+[2025-04-03 21:26:57] Conexão estabelecida
+[2025-04-03 21:26:57] ID do protocolo: 1, ID do serviço: 1
+[2025-04-03 21:26:57] Executando consulta: SELECT * FROM Protocolo_Servico WHERE id = 1
+[2025-04-03 21:26:57] Serviço encontrado: {"id":"1","id_protocolo":"1","id_servico":"1","dose":"123","dose_total":"123","via_administracao":null,"dias_aplicacao":null,"observacoes":"123","Servico_Codigo":"123","Dose_M":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 21:26:57] Verificando estrutura da tabela Protocolo_Servico
+[2025-04-03 21:26:57] Colunas existentes: id, id_protocolo, id_servico, dose, dose_total, via_administracao, dias_aplicacao, observacoes, servico_codigo, dose_m, dias_de_aplic, via_de_adm
+[2025-04-03 21:26:57] Coluna Servico_Codigo já existe. Ignorando.
+[2025-04-03 21:26:57] Coluna Dose já existe. Ignorando.
+[2025-04-03 21:26:57] Coluna Dose_M já existe. Ignorando.
+[2025-04-03 21:26:57] Coluna Dose_Total já existe. Ignorando.
+[2025-04-03 21:26:57] Coluna Dias_de_Aplic já existe. Ignorando.
+[2025-04-03 21:26:57] Coluna Via_de_Adm já existe. Ignorando.
+[2025-04-03 21:26:57] Coluna observacoes já existe. Ignorando.
+[2025-04-03 21:26:57] Valores para atualização:
+[2025-04-03 21:26:57] Servico_Codigo: 123
+[2025-04-03 21:26:57] Dose: 1234
+[2025-04-03 21:26:57] Dose_M: 123
+[2025-04-03 21:26:57] Dose_Total: 123
+[2025-04-03 21:26:57] Dias_de_Aplic: 123
+[2025-04-03 21:26:57] Via_de_Adm: 123
+[2025-04-03 21:26:57] observacoes: 123
+[2025-04-03 21:26:57] Query de atualização: UPDATE Protocolo_Servico SET Servico_Codigo = '123', Dose = 1234, Dose_M = 123, Dose_Total = 123, Dias_de_Aplic = 123, Via_de_Adm = '123', observacoes = '123' WHERE id = 1 AND id_protocolo = 1
+[2025-04-03 21:26:58] Serviço atualizado com sucesso. Linhas afetadas: 1
+[2025-04-03 21:26:58] Dados atualizados: {"id":"1","id_protocolo":"1","id_servico":"1","dose":"1234","dose_total":"123","via_administracao":null,"dias_aplicacao":null,"observacoes":"123","Servico_Codigo":"123","Dose_M":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 21:26:58] Finalizado update_servico_protocolo.php
+[2025-04-03 21:27:13] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 21:27:13] Iniciando update_servico_protocolo.php
+[2025-04-03 21:27:13] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"123","Dose":"1232","Dose_M":123,"Dose_Total":123,"Dias_de_Aplic":123,"Via_de_Adm":"123","observacoes":"123","id":1,"id_protocolo":"1"}
+[2025-04-03 21:27:13] Conexão estabelecida
+[2025-04-03 21:27:13] ID do protocolo: 1, ID do serviço: 1
+[2025-04-03 21:27:13] Executando consulta: SELECT * FROM Protocolo_Servico WHERE id = 1
+[2025-04-03 21:27:13] Serviço encontrado: {"id":"1","id_protocolo":"1","id_servico":"1","dose":"1234","dose_total":"123","via_administracao":null,"dias_aplicacao":null,"observacoes":"123","Servico_Codigo":"123","Dose_M":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 21:27:13] Verificando estrutura da tabela Protocolo_Servico
+[2025-04-03 21:27:13] Colunas existentes: id, id_protocolo, id_servico, dose, dose_total, via_administracao, dias_aplicacao, observacoes, servico_codigo, dose_m, dias_de_aplic, via_de_adm
+[2025-04-03 21:27:13] Coluna Servico_Codigo já existe. Ignorando.
+[2025-04-03 21:27:13] Coluna Dose já existe. Ignorando.
+[2025-04-03 21:27:13] Coluna Dose_M já existe. Ignorando.
+[2025-04-03 21:27:13] Coluna Dose_Total já existe. Ignorando.
+[2025-04-03 21:27:13] Coluna Dias_de_Aplic já existe. Ignorando.
+[2025-04-03 21:27:13] Coluna Via_de_Adm já existe. Ignorando.
+[2025-04-03 21:27:13] Coluna observacoes já existe. Ignorando.
+[2025-04-03 21:27:13] Valores para atualização:
+[2025-04-03 21:27:13] Servico_Codigo: 123
+[2025-04-03 21:27:13] Dose: 1232
+[2025-04-03 21:27:13] Dose_M: 123
+[2025-04-03 21:27:13] Dose_Total: 123
+[2025-04-03 21:27:13] Dias_de_Aplic: 123
+[2025-04-03 21:27:13] Via_de_Adm: 123
+[2025-04-03 21:27:13] observacoes: 123
+[2025-04-03 21:27:13] Query de atualização: UPDATE Protocolo_Servico SET Servico_Codigo = '123', Dose = 1232, Dose_M = 123, Dose_Total = 123, Dias_de_Aplic = 123, Via_de_Adm = '123', observacoes = '123' WHERE id = 1 AND id_protocolo = 1
+[2025-04-03 21:27:13] Serviço atualizado com sucesso. Linhas afetadas: 1
+[2025-04-03 21:27:13] Dados atualizados: {"id":"1","id_protocolo":"1","id_servico":"1","dose":"1232","dose_total":"123","via_administracao":null,"dias_aplicacao":null,"observacoes":"123","Servico_Codigo":"123","Dose_M":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 21:27:13] Finalizado update_servico_protocolo.php
+[2025-04-03 21:53:02] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 21:53:02] Iniciando update_servico_protocolo.php
+[2025-04-03 21:53:02] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"123","Dose":123,"Dose_M":123,"Dose_Total":"1234","Dias_de_Aplic":123,"Via_de_Adm":"123","observacoes":"0","id":3,"id_protocolo":"3"}
+[2025-04-03 21:53:02] Conexão estabelecida
+[2025-04-03 21:53:02] ID do protocolo: 3, ID do serviço: 3
+[2025-04-03 21:53:02] Executando consulta: SELECT * FROM Protocolo_Servico WHERE id = 3
+[2025-04-03 21:53:02] Serviço encontrado: {"id":"3","id_protocolo":"3","id_servico":"1","dose":"123","dose_total":"123","via_administracao":null,"dias_aplicacao":null,"observacoes":"0","Servico_Codigo":"123","Dose_M":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 21:53:02] Verificando estrutura da tabela Protocolo_Servico
+[2025-04-03 21:53:02] Colunas existentes: id, id_protocolo, id_servico, dose, dose_total, via_administracao, dias_aplicacao, observacoes, servico_codigo, dose_m, dias_de_aplic, via_de_adm
+[2025-04-03 21:53:02] Coluna Servico_Codigo já existe. Ignorando.
+[2025-04-03 21:53:02] Coluna Dose já existe. Ignorando.
+[2025-04-03 21:53:02] Coluna Dose_M já existe. Ignorando.
+[2025-04-03 21:53:02] Coluna Dose_Total já existe. Ignorando.
+[2025-04-03 21:53:02] Coluna Dias_de_Aplic já existe. Ignorando.
+[2025-04-03 21:53:02] Coluna Via_de_Adm já existe. Ignorando.
+[2025-04-03 21:53:02] Coluna observacoes já existe. Ignorando.
+[2025-04-03 21:53:02] Valores para atualização:
+[2025-04-03 21:53:02] Servico_Codigo: 123
+[2025-04-03 21:53:02] Dose: 123
+[2025-04-03 21:53:02] Dose_M: 123
+[2025-04-03 21:53:02] Dose_Total: 1234
+[2025-04-03 21:53:02] Dias_de_Aplic: 123
+[2025-04-03 21:53:02] Via_de_Adm: 123
+[2025-04-03 21:53:02] observacoes: 0
+[2025-04-03 21:53:02] Query de atualização: UPDATE Protocolo_Servico SET Servico_Codigo = '123', Dose = 123, Dose_M = 123, Dose_Total = 1234, Dias_de_Aplic = 123, Via_de_Adm = '123', observacoes = '0' WHERE id = 3 AND id_protocolo = 3
+[2025-04-03 21:53:02] Serviço atualizado com sucesso. Linhas afetadas: 1
+[2025-04-03 21:53:02] Dados atualizados: {"id":"3","id_protocolo":"3","id_servico":"1","dose":"123","dose_total":"1234","via_administracao":null,"dias_aplicacao":null,"observacoes":"0","Servico_Codigo":"123","Dose_M":"123","Dias_de_Aplic":"123","Via_de_Adm":"123"}
+[2025-04-03 21:53:02] Finalizado update_servico_protocolo.php
+[2025-04-04 18:47:32] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 18:47:32] Iniciando update_servico_protocolo.php
+[2025-04-04 18:47:32] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"123","Dose":123,"Dose_M":123,"Dose_Total":1231,"Dias_de_Aplic":23,"Via_de_Adm":"123","observacoes":"1234","id":6,"id_protocolo":"13"}
+[2025-04-04 18:47:32] Conexão estabelecida
+[2025-04-04 18:47:32] ID do protocolo: 13, ID do serviço: 6
+[2025-04-04 18:47:32] Erro: Unknown column 'id_protocolo' in 'field list'
+[2025-04-04 18:47:32] Finalizado update_servico_protocolo.php
+[2025-04-04 19:14:51] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 19:14:51] Iniciando update_servico_protocolo.php
+[2025-04-04 19:14:51] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"890","Dose":890,"Dose_M":890,"Dose_Total":890,"Dias_de_Aplic":890,"Via_de_Adm":"890","observacoes":"8901","id":10,"id_protocolo":"9"}
+[2025-04-04 19:14:51] Conexão estabelecida
+[2025-04-04 19:14:51] ID do protocolo: 9, ID do serviço: 10
+[2025-04-04 19:14:51] Erro: Unknown column 'id_protocolo' in 'field list'
+[2025-04-04 19:14:51] Finalizado update_servico_protocolo.php
+[2025-04-04 19:40:06] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 19:40:06] Iniciando update_servico_protocolo.php
+[2025-04-04 19:40:06] Dados brutos recebidos: {"id_servico":1,"Servico_Codigo":"789","Dose":"789","Dose_M":"789","Dose_Total":"789","Dias_de_Aplic":"789","Via_de_Adm":"789","observacoes":"789","id":8,"id_protocolo":"12"}
+[2025-04-04 19:40:06] Conexão estabelecida
+[2025-04-04 19:40:06] ID do protocolo: 12, ID do serviço: 8
+[2025-04-04 19:40:06] Verificando estrutura da tabela Protocolo_Servico
+[2025-04-04 19:40:06] Colunas existentes: id, id_protocolo, id_servico, dose, dose_total, via_administracao, dias_aplicacao, observacoes, servico_codigo, dose_m, dias_de_aplic, via_de_adm
+[2025-04-04 19:40:06] Possíveis colunas de protocolo: id_protocolo
+[2025-04-04 19:40:06] Coluna FK encontrada via INFORMATION_SCHEMA: id_protocolo
+[2025-04-04 19:40:06] Executando consulta: SELECT * FROM Protocolo_Servico WHERE id = 8
+[2025-04-04 19:40:06] Serviço encontrado: {"id":"8","id_protocolo":"12","id_servico":"1","dose":"321","dose_total":"321","via_administracao":null,"dias_aplicacao":null,"observacoes":"321","Servico_Codigo":"321","Dose_M":"321","Dias_de_Aplic":null,"Via_de_Adm":"312"}
+[2025-04-04 19:40:06] Coluna Servico_Codigo já existe. Ignorando.
+[2025-04-04 19:40:06] Coluna Dose já existe. Ignorando.
+[2025-04-04 19:40:06] Coluna Dose_M já existe. Ignorando.
+[2025-04-04 19:40:06] Coluna Dose_Total já existe. Ignorando.
+[2025-04-04 19:40:06] Coluna Dias_de_Aplic já existe. Ignorando.
+[2025-04-04 19:40:06] Coluna Via_de_Adm já existe. Ignorando.
+[2025-04-04 19:40:06] Coluna observacoes já existe. Ignorando.
+[2025-04-04 19:40:06] Valores para atualização:
+[2025-04-04 19:40:06] Servico_Codigo: 789
+[2025-04-04 19:40:06] Dose: 789
+[2025-04-04 19:40:06] Dose_M: 789
+[2025-04-04 19:40:06] Dose_Total: 789
+[2025-04-04 19:40:06] Dias_de_Aplic: 789
+[2025-04-04 19:40:06] Via_de_Adm: 789
+[2025-04-04 19:40:06] observacoes: 789
+[2025-04-04 19:40:06] Query de atualização: UPDATE Protocolo_Servico SET Servico_Codigo = '789', Dose = 789, Dose_M = 789, Dose_Total = 789, Dias_de_Aplic = 789, Via_de_Adm = '789', observacoes = '789' WHERE id = 8 AND id_protocolo = 12
+[2025-04-04 19:40:06] Serviço atualizado com sucesso. Linhas afetadas: 1
+[2025-04-04 19:40:06] Dados atualizados: {"id":"8","id_protocolo":"12","id_servico":"1","dose":"789","dose_total":"789","via_administracao":null,"dias_aplicacao":null,"observacoes":"789","Servico_Codigo":"789","Dose_M":"789","Dias_de_Aplic":"789","Via_de_Adm":"789"}
+[2025-04-04 19:40:06] Finalizado update_servico_protocolo.php

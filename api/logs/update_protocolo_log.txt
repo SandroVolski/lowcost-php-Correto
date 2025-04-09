@@ -1,0 +1,107 @@
+[2025-04-03 21:41:33] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 21:41:33] Iniciando update_protocolo.php
+[2025-04-03 21:41:33] ID do protocolo a ser atualizado: 3
+[2025-04-03 21:41:33] Dados brutos recebidos: {"Protocolo_Nome":"Protocolo de Imunoterapia Avançadasss","Protocolo_Sigla":"PIA","Protocolo_Dose_M":200,"Protocolo_Dose_Total":1000,"Protocolo_Dias_de_Aplicacao":10,"CID":"","Protocolo_ViaAdm":1,"Linha":1}
+[2025-04-03 21:41:33] Conexão com o banco de dados estabelecida
+[2025-04-03 21:41:33] Dados decodificados: {"Protocolo_Nome":"Protocolo de Imunoterapia Avan\u00e7adasss","Protocolo_Sigla":"PIA","Protocolo_Dose_M":200,"Protocolo_Dose_Total":1000,"Protocolo_Dias_de_Aplicacao":10,"CID":"","Protocolo_ViaAdm":1,"Linha":1}
+[2025-04-03 21:41:33] Executando consulta: SELECT * FROM Protocolo WHERE id = 3
+[2025-04-03 21:41:33] Erro: Unknown column 'id' in 'where clause'
+[2025-04-03 21:41:33] update_protocolo.php finalizado
+[2025-04-03 21:52:13] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 21:52:13] Iniciando update_protocolo.php
+[2025-04-03 21:52:13] ID a ser atualizado: 3
+[2025-04-03 21:52:13] Dados brutos: {"Protocolo_Nome":"Protocolo de Imunoterapia Avançadassssssssss","Protocolo_Sigla":"PIASS","Protocolo_Dose_M":200,"Protocolo_Dose_Total":1000,"Protocolo_Dias_de_Aplicacao":10,"CID":"","Protocolo_ViaAdm":1,"Linha":1}
+[2025-04-03 21:52:13] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 3
+[2025-04-03 21:52:13] Query: UPDATE Protocolo SET Protocolo_Nome = 'Protocolo de Imunoterapia Avançadassssssssss', Protocolo_Sigla = 'PIASS', Protocolo_Dose_M = '200', Protocolo_Dose_Total = 1000, Protocolo_Dias_de_Aplicacao = '10', Protocolo_ViaAdm = 1, Linha = 1 WHERE id_protocolo = 3
+[2025-04-03 21:52:13] Protocolo atualizado. Linhas afetadas: 1
+[2025-04-03 21:52:13] Operação concluída com sucesso
+[2025-04-03 21:52:13] Script finalizado
+[2025-04-03 21:52:37] ============= NOVA REQUISIÇÃO =============
+[2025-04-03 21:52:37] Iniciando update_protocolo.php
+[2025-04-03 21:52:37] ID a ser atualizado: 3
+[2025-04-03 21:52:37] Dados brutos: {"Protocolo_Nome":"Protocolo de Imunoterapia Avançadassssssssss","Protocolo_Sigla":"PIASS","Protocolo_Dose_M":200,"Protocolo_Dose_Total":1000,"Protocolo_Dias_de_Aplicacao":10,"CID":"","Protocolo_ViaAdm":7,"Linha":1}
+[2025-04-03 21:52:37] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 3
+[2025-04-03 21:52:37] Query: UPDATE Protocolo SET Protocolo_Nome = 'Protocolo de Imunoterapia Avançadassssssssss', Protocolo_Sigla = 'PIASS', Protocolo_Dose_M = '200', Protocolo_Dose_Total = 1000, Protocolo_Dias_de_Aplicacao = '10', Protocolo_ViaAdm = 7, Linha = 1 WHERE id_protocolo = 3
+[2025-04-03 21:52:37] Protocolo atualizado. Linhas afetadas: 1
+[2025-04-03 21:52:37] Operação concluída com sucesso
+[2025-04-03 21:52:37] Script finalizado
+[2025-04-04 13:42:36] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 13:42:36] Iniciando update_protocolo.php
+[2025-04-04 13:42:36] ID a ser atualizado: 6
+[2025-04-04 13:42:36] Dados brutos: {"Servico_Codigo":"Testando","Protocolo_Nome":"Testando","Protocolo_Sigla":"Testando","Protocolo_Dose_M":null,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"CID":"Testando","Protocolo_ViaAdm":6,"Linha":null}
+[2025-04-04 13:42:36] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 6
+[2025-04-04 13:42:36] ERRO: Unknown column 'id_protocolo' in 'where clause'
+[2025-04-04 13:42:36] Script finalizado
+[2025-04-04 18:56:50] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 18:56:50] Iniciando update_protocolo.php
+[2025-04-04 18:56:51] ID a ser atualizado: 13
+[2025-04-04 18:56:51] Dados brutos: {"Servico_Codigo":"44","Protocolo_Nome":"44","Protocolo_Sigla":"44","Protocolo_Dose_M":44,"Protocolo_Dose_Total":44,"Protocolo_Dias_de_Aplicacao":44,"CID":"44","Protocolo_ViaAdm":3,"Linha":44}
+[2025-04-04 18:56:51] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 13
+[2025-04-04 18:56:51] ERRO: Unknown column 'id_protocolo' in 'where clause'
+[2025-04-04 18:56:51] Script finalizado
+[2025-04-04 18:58:42] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 18:58:42] Iniciando update_protocolo.php
+[2025-04-04 18:58:42] ID a ser atualizado: 13
+[2025-04-04 18:58:42] Dados brutos: {"Servico_Codigo":"44","Protocolo_Nome":"44","Protocolo_Sigla":"44","Protocolo_Dose_M":44,"Protocolo_Dose_Total":44,"Protocolo_Dias_de_Aplicacao":44,"CID":"44","Protocolo_ViaAdm":3,"Linha":44}
+[2025-04-04 18:58:42] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 13
+[2025-04-04 18:58:42] ERRO: Unknown column 'id_protocolo' in 'where clause'
+[2025-04-04 18:58:42] Script finalizado
+[2025-04-04 19:05:08] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 19:05:08] Iniciando update_protocolo.php
+[2025-04-04 19:05:09] ID a ser atualizado: 6
+[2025-04-04 19:05:09] Dados brutos: {"Servico_Codigo":"12","Protocolo_Nome":"123","Protocolo_Sigla":"123","Protocolo_Dose_M":12,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"CID":"","Protocolo_ViaAdm":null,"Linha":null}
+[2025-04-04 19:05:09] Verificando estrutura da tabela Protocolo...
+[2025-04-04 19:05:09] Coluna encontrada: id | Chave: PRI
+[2025-04-04 19:05:09] Coluna ID primária encontrada: id
+[2025-04-04 19:05:09] Verificando protocolo: SELECT * FROM Protocolo WHERE id = 6
+[2025-04-04 19:05:09] Query: UPDATE Protocolo SET Protocolo_Nome = '123', Protocolo_Sigla = '123', Servico_Codigo = '12', Protocolo_Dose_M = '12', Protocolo_Dose_Total = NULL, Protocolo_Dias_de_Aplicacao = NULL, Protocolo_ViaAdm = NULL, Linha = NULL, CID = '' WHERE id = 6
+[2025-04-04 19:05:09] Protocolo atualizado. Linhas afetadas: 1
+[2025-04-04 19:05:09] Operação concluída com sucesso
+[2025-04-04 19:05:09] Script finalizado
+[2025-04-04 19:05:26] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 19:05:26] Iniciando update_protocolo.php
+[2025-04-04 19:05:26] ID a ser atualizado: 12
+[2025-04-04 19:05:26] Dados brutos: {"Servico_Codigo":"33","Protocolo_Nome":"33","Protocolo_Sigla":"33","Protocolo_Dose_M":33,"Protocolo_Dose_Total":33,"Protocolo_Dias_de_Aplicacao":33,"CID":"33","Protocolo_ViaAdm":6,"Linha":33}
+[2025-04-04 19:05:26] Verificando estrutura da tabela Protocolo...
+[2025-04-04 19:05:26] Coluna encontrada: id | Chave: PRI
+[2025-04-04 19:05:26] Coluna ID primária encontrada: id
+[2025-04-04 19:05:26] Verificando protocolo: SELECT * FROM Protocolo WHERE id = 12
+[2025-04-04 19:05:26] Query: UPDATE Protocolo SET Protocolo_Nome = '33', Protocolo_Sigla = '33', Servico_Codigo = '33', Protocolo_Dose_M = '33', Protocolo_Dose_Total = '33', Protocolo_Dias_de_Aplicacao = '33', Protocolo_ViaAdm = 6, Linha = 33, CID = '33' WHERE id = 12
+[2025-04-04 19:05:26] Protocolo atualizado. Linhas afetadas: 1
+[2025-04-04 19:05:26] Operação concluída com sucesso
+[2025-04-04 19:05:26] Script finalizado
+[2025-04-04 19:13:29] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 19:13:29] Iniciando update_protocolo.php
+[2025-04-04 19:13:29] ID a ser atualizado: 9
+[2025-04-04 19:13:29] Dados brutos: {"Servico_Codigo":"","Protocolo_Nome":"54","Protocolo_Sigla":"5","Protocolo_Dose_M":null,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"CID":"","Protocolo_ViaAdm":null,"Linha":null}
+[2025-04-04 19:13:29] Verificando estrutura da tabela Protocolo...
+[2025-04-04 19:13:29] Coluna encontrada: id | Chave: PRI
+[2025-04-04 19:13:29] Coluna ID primária encontrada: id
+[2025-04-04 19:13:29] Verificando protocolo: SELECT * FROM Protocolo WHERE id = 9
+[2025-04-04 19:13:29] Query: UPDATE Protocolo SET Protocolo_Nome = '54', Protocolo_Sigla = '5', Servico_Codigo = '', Protocolo_Dose_M = NULL, Protocolo_Dose_Total = NULL, Protocolo_Dias_de_Aplicacao = NULL, Protocolo_ViaAdm = NULL, Linha = NULL, CID = '' WHERE id = 9
+[2025-04-04 19:13:29] ERRO: Incorrect integer value: '' for column 'Servico_Codigo' at row 1
+[2025-04-04 19:13:29] Script finalizado
+[2025-04-04 19:13:44] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 19:13:44] Iniciando update_protocolo.php
+[2025-04-04 19:13:44] ID a ser atualizado: 10
+[2025-04-04 19:13:44] Dados brutos: {"Servico_Codigo":"12","Protocolo_Nome":"12","Protocolo_Sigla":"12","Protocolo_Dose_M":12,"Protocolo_Dose_Total":12,"Protocolo_Dias_de_Aplicacao":12,"CID":"12","Protocolo_ViaAdm":1,"Linha":12}
+[2025-04-04 19:13:44] Verificando estrutura da tabela Protocolo...
+[2025-04-04 19:13:44] Coluna encontrada: id | Chave: PRI
+[2025-04-04 19:13:44] Coluna ID primária encontrada: id
+[2025-04-04 19:13:44] Verificando protocolo: SELECT * FROM Protocolo WHERE id = 10
+[2025-04-04 19:13:44] Query: UPDATE Protocolo SET Protocolo_Nome = '12', Protocolo_Sigla = '12', Servico_Codigo = '12', Protocolo_Dose_M = '12', Protocolo_Dose_Total = '12', Protocolo_Dias_de_Aplicacao = '12', Protocolo_ViaAdm = 1, Linha = 12, CID = '12' WHERE id = 10
+[2025-04-04 19:13:44] Protocolo atualizado. Linhas afetadas: 1
+[2025-04-04 19:13:44] Operação concluída com sucesso
+[2025-04-04 19:13:44] Script finalizado
+[2025-04-04 19:14:01] ============= NOVA REQUISIÇÃO =============
+[2025-04-04 19:14:01] Iniciando update_protocolo.php
+[2025-04-04 19:14:01] ID a ser atualizado: 9
+[2025-04-04 19:14:01] Dados brutos: {"Servico_Codigo":"5","Protocolo_Nome":"5","Protocolo_Sigla":"5","Protocolo_Dose_M":5,"Protocolo_Dose_Total":5,"Protocolo_Dias_de_Aplicacao":5,"CID":"5","Protocolo_ViaAdm":7,"Linha":5}
+[2025-04-04 19:14:01] Verificando estrutura da tabela Protocolo...
+[2025-04-04 19:14:01] Coluna encontrada: id | Chave: PRI
+[2025-04-04 19:14:01] Coluna ID primária encontrada: id
+[2025-04-04 19:14:01] Verificando protocolo: SELECT * FROM Protocolo WHERE id = 9
+[2025-04-04 19:14:01] Query: UPDATE Protocolo SET Protocolo_Nome = '5', Protocolo_Sigla = '5', Servico_Codigo = '5', Protocolo_Dose_M = '5', Protocolo_Dose_Total = '5', Protocolo_Dias_de_Aplicacao = '5', Protocolo_ViaAdm = 7, Linha = 5, CID = '5' WHERE id = 9
+[2025-04-04 19:14:01] Protocolo atualizado. Linhas afetadas: 1
+[2025-04-04 19:14:01] Operação concluída com sucesso
+[2025-04-04 19:14:01] Script finalizado

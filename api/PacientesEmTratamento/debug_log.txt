@@ -1,0 +1,73 @@
+[2025-04-04 18:24:04] ===== INÍCIO DA EXECUÇÃO =====
+[2025-04-04 18:24:05] Conexão direta estabelecida com sucesso
+[2025-04-04 18:24:05] Dados brutos recebidos: {"Servico_Codigo":"2","Protocolo_Nome":"2","Protocolo_Sigla":"2","Protocolo_Dose_M":2,"Protocolo_Dose_Total":2,"Protocolo_Dias_de_Aplicacao":2,"CID":"2","Protocolo_ViaAdm":7,"Linha":2}
+[2025-04-04 18:24:05] Nome: 2
+[2025-04-04 18:24:05] Sigla: 2
+[2025-04-04 18:24:05] Dose M: 2
+[2025-04-04 18:24:05] Dose Total: 2
+[2025-04-04 18:24:05] Dias: 2
+[2025-04-04 18:24:05] Via: 7
+[2025-04-04 18:24:05] Linha: 2
+[2025-04-04 18:24:05] CID: 2
+[2025-04-04 18:24:05] SQL básico: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-04-04 18:24:05] Parâmetros vinculados para consulta básica
+[2025-04-04 18:24:05] Inserção BÁSICA bem-sucedida! ID: 11
+[2025-04-04 18:24:05] SQL de atualização: UPDATE Protocolo SET 
+            Protocolo_Dose_M = ?, 
+            Protocolo_Dose_Total = ?,
+            Protocolo_Dias_de_Aplicacao = ?,
+            Protocolo_ViaAdm = ?,
+            Linha = ?,
+            CID = ?
+            WHERE id = ?
+[2025-04-04 18:25:50] ===== INÍCIO DA EXECUÇÃO =====
+[2025-04-04 18:25:50] Conexão estabelecida com sucesso
+[2025-04-04 18:25:50] Verificando estrutura da tabela Protocolo...
+[2025-04-04 18:25:50] Coluna de chave primária encontrada: id
+[2025-04-04 18:25:50] Dados recebidos: {"Servico_Codigo":"3","Protocolo_Nome":"3","Protocolo_Sigla":"3","Protocolo_Dose_M":3,"Protocolo_Dose_Total":3,"Protocolo_Dias_de_Aplicacao":3,"CID":"3","Protocolo_ViaAdm":6,"Linha":3}
+[2025-04-04 18:25:50] Realizando inserção inicial com nome e sigla
+[2025-04-04 18:25:50] Inserção inicial bem-sucedida! ID: 12
+[2025-04-04 18:25:50] SQL de atualização: UPDATE Protocolo SET 
+        Protocolo_Dose_M = ?, 
+        Protocolo_Dose_Total = ?,
+        Protocolo_Dias_de_Aplicacao = ?,
+        Protocolo_ViaAdm = ?,
+        Linha = ?,
+        CID = ?
+        WHERE id = ?
+[2025-04-04 18:25:50] Valores para UPDATE:
+[2025-04-04 18:25:50] Dose M: 3
+[2025-04-04 18:25:50] Dose Total: 3
+[2025-04-04 18:25:50] Dias: 3
+[2025-04-04 18:25:50] Via: 6
+[2025-04-04 18:25:50] Linha: 3
+[2025-04-04 18:25:50] CID: '3'
+[2025-04-04 18:25:50] ID: 12
+[2025-04-04 18:27:52] ===== INÍCIO DA EXECUÇÃO =====
+[2025-04-04 18:27:52] Conexão estabelecida com sucesso
+[2025-04-04 18:27:52] Verificando estrutura da tabela Protocolo...
+[2025-04-04 18:27:52] Coluna de chave primária encontrada: id
+[2025-04-04 18:27:52] Dados recebidos: {"Servico_Codigo":"4","Protocolo_Nome":"4","Protocolo_Sigla":"4","Protocolo_Dose_M":4,"Protocolo_Dose_Total":4,"Protocolo_Dias_de_Aplicacao":4,"CID":"4","Protocolo_ViaAdm":3,"Linha":4}
+[2025-04-04 18:27:52] Realizando inserção inicial com nome e sigla
+[2025-04-04 18:27:52] Inserção inicial bem-sucedida! ID: 13
+[2025-04-04 18:27:52] SQL de atualização: UPDATE Protocolo SET 
+        Protocolo_Dose_M = ?, 
+        Protocolo_Dose_Total = ?,
+        Protocolo_Dias_de_Aplicacao = ?,
+        Protocolo_ViaAdm = ?,
+        Linha = ?,
+        CID = ?
+        WHERE id = ?
+[2025-04-04 18:27:52] Valores para UPDATE:
+[2025-04-04 18:27:52] Dose M: 4
+[2025-04-04 18:27:52] Dose Total: 4
+[2025-04-04 18:27:52] Dias: 4
+[2025-04-04 18:27:52] Via: 3
+[2025-04-04 18:27:52] Linha: 4
+[2025-04-04 18:27:52] CID: '4'
+[2025-04-04 18:27:52] ID: 13
+[2025-04-04 18:27:52] Parâmetros vinculados para atualização
+[2025-04-04 18:27:52] UPDATE executado com sucesso. Linhas afetadas: 1
+[2025-04-04 18:27:52] Verificação: Registro recuperado após operações:
+[2025-04-04 18:27:52] {"id":13,"Servico_Codigo":4,"Protocolo_Nome":"4","Protocolo_Sigla":"4","Protocolo_Dose_M":"4","Protocolo_Dose_Total":4,"Protocolo_Dias_de_Aplicacao":"4","Protocolo_ViaAdm":3,"Linha":4,"CID":"4"}
+[2025-04-04 18:27:52] ===== FIM DA EXECUÇÃO =====

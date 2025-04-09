@@ -1,0 +1,21 @@
+[2025-04-04 13:00:16] Variável $database não definida em config.php. Usando valor padrão: nome_do_seu_banco_principal
+[2025-04-04 13:00:16] Tentando conectar usando - host: localhost, user: root, db: nome_do_seu_banco_principal, port: 3306
+[2025-04-04 13:00:16] ERRO: Unknown database 'nome_do_seu_banco_principal'
+[2025-04-04 13:00:16] Variável $database não definida em config.php. Usando valor padrão: nome_do_seu_banco_principal
+[2025-04-04 13:00:16] Tentando conectar usando - host: localhost, user: root, db: nome_do_seu_banco_principal, port: 3306
+[2025-04-04 13:00:16] ERRO: Unknown database 'nome_do_seu_banco_principal'
+[2025-04-04 13:05:28] Conexões com bancos de dados estabelecidas com sucesso
+[2025-04-04 13:05:28] Dados recebidos: {"Protocolo_Nome":"2312","Protocolo_Sigla":"312","Protocolo_Dose_M":2312,"Protocolo_Dose_Total":3,"Protocolo_Dias_de_Aplicacao":123,"CID":"3","Protocolo_ViaAdm":6,"Linha":1231}
+[2025-04-04 13:05:28] SQL preparado: INSERT INTO Protocolo (Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, CID) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2025-04-04 13:05:28] Valores sanitizados: {"servico_codigo":"","protocolo_nome":"2312","protocolo_sigla":"312","protocolo_dose_m":2312,"protocolo_dose_total":3,"protocolo_dias_aplicacao":123,"protocolo_viaadm":6,"linha":1231}
+[2025-04-04 13:05:28] CID adicionado: 3
+[2025-04-04 13:07:23] Conexões com bancos de dados estabelecidas com sucesso
+[2025-04-04 13:07:23] Dados recebidos: {"Protocolo_Nome":"123","Protocolo_Sigla":"123","Protocolo_Dose_M":123,"Protocolo_Dose_Total":123,"Protocolo_Dias_de_Aplicacao":123,"CID":"123","Protocolo_ViaAdm":3,"Linha":123}
+[2025-04-04 13:07:23] SQL preparado: INSERT INTO Protocolo (Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, CID) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2025-04-04 13:07:23] Valores sanitizados: {"servico_codigo":"","protocolo_nome":"123","protocolo_sigla":"123","protocolo_dose_m":123,"protocolo_dose_total":123,"protocolo_dias_aplicacao":123,"protocolo_viaadm":3,"linha":123}
+[2025-04-04 13:07:23] CID adicionado: 123
+[2025-04-04 13:11:34] Conexões com bancos de dados verificadas com sucesso
+[2025-04-04 13:11:34] Dados recebidos: {"Protocolo_Nome":"123","Protocolo_Sigla":"123","Protocolo_Dose_M":123,"Protocolo_Dose_Total":132,"Protocolo_Dias_de_Aplicacao":123,"CID":"123","Protocolo_ViaAdm":7,"Linha":123}
+[2025-04-04 13:11:34] SQL preparado: INSERT INTO Protocolo (Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, CID) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2025-04-04 13:11:34] Valores sanitizados: {"servico_codigo":"","protocolo_nome":"123","protocolo_sigla":"123","protocolo_dose_m":123,"protocolo_dose_total":132,"protocolo_dias_aplicacao":123,"protocolo_viaadm":7,"linha":123}
+[2025-04-04 13:11:34] CID adicionado: 123

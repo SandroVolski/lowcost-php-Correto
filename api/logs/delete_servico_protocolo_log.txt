@@ -1,0 +1,8 @@
+[2025-04-03 20:47:51] Iniciando delete_servico_protocolo.php
+[2025-04-03 20:47:51] Conexão estabelecida
+[2025-04-03 20:47:51] Excluindo serviço ID=2 do protocolo ID=1
+[2025-04-03 20:47:51] Serviço excluído com sucesso
+[2025-04-04 19:40:25] Iniciando delete_servico_protocolo.php
+[2025-04-04 19:40:25] Conexão estabelecida
+[2025-04-04 19:40:25] Excluindo serviço ID=8 do protocolo ID=12
+[2025-04-04 19:40:25] Serviço excluído com sucesso
