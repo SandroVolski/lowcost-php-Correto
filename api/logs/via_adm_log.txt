@@ -10,14 +10,6 @@ ID_PROTOCOLO	PROTOCOLO_NOME	PROTOCOLO_VIAADM	VIA_ADMINISTRACAO
                 Protocolo_Dose_Total, 
                 Protocolo_Dias_de_Aplicacao, 
                 Protocolo_ViaAdm, 
-                Linha FROM Protocolo ORDER BY Protocolo_Nome
-# Tabela dViaadministracao encontrada no banco bd_servico
-# Colunas encontradas na tabela dViaadministracao: id, idviaadministracao, Via_administracao
-# Consulta de via de administração preparada com sucesso
-
-# ESTATÍSTICAS:
-# Total de protocolos: 0
-# Protocolos com ViaAdm: 0
-# Vias encontradas: 0 (0%)
-# Retornados 0 protocolos com sucesso
+                Linha, CID FROM Protocolo ORDER BY Protocolo_Nome
+# ERRO: Unknown column 'id_protocolo' in 'field list'
 # Processamento finalizado

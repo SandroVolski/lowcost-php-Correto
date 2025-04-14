@@ -1,0 +1,100 @@
+[2025-04-14 16:48:31] === INICIANDO NOVA CONSULTA DE PRESTADORES ===
+[2025-04-14 16:48:31] Arquivo de configuração incluído
+[2025-04-14 16:48:31] Conexão com o banco estabelecida
+[2025-04-14 16:48:31] SQL: 
+    SELECT 
+        id, 
+        Prestador_Nome_Fantasia 
+    FROM 
+        bd_servico.bd_empresas_empresas 
+    WHERE 
+        Prestador_Nome_Fantasia IS NOT NULL 
+        AND TRIM(Prestador_Nome_Fantasia) != '' 
+    ORDER BY 
+        Prestador_Nome_Fantasia
+    
+[2025-04-14 16:48:31] Encontrados 24103 prestadores com Nome_Fantasia
+[2025-04-14 16:48:31] Total de 24103 prestadores com Nome_Fantasia
+[2025-04-14 16:48:31] Amostra 0: ID=26858, Nome_Fantasia=	 Carine Cecconello
+[2025-04-14 16:48:31] Amostra 1: ID=26675, Nome_Fantasia= Admilson Antonio Romanio
+[2025-04-14 16:48:31] Amostra 2: ID=26676, Nome_Fantasia= Adrian Estrada Barber 
+[2025-04-14 16:48:31] Amostra 3: ID=26677, Nome_Fantasia= Adriane Andrich Martins De Oliveira
+[2025-04-14 16:48:31] Amostra 4: ID=26678, Nome_Fantasia= Alessandra Cristhina Escopelli
+[2025-04-14 16:48:31] Requisição concluída com sucesso
+[2025-04-14 16:48:31] Conexão fechada
+[2025-04-14 16:48:31] === FIM DA CONSULTA ===
+[2025-04-14 16:48:31] === INICIANDO NOVA CONSULTA DE PRESTADORES ===
+[2025-04-14 16:48:31] Arquivo de configuração incluído
+[2025-04-14 16:48:31] Conexão com o banco estabelecida
+[2025-04-14 16:48:31] SQL: 
+    SELECT 
+        id, 
+        Prestador_Nome_Fantasia 
+    FROM 
+        bd_servico.bd_empresas_empresas 
+    WHERE 
+        Prestador_Nome_Fantasia IS NOT NULL 
+        AND TRIM(Prestador_Nome_Fantasia) != '' 
+    ORDER BY 
+        Prestador_Nome_Fantasia
+    
+[2025-04-14 16:48:31] Encontrados 24103 prestadores com Nome_Fantasia
+[2025-04-14 16:48:31] Total de 24103 prestadores com Nome_Fantasia
+[2025-04-14 16:48:31] Amostra 0: ID=26858, Nome_Fantasia=	 Carine Cecconello
+[2025-04-14 16:48:31] Amostra 1: ID=26675, Nome_Fantasia= Admilson Antonio Romanio
+[2025-04-14 16:48:31] Amostra 2: ID=26676, Nome_Fantasia= Adrian Estrada Barber 
+[2025-04-14 16:48:31] Amostra 3: ID=26677, Nome_Fantasia= Adriane Andrich Martins De Oliveira
+[2025-04-14 16:48:31] Amostra 4: ID=26678, Nome_Fantasia= Alessandra Cristhina Escopelli
+[2025-04-14 16:48:31] Requisição concluída com sucesso
+[2025-04-14 16:48:31] Conexão fechada
+[2025-04-14 16:48:31] === FIM DA CONSULTA ===
+[2025-04-14 16:48:31] === INICIANDO NOVA CONSULTA DE PRESTADORES ===
+[2025-04-14 16:48:31] Arquivo de configuração incluído
+[2025-04-14 16:48:31] Conexão com o banco estabelecida
+[2025-04-14 16:48:31] SQL: 
+    SELECT 
+        id, 
+        Prestador_Nome_Fantasia 
+    FROM 
+        bd_servico.bd_empresas_empresas 
+    WHERE 
+        Prestador_Nome_Fantasia IS NOT NULL 
+        AND TRIM(Prestador_Nome_Fantasia) != '' 
+    ORDER BY 
+        Prestador_Nome_Fantasia
+    
+[2025-04-14 16:48:31] Encontrados 24103 prestadores com Nome_Fantasia
+[2025-04-14 16:48:31] Total de 24103 prestadores com Nome_Fantasia
+[2025-04-14 16:48:31] Amostra 0: ID=26858, Nome_Fantasia=	 Carine Cecconello
+[2025-04-14 16:48:31] Amostra 1: ID=26675, Nome_Fantasia= Admilson Antonio Romanio
+[2025-04-14 16:48:31] Amostra 2: ID=26676, Nome_Fantasia= Adrian Estrada Barber 
+[2025-04-14 16:48:31] Amostra 3: ID=26677, Nome_Fantasia= Adriane Andrich Martins De Oliveira
+[2025-04-14 16:48:31] Amostra 4: ID=26678, Nome_Fantasia= Alessandra Cristhina Escopelli
+[2025-04-14 16:48:31] Requisição concluída com sucesso
+[2025-04-14 16:48:31] Conexão fechada
+[2025-04-14 16:48:31] === FIM DA CONSULTA ===
+[2025-04-14 16:48:31] === INICIANDO NOVA CONSULTA DE PRESTADORES ===
+[2025-04-14 16:48:31] Arquivo de configuração incluído
+[2025-04-14 16:48:31] Conexão com o banco estabelecida
+[2025-04-14 16:48:31] SQL: 
+    SELECT 
+        id, 
+        Prestador_Nome_Fantasia 
+    FROM 
+        bd_servico.bd_empresas_empresas 
+    WHERE 
+        Prestador_Nome_Fantasia IS NOT NULL 
+        AND TRIM(Prestador_Nome_Fantasia) != '' 
+    ORDER BY 
+        Prestador_Nome_Fantasia
+    
+[2025-04-14 16:48:31] Encontrados 24103 prestadores com Nome_Fantasia
+[2025-04-14 16:48:31] Total de 24103 prestadores com Nome_Fantasia
+[2025-04-14 16:48:31] Amostra 0: ID=26858, Nome_Fantasia=	 Carine Cecconello
+[2025-04-14 16:48:31] Amostra 1: ID=26675, Nome_Fantasia= Admilson Antonio Romanio
+[2025-04-14 16:48:31] Amostra 2: ID=26676, Nome_Fantasia= Adrian Estrada Barber 
+[2025-04-14 16:48:31] Amostra 3: ID=26677, Nome_Fantasia= Adriane Andrich Martins De Oliveira
+[2025-04-14 16:48:31] Amostra 4: ID=26678, Nome_Fantasia= Alessandra Cristhina Escopelli
+[2025-04-14 16:48:31] Requisição concluída com sucesso
+[2025-04-14 16:48:31] Conexão fechada
+[2025-04-14 16:48:31] === FIM DA CONSULTA ===
