@@ -13,7 +13,7 @@ try {
     include_once("../../config.php");
 
     // Iniciar transação
-    $conn->begin_transaction();
+    $conn_pacientes->begin_transaction();
 
     // Obter dados do corpo da requisição
     $data = json_decode(file_get_contents("php://input"), true);
@@ -37,7 +37,7 @@ try {
         tempo_analise = ?
     WHERE id = ?";
     
-    $stmt = $conn->prepare($sql);
+    $stmt = $conn_pacientes->prepare($sql);
     
     // Formatação de data: converter de DD/MM/YYYY para YYYY-MM-DD para MySQL
     $dataSolicitacao = NULL;
@@ -78,7 +78,7 @@ try {
     if (isset($data['ciclos_dias']) && is_array($data['ciclos_dias'])) {
         // Primeiro, excluir os ciclos existentes
         $deleteQuery = "DELETE FROM previa_ciclos_dias WHERE previa_id = ?";
-        $deleteStmt = $conn->prepare($deleteQuery);
+        $deleteStmt = $conn_pacientes->prepare($deleteQuery);
         $deleteStmt->bind_param("i", $data['id']);
         $deleteStmt->execute();
         
@@ -91,7 +91,7 @@ try {
             is_full_cycle
         ) VALUES (?, ?, ?, ?, ?)";
         
-        $cicloStmt = $conn->prepare($cicloSql);
+        $cicloStmt = $conn_pacientes->prepare($cicloSql);
         
         foreach ($data['ciclos_dias'] as $cicloDia) {
             $isFullCycle = isset($cicloDia['fullCycle']) ? (int)$cicloDia['fullCycle'] : 0;
@@ -110,7 +110,7 @@ try {
     }
     
     // Commit da transação
-    $conn->commit();
+    $conn_pacientes->commit();
     
     http_response_code(200);
     echo json_encode([
@@ -120,15 +120,15 @@ try {
     
 } catch (Exception $e) {
     // Rollback em caso de erro
-    if (isset($conn) && !$conn->connect_error) {
-        $conn->rollback();
+    if (isset($conn_pacientes) && !$conn_pacientes->connect_error) {
+        $conn_pacientes->rollback();
     }
     
     http_response_code(500);
     echo json_encode(["error" => $e->getMessage()]);
 }
 
-if (isset($conn)) {
-    $conn->close();
+if (isset($conn_pacientes)) {
+    $conn_pacientes->close();
 }
 ?>

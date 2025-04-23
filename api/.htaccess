@@ -3,8 +3,22 @@
     RewriteEngine On
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 </IfModule>
-
 # Permitir todos os métodos HTTP
 <LimitExcept GET POST PUT DELETE OPTIONS>
     Require all granted
 </LimitExcept>
+
+# Aumentar limites para upload de arquivos
+php_value upload_max_filesize 20M
+php_value post_max_size 20M
+php_value memory_limit 128M
+php_value max_execution_time 300
+php_value max_input_time 300
+
+# Configuração para processamento de arquivos grandes
+php_value max_file_uploads 20
+
+# Ativar log de erros
+php_flag display_errors Off
+php_flag log_errors On
+php_value error_log error.log

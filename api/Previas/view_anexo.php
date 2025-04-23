@@ -26,14 +26,14 @@ try {
     // Configurar MySQL para transferência binária
     $conn_pacientes->set_charset('binary');
     
-    // Buscar anexo usando prepared statement
+    // Buscar anexo
     $stmt = $conn_pacientes->prepare(
         "SELECT nome_arquivo, tipo, arquivo_conteudo FROM previa_anexos WHERE id = ?"
     );
     $stmt->bind_param("i", $anexoId);
     $stmt->execute();
     
-    // Vincular resultados a variáveis
+    // Vincular resultados
     $stmt->bind_result($nomeArquivo, $tipoArquivo, $conteudoArquivo);
     
     // Obter resultado
@@ -41,11 +41,11 @@ try {
         throw new Exception("Anexo não encontrado");
     }
     
-    // Fechar statement
+    // Fechar conexões
     $stmt->close();
     $conn_pacientes->close();
     
-    // Limpar qualquer saída
+    // Limpar buffers
     if (ob_get_level()) ob_end_clean();
     
     // Prevenir cache
@@ -53,9 +53,9 @@ try {
     header("Pragma: no-cache");
     header("Cache-Control: no-store, no-cache, must-revalidate");
     
-    // Headers para forçar download em vez de visualização inline
+    // Headers para visualização inline
     header("Content-Type: $tipoArquivo");
-    header("Content-Disposition: attachment; filename=\"$nomeArquivo\""); 
+    header("Content-Disposition: inline; filename=\"$nomeArquivo\"");
     header("Content-Length: " . strlen($conteudoArquivo));
     header("Content-Transfer-Encoding: binary");
     

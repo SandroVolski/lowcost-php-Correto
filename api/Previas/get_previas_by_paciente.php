@@ -28,7 +28,7 @@ try {
     GROUP BY p.id
     ORDER BY p.data_criacao DESC";
     
-    $stmt = $conn->prepare($sql);
+    $stmt = $conn_pacientes->prepare($sql);
     $stmt->bind_param("i", $pacienteId);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -45,7 +45,7 @@ try {
     echo json_encode(["error" => $e->getMessage()]);
 }
 
-if (isset($conn)) {
-    $conn->close();
+if (isset($conn_pacientes)) {
+    $conn_pacientes->close();
 }
 ?>

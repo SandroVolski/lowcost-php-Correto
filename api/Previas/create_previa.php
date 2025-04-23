@@ -13,7 +13,7 @@ try {
     include_once("../../config.php");
 
     // Iniciar transação
-    $conn->begin_transaction();
+    $conn_pacientes->begin_transaction();
 
     // Obter dados do corpo da requisição
     $data = json_decode(file_get_contents("php://input"), true);
@@ -24,7 +24,7 @@ try {
     
     // Obter o próximo número sequencial para este paciente
     $seqQuery = "SELECT MAX(numero_sequencial) as max_seq FROM previas WHERE paciente_id = ?";
-    $seqStmt = $conn->prepare($seqQuery);
+    $seqStmt = $conn_pacientes->prepare($seqQuery);
     $seqStmt->bind_param("i", $data['paciente_id']);
     $seqStmt->execute();
     $seqResult = $seqStmt->get_result();
@@ -51,7 +51,7 @@ try {
         tempo_analise
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     
-    $stmt = $conn->prepare($sql);
+    $stmt = $conn_pacientes->prepare($sql);
     
     // Formatação de data: converter de DD/MM/YYYY para YYYY-MM-DD para MySQL
     $dataSolicitacao = NULL;
@@ -89,7 +89,7 @@ try {
     );
     
     $stmt->execute();
-    $previaId = $conn->insert_id;
+    $previaId = $conn_pacientes->insert_id;
     
     // Inserir ciclos/dias da prévia
     if (isset($data['ciclos_dias']) && is_array($data['ciclos_dias'])) {
@@ -101,7 +101,7 @@ try {
             is_full_cycle
         ) VALUES (?, ?, ?, ?, ?)";
         
-        $cicloStmt = $conn->prepare($cicloSql);
+        $cicloStmt = $conn_pacientes->prepare($cicloSql);
         
         foreach ($data['ciclos_dias'] as $cicloDia) {
             $isFullCycle = isset($cicloDia['fullCycle']) ? (int)$cicloDia['fullCycle'] : 0;
@@ -120,7 +120,7 @@ try {
     }
     
     // Commit da transação
-    $conn->commit();
+    $conn_pacientes->commit();
     
     http_response_code(201);
     echo json_encode([
@@ -132,15 +132,15 @@ try {
     
 } catch (Exception $e) {
     // Rollback em caso de erro
-    if (isset($conn) && !$conn->connect_error) {
-        $conn->rollback();
+    if (isset($conn_pacientes) && !$conn_pacientes->connect_error) {
+        $conn_pacientes->rollback();
     }
     
     http_response_code(500);
     echo json_encode(["error" => $e->getMessage()]);
 }
 
-if (isset($conn)) {
-    $conn->close();
+if (isset($conn_pacientes)) {
+    $conn_pacientes->close();
 }
 ?>

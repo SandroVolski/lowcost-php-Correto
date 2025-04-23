@@ -22,7 +22,7 @@ try {
     // Consulta para buscar detalhes da prévia
     $sql = "SELECT * FROM previas WHERE id = ?";
     
-    $stmt = $conn->prepare($sql);
+    $stmt = $conn_pacientes->prepare($sql);
     $stmt->bind_param("i", $previaId);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -42,7 +42,7 @@ try {
     echo json_encode(["error" => $e->getMessage()]);
 }
 
-if (isset($conn)) {
-    $conn->close();
+if (isset($conn_pacientes)) {
+    $conn_pacientes->close();
 }
 ?>

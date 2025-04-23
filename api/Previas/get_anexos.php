@@ -19,10 +19,10 @@ try {
     
     $previaId = intval($_GET['previa_id']);
     
-    // Consulta para buscar anexos da prévia
+    // Consulta para buscar anexos da prévia - NÃO selecionamos o conteúdo do arquivo aqui para economizar memória
     $sql = "SELECT id, previa_id, nome_arquivo, tamanho, tipo, data_upload FROM previa_anexos WHERE previa_id = ? ORDER BY data_upload DESC";
     
-    $stmt = $conn->prepare($sql);
+    $stmt = $conn_pacientes->prepare($sql);
     $stmt->bind_param("i", $previaId);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -30,7 +30,7 @@ try {
     $anexos = [];
     while ($row = $result->fetch_assoc()) {
         // Adicionar URLs para download e preview
-        $row['download_url'] = "/api/previas/download_anexo.php?id=" . $row['id'];
+        $row['download_url'] = "/api/Previas/download_anexo.php?id=" . $row['id'];
         $anexos[] = $row;
     }
     
@@ -41,7 +41,7 @@ try {
     echo json_encode(["error" => $e->getMessage()]);
 }
 
-if (isset($conn)) {
-    $conn->close();
+if (isset($conn_pacientes)) {
+    $conn_pacientes->close();
 }
 ?>

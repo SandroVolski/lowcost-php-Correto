@@ -19,30 +19,20 @@ try {
     
     $anexoId = intval($_GET['id']);
     
-    // Buscar informações do anexo antes de excluir
-    $sqlFetch = "SELECT caminho_arquivo FROM previa_anexos WHERE id = ?";
-    $stmtFetch = $conn->prepare($sqlFetch);
-    $stmtFetch->bind_param("i", $anexoId);
-    $stmtFetch->execute();
-    $resultFetch = $stmtFetch->get_result();
+    // Verificar se o anexo existe
+    $sqlCheck = "SELECT id FROM previa_anexos WHERE id = ?";
+    $stmtCheck = $conn_pacientes->prepare($sqlCheck);
+    $stmtCheck->bind_param("i", $anexoId);
+    $stmtCheck->execute();
+    $resultCheck = $stmtCheck->get_result();
     
-    if ($resultFetch->num_rows === 0) {
+    if ($resultCheck->num_rows === 0) {
         throw new Exception("Anexo não encontrado");
     }
     
-    $anexo = $resultFetch->fetch_assoc();
-    
-    // Excluir o arquivo físico
-    if (file_exists($anexo['caminho_arquivo'])) {
-        if (!unlink($anexo['caminho_arquivo'])) {
-            // Logamos o erro, mas continuamos o processo
-            error_log("Não foi possível excluir o arquivo: " . $anexo['caminho_arquivo']);
-        }
-    }
-    
-    // Excluir o registro no banco de dados
+    // Excluir o registro no banco de dados (o conteúdo do arquivo será excluído junto)
     $sql = "DELETE FROM previa_anexos WHERE id = ?";
-    $stmt = $conn->prepare($sql);
+    $stmt = $conn_pacientes->prepare($sql);
     $stmt->bind_param("i", $anexoId);
     $stmt->execute();
     
@@ -54,7 +44,7 @@ try {
     echo json_encode(["error" => $e->getMessage()]);
 }
 
-if (isset($conn)) {
-    $conn->close();
+if (isset($conn_pacientes)) {
+    $conn_pacientes->close();
 }
 ?>
