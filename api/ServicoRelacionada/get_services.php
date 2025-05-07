@@ -62,7 +62,9 @@ $allowedFields = [
     'UnidadeFracionamento' => 's.UnidadeFracionamento',
     'Fracionamento' => 's.Fracionamento',
     'Laboratorio' => 's.Laboratorio',
+    'Uso' => 's.Uso',
     'Revisado_Farma' => 's.Revisado_Farma',
+    'Revisado_ADM' => 's.Revisado_ADM',
     // Registro Visa
     'RegistroVisa' => 'r.RegistroVisa',
     'Cod_Ggrem' => 'r.Cod_Ggrem',
@@ -125,7 +127,9 @@ $sqlBase = "SELECT DISTINCT
     s.UnidadeFracionamento,
     s.Fracionamento,
     s.Laboratorio,
-    s.Revisado_Farma,
+    s.Uso,
+    s.Revisado_Farma,            
+    s.Revisado_ADM, 
     s.idPrincipioAtivo,
     -- Registro Visa
     r.RegistroVisa,

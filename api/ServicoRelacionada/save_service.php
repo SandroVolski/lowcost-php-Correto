@@ -59,7 +59,9 @@ try {
         UnidadeFracionamento, 
         Fracionamento, 
         Laboratorio, 
+        Uso,
         Revisado_Farma,
+        Revisado_ADM,
         idRegistroVisa, 
         idTabela, 
         idViaAdministracao, 
@@ -70,7 +72,7 @@ try {
         idUnidadeFracionamento, 
         idFatorConversao, 
         idTaxas
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     $stmt = $conn->prepare($sql);
     if (!$stmt) {
@@ -87,7 +89,9 @@ try {
     $unidadeFracionamento = isset($data->UnidadeFracionamento) && $data->UnidadeFracionamento !== "" ? $data->UnidadeFracionamento : null;
     $fracionamento = isset($data->Fracionamento) && $data->Fracionamento !== "" ? $data->Fracionamento : null;
     $laboratorio = isset($data->Laboratorio) && $data->Laboratorio !== "" ? $data->Laboratorio : null;
+    $uso = isset($data->Uso) && $data->Uso !== "" ? $data->Uso : null;
     $revisado_Farma = isset($data->Revisado_Farma) && $data->Revisado_Farma !== "" ? (int)$data->Revisado_Farma : 0;
+    $revisado_ADM = isset($data->Revisado_ADM) && $data->Revisado_ADM !== "" ? $data->Revisado_ADM : null;
     $idRegistroVisa = isset($data->idRegistroVisa) && $data->idRegistroVisa !== "" ? (int)$data->idRegistroVisa : null;
     $idTabela = isset($data->idTabela) && $data->idTabela !== "" ? (int)$data->idTabela : null;
     $idViaAdministracao = isset($data->idViaAdministracao) && $data->idViaAdministracao !== "" ? (int)$data->idViaAdministracao : null;
@@ -100,9 +104,8 @@ try {
     $idTaxas = isset($data->idTaxas) && $data->idTaxas !== "" ? (int)$data->idTaxas : null;
 
     $bindResult = $stmt->bind_param(
-        "ssssssssiiiiiiiiiii",
+        "ssssssssissiiiiiiiii",
         $codigoTUSS,
-        //$cod_Ggrem,
         $descricaoApresentacao,
         $descricaoResumida,
         $descricaoComercial,
@@ -111,7 +114,9 @@ try {
         $fracionamento,
         $laboratorio,
         $revisado_Farma,
-        $idRegistroVisa,
+        $uso,                // Novo campo
+        $revisado_ADM,       // Novo campo
+        $idRegistroVisa,     // Agora tratado como string
         $idTabela,
         $idViaAdministracao,
         $idClasseFarmaceutica,

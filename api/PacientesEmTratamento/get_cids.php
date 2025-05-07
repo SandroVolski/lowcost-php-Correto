@@ -19,7 +19,7 @@ try {
     
     // Parâmetros de pesquisa (opcional)
     $search = isset($_GET['search']) ? $_GET['search'] : '';
-    $limit = isset($_GET['limit']) ? intval($_GET['limit']) : 1000; // Limitar quantidade por padrão para evitar sobrecarga
+    //$limit = isset($_GET['limit']) ? intval($_GET['limit']) : 1000; // Limitar quantidade por padrão para evitar sobrecarga
     
     // Construir a consulta SQL
     $sql = "SELECT 
@@ -35,7 +35,7 @@ try {
     }
     
     // Ordenar e limitar os resultados
-    $sql .= " ORDER BY SUBCAT ASC LIMIT $limit";
+    $sql .= " ORDER BY SUBCAT ASC";
     
     // Executar a consulta
     $result = $conn->query($sql);

@@ -231,7 +231,9 @@ try {
         UnidadeFracionamento = ?,
         Fracionamento = ?,
         Laboratorio = ?,
+        Uso = ?,
         Revisado_Farma = ?,
+        Revisado_ADM = ?,
         idViaAdministracao = ?,
         idClasseFarmaceutica = ?,
         idPrincipioAtivo = ?,
@@ -272,7 +274,10 @@ try {
     $laboratorio = isset($data->Laboratorio) && $data->Laboratorio !== "" ? $data->Laboratorio : 
                   (isset($data->Laboratório) && $data->Laboratório !== "" ? $data->Laboratório : null);
     
+    $uso = isset($data->Uso) && $data->Uso !== "" ? $data->Uso : null;
+
     $revisado_Farma = isset($data->Revisado_Farma) && $data->Revisado_Farma !== "" ? intval($data->Revisado_Farma) : 0;
+    $revisado_ADM = isset($data->Revisado_ADM) && $data->Revisado_ADM !== "" ? intval($data->Revisado_ADM) : 0;
     
     // IDs dos campos relacionados
     $idViaAdministracao = isset($data->idViaAdministracao) && $data->idViaAdministracao !== "" ? intval($data->idViaAdministracao) : null;
@@ -310,6 +315,8 @@ try {
     $types .= 's'; // $unidadeFracionamento (string)
     $types .= 's'; // $fracionamento (string)
     $types .= 's'; // $laboratorio (string)
+    $types .= 's'; // $laboratorio (string)
+    $types .= 'i'; // $revisado (integer)
     $types .= 'i'; // $revisado (integer)
     $types .= 'i'; // $idViaAdministracao (integer)
     $types .= 'i'; // $idClasseFarmaceutica (integer)
@@ -339,7 +346,9 @@ try {
         $unidadeFracionamento,
         $fracionamento,
         $laboratorio,
+        $uso,
         $revisado_Farma,
+        $revisado_ADM,
         $idViaAdministracao,
         $idClasseFarmaceutica,
         $idPrincipioAtivo,
@@ -364,7 +373,9 @@ try {
         'unidadeFracionamento' => $unidadeFracionamento,
         'fracionamento' => $fracionamento,
         'laboratorio' => $laboratorio,
+        'uso' => $uso,
         'revisado_Farma' => $revisado_Farma,
+        'revisado_ADM' => $revisado_ADM,
         'idViaAdministracao' => $idViaAdministracao,
         'idClasseFarmaceutica' => $idClasseFarmaceutica,
         'idPrincipioAtivo' => $idPrincipioAtivo,
@@ -389,7 +400,9 @@ try {
         $unidadeFracionamento,
         $fracionamento,
         $laboratorio,
+        $uso,
         $revisado_Farma,
+        $revisado_ADM,
         $idViaAdministracao,
         $idClasseFarmaceutica,
         $idPrincipioAtivo,

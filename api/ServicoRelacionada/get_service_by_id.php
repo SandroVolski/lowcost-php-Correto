@@ -43,7 +43,9 @@ try {
         UnidadeFracionamento,
         Fracionamento,
         Laboratorio,
+        Uso,
         Revisado_Farma,
+        Revisado_ADM, 
         
         -- IDs dos campos relacionados
         idViaAdministracao,

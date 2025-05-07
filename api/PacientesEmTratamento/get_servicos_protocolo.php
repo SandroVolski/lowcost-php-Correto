@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-
+    
 // Função para logging
 function logMessage($message) {
     $logDir = "../logs";
@@ -100,19 +100,26 @@ try {
     logMessage("Executando consulta para obter serviços com todos os campos");
     
     // Tentar buscar todos os serviços associados ao protocolo
+    // No get_servicos_protocolo.php, adicione este SQL mais completo
     $sql = "SELECT 
-                id,
-                id_protocolo,
-                id_servico,
-                Servico_Codigo,
-                Dose,
-                Dose_M,
-                Dose_Total,
-                Dias_de_Aplic,
-                Via_de_Adm,
-                observacoes
-            FROM Protocolo_Servico 
-            WHERE id_protocolo = ?";
+        id,
+        id_protocolo,
+        id_servico,
+        Servico_Codigo,
+        nome,
+        Dose,
+        dose,
+        Dose_M,
+        Dose_Total,
+        Dias_de_Aplic,
+        dias_aplicacao,
+        Via_de_Adm,
+        via_administracao,
+        frequencia,
+        unidade_medida,
+        observacoes
+        FROM Protocolo_Servico 
+        WHERE id_protocolo = ?";
     
     $stmt = $conn->prepare($sql);
     

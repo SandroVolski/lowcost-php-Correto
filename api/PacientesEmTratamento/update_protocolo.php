@@ -95,102 +95,140 @@ try {
     $existingProtocol = $result->fetch_assoc();
     logMessage("Protocolo atual: " . json_encode($existingProtocol));
     
-    // Verificar se a tabela tem coluna CID
-    $hasColumn = function ($tableName, $columnName) use ($conn) {
-        $query = "SHOW COLUMNS FROM $tableName LIKE '$columnName'";
-        $result = $conn->query($query);
-        return $result && $result->num_rows > 0;
-    };
+    // Verificar colunas existentes na tabela
+    $colunas_result = $conn->query("DESCRIBE Protocolo");
+    if (!$colunas_result) {
+        throw new Exception("Erro ao verificar colunas: " . $conn->error);
+    }
     
-    $hasCidColumn = $hasColumn('Protocolo', 'CID');
-    logMessage("Tabela tem coluna CID? " . ($hasCidColumn ? "Sim" : "Não"));
+    $colunas = [];
+    while ($row = $colunas_result->fetch_assoc()) {
+        $colunas[] = $row['Field'];
+    }
+    
+    logMessage("Colunas disponíveis: " . implode(", ", $colunas));
     
     // Extrair e converter dados
-    $protocolo_nome = isset($data['Protocolo_Nome']) ? $conn->real_escape_string($data['Protocolo_Nome']) : null;
-    $protocolo_sigla = isset($data['Protocolo_Sigla']) ? $conn->real_escape_string($data['Protocolo_Sigla']) : null;
-    $servico_codigo = isset($data['Servico_Codigo']) ? $conn->real_escape_string($data['Servico_Codigo']) : null;
-    $protocolo_dose_m = isset($data['Protocolo_Dose_M']) ? $conn->real_escape_string($data['Protocolo_Dose_M']) : null;
-    $protocolo_dose_total = isset($data['Protocolo_Dose_Total']) ? $conn->real_escape_string($data['Protocolo_Dose_Total']) : null;
-    $protocolo_dias_aplicacao = isset($data['Protocolo_Dias_de_Aplicacao']) ? $conn->real_escape_string($data['Protocolo_Dias_de_Aplicacao']) : null;
-    $protocolo_viaadm = isset($data['Protocolo_ViaAdm']) ? $conn->real_escape_string($data['Protocolo_ViaAdm']) : null;
-    $linha = isset($data['Linha']) ? $conn->real_escape_string($data['Linha']) : null;
-    $cid = $hasCidColumn && isset($data['CID']) ? $conn->real_escape_string($data['CID']) : null;
+    $update_fields = [];
+    $update_values = [];
+    $update_types = "";
     
-    // Validar campos obrigatórios
-    if (empty($protocolo_nome) || empty($protocolo_sigla)) {
-        logMessage("Campos obrigatórios faltando");
-        throw new Exception("Nome e Sigla são campos obrigatórios");
+    // Campos obrigatórios
+    if (isset($data['Protocolo_Nome']) && !empty($data['Protocolo_Nome'])) {
+        $update_fields[] = "Protocolo_Nome = ?";
+        $update_values[] = $data['Protocolo_Nome'];
+        $update_types .= "s";
+    } else {
+        logMessage("Nome do protocolo é obrigatório");
+        throw new Exception("Nome do protocolo é obrigatório");
     }
     
-    // Construir query de atualização
-    $updateParts = [];
-    
-    if ($protocolo_nome !== null) {
-        $updateParts[] = "Protocolo_Nome = '$protocolo_nome'";
+    if (isset($data['Protocolo_Sigla']) && !empty($data['Protocolo_Sigla'])) {
+        $update_fields[] = "Protocolo_Sigla = ?";
+        $update_values[] = $data['Protocolo_Sigla'];
+        $update_types .= "s";
+    } else {
+        logMessage("Sigla do protocolo é obrigatória");
+        throw new Exception("Sigla do protocolo é obrigatória");
     }
     
-    if ($protocolo_sigla !== null) {
-        $updateParts[] = "Protocolo_Sigla = '$protocolo_sigla'";
+    // Campos opcionais
+    if (in_array("Servico_Codigo", $colunas) && isset($data['Servico_Codigo'])) {
+        $update_fields[] = "Servico_Codigo = ?";
+        $update_values[] = $data['Servico_Codigo'];
+        $update_types .= "s";
     }
     
-    if ($servico_codigo !== null) {
-        $updateParts[] = "Servico_Codigo = '$servico_codigo'";
+    if (in_array("Protocolo_Dose_M", $colunas) && isset($data['Protocolo_Dose_M'])) {
+        $update_fields[] = "Protocolo_Dose_M = ?";
+        $update_values[] = $data['Protocolo_Dose_M'];
+        $update_types .= "s";
     }
     
-    if ($protocolo_dose_m !== null) {
-        $updateParts[] = "Protocolo_Dose_M = '$protocolo_dose_m'";
-    } else if (isset($data['Protocolo_Dose_M'])) {
-        $updateParts[] = "Protocolo_Dose_M = NULL";
+    if (in_array("Protocolo_Dose_Total", $colunas) && isset($data['Protocolo_Dose_Total'])) {
+        $update_fields[] = "Protocolo_Dose_Total = ?";
+        $update_values[] = $data['Protocolo_Dose_Total'];
+        $update_types .= "s";
     }
     
-    if ($protocolo_dose_total !== null) {
-        $updateParts[] = "Protocolo_Dose_Total = '$protocolo_dose_total'";
-    } else if (isset($data['Protocolo_Dose_Total'])) {
-        $updateParts[] = "Protocolo_Dose_Total = NULL";
+    if (in_array("Protocolo_Dias_de_Aplicacao", $colunas) && isset($data['Protocolo_Dias_de_Aplicacao'])) {
+        $update_fields[] = "Protocolo_Dias_de_Aplicacao = ?";
+        $update_values[] = $data['Protocolo_Dias_de_Aplicacao'];
+        $update_types .= "s";
     }
     
-    if ($protocolo_dias_aplicacao !== null) {
-        $updateParts[] = "Protocolo_Dias_de_Aplicacao = '$protocolo_dias_aplicacao'";
-    } else if (isset($data['Protocolo_Dias_de_Aplicacao'])) {
-        $updateParts[] = "Protocolo_Dias_de_Aplicacao = NULL";
+    if (in_array("Protocolo_ViaAdm", $colunas) && isset($data['Protocolo_ViaAdm'])) {
+        $update_fields[] = "Protocolo_ViaAdm = ?";
+        $update_values[] = $data['Protocolo_ViaAdm'];
+        $update_types .= "s";
     }
     
-    if ($protocolo_viaadm !== null) {
-        $updateParts[] = "Protocolo_ViaAdm = '$protocolo_viaadm'";
-    } else if (isset($data['Protocolo_ViaAdm'])) {
-        $updateParts[] = "Protocolo_ViaAdm = NULL";
+    if (in_array("Linha", $colunas) && isset($data['Linha'])) {
+        $update_fields[] = "Linha = ?";
+        $update_values[] = intval($data['Linha']);
+        $update_types .= "i";
     }
     
-    if ($linha !== null) {
-        $updateParts[] = "Linha = '$linha'";
-    } else if (isset($data['Linha'])) {
-        $updateParts[] = "Linha = NULL";
+    // Campos adicionais presentes no novo código
+    if (in_array("Intervalo_Ciclos", $colunas) && isset($data['Intervalo_Ciclos'])) {
+        $update_fields[] = "Intervalo_Ciclos = ?";
+        $update_values[] = intval($data['Intervalo_Ciclos']);
+        $update_types .= "i";
     }
     
-    if ($hasCidColumn && $cid !== null) {
-        $updateParts[] = "CID = '$cid'";
-    } else if ($hasCidColumn && isset($data['CID'])) {
-        $updateParts[] = "CID = NULL";
+    if (in_array("Ciclos_Previstos", $colunas) && isset($data['Ciclos_Previstos'])) {
+        $update_fields[] = "Ciclos_Previstos = ?";
+        $update_values[] = intval($data['Ciclos_Previstos']);
+        $update_types .= "i";
     }
     
-    if (empty($updateParts)) {
+    if (in_array("CID", $colunas) && isset($data['CID'])) {
+        $update_fields[] = "CID = ?";
+        $update_values[] = $data['CID'];
+        $update_types .= "s";
+    }
+    
+    if (empty($update_fields)) {
         logMessage("Nenhum campo válido para atualização");
         throw new Exception("Nenhum campo válido para atualização");
     }
     
-    $updateStr = implode(", ", $updateParts);
-    $updateQuery = "UPDATE Protocolo SET $updateStr WHERE $id_column = $id_protocolo";
+    $updateStr = implode(", ", $update_fields);
+    $updateQuery = "UPDATE Protocolo SET $updateStr WHERE $id_column = ?";
+    
+    // Adicionar o ID do protocolo ao final dos parâmetros
+    $update_values[] = $id_protocolo;
+    $update_types .= "i";
     
     logMessage("Query: $updateQuery");
+    logMessage("Tipos de parâmetros: $update_types");
     
-    $updateResult = $conn->query($updateQuery);
-    
-    if (!$updateResult) {
-        logMessage("Erro na atualização: " . $conn->error);
-        throw new Exception("Erro ao atualizar protocolo: " . $conn->error);
+    $stmt = $conn->prepare($updateQuery);
+    if (!$stmt) {
+        logMessage("Erro ao preparar query: " . $conn->error);
+        throw new Exception("Erro ao preparar query: " . $conn->error);
     }
     
-    logMessage("Protocolo atualizado. Linhas afetadas: " . $conn->affected_rows);
+    // Bind parameters dinâmico
+    $bind_params = array($update_types);
+    foreach ($update_values as $key => $value) {
+        $bind_params[] = &$update_values[$key];
+    }
+    
+    if (!call_user_func_array(array($stmt, 'bind_param'), $bind_params)) {
+        logMessage("Erro no bind_param: " . $stmt->error);
+        throw new Exception("Erro no bind_param: " . $stmt->error);
+    }
+    
+    if (!$stmt->execute()) {
+        logMessage("Erro na execução: " . $stmt->error);
+        throw new Exception("Erro na execução: " . $stmt->error);
+    }
+    
+    $affected_rows = $stmt->affected_rows;
+    $stmt->close();
+    
+    logMessage("Protocolo atualizado. Linhas afetadas: " . $affected_rows);
     
     // Buscar dados atualizados
     $selectQuery = "SELECT * FROM Protocolo WHERE $id_column = $id_protocolo";
@@ -208,7 +246,7 @@ try {
     echo json_encode([
         "message" => "Protocolo atualizado com sucesso",
         "data" => $updatedData,
-        "affected_rows" => $conn->affected_rows
+        "affected_rows" => $affected_rows
     ]);
     
     logMessage("Operação concluída com sucesso");

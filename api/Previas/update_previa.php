@@ -3,18 +3,20 @@ header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: PUT, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-
 if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     http_response_code(200);
     exit;
 }
-
 try {
     include_once("../../config.php");
-
+    // Verificar a conexão com o banco de dados
+    if ($conn_pacientes->connect_error) {
+        http_response_code(500);
+        echo json_encode(["error" => "Falha na conexão com o banco de dados: " . $conn_pacientes->connect_error]);
+        exit;
+    }
     // Iniciar transação
     $conn_pacientes->begin_transaction();
-
     // Obter dados do corpo da requisição
     $data = json_decode(file_get_contents("php://input"), true);
     
@@ -56,8 +58,18 @@ try {
         }
     }
     
+    // CORREÇÃO: Definir inconsistencia como NULL se estiver vazio
+    $inconsistencia = NULL;
+    if (isset($data['inconsistencia']) && !empty($data['inconsistencia'])) {
+        // Somente atribua um valor se for um dos valores válidos do ENUM
+        if (in_array($data['inconsistencia'], ['Completa', 'Dados Faltantes', 'Requer Análise', 'Informações Inconsistentes'])) {
+            $inconsistencia = $data['inconsistencia'];
+        }
+    }
+    
+    // Corrigido o bind_param para incluir corretamente todos os parâmetros
     $stmt->bind_param(
-        "ssssddsssi",
+        "ssssddsssis",
         $data['guia'],
         $data['protocolo'],
         $data['cid'],
@@ -66,7 +78,7 @@ try {
         $data['peso'],
         $data['altura'],
         $data['parecer_guia'],
-        $data['inconsistencia'],
+        $inconsistencia, // Aqui usamos a variável corrigida em vez de $data['inconsistencia']
         $dataParecerRegistrado,
         $data['tempo_analise'],
         $data['id']
@@ -125,9 +137,8 @@ try {
     }
     
     http_response_code(500);
-    echo json_encode(["error" => $e->getMessage()]);
+    echo json_encode(["error" => "Erro detalhado: " . $e->getMessage()]);
 }
-
 if (isset($conn_pacientes)) {
     $conn_pacientes->close();
 }

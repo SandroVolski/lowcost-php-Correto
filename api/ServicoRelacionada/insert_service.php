@@ -156,7 +156,9 @@ try {
         UnidadeFracionamento, -- 7 (string)
         Fracionamento,        -- 8 (string)
         Laboratorio,          -- 9 (string)
+        Uso,
         Revisado_Farma,             -- 10 (integer)
+        Revisado_ADM,
         idViaAdministracao,   -- 11 (integer)
         idClasseFarmaceutica, -- 12 (integer)
         idPrincipioAtivo,     -- 13 (integer)
@@ -167,7 +169,7 @@ try {
         idTaxas,              -- 18 (integer)
         idRegistroVisa,        -- 19 (integer ou string?)
         idTabela              -- 20 (integer)
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     
     // Contagem de interrogações: 19
     // Total de valores a serem passados: 19
@@ -187,7 +189,9 @@ try {
     $unidadeFracionamento = isset($data->UnidadeFracionamento) && $data->UnidadeFracionamento !== "" ? $data->UnidadeFracionamento : null;
     $fracionamento = isset($data->Fracionamento) && $data->Fracionamento !== "" ? $data->Fracionamento : null;
     $laboratorio = isset($data->Laboratorio) && $data->Laboratorio !== "" ? $data->Laboratorio : null;
+    $uso = isset($data->Uso) && $data->Uso !== "" ? $data->Uso : null;
     $revisado_Farma = isset($data->Revisado_Farma) && $data->Revisado_Farma !== "" ? intval($data->Revisado_Farma) : 0;
+    $revisado_ADM = isset($data->Revisado_ADM) && $data->Revisado_ADM !== "" ? $data->Revisado_ADM : null;
     
     // IDs dos campos relacionados
     $idViaAdministracao = isset($data->idViaAdministracao) && $data->idViaAdministracao !== "" ? intval($data->idViaAdministracao) : null;
@@ -204,8 +208,8 @@ try {
     // Criar manualmente a string de tipos para evitar problemas de contagem
     // 9 strings + 10 inteiros = 19 tipos
     $types = '';
-    for ($i = 0; $i < 9; $i++) $types .= 's'; // 9 strings
-    for ($i = 0; $i < 11; $i++) $types .= 'i'; // 10 inteiros
+    for ($i = 0; $i < 12; $i++) $types .= 's'; // para strings
+    for ($i = 0; $i < 10; $i++) $types .= 'i'; // para inteiros
     
     // Verificar explicitamente o comprimento da string de tipos
     error_log("String de tipos: $types");
@@ -236,7 +240,9 @@ try {
         $unidadeFracionamento,
         $fracionamento,
         $laboratorio,
+        $uso,
         $revisado_Farma,
+        $revisado_ADM,
         $idViaAdministracao,
         $idClasseFarmaceutica,
         $idPrincipioAtivo,

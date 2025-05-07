@@ -23,7 +23,9 @@ $sql = "SELECT
     s.UnidadeFracionamento,
     s.Fracionamento,
     s.Laboratorio,
+    s.Uso,
     s.Revisado_Farma,
+    s.Revisado_ADM,
 
     -- Registro Visa
     r.Cod_Ggrem,

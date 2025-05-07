@@ -69,15 +69,17 @@ try {
     // IMPORTANTE: Troque "id_protocolo" por "id AS id_protocolo" se o nome da coluna for apenas "id"
     // Verifique a estrutura da sua tabela
     $sql = "SELECT 
-                id_protocolo, 
-                Servico_Codigo, 
-                Protocolo_Nome, 
-                Protocolo_Sigla, 
-                Protocolo_Dose_M, 
-                Protocolo_Dose_Total, 
-                Protocolo_Dias_de_Aplicacao, 
-                Protocolo_ViaAdm, 
-                Linha";
+            id_protocolo, 
+            Servico_Codigo, 
+            Protocolo_Nome, 
+            Protocolo_Sigla, 
+            Protocolo_Dose_M, 
+            Protocolo_Dose_Total, 
+            Protocolo_Dias_de_Aplicacao, 
+            Protocolo_ViaAdm, 
+            Linha,
+            Intervalo_Ciclos,
+            Ciclos_Previstos";
                 
     // Adicionar CID à consulta se existir
     if ($cidExists) {
@@ -156,7 +158,9 @@ try {
             'Protocolo_Dose_Total' => $row['Protocolo_Dose_Total'],
             'Protocolo_Dias_de_Aplicacao' => $row['Protocolo_Dias_de_Aplicacao'],
             'Protocolo_ViaAdm' => $row['Protocolo_ViaAdm'],
-            'Linha' => $row['Linha']
+            'Linha' => $row['Linha'],
+            'Intervalo_Ciclos' => $row['Intervalo_Ciclos'],
+            'Ciclos_Previstos' => $row['Ciclos_Previstos']
         ];
         
         // Adicionar CID se existir
