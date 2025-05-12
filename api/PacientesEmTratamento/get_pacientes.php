@@ -28,12 +28,70 @@ try {
         throw new Exception("Erro de conexão com o banco de dados.");
     }
 
-    // Parâmetros de paginação (opcional)
+    // Parâmetros de pesquisa e paginação
     $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
     $limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 100;
     $offset = ($page - 1) * $limit;
+    
+    // Novos parâmetros de pesquisa
+    $searchTerm = isset($_GET['search']) ? $_GET['search'] : '';
+    $searchType = isset($_GET['type']) ? $_GET['type'] : 'nome';
+    
+    // Construir a cláusula WHERE baseada no tipo de pesquisa
+    $whereClause = '';
+    $params = [];
+    $types = '';
+    
+    if (!empty($searchTerm)) {
+        switch ($searchType) {
+            case 'nome':
+                $whereClause = "WHERE p.Paciente_Nome LIKE ?";
+                $searchParam = "%$searchTerm%";
+                $params[] = $searchParam;
+                $types .= "s";
+                break;
+            case 'codigo':
+                $whereClause = "WHERE p.Codigo LIKE ?";
+                $searchParam = "%$searchTerm%";
+                $params[] = $searchParam;
+                $types .= "s";
+                break;
+            case 'cid':
+                $whereClause = "WHERE p.Cid_Diagnostico LIKE ?";
+                $searchParam = "%$searchTerm%";
+                $params[] = $searchParam;
+                $types .= "s";
+                break;
+            case 'operadora':
+                $whereClause = "WHERE o.Nome_Fantasia LIKE ?";
+                $searchParam = "%$searchTerm%";
+                $params[] = $searchParam;
+                $types .= "s";
+                break;
+            case 'prestador':
+                $whereClause = "WHERE (e.Prestador_Nome LIKE ? OR e.Prestador_Nome_Fantasia LIKE ?)";
+                $searchParam = "%$searchTerm%";
+                $params[] = $searchParam;
+                $params[] = $searchParam;
+                $types .= "ss";
+                break;
+            default:
+                // Pesquisa em múltiplos campos
+                $whereClause = "WHERE (p.Paciente_Nome LIKE ? OR p.Codigo LIKE ? OR p.Cid_Diagnostico LIKE ?)";
+                $searchParam = "%$searchTerm%";
+                $params[] = $searchParam;
+                $params[] = $searchParam;
+                $params[] = $searchParam;
+                $types .= "sss";
+        }
+    }
 
-    // Query corrigida usando os nomes reais das colunas na tabela Pacientes
+    // Adicionar parâmetros de paginação
+    $params[] = $offset;
+    $params[] = $limit;
+    $types .= "ii";
+
+    // Query com WHERE dinâmico
     $sql = "
     SELECT 
         p.id,
@@ -55,48 +113,14 @@ try {
         bd_servico.bd_producaom_operadoras o ON p.Operadora = o.id
     LEFT JOIN 
         bd_servico.bd_empresas_empresas e ON p.Prestador = e.id
+    $whereClause
     ORDER BY 
         p.Paciente_Nome
     LIMIT ?, ?
     ";
 
     error_log("SQL gerado: $sql");
-
-    // Verificar se já existem pacientes na tabela
-    $checkSql = "SELECT COUNT(*) as count FROM bd_pacientestto.Pacientes";
-    $checkResult = $conn_pacientes->query($checkSql);
-    $rowCount = 0;
-    
-    if ($checkResult && $checkResult->num_rows > 0) {
-        $rowCount = $checkResult->fetch_assoc()['count'];
-    }
-    
-    error_log("Número de pacientes encontrados: $rowCount");
-    
-    /* Se não há pacientes, criar alguns para teste
-    if ($rowCount == 0) {
-        error_log("Nenhum paciente encontrado. Criando dados de exemplo...");
-        
-        // Exemplo 1
-        $insertSql = "INSERT INTO bd_pacientestto.Pacientes 
-            (Paciente_Nome, Operadora, Prestador, Codigo, Data_Nascimento, Sexo, Cid_Diagnostico, Data_Inicio_Tratamento) 
-            VALUES ('Maria Silva', 1, 2, 1001, '1980-05-15', 'F', 'C50.9', '2023-01-10')";
-        $conn_pacientes->query($insertSql);
-        
-        // Exemplo 2
-        $insertSql = "INSERT INTO bd_pacientestto.Pacientes 
-            (Paciente_Nome, Operadora, Prestador, Codigo, Data_Nascimento, Sexo, Cid_Diagnostico, Data_Inicio_Tratamento) 
-            VALUES ('José Santos', 2, 3, 1002, '1975-08-22', 'M', 'C61', '2023-02-15')";
-        $conn_pacientes->query($insertSql);
-        
-        // Exemplo 3
-        $insertSql = "INSERT INTO bd_pacientestto.Pacientes 
-            (Paciente_Nome, Operadora, Prestador, Codigo, Data_Nascimento, Sexo, Cid_Diagnostico, Data_Inicio_Tratamento) 
-            VALUES ('Ana Oliveira', 1, 8, 1003, '1990-11-30', 'F', 'C18.9', '2023-03-05')";
-        $conn_pacientes->query($insertSql);
-        
-        error_log("Dados de exemplo criados com sucesso.");
-    }*/
+    error_log("Parâmetros: " . implode(", ", $params));
 
     // Preparar e executar a consulta
     $stmt = $conn->prepare($sql);
@@ -104,9 +128,39 @@ try {
         throw new Exception("Erro ao preparar a consulta: " . $conn->error);
     }
 
-    $stmt->bind_param("ii", $offset, $limit);
+    // Bind dos parâmetros dinâmicos
+    if (!empty($params)) {
+        $stmt->bind_param($types, ...$params);
+    }
+    
     $stmt->execute();
     $result = $stmt->get_result();
+
+    // Calcular o total de pacientes para fins de paginação
+    $countSql = "SELECT COUNT(*) as total FROM bd_pacientestto.Pacientes p 
+                 LEFT JOIN bd_servico.bd_producaom_operadoras o ON p.Operadora = o.id
+                 LEFT JOIN bd_servico.bd_empresas_empresas e ON p.Prestador = e.id
+                 $whereClause";
+                 
+    $countStmt = $conn->prepare($countSql);
+    
+    if ($countStmt) {
+        // Bind dos parâmetros de pesquisa (sem os de paginação)
+        if (!empty($searchTerm)) {
+            $countParams = array_slice($params, 0, -2);
+            $countTypes = substr($types, 0, -2);
+            if (!empty($countParams)) {
+                $countStmt->bind_param($countTypes, ...$countParams);
+            }
+        }
+        
+        $countStmt->execute();
+        $countResult = $countStmt->get_result();
+        $totalRecords = $countResult->fetch_assoc()['total'];
+        $countStmt->close();
+    } else {
+        $totalRecords = 0;
+    }
 
     // Coletar os resultados
     $pacientes = [];
@@ -126,59 +180,17 @@ try {
         $pacientes[] = $row;
     }
 
-    /* Se ainda não temos pacientes, criar dados fictícios
-    if (count($pacientes) == 0) {
-        error_log("Nenhum paciente encontrado após a consulta. Retornando dados fictícios.");
-        
-        $pacientes = [
-            [
-                "id" => 1,
-                "Operadora" => "Unimed",
-                "Prestador_Nome" => "Hospital São Lucas",
-                "Prestador_Nome_Fantasia" => "São Lucas",
-                "Paciente_Codigo" => "P001",
-                "Nome" => "Maria Silva",
-                "Nascimento" => "15/05/1980",
-                "Idade" => 43,
-                "Sexo" => "F",
-                "Data_Inicio_Tratamento" => "10/01/2023",
-                "CID" => "C50.9",
-                "Finalidade" => "Quimioterapia"
-            ],
-            [
-                "id" => 2,
-                "Operadora" => "SulAmérica",
-                "Prestador_Nome" => "Clínica Oncológica",
-                "Prestador_Nome_Fantasia" => "OncoMed",
-                "Paciente_Codigo" => "P002",
-                "Nome" => "José Santos",
-                "Nascimento" => "22/08/1975",
-                "Idade" => 48,
-                "Sexo" => "M",
-                "Data_Inicio_Tratamento" => "15/02/2023",
-                "CID" => "C61",
-                "Finalidade" => "Radioterapia"
-            ],
-            [
-                "id" => 3,
-                "Operadora" => "Bradesco Saúde",
-                "Prestador_Nome" => "Instituto de Oncologia",
-                "Prestador_Nome_Fantasia" => "OncoInstituto",
-                "Paciente_Codigo" => "P003",
-                "Nome" => "Ana Oliveira",
-                "Nascimento" => "30/11/1990",
-                "Idade" => 33,
-                "Sexo" => "F",
-                "Data_Inicio_Tratamento" => "05/03/2023",
-                "CID" => "C18.9",
-                "Finalidade" => "Adjuvante"
-            ]
-        ];
-    }*/
-
-    // Retornar dados
+    // Retornar dados com metadados de paginação
     http_response_code(200);
-    echo json_encode($pacientes);
+    echo json_encode([
+        'data' => $pacientes,
+        'meta' => [
+            'total' => (int)$totalRecords,
+            'page' => $page,
+            'limit' => $limit,
+            'pages' => ceil($totalRecords / $limit)
+        ]
+    ]);
 
     if (isset($stmt)) {
         $stmt->close();
@@ -187,40 +199,11 @@ try {
 } catch (Exception $e) {
     error_log("Erro em get_pacientes.php: " . $e->getMessage());
     
-    /* Em caso de erro, retornar dados fictícios para evitar travamento da interface
-    $dadosExemplo = [
-        [
-            "id" => 1,
-            "Operadora" => "Unimed",
-            "Prestador_Nome" => "Hospital São Lucas",
-            "Prestador_Nome_Fantasia" => "São Lucas",
-            "Paciente_Codigo" => "P001",
-            "Nome" => "Maria Silva",
-            "Nascimento" => "15/05/1980",
-            "Idade" => 43,
-            "Sexo" => "F",
-            "Data_Inicio_Tratamento" => "10/01/2023",
-            "CID" => "C50.9",
-            "Finalidade" => "Quimioterapia"
-        ],
-        [
-            "id" => 2,
-            "Operadora" => "SulAmérica",
-            "Prestador_Nome" => "Clínica Oncológica",
-            "Prestador_Nome_Fantasia" => "OncoMed",
-            "Paciente_Codigo" => "P002",
-            "Nome" => "José Santos",
-            "Nascimento" => "22/08/1975",
-            "Idade" => 48,
-            "Sexo" => "M",
-            "Data_Inicio_Tratamento" => "15/02/2023",
-            "CID" => "C61",
-            "Finalidade" => "Radioterapia"
-        ]
-    ];*/
-    
-    http_response_code(200); // Erro tratado, retornando 200 com dados fictícios
-    echo json_encode($dadosExemplo);
+    http_response_code(500);
+    echo json_encode([
+        "message" => "Erro ao buscar pacientes", 
+        "error" => $e->getMessage()
+    ]);
 }
 
 // Fechar conexões
