@@ -29,7 +29,7 @@ try {
     $numeroSequencial = ($seqRow['max_seq'] ?? 0) + 1;
     $codigoComposto = $data['paciente_id'] . '-' . str_pad($numeroSequencial, 3, '0', STR_PAD_LEFT);
 
-    // Preparar a inserção da prévia
+    // Preparar a inserção da prévia com os novos campos
     $sql = "INSERT INTO previas (
         paciente_id, 
         numero_sequencial, 
@@ -37,6 +37,8 @@ try {
         guia, 
         protocolo, 
         cid, 
+        data_emissao_guia,
+        data_encaminhamento_af,
         data_solicitacao, 
         parecer, 
         peso, 
@@ -45,50 +47,52 @@ try {
         inconsistencia, 
         data_parecer_registrado, 
         tempo_analise
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     $stmt = $conn_pacientes->prepare($sql);
 
-    // Formatação de data: converter de DD/MM/YYYY para YYYY-MM-DD para MySQL
-    $dataSolicitacao = NULL;
-    if (isset($data['data_solicitacao']) && !empty($data['data_solicitacao'])) {
-        $dateParts = explode('/', $data['data_solicitacao']);
-        if (count($dateParts) === 3) {
-            $dataSolicitacao = $dateParts[2] . '-' . $dateParts[1] . '-' . $dateParts[0];
+    // Função helper para converter data DD/MM/YYYY para YYYY-MM-DD
+    function convertDateToMysql($dateString) {
+        if (!$dateString || empty($dateString)) {
+            return NULL;
         }
+        $dateParts = explode('/', $dateString);
+        if (count($dateParts) === 3) {
+            return $dateParts[2] . '-' . $dateParts[1] . '-' . $dateParts[0];
+        }
+        return NULL;
     }
 
-    $dataParecerRegistrado = NULL;
-    if (isset($data['data_parecer_registrado']) && !empty($data['data_parecer_registrado'])) {
-        $dateParts = explode('/', $data['data_parecer_registrado']);
-        if (count($dateParts) === 3) {
-            $dataParecerRegistrado = $dateParts[2] . '-' . $dateParts[1] . '-' . $dateParts[0];
-        }
-    }
+    // Converter as datas para formato MySQL
+    $dataEmissaoGuia = convertDateToMysql($data['data_emissao_guia'] ?? '');
+    $dataEncaminhamentoAF = convertDateToMysql($data['data_encaminhamento_af'] ?? '');
+    $dataSolicitacao = convertDateToMysql($data['data_solicitacao'] ?? '');
+    $dataParecerRegistrado = convertDateToMysql($data['data_parecer_registrado'] ?? '');
 
-    // CORREÇÃO AQUI: Definir inconsistencia como NULL se estiver vazio
+    // CORREÇÃO: Definir inconsistencia como NULL se estiver vazio
     $inconsistencia = NULL;
     if (isset($data['inconsistencia']) && !empty($data['inconsistencia'])) {
-        // Somente atribua um valor se for um dos valores válidos do ENUM
         if (in_array($data['inconsistencia'], ['Completa', 'Dados Faltantes', 'Requer Análise', 'Informações Inconsistentes'])) {
             $inconsistencia = $data['inconsistencia'];
         }
     }
 
     $stmt->bind_param(
-        "iissssssddsssi",
+        "iissssssssddsssi",
         $data['paciente_id'],
         $numeroSequencial,
         $codigoComposto,
         $data['guia'],
         $data['protocolo'],
         $data['cid'],
+        $dataEmissaoGuia,
+        $dataEncaminhamentoAF,
         $dataSolicitacao,
         $data['parecer'],
         $data['peso'],
         $data['altura'],
         $data['parecer_guia'],
-        $inconsistencia,  // Aqui usamos a variável corrigida
+        $inconsistencia,
         $dataParecerRegistrado,
         $data['tempo_analise']
     );
