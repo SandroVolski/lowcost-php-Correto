@@ -145,35 +145,44 @@ try {
     }
 
     // Agora inserir na tabela dservicorelacionada
-    // Vamos contar explicitamente o número de campos e valores na consulta
+    // Atualizando a query para incluir os novos campos
     $sql = "INSERT INTO dServicoRelacionada (
-        Cod,                  -- 1 (string)
-        Codigo_TUSS,          -- 2 (string)
-        Descricao_Apresentacao, -- 3 (string)
-        Descricao_Resumida,   -- 4 (string)
-        Descricao_Comercial,  -- 5 (string)
-        Concentracao,         -- 6 (string)
-        UnidadeFracionamento, -- 7 (string)
-        Fracionamento,        -- 8 (string)
-        Laboratorio,          -- 9 (string)
-        Uso,
-        Revisado_Farma,             -- 10 (integer)
-        Revisado_ADM,
-        idViaAdministracao,   -- 11 (integer)
-        idClasseFarmaceutica, -- 12 (integer)
-        idPrincipioAtivo,     -- 13 (integer)
-        idArmazenamento,      -- 14 (integer)
-        idMedicamento,        -- 15 (integer)
-        idUnidadeFracionamento, -- 16 (integer)
-        idFatorConversao,     -- 17 (integer)
-        idTaxas,              -- 18 (integer)
-        idRegistroVisa,        -- 19 (integer ou string?)
-        idTabela              -- 20 (integer)
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        Cod,                         
+        Codigo_TUSS,                 
+        Codigo_Celos,                
+        Descricao_Padronizada,      
+        Descricao_Resumida,          
+        Descricao_Comercial,         
+        Descricao_Comercial_Completa,
+        Descricao_TUSS,              
+        Concentracao,                
+        UnidadeFracionamento,        
+        Fracionamento,               
+        Laboratorio,                 
+        Uso,                         
+        Revisado_Farma,              
+        Revisado_ADM,                
+        idViaAdministracao,          
+        idClasseFarmaceutica,        
+        idPrincipioAtivo,            
+        idArmazenamento,             
+        idMedicamento,               
+        idUnidadeFracionamento,      
+        idFatorConversao,            
+        idTaxas,                     
+        idRegistroVisa,              
+        idTabela,                    
+        -- Novos campos
+        Unidade_Entrada,
+        Quantidade_Entrada,
+        Unidade_Entrada_Convertida,
+        Quantidade_Convertida,
+        Unidade_Pagamento_Nao_Fracionado,
+        Quantidade_Pagamento_Nao_Fracionado,
+        Unidade_Pagamento_Fracionado,
+        Quantidade_Pagamento_Fracionado
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     
-    // Contagem de interrogações: 19
-    // Total de valores a serem passados: 19
-
     $stmt = $conn->prepare($sql);
     if (!$stmt) {
         throw new Exception("Erro ao preparar a consulta: " . $conn->error);
@@ -182,9 +191,12 @@ try {
     // Converter valores nulos ou vazios para NULL no banco de dados
     $cod = $data->Cod;
     $codigoTUSS = isset($data->Codigo_TUSS) && $data->Codigo_TUSS !== "" ? $data->Codigo_TUSS : null;
-    $descricaoApresentacao = isset($data->Descricao_Apresentacao) && $data->Descricao_Apresentacao !== "" ? $data->Descricao_Apresentacao : null;
+    $codigoCelos = isset($data->Codigo_Celos) && $data->Codigo_Celos !== "" ? $data->Codigo_Celos : null;
+    $descricaoPadronizada = isset($data->Descricao_Padronizada) && $data->Descricao_Padronizada !== "" ? $data->Descricao_Padronizada : null;
     $descricaoResumida = isset($data->Descricao_Resumida) && $data->Descricao_Resumida !== "" ? $data->Descricao_Resumida : null;
     $descricaoComercial = isset($data->Descricao_Comercial) && $data->Descricao_Comercial !== "" ? $data->Descricao_Comercial : null;
+    $descricaoComercialCompleta = isset($data->Descricao_Comercial_Completa) && $data->Descricao_Comercial_Completa !== "" ? $data->Descricao_Comercial_Completa : null;
+    $descricaoTUSS = isset($data->Descricao_TUSS) && $data->Descricao_TUSS !== "" ? $data->Descricao_TUSS : null;
     $concentracao = isset($data->Concentracao) && $data->Concentracao !== "" ? $data->Concentracao : null;
     $unidadeFracionamento = isset($data->UnidadeFracionamento) && $data->UnidadeFracionamento !== "" ? $data->UnidadeFracionamento : null;
     $fracionamento = isset($data->Fracionamento) && $data->Fracionamento !== "" ? $data->Fracionamento : null;
@@ -202,19 +214,30 @@ try {
     $idUnidadeFracionamento = isset($data->idUnidadeFracionamento) && $data->idUnidadeFracionamento !== "" ? intval($data->idUnidadeFracionamento) : null;
     $idFatorConversao = isset($data->idFatorConversao) && $data->idFatorConversao !== "" ? intval($data->idFatorConversao) : null;
     $idTaxas = isset($data->idTaxas) && $data->idTaxas !== "" ? intval($data->idTaxas) : null;
-    $idTabela = isset($data->idTabela) && $data->idTabela !== "" ? intval($data->idTabela) : null; // Novo campo
+    $idTabela = isset($data->idTabela) && $data->idTabela !== "" ? intval($data->idTabela) : null;
+    
+    $unidadeEntrada = isset($data->Unidade_Entrada) ? $data->Unidade_Entrada : '';
+    $quantidadeEntrada = isset($data->Quantidade_Entrada) ? $data->Quantidade_Entrada : null;
+    $unidadeEntradaConvertida = isset($data->Unidade_Entrada_Convertida) ? $data->Unidade_Entrada_Convertida : '';
+    $quantidadeConvertida = isset($data->Quantidade_Convertida) ? $data->Quantidade_Convertida : null;
+    $unidadePagamentoNaoFracionado = isset($data->Unidade_Pagamento_Nao_Fracionado) ? $data->Unidade_Pagamento_Nao_Fracionado : '';
+    $quantidadePagamentoNaoFracionado = isset($data->Quantidade_Pagamento_Nao_Fracionado) ? $data->Quantidade_Pagamento_Nao_Fracionado : null;
+    $unidadePagamentoFracionado = isset($data->Unidade_Pagamento_Fracionado) ? $data->Unidade_Pagamento_Fracionado : '';
+    $quantidadePagamentoFracionado = isset($data->Quantidade_Pagamento_Fracionado) ? $data->Quantidade_Pagamento_Fracionado : null;
 
     
-    // Criar manualmente a string de tipos para evitar problemas de contagem
-    // 9 strings + 10 inteiros = 19 tipos
-    $types = '';
-    for ($i = 0; $i < 12; $i++) $types .= 's'; // para strings
-    for ($i = 0; $i < 10; $i++) $types .= 'i'; // para inteiros
+    // Criar string de tipos para os parâmetros
+    // 16 strings + 9 inteiros = 25 tipos
+    $types = str_repeat('s', 16) . str_repeat('i', 9) . str_repeat('s', 8); // 16 strings + 9 inteiros + 8 novas strings = 33 tipos
+
+    error_log("String de tipos atualizada: $types");
+    error_log("Comprimento da string de tipos atualizada: " . strlen($types));
+    error_log("Contagem de parâmetros esperada: 33"); // Agora são 33 parâmetros
     
-    // Verificar explicitamente o comprimento da string de tipos
-    error_log("String de tipos: $types");
-    error_log("Comprimento da string de tipos: " . strlen($types)); // Deve ser 19
-    error_log("Número de parâmetros: 19");
+    // Verificar comprimento da string de tipos
+    if (strlen($types) !== 33) {
+        error_log("ERRO: O comprimento da string de tipos não corresponde ao número esperado de parâmetros!");
+    }
     
     // Verificar o tipo de idRegistroVisa
     if (!is_null($idRegistroVisa)) {
@@ -233,9 +256,12 @@ try {
         $types, 
         $cod,
         $codigoTUSS,
-        $descricaoApresentacao,
+        $codigoCelos,
+        $descricaoPadronizada,
         $descricaoResumida,
         $descricaoComercial,
+        $descricaoComercialCompleta,
+        $descricaoTUSS,
         $concentracao,
         $unidadeFracionamento,
         $fracionamento,
@@ -252,7 +278,16 @@ try {
         $idFatorConversao,
         $idTaxas,
         $idRegistroVisa,
-        $idTabela
+        $idTabela,
+        // Novos campos
+        $unidadeEntrada,
+        $quantidadeEntrada,
+        $unidadeEntradaConvertida,
+        $quantidadeConvertida,
+        $unidadePagamentoNaoFracionado,
+        $quantidadePagamentoNaoFracionado,
+        $unidadePagamentoFracionado,
+        $quantidadePagamentoFracionado
     );
 
     if (!$bindResult) {
@@ -274,7 +309,7 @@ try {
         "message" => "Serviço criado com sucesso", 
         "id" => $lastId,
         "cod" => $cod, // Inclui o código na resposta
-        "registroVisa" => $hasRegistroVisaFields ? $idRegistroVisa : null
+        "registroVisa" => $hasRegistroVisaData ? $idRegistroVisa : null
     ]);
     $stmt->close();
     $conn->close();

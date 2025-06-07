@@ -105,3 +105,211 @@
 [2025-04-04 19:14:01] Protocolo atualizado. Linhas afetadas: 1
 [2025-04-04 19:14:01] Operação concluída com sucesso
 [2025-04-04 19:14:01] Script finalizado
+[2025-05-15 23:00:34] ============= NOVA REQUISIÇÃO =============
+[2025-05-15 23:00:34] Iniciando update_protocolo.php
+[2025-05-15 23:00:35] Conexão estabelecida via config.php
+[2025-05-15 23:00:35] ID a ser atualizado: 20
+[2025-05-15 23:00:35] Dados brutos: {"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","CID":"A000","Intervalo_Ciclos":1,"Ciclos_Previstos":1,"Linha":1}
+[2025-05-15 23:00:35] Verificando estrutura da tabela Protocolo...
+[2025-05-15 23:00:35] Coluna encontrada: id_protocolo | Chave: PRI
+[2025-05-15 23:00:35] Coluna ID primária encontrada: id_protocolo
+[2025-05-15 23:00:35] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 20
+[2025-05-15 23:00:35] Protocolo atual: {"id_protocolo":"20","Servico_Codigo":null,"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","Protocolo_Dose_M":null,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"Protocolo_ViaAdm":null,"Linha":"1","Intervalo_Ciclos":"1","Ciclos_Previstos":"1","CID":"A000"}
+[2025-05-15 23:00:35] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-15 23:00:35] Query: UPDATE Protocolo SET Protocolo_Nome = ?, Protocolo_Sigla = ?, Linha = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, CID = ? WHERE id_protocolo = ?
+[2025-05-15 23:00:35] Tipos de parâmetros: ssiiisi
+[2025-05-15 23:00:35] Protocolo atualizado. Linhas afetadas: 0
+[2025-05-15 23:00:36] Operação concluída com sucesso
+[2025-05-15 23:00:36] Script finalizado
+[2025-05-15 23:01:36] ============= NOVA REQUISIÇÃO =============
+[2025-05-15 23:01:36] Iniciando update_protocolo.php
+[2025-05-15 23:01:37] Conexão estabelecida via config.php
+[2025-05-15 23:01:37] ID a ser atualizado: 20
+[2025-05-15 23:01:37] Dados brutos: {"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","CID":"A000","Intervalo_Ciclos":1,"Ciclos_Previstos":1,"Linha":1}
+[2025-05-15 23:01:37] Verificando estrutura da tabela Protocolo...
+[2025-05-15 23:01:37] Coluna encontrada: id_protocolo | Chave: PRI
+[2025-05-15 23:01:37] Coluna ID primária encontrada: id_protocolo
+[2025-05-15 23:01:37] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 20
+[2025-05-15 23:01:37] Protocolo atual: {"id_protocolo":"20","Servico_Codigo":null,"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","Protocolo_Dose_M":null,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"Protocolo_ViaAdm":null,"Linha":"1","Intervalo_Ciclos":"1","Ciclos_Previstos":"1","CID":"A000"}
+[2025-05-15 23:01:38] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-15 23:01:38] Query: UPDATE Protocolo SET Protocolo_Nome = ?, Protocolo_Sigla = ?, Linha = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, CID = ? WHERE id_protocolo = ?
+[2025-05-15 23:01:38] Tipos de parâmetros: ssiiisi
+[2025-05-15 23:01:38] Protocolo atualizado. Linhas afetadas: 0
+[2025-05-15 23:01:38] Operação concluída com sucesso
+[2025-05-15 23:01:38] Script finalizado
+[2025-05-15 23:02:01] ============= NOVA REQUISIÇÃO =============
+[2025-05-15 23:02:01] Iniciando update_protocolo.php
+[2025-05-15 23:02:02] Conexão estabelecida via config.php
+[2025-05-15 23:02:02] ID a ser atualizado: 20
+[2025-05-15 23:02:02] Dados brutos: {"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","CID":"A000","Intervalo_Ciclos":1,"Ciclos_Previstos":1,"Linha":1}
+[2025-05-15 23:02:02] Verificando estrutura da tabela Protocolo...
+[2025-05-15 23:02:02] Coluna encontrada: id_protocolo | Chave: PRI
+[2025-05-15 23:02:02] Coluna ID primária encontrada: id_protocolo
+[2025-05-15 23:02:02] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 20
+[2025-05-15 23:02:02] Protocolo atual: {"id_protocolo":"20","Servico_Codigo":null,"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","Protocolo_Dose_M":null,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"Protocolo_ViaAdm":null,"Linha":"1","Intervalo_Ciclos":"1","Ciclos_Previstos":"1","CID":"A000"}
+[2025-05-15 23:02:02] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-15 23:02:02] Query: UPDATE Protocolo SET Protocolo_Nome = ?, Protocolo_Sigla = ?, Linha = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, CID = ? WHERE id_protocolo = ?
+[2025-05-15 23:02:02] Tipos de parâmetros: ssiiisi
+[2025-05-15 23:02:03] Protocolo atualizado. Linhas afetadas: 0
+[2025-05-15 23:02:03] Operação concluída com sucesso
+[2025-05-15 23:02:03] Script finalizado
+[2025-05-15 23:03:08] ============= NOVA REQUISIÇÃO =============
+[2025-05-15 23:03:08] Iniciando update_protocolo.php
+[2025-05-15 23:03:09] Conexão estabelecida via config.php
+[2025-05-15 23:03:09] ID a ser atualizado: 20
+[2025-05-15 23:03:09] Dados brutos: {"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","CID":"A000","Intervalo_Ciclos":1,"Ciclos_Previstos":1,"Linha":1}
+[2025-05-15 23:03:09] Verificando estrutura da tabela Protocolo...
+[2025-05-15 23:03:09] Coluna encontrada: id_protocolo | Chave: PRI
+[2025-05-15 23:03:09] Coluna ID primária encontrada: id_protocolo
+[2025-05-15 23:03:09] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 20
+[2025-05-15 23:03:09] Protocolo atual: {"id_protocolo":"20","Servico_Codigo":null,"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","Protocolo_Dose_M":null,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"Protocolo_ViaAdm":null,"Linha":"1","Intervalo_Ciclos":"1","Ciclos_Previstos":"1","CID":"A000"}
+[2025-05-15 23:03:09] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-15 23:03:09] Query: UPDATE Protocolo SET Protocolo_Nome = ?, Protocolo_Sigla = ?, Linha = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, CID = ? WHERE id_protocolo = ?
+[2025-05-15 23:03:09] Tipos de parâmetros: ssiiisi
+[2025-05-15 23:03:09] Protocolo atualizado. Linhas afetadas: 0
+[2025-05-15 23:03:10] Operação concluída com sucesso
+[2025-05-15 23:03:10] Script finalizado
+[2025-05-15 23:04:13] ============= NOVA REQUISIÇÃO =============
+[2025-05-15 23:04:13] Iniciando update_protocolo.php
+[2025-05-15 23:04:15] Conexão estabelecida via config.php
+[2025-05-15 23:04:15] ID a ser atualizado: 20
+[2025-05-15 23:04:15] Dados brutos: {"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","CID":"A000","Intervalo_Ciclos":1,"Ciclos_Previstos":1,"Linha":1}
+[2025-05-15 23:04:15] Verificando estrutura da tabela Protocolo...
+[2025-05-15 23:04:15] Coluna encontrada: id_protocolo | Chave: PRI
+[2025-05-15 23:04:15] Coluna ID primária encontrada: id_protocolo
+[2025-05-15 23:04:15] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 20
+[2025-05-15 23:04:15] Protocolo atual: {"id_protocolo":"20","Servico_Codigo":null,"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","Protocolo_Dose_M":null,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"Protocolo_ViaAdm":null,"Linha":"1","Intervalo_Ciclos":"1","Ciclos_Previstos":"1","CID":"A000"}
+[2025-05-15 23:04:15] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-15 23:04:15] Query: UPDATE Protocolo SET Protocolo_Nome = ?, Protocolo_Sigla = ?, Linha = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, CID = ? WHERE id_protocolo = ?
+[2025-05-15 23:04:15] Tipos de parâmetros: ssiiisi
+[2025-05-15 23:04:15] Protocolo atualizado. Linhas afetadas: 0
+[2025-05-15 23:04:15] Operação concluída com sucesso
+[2025-05-15 23:04:15] Script finalizado
+[2025-05-15 23:07:05] ============= NOVA REQUISIÇÃO =============
+[2025-05-15 23:07:05] Iniciando update_protocolo.php
+[2025-05-15 23:07:06] Conexão estabelecida via config.php
+[2025-05-15 23:07:06] ID a ser atualizado: 20
+[2025-05-15 23:07:06] Dados brutos: {"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","CID":"A000","Intervalo_Ciclos":1,"Ciclos_Previstos":1,"Linha":1}
+[2025-05-15 23:07:06] Verificando estrutura da tabela Protocolo...
+[2025-05-15 23:07:06] Coluna encontrada: id_protocolo | Chave: PRI
+[2025-05-15 23:07:06] Coluna ID primária encontrada: id_protocolo
+[2025-05-15 23:07:06] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 20
+[2025-05-15 23:07:06] Protocolo atual: {"id_protocolo":"20","Servico_Codigo":null,"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","Protocolo_Dose_M":null,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"Protocolo_ViaAdm":null,"Linha":"1","Intervalo_Ciclos":"1","Ciclos_Previstos":"1","CID":"A000"}
+[2025-05-15 23:07:06] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-15 23:07:06] Query: UPDATE Protocolo SET Protocolo_Nome = ?, Protocolo_Sigla = ?, Linha = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, CID = ? WHERE id_protocolo = ?
+[2025-05-15 23:07:06] Tipos de parâmetros: ssiiisi
+[2025-05-15 23:07:06] Protocolo atualizado. Linhas afetadas: 0
+[2025-05-15 23:07:06] Operação concluída com sucesso
+[2025-05-15 23:07:06] Script finalizado
+[2025-05-15 23:10:51] ============= NOVA REQUISIÇÃO =============
+[2025-05-15 23:10:51] Iniciando update_protocolo.php
+[2025-05-15 23:10:52] Conexão estabelecida via config.php
+[2025-05-15 23:10:52] ID a ser atualizado: 20
+[2025-05-15 23:10:52] Dados brutos: {"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","CID":"A000","Intervalo_Ciclos":1,"Ciclos_Previstos":1,"Linha":1}
+[2025-05-15 23:10:52] Verificando estrutura da tabela Protocolo...
+[2025-05-15 23:10:53] Coluna encontrada: id_protocolo | Chave: PRI
+[2025-05-15 23:10:53] Coluna ID primária encontrada: id_protocolo
+[2025-05-15 23:10:53] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 20
+[2025-05-15 23:10:53] Protocolo atual: {"id_protocolo":"20","Servico_Codigo":null,"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","Protocolo_Dose_M":null,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"Protocolo_ViaAdm":null,"Linha":"1","Intervalo_Ciclos":"1","Ciclos_Previstos":"1","CID":"A000"}
+[2025-05-15 23:10:53] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-15 23:10:53] Query: UPDATE Protocolo SET Protocolo_Nome = ?, Protocolo_Sigla = ?, Linha = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, CID = ? WHERE id_protocolo = ?
+[2025-05-15 23:10:53] Tipos de parâmetros: ssiiisi
+[2025-05-15 23:10:53] Protocolo atualizado. Linhas afetadas: 0
+[2025-05-15 23:10:53] Operação concluída com sucesso
+[2025-05-15 23:10:53] Script finalizado
+[2025-05-15 23:11:12] ============= NOVA REQUISIÇÃO =============
+[2025-05-15 23:11:12] Iniciando update_protocolo.php
+[2025-05-15 23:11:13] Conexão estabelecida via config.php
+[2025-05-15 23:11:13] ID a ser atualizado: 20
+[2025-05-15 23:11:13] Dados brutos: {"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","CID":"A000","Intervalo_Ciclos":1,"Ciclos_Previstos":1,"Linha":1}
+[2025-05-15 23:11:13] Verificando estrutura da tabela Protocolo...
+[2025-05-15 23:11:13] Coluna encontrada: id_protocolo | Chave: PRI
+[2025-05-15 23:11:13] Coluna ID primária encontrada: id_protocolo
+[2025-05-15 23:11:13] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 20
+[2025-05-15 23:11:13] Protocolo atual: {"id_protocolo":"20","Servico_Codigo":null,"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","Protocolo_Dose_M":null,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"Protocolo_ViaAdm":null,"Linha":"1","Intervalo_Ciclos":"1","Ciclos_Previstos":"1","CID":"A000"}
+[2025-05-15 23:11:13] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-15 23:11:13] Query: UPDATE Protocolo SET Protocolo_Nome = ?, Protocolo_Sigla = ?, Linha = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, CID = ? WHERE id_protocolo = ?
+[2025-05-15 23:11:13] Tipos de parâmetros: ssiiisi
+[2025-05-15 23:11:13] Protocolo atualizado. Linhas afetadas: 0
+[2025-05-15 23:11:14] Operação concluída com sucesso
+[2025-05-15 23:11:14] Script finalizado
+[2025-06-05 11:53:34] ============= NOVA REQUISIÇÃO =============
+[2025-06-05 11:53:34] Iniciando update_protocolo.php
+[2025-06-05 11:53:35] Conexão estabelecida via config.php
+[2025-06-05 11:53:35] ID a ser atualizado: 15
+[2025-06-05 11:53:35] Dados brutos: {"Protocolo_Nome":"ERITROPOETINA 4000UI","Protocolo_Sigla":"ERITROPOETINA 4000UI SC 1X/D","CID":"D630","Intervalo_Ciclos":7,"Ciclos_Previstos":99,"Linha":1}
+[2025-06-05 11:53:35] Verificando estrutura da tabela Protocolo...
+[2025-06-05 11:53:35] Coluna encontrada: id_protocolo | Chave: PRI
+[2025-06-05 11:53:35] Coluna ID primária encontrada: id_protocolo
+[2025-06-05 11:53:35] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 15
+[2025-06-05 11:53:35] Protocolo atual: {"id_protocolo":"15","Servico_Codigo":null,"Protocolo_Nome":"ERITROPOETINA 4000UI","Protocolo_Sigla":"ERITROPOETINA 4000UI","Protocolo_Dose_M":null,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"Protocolo_ViaAdm":null,"Linha":"1","Intervalo_Ciclos":"7","Ciclos_Previstos":"99","CID":"D630"}
+[2025-06-05 11:53:36] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-06-05 11:53:36] Query: UPDATE Protocolo SET Protocolo_Nome = ?, Protocolo_Sigla = ?, Linha = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, CID = ? WHERE id_protocolo = ?
+[2025-06-05 11:53:36] Tipos de parâmetros: ssiiisi
+[2025-06-05 11:53:36] Protocolo atualizado. Linhas afetadas: 1
+[2025-06-05 11:53:36] Operação concluída com sucesso
+[2025-06-05 11:53:36] Script finalizado
+[2025-06-05 11:56:30] ============= NOVA REQUISIÇÃO =============
+[2025-06-05 11:56:30] Iniciando update_protocolo.php
+[2025-06-05 11:56:31] Conexão estabelecida via config.php
+[2025-06-05 11:56:31] ID a ser atualizado: 15
+[2025-06-05 11:56:31] Dados brutos: {"Protocolo_Nome":"ERITROPOETINA 4000UI","Protocolo_Sigla":"ERITROPOETINA 4000UI SC 1X/D","CID":"D630","Intervalo_Ciclos":7,"Ciclos_Previstos":99,"Linha":1}
+[2025-06-05 11:56:31] Verificando estrutura da tabela Protocolo...
+[2025-06-05 11:56:31] Coluna encontrada: id_protocolo | Chave: PRI
+[2025-06-05 11:56:31] Coluna ID primária encontrada: id_protocolo
+[2025-06-05 11:56:31] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 15
+[2025-06-05 11:56:31] Protocolo atual: {"id_protocolo":"15","Servico_Codigo":null,"Protocolo_Nome":"ERITROPOETINA 4000UI","Protocolo_Sigla":"ERITROPOETINA 4000UI SC 1X\/D","Protocolo_Dose_M":null,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"Protocolo_ViaAdm":null,"Linha":"1","Intervalo_Ciclos":"7","Ciclos_Previstos":"99","CID":"D630"}
+[2025-06-05 11:56:31] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-06-05 11:56:31] Query: UPDATE Protocolo SET Protocolo_Nome = ?, Protocolo_Sigla = ?, Linha = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, CID = ? WHERE id_protocolo = ?
+[2025-06-05 11:56:31] Tipos de parâmetros: ssiiisi
+[2025-06-05 11:56:32] Protocolo atualizado. Linhas afetadas: 0
+[2025-06-05 11:56:32] Operação concluída com sucesso
+[2025-06-05 11:56:32] Script finalizado
+[2025-06-05 12:05:01] ============= NOVA REQUISIÇÃO =============
+[2025-06-05 12:05:01] Iniciando update_protocolo.php
+[2025-06-05 12:05:02] Conexão estabelecida via config.php
+[2025-06-05 12:05:02] ID a ser atualizado: 40
+[2025-06-05 12:05:02] Dados brutos: {"Protocolo_Nome":"ERITROPOETINA 40000UI","Protocolo_Sigla":"ERITROPOETINA 40000UI SC 1X/D D1 SEMANAL","CID":"C900","Intervalo_Ciclos":7,"Ciclos_Previstos":null,"Linha":null}
+[2025-06-05 12:05:02] Verificando estrutura da tabela Protocolo...
+[2025-06-05 12:05:02] Coluna encontrada: id_protocolo | Chave: PRI
+[2025-06-05 12:05:02] Coluna ID primária encontrada: id_protocolo
+[2025-06-05 12:05:02] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 40
+[2025-06-05 12:05:02] Protocolo atual: {"id_protocolo":"40","Servico_Codigo":null,"Protocolo_Nome":"ERITROPOETINA 40000UI","Protocolo_Sigla":"ERITROPOETINA 4000UI SC 1X\/D D1 SEMANAL","Protocolo_Dose_M":null,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"Protocolo_ViaAdm":null,"Linha":null,"Intervalo_Ciclos":"7","Ciclos_Previstos":null,"CID":"C900"}
+[2025-06-05 12:05:02] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-06-05 12:05:02] Query: UPDATE Protocolo SET Protocolo_Nome = ?, Protocolo_Sigla = ?, Intervalo_Ciclos = ?, CID = ? WHERE id_protocolo = ?
+[2025-06-05 12:05:02] Tipos de parâmetros: ssisi
+[2025-06-05 12:05:02] Protocolo atualizado. Linhas afetadas: 1
+[2025-06-05 12:05:02] Operação concluída com sucesso
+[2025-06-05 12:05:02] Script finalizado
+[2025-06-06 08:57:23] ============= NOVA REQUISIÇÃO =============
+[2025-06-06 08:57:23] Iniciando update_protocolo.php
+[2025-06-06 08:57:24] Conexão estabelecida via config.php
+[2025-06-06 08:57:24] ID a ser atualizado: 26
+[2025-06-06 08:57:24] Dados brutos: {"Protocolo_Nome":"GOSSERRELINA 3,6mg","Protocolo_Sigla":"GOSSERRELINA 3,6mg SC 1X/D A/CD 28-30 D (MENSAL)","CID":"C509","Intervalo_Ciclos":28,"Ciclos_Previstos":99,"Linha":1}
+[2025-06-06 08:57:24] Verificando estrutura da tabela Protocolo...
+[2025-06-06 08:57:24] Coluna encontrada: id_protocolo | Chave: PRI
+[2025-06-06 08:57:24] Coluna ID primária encontrada: id_protocolo
+[2025-06-06 08:57:24] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 26
+[2025-06-06 08:57:24] Protocolo atual: {"id_protocolo":"26","Servico_Codigo":null,"Protocolo_Nome":"GOSSERRELINA 3,6MG","Protocolo_Sigla":"GOSSERRELINA 3,6MG","Protocolo_Dose_M":null,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"Protocolo_ViaAdm":null,"Linha":"1","Intervalo_Ciclos":"28","Ciclos_Previstos":"99","CID":"C509"}
+[2025-06-06 08:57:24] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-06-06 08:57:24] Query: UPDATE Protocolo SET Protocolo_Nome = ?, Protocolo_Sigla = ?, Linha = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, CID = ? WHERE id_protocolo = ?
+[2025-06-06 08:57:24] Tipos de parâmetros: ssiiisi
+[2025-06-06 08:57:24] Protocolo atualizado. Linhas afetadas: 1
+[2025-06-06 08:57:24] Operação concluída com sucesso
+[2025-06-06 08:57:24] Script finalizado
+[2025-06-06 09:00:49] ============= NOVA REQUISIÇÃO =============
+[2025-06-06 09:00:49] Iniciando update_protocolo.php
+[2025-06-06 09:00:50] Conexão estabelecida via config.php
+[2025-06-06 09:00:50] ID a ser atualizado: 10
+[2025-06-06 09:00:50] Dados brutos: {"Protocolo_Nome":"GOSSErrelina 10,8mg","Protocolo_Sigla":"Gosserrelina 10,8mg SC 1X/D A/CD 84-90 D","CID":"C61,C500,C509","Intervalo_Ciclos":84,"Ciclos_Previstos":null,"Linha":null}
+[2025-06-06 09:00:50] Verificando estrutura da tabela Protocolo...
+[2025-06-06 09:00:50] Coluna encontrada: id_protocolo | Chave: PRI
+[2025-06-06 09:00:50] Coluna ID primária encontrada: id_protocolo
+[2025-06-06 09:00:50] Verificando protocolo: SELECT * FROM Protocolo WHERE id_protocolo = 10
+[2025-06-06 09:00:50] Protocolo atual: {"id_protocolo":"10","Servico_Codigo":null,"Protocolo_Nome":"GOSSErrelina 10,8mg","Protocolo_Sigla":"Gosserrelina 10,8mg SC 1X\/D A\/CD 84-90 D","Protocolo_Dose_M":null,"Protocolo_Dose_Total":null,"Protocolo_Dias_de_Aplicacao":null,"Protocolo_ViaAdm":null,"Linha":null,"Intervalo_Ciclos":"84","Ciclos_Previstos":null,"CID":"C61"}
+[2025-06-06 09:00:50] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-06-06 09:00:50] Query: UPDATE Protocolo SET Protocolo_Nome = ?, Protocolo_Sigla = ?, Intervalo_Ciclos = ?, CID = ? WHERE id_protocolo = ?
+[2025-06-06 09:00:50] Tipos de parâmetros: ssisi
+[2025-06-06 09:00:51] Protocolo atualizado. Linhas afetadas: 1
+[2025-06-06 09:00:51] Operação concluída com sucesso
+[2025-06-06 09:00:51] Script finalizado

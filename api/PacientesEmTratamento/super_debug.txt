@@ -1,0 +1,265 @@
+[2025-05-15 22:59:38] ==== NOVA REQUISIÇÃO ====
+[2025-05-15 22:59:38] Dados recebidos: {"Protocolo_Nome":"teste","Protocolo_Sigla":"tst","CID":"A000","Intervalo_Ciclos":1,"Ciclos_Previstos":1,"Linha":1}
+[2025-05-15 22:59:38] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-15 22:59:40] Conexão estabelecida
+[2025-05-15 22:59:40] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-15 22:59:40] Executando query...
+[2025-05-15 22:59:40] Protocolo inserido com sucesso, ID: 20
+[2025-05-15 22:59:40] Verificando se podemos adicionar campos adicionais...
+[2025-05-15 22:59:40] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-15 22:59:40] SQL de atualização: UPDATE Protocolo SET CID = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, Linha = ? WHERE id_protocolo = ?
+[2025-05-15 22:59:40] Protocolo atualizado com campos adicionais
+[2025-05-15 22:59:40] Enviando resposta de sucesso
+[2025-05-15 22:59:40] ==== FIM DA REQUISIÇÃO ====
+[2025-05-22 13:55:48] ==== NOVA REQUISIÇÃO ====
+[2025-05-22 13:55:48] Dados recebidos: {"Protocolo_Nome":"HIDRATAÇÃO PÓS QT","Protocolo_Sigla":"Prevenção de toxicidades, suporte clínico e tratamento de complicações associadas","CID":"","Intervalo_Ciclos":7,"Ciclos_Previstos":99,"Linha":null}
+[2025-05-22 13:55:48] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-22 13:55:50] Conexão estabelecida
+[2025-05-22 13:55:50] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-22 13:55:50] Executando query...
+[2025-05-22 13:55:50] ERRO FATAL: Data too long for column 'Protocolo_Sigla' at row 1
+[2025-05-22 13:55:50] STACK TRACE: #0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/add_protocolo.php(91): mysqli_stmt->execute()
+#1 {main}
+[2025-05-22 13:55:50] ==== FIM DA REQUISIÇÃO ====
+[2025-05-22 13:56:31] ==== NOVA REQUISIÇÃO ====
+[2025-05-22 13:56:31] Dados recebidos: {"Protocolo_Nome":"HIDRATAÇÃO PÓS QT","Protocolo_Sigla":"Prevenção de toxicidades, suporte clínico e tratamento de complicações associadas","CID":"C61","Intervalo_Ciclos":7,"Ciclos_Previstos":99,"Linha":1}
+[2025-05-22 13:56:31] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-22 13:56:32] Conexão estabelecida
+[2025-05-22 13:56:32] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-22 13:56:32] Executando query...
+[2025-05-22 13:56:32] ERRO FATAL: Data too long for column 'Protocolo_Sigla' at row 1
+[2025-05-22 13:56:32] STACK TRACE: #0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/add_protocolo.php(91): mysqli_stmt->execute()
+#1 {main}
+[2025-05-22 13:56:32] ==== FIM DA REQUISIÇÃO ====
+[2025-05-22 13:57:24] ==== NOVA REQUISIÇÃO ====
+[2025-05-22 13:57:24] Dados recebidos: {"Protocolo_Nome":"HIDRATAÇÃO PÓS QT","Protocolo_Sigla":"Prevenção de toxicidades, suporte clínico e tratamento de complicações associadas","CID":"C61","Intervalo_Ciclos":7,"Ciclos_Previstos":99,"Linha":1}
+[2025-05-22 13:57:24] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-22 13:57:25] Conexão estabelecida
+[2025-05-22 13:57:25] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-22 13:57:25] Executando query...
+[2025-05-22 13:57:26] ERRO FATAL: Data too long for column 'Protocolo_Sigla' at row 1
+[2025-05-22 13:57:26] STACK TRACE: #0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/add_protocolo.php(91): mysqli_stmt->execute()
+#1 {main}
+[2025-05-22 13:57:26] ==== FIM DA REQUISIÇÃO ====
+[2025-05-22 13:57:43] ==== NOVA REQUISIÇÃO ====
+[2025-05-22 13:57:43] Dados recebidos: {"Protocolo_Nome":"HIDRATAÇÃO PÓS QT","Protocolo_Sigla":"Prevenção de toxicidades e suporte clínico ","CID":"C61","Intervalo_Ciclos":7,"Ciclos_Previstos":99,"Linha":1}
+[2025-05-22 13:57:43] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-22 13:57:44] Conexão estabelecida
+[2025-05-22 13:57:44] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-22 13:57:44] Executando query...
+[2025-05-22 13:57:44] Protocolo inserido com sucesso, ID: 28
+[2025-05-22 13:57:44] Verificando se podemos adicionar campos adicionais...
+[2025-05-22 13:57:45] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-22 13:57:45] SQL de atualização: UPDATE Protocolo SET CID = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, Linha = ? WHERE id_protocolo = ?
+[2025-05-22 13:57:45] Protocolo atualizado com campos adicionais
+[2025-05-22 13:57:45] Enviando resposta de sucesso
+[2025-05-22 13:57:45] ==== FIM DA REQUISIÇÃO ====
+[2025-05-27 09:06:22] ==== NOVA REQUISIÇÃO ====
+[2025-05-27 09:06:22] Dados recebidos: {"Protocolo_Nome":"OPDUALAG","Protocolo_Sigla":"(Nivolumabe - 480mg + Relatlimabe - 160mg) = 2 FA (240mg + 80mg) EV 1X/D D1 A CADA 28D","CID":"C439","Intervalo_Ciclos":null,"Ciclos_Previstos":null,"Linha":null}
+[2025-05-27 09:06:22] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-27 09:06:23] Conexão estabelecida
+[2025-05-27 09:06:23] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-27 09:06:23] Executando query...
+[2025-05-27 09:06:23] ERRO FATAL: Data too long for column 'Protocolo_Sigla' at row 1
+[2025-05-27 09:06:23] STACK TRACE: #0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/add_protocolo.php(91): mysqli_stmt->execute()
+#1 {main}
+[2025-05-27 09:06:23] ==== FIM DA REQUISIÇÃO ====
+[2025-05-27 09:08:37] ==== NOVA REQUISIÇÃO ====
+[2025-05-27 09:08:37] Dados recebidos: {"Protocolo_Nome":"OPDUALAG","Protocolo_Sigla":"(NIVOLUMABE - 480mg + RELATLIMABE - 160mg) = 2 FA (240mg + 80mg) EV 1X/D D1 A CADA 28D","CID":"C439","Intervalo_Ciclos":28,"Ciclos_Previstos":null,"Linha":null}
+[2025-05-27 09:08:37] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-27 09:08:38] Conexão estabelecida
+[2025-05-27 09:08:38] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-27 09:08:38] Executando query...
+[2025-05-27 09:08:38] ERRO FATAL: Data too long for column 'Protocolo_Sigla' at row 1
+[2025-05-27 09:08:38] STACK TRACE: #0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/add_protocolo.php(91): mysqli_stmt->execute()
+#1 {main}
+[2025-05-27 09:08:38] ==== FIM DA REQUISIÇÃO ====
+[2025-05-27 09:10:55] ==== NOVA REQUISIÇÃO ====
+[2025-05-27 09:10:55] Dados recebidos: {"Protocolo_Nome":"OPDUALAG","Protocolo_Sigla":"(NIVOLUMABE - 480mg + RELATLIMABE - 160mg) = 2 FA (240mg + 80mg) EV 1X/D D1 A CADA 28DC43","CID":"C439","Intervalo_Ciclos":28,"Ciclos_Previstos":null,"Linha":null}
+[2025-05-27 09:10:55] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-27 09:10:56] Conexão estabelecida
+[2025-05-27 09:10:56] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-27 09:10:57] Executando query...
+[2025-05-27 09:10:57] ERRO FATAL: Data too long for column 'Protocolo_Sigla' at row 1
+[2025-05-27 09:10:57] STACK TRACE: #0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/add_protocolo.php(91): mysqli_stmt->execute()
+#1 {main}
+[2025-05-27 09:10:57] ==== FIM DA REQUISIÇÃO ====
+[2025-05-27 09:11:05] ==== NOVA REQUISIÇÃO ====
+[2025-05-27 09:11:05] Dados recebidos: {"Protocolo_Nome":"OPDUALAG","Protocolo_Sigla":"(NIVOLUMABE - 480mg + RELATLIMABE - 160mg) = 2 FA (240mg + 80mg) EV 1X/D D1 A CADA 28DC43","CID":"C439","Intervalo_Ciclos":28,"Ciclos_Previstos":null,"Linha":null}
+[2025-05-27 09:11:05] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-27 09:11:06] Conexão estabelecida
+[2025-05-27 09:11:06] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-27 09:11:06] Executando query...
+[2025-05-27 09:11:07] ERRO FATAL: Data too long for column 'Protocolo_Sigla' at row 1
+[2025-05-27 09:11:07] STACK TRACE: #0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/add_protocolo.php(91): mysqli_stmt->execute()
+#1 {main}
+[2025-05-27 09:11:07] ==== FIM DA REQUISIÇÃO ====
+[2025-05-27 10:17:37] ==== NOVA REQUISIÇÃO ====
+[2025-05-27 10:17:37] Dados recebidos: {"Protocolo_Nome":"OPDUALAG","Protocolo_Sigla":"(NIVOLUMABE - 480mg + RELATLIMABE - 160mg) = 2 FA (240mg + 80mg) EV 1X/D D1 A CADA 28DC43","CID":"C439","Intervalo_Ciclos":28,"Ciclos_Previstos":null,"Linha":null}
+[2025-05-27 10:17:37] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-27 10:17:38] Conexão estabelecida
+[2025-05-27 10:17:38] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-27 10:17:38] Executando query...
+[2025-05-27 10:17:39] Protocolo inserido com sucesso, ID: 29
+[2025-05-27 10:17:39] Verificando se podemos adicionar campos adicionais...
+[2025-05-27 10:17:39] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-27 10:17:39] SQL de atualização: UPDATE Protocolo SET CID = ?, Intervalo_Ciclos = ? WHERE id_protocolo = ?
+[2025-05-27 10:17:39] Protocolo atualizado com campos adicionais
+[2025-05-27 10:17:39] Enviando resposta de sucesso
+[2025-05-27 10:17:39] ==== FIM DA REQUISIÇÃO ====
+[2025-05-28 09:37:21] ==== NOVA REQUISIÇÃO ====
+[2025-05-28 09:37:21] Dados recebidos: {"Protocolo_Nome":"DRD>DARA-DALINVI (EV) MENSAL","Protocolo_Sigla":"DRD - DARATUMUMABE 16mg/kg EV 1X/D D1 A CADA 28D","CID":"C900","Intervalo_Ciclos":28,"Ciclos_Previstos":null,"Linha":null}
+[2025-05-28 09:37:21] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-28 09:37:22] Conexão estabelecida
+[2025-05-28 09:37:22] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-28 09:37:22] Executando query...
+[2025-05-28 09:37:22] Protocolo inserido com sucesso, ID: 30
+[2025-05-28 09:37:22] Verificando se podemos adicionar campos adicionais...
+[2025-05-28 09:37:22] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-28 09:37:22] SQL de atualização: UPDATE Protocolo SET CID = ?, Intervalo_Ciclos = ? WHERE id_protocolo = ?
+[2025-05-28 09:37:23] Protocolo atualizado com campos adicionais
+[2025-05-28 09:37:23] Enviando resposta de sucesso
+[2025-05-28 09:37:23] ==== FIM DA REQUISIÇÃO ====
+[2025-05-28 09:59:09] ==== NOVA REQUISIÇÃO ====
+[2025-05-28 09:59:09] Dados recebidos: {"Protocolo_Nome":"ANAStrozol - 5 anos","Protocolo_Sigla":"ANASTROZOL 1mg = 1 CP 1mg VO 1X/D (D1-D30) MENSAL - 60 Ciclos previstos.","CID":"C500,C501,C502,C503,C504,C505,C506,C508,C509","Intervalo_Ciclos":30,"Ciclos_Previstos":60,"Linha":1}
+[2025-05-28 09:59:09] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-28 09:59:10] Conexão estabelecida
+[2025-05-28 09:59:10] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-28 09:59:10] Executando query...
+[2025-05-28 09:59:10] Protocolo inserido com sucesso, ID: 31
+[2025-05-28 09:59:10] Verificando se podemos adicionar campos adicionais...
+[2025-05-28 09:59:11] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-28 09:59:11] SQL de atualização: UPDATE Protocolo SET CID = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, Linha = ? WHERE id_protocolo = ?
+[2025-05-28 09:59:11] Protocolo atualizado com campos adicionais
+[2025-05-28 09:59:11] Enviando resposta de sucesso
+[2025-05-28 09:59:11] ==== FIM DA REQUISIÇÃO ====
+[2025-05-28 11:01:38] ==== NOVA REQUISIÇÃO ====
+[2025-05-28 11:01:38] Dados recebidos: {"Protocolo_Nome":"FOLFIRI + BEVA","Protocolo_Sigla":"IRINO+LEUCO+5FU = FOLFIRI + BEVACIZUMABE","CID":"C189","Intervalo_Ciclos":14,"Ciclos_Previstos":99,"Linha":2}
+[2025-05-28 11:01:38] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-28 11:01:39] Conexão estabelecida
+[2025-05-28 11:01:39] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-28 11:01:39] Executando query...
+[2025-05-28 11:01:40] Protocolo inserido com sucesso, ID: 32
+[2025-05-28 11:01:40] Verificando se podemos adicionar campos adicionais...
+[2025-05-28 11:01:40] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-28 11:01:40] SQL de atualização: UPDATE Protocolo SET CID = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, Linha = ? WHERE id_protocolo = ?
+[2025-05-28 11:01:40] Protocolo atualizado com campos adicionais
+[2025-05-28 11:01:40] Enviando resposta de sucesso
+[2025-05-28 11:01:40] ==== FIM DA REQUISIÇÃO ====
+[2025-05-28 11:06:00] ==== NOVA REQUISIÇÃO ====
+[2025-05-28 11:06:00] Dados recebidos: {"Protocolo_Nome":"GOLIMUMABE EV","Protocolo_Sigla":"GOLIMUmabe 2mg/kg EV 1X/D D1 BIMENSAL","CID":"M45","Intervalo_Ciclos":56,"Ciclos_Previstos":null,"Linha":null}
+[2025-05-28 11:06:00] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-28 11:06:01] Conexão estabelecida
+[2025-05-28 11:06:01] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-28 11:06:02] Executando query...
+[2025-05-28 11:06:02] Protocolo inserido com sucesso, ID: 33
+[2025-05-28 11:06:02] Verificando se podemos adicionar campos adicionais...
+[2025-05-28 11:06:02] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-28 11:06:02] SQL de atualização: UPDATE Protocolo SET CID = ?, Intervalo_Ciclos = ? WHERE id_protocolo = ?
+[2025-05-28 11:06:02] Protocolo atualizado com campos adicionais
+[2025-05-28 11:06:02] Enviando resposta de sucesso
+[2025-05-28 11:06:02] ==== FIM DA REQUISIÇÃO ====
+[2025-05-29 13:49:09] ==== NOVA REQUISIÇÃO ====
+[2025-05-29 13:49:09] Dados recebidos: {"Protocolo_Nome":"RAMUCIRUMABE + DOCETAXEL","Protocolo_Sigla":"RAMUCIRUMABE 10MG/KG + DOCETAXEL 75MGM2","CID":"C340","Intervalo_Ciclos":21,"Ciclos_Previstos":12,"Linha":2}
+[2025-05-29 13:49:09] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-29 13:49:10] Conexão estabelecida
+[2025-05-29 13:49:10] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-29 13:49:11] Executando query...
+[2025-05-29 13:49:11] Protocolo inserido com sucesso, ID: 34
+[2025-05-29 13:49:11] Verificando se podemos adicionar campos adicionais...
+[2025-05-29 13:49:11] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-29 13:49:11] SQL de atualização: UPDATE Protocolo SET CID = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, Linha = ? WHERE id_protocolo = ?
+[2025-05-29 13:49:11] Protocolo atualizado com campos adicionais
+[2025-05-29 13:49:11] Enviando resposta de sucesso
+[2025-05-29 13:49:11] ==== FIM DA REQUISIÇÃO ====
+[2025-05-29 13:59:30] ==== NOVA REQUISIÇÃO ====
+[2025-05-29 13:59:30] Dados recebidos: {"Protocolo_Nome":"PEGFILGRASTIM","Protocolo_Sigla":"PEGFILGRASTIM 6MG D2 PÓS QT","CID":"C340","Intervalo_Ciclos":21,"Ciclos_Previstos":99,"Linha":1}
+[2025-05-29 13:59:30] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-29 13:59:31] Conexão estabelecida
+[2025-05-29 13:59:31] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-29 13:59:31] Executando query...
+[2025-05-29 13:59:32] Protocolo inserido com sucesso, ID: 35
+[2025-05-29 13:59:32] Verificando se podemos adicionar campos adicionais...
+[2025-05-29 13:59:32] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-29 13:59:32] SQL de atualização: UPDATE Protocolo SET CID = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, Linha = ? WHERE id_protocolo = ?
+[2025-05-29 13:59:32] Protocolo atualizado com campos adicionais
+[2025-05-29 13:59:32] Enviando resposta de sucesso
+[2025-05-29 13:59:32] ==== FIM DA REQUISIÇÃO ====
+[2025-05-29 15:53:06] ==== NOVA REQUISIÇÃO ====
+[2025-05-29 15:53:06] Dados recebidos: {"Protocolo_Nome":"FULVESTRANTO - MANUTENÇÃO","Protocolo_Sigla":"FULVESTRANTO 500MG - DOSE MANUTENÇÃO","CID":"C500","Intervalo_Ciclos":28,"Ciclos_Previstos":12,"Linha":2}
+[2025-05-29 15:53:06] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-29 15:53:07] Conexão estabelecida
+[2025-05-29 15:53:07] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-29 15:53:07] Executando query...
+[2025-05-29 15:53:07] Protocolo inserido com sucesso, ID: 36
+[2025-05-29 15:53:07] Verificando se podemos adicionar campos adicionais...
+[2025-05-29 15:53:07] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-29 15:53:07] SQL de atualização: UPDATE Protocolo SET CID = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, Linha = ? WHERE id_protocolo = ?
+[2025-05-29 15:53:08] Protocolo atualizado com campos adicionais
+[2025-05-29 15:53:08] Enviando resposta de sucesso
+[2025-05-29 15:53:08] ==== FIM DA REQUISIÇÃO ====
+[2025-05-29 17:17:34] ==== NOVA REQUISIÇÃO ====
+[2025-05-29 17:17:34] Dados recebidos: {"Protocolo_Nome":"PEMBRO + PEME","Protocolo_Sigla":"PEMBROLIZUMABE 200MG + PEMETREXEDE 500MGM2","CID":"C340","Intervalo_Ciclos":21,"Ciclos_Previstos":99,"Linha":1}
+[2025-05-29 17:17:34] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-05-29 17:17:35] Conexão estabelecida
+[2025-05-29 17:17:35] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-05-29 17:17:35] Executando query...
+[2025-05-29 17:17:35] Protocolo inserido com sucesso, ID: 37
+[2025-05-29 17:17:35] Verificando se podemos adicionar campos adicionais...
+[2025-05-29 17:17:35] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-05-29 17:17:35] SQL de atualização: UPDATE Protocolo SET CID = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, Linha = ? WHERE id_protocolo = ?
+[2025-05-29 17:17:35] Protocolo atualizado com campos adicionais
+[2025-05-29 17:17:35] Enviando resposta de sucesso
+[2025-05-29 17:17:35] ==== FIM DA REQUISIÇÃO ====
+[2025-06-03 17:08:45] ==== NOVA REQUISIÇÃO ====
+[2025-06-03 17:08:45] Dados recebidos: {"Protocolo_Nome":"TOCILIZUMABE EV","Protocolo_Sigla":"TOCILIZUMABE 8MG/KG ","CID":"M058","Intervalo_Ciclos":28,"Ciclos_Previstos":99,"Linha":1}
+[2025-06-03 17:08:45] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-06-03 17:08:46] Conexão estabelecida
+[2025-06-03 17:08:46] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-06-03 17:08:46] Executando query...
+[2025-06-03 17:08:46] Protocolo inserido com sucesso, ID: 38
+[2025-06-03 17:08:46] Verificando se podemos adicionar campos adicionais...
+[2025-06-03 17:08:47] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-06-03 17:08:47] SQL de atualização: UPDATE Protocolo SET CID = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, Linha = ? WHERE id_protocolo = ?
+[2025-06-03 17:08:47] Protocolo atualizado com campos adicionais
+[2025-06-03 17:08:47] Enviando resposta de sucesso
+[2025-06-03 17:08:47] ==== FIM DA REQUISIÇÃO ====
+[2025-06-05 02:54:10] ==== NOVA REQUISIÇÃO ====
+[2025-06-05 02:54:10] Dados recebidos: {"Protocolo_Nome":"ENFORTUMABE VEDOTINA","Protocolo_Sigla":"1,25MG/KG D1,D8,D15","CID":"C679","Intervalo_Ciclos":28,"Ciclos_Previstos":12,"Linha":2}
+[2025-06-05 02:54:10] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-06-05 02:54:11] Conexão estabelecida
+[2025-06-05 02:54:11] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-06-05 02:54:11] Executando query...
+[2025-06-05 02:54:11] Protocolo inserido com sucesso, ID: 39
+[2025-06-05 02:54:11] Verificando se podemos adicionar campos adicionais...
+[2025-06-05 02:54:11] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-06-05 02:54:11] SQL de atualização: UPDATE Protocolo SET CID = ?, Intervalo_Ciclos = ?, Ciclos_Previstos = ?, Linha = ? WHERE id_protocolo = ?
+[2025-06-05 02:54:12] Protocolo atualizado com campos adicionais
+[2025-06-05 02:54:12] Enviando resposta de sucesso
+[2025-06-05 02:54:12] ==== FIM DA REQUISIÇÃO ====
+[2025-06-05 11:56:18] ==== NOVA REQUISIÇÃO ====
+[2025-06-05 11:56:18] Dados recebidos: {"Protocolo_Nome":"ERITROPOETINA 40000UI","Protocolo_Sigla":"ERITROPOETINA 4000UI SC 1X/D D1 SEMANAL","CID":"C900","Intervalo_Ciclos":7,"Ciclos_Previstos":null,"Linha":null}
+[2025-06-05 11:56:18] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-06-05 11:56:19] Conexão estabelecida
+[2025-06-05 11:56:19] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-06-05 11:56:19] Executando query...
+[2025-06-05 11:56:19] Protocolo inserido com sucesso, ID: 40
+[2025-06-05 11:56:19] Verificando se podemos adicionar campos adicionais...
+[2025-06-05 11:56:19] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-06-05 11:56:19] SQL de atualização: UPDATE Protocolo SET CID = ?, Intervalo_Ciclos = ? WHERE id_protocolo = ?
+[2025-06-05 11:56:20] Protocolo atualizado com campos adicionais
+[2025-06-05 11:56:20] Enviando resposta de sucesso
+[2025-06-05 11:56:20] ==== FIM DA REQUISIÇÃO ====
+[2025-06-06 09:26:49] ==== NOVA REQUISIÇÃO ====
+[2025-06-06 09:26:49] Dados recebidos: {"Protocolo_Nome":"IGGIV 400mg/kg MENSAL","Protocolo_Sigla":"IGG 0,4g/kg EV 1X/D D1 A/CD 28 D","CID":"C900","Intervalo_Ciclos":28,"Ciclos_Previstos":null,"Linha":null}
+[2025-06-06 09:26:49] Caminho do config: /home1/abgest10/api.lowcostonco.com.br/backend-php/api/PacientesEmTratamento/../../config.php
+[2025-06-06 09:26:50] Conexão estabelecida
+[2025-06-06 09:26:50] SQL simples: INSERT INTO Protocolo (Protocolo_Nome, Protocolo_Sigla) VALUES (?, ?)
+[2025-06-06 09:26:51] Executando query...
+[2025-06-06 09:26:51] Protocolo inserido com sucesso, ID: 41
+[2025-06-06 09:26:51] Verificando se podemos adicionar campos adicionais...
+[2025-06-06 09:26:51] Colunas disponíveis: id_protocolo, Servico_Codigo, Protocolo_Nome, Protocolo_Sigla, Protocolo_Dose_M, Protocolo_Dose_Total, Protocolo_Dias_de_Aplicacao, Protocolo_ViaAdm, Linha, Intervalo_Ciclos, Ciclos_Previstos, CID
+[2025-06-06 09:26:51] SQL de atualização: UPDATE Protocolo SET CID = ?, Intervalo_Ciclos = ? WHERE id_protocolo = ?
+[2025-06-06 09:26:51] Protocolo atualizado com campos adicionais
+[2025-06-06 09:26:51] Enviando resposta de sucesso
+[2025-06-06 09:26:51] ==== FIM DA REQUISIÇÃO ====

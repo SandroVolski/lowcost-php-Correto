@@ -1,0 +1,621 @@
+[2025-05-15 22:59:41] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-15 22:59:41] Dados brutos recebidos: {"id_servico":1,"nome":"teste med","dose":2,"unidade_medida":"mcg","via_administracao":"1","dias_aplicacao":"D0","frequencia":"1x","observacoes":""}
+[2025-05-15 22:59:42] ID do protocolo: 20
+[2025-05-15 22:59:42] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-15 22:59:43] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                20, 
+                1, 
+                'teste med', 
+                2, 
+                'mcg', 
+                1, 
+                'D0', 
+                '1x', 
+                ''
+            )
+[2025-05-15 22:59:43] Medicamento inserido com sucesso. ID: 29
+[2025-05-15 22:59:43] ==== FIM DA REQUISIÇÃO ====
+[2025-05-22 13:57:45] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-22 13:57:45] Dados brutos recebidos: {"id_servico":1,"nome":"Omeprazol","dose":40,"unidade_medida":"Mg","via_administracao":"1","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-05-22 13:57:46] ID do protocolo: 28
+[2025-05-22 13:57:47] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-22 13:57:47] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                28, 
+                1, 
+                'Omeprazol', 
+                40, 
+                'Mg', 
+                1, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-05-22 13:57:47] Medicamento inserido com sucesso. ID: 40
+[2025-05-22 13:57:48] ==== FIM DA REQUISIÇÃO ====
+[2025-05-27 10:17:39] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-27 10:17:39] Dados brutos recebidos: {"id_servico":1,"nome":"Nivolumabe","dose":480,"unidade_medida":"Mg","via_administracao":"1","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-05-27 10:17:40] ID do protocolo: 29
+[2025-05-27 10:17:41] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-27 10:17:41] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                29, 
+                1, 
+                'Nivolumabe', 
+                480, 
+                'Mg', 
+                1, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-05-27 10:17:41] Medicamento inserido com sucesso. ID: 41
+[2025-05-27 10:17:42] ==== FIM DA REQUISIÇÃO ====
+[2025-05-27 10:17:42] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-27 10:17:42] Dados brutos recebidos: {"id_servico":1,"nome":"Relatlimabe","dose":160,"unidade_medida":"Mg","via_administracao":"1","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-05-27 10:17:43] ID do protocolo: 29
+[2025-05-27 10:17:43] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-27 10:17:44] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                29, 
+                1, 
+                'Relatlimabe', 
+                160, 
+                'Mg', 
+                1, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-05-27 10:17:44] Medicamento inserido com sucesso. ID: 42
+[2025-05-27 10:17:44] ==== FIM DA REQUISIÇÃO ====
+[2025-05-28 09:37:23] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-28 09:37:23] Dados brutos recebidos: {"id_servico":1,"nome":"Daratumumabe","dose":16,"unidade_medida":"MgKg","via_administracao":"1","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-05-28 09:37:24] ID do protocolo: 30
+[2025-05-28 09:37:24] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-28 09:37:25] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                30, 
+                1, 
+                'Daratumumabe', 
+                16, 
+                'MgKg', 
+                1, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-05-28 09:37:25] Medicamento inserido com sucesso. ID: 43
+[2025-05-28 09:37:25] ==== FIM DA REQUISIÇÃO ====
+[2025-05-28 09:59:11] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-28 09:59:11] Dados brutos recebidos: {"id_servico":1,"nome":"Anastrozol","dose":1,"unidade_medida":"Mg","via_administracao":"2","dias_aplicacao":"D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19,D20,D21,D22,D23,D24,D25,D26,D27,D28,D29,D30","frequencia":"1x","observacoes":""}
+[2025-05-28 09:59:12] ID do protocolo: 31
+[2025-05-28 09:59:12] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-28 09:59:13] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                31, 
+                1, 
+                'Anastrozol', 
+                1, 
+                'Mg', 
+                2, 
+                'D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19,D20,D21,D22,D23,D24,D25,D26,D27,D28,D29,D30', 
+                '1x', 
+                ''
+            )
+[2025-05-28 09:59:13] ERRO: Data too long for column 'dias_aplicacao' at row 1
+[2025-05-28 09:59:13] ==== FIM DA REQUISIÇÃO ====
+[2025-05-28 11:01:40] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-28 11:01:40] Dados brutos recebidos: {"id_servico":1,"nome":"Irinotecano","dose":180,"unidade_medida":"Mgm2","via_administracao":"1","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-05-28 11:01:41] ID do protocolo: 32
+[2025-05-28 11:01:42] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-28 11:01:42] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                32, 
+                1, 
+                'Irinotecano', 
+                180, 
+                'Mgm2', 
+                1, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-05-28 11:01:42] Medicamento inserido com sucesso. ID: 44
+[2025-05-28 11:01:42] ==== FIM DA REQUISIÇÃO ====
+[2025-05-28 11:01:43] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-28 11:01:43] Dados brutos recebidos: {"id_servico":1,"nome":"Leucovorin","dose":400,"unidade_medida":"Mgm2","via_administracao":"1","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-05-28 11:01:43] ID do protocolo: 32
+[2025-05-28 11:01:44] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-28 11:01:44] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                32, 
+                1, 
+                'Leucovorin', 
+                400, 
+                'Mgm2', 
+                1, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-05-28 11:01:44] Medicamento inserido com sucesso. ID: 45
+[2025-05-28 11:01:44] ==== FIM DA REQUISIÇÃO ====
+[2025-05-28 11:01:45] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-28 11:01:45] Dados brutos recebidos: {"id_servico":1,"nome":"Fluoruracil","dose":400,"unidade_medida":"Mgm2","via_administracao":"1","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-05-28 11:01:46] ID do protocolo: 32
+[2025-05-28 11:01:46] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-28 11:01:46] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                32, 
+                1, 
+                'Fluoruracil', 
+                400, 
+                'Mgm2', 
+                1, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-05-28 11:01:47] Medicamento inserido com sucesso. ID: 46
+[2025-05-28 11:01:47] ==== FIM DA REQUISIÇÃO ====
+[2025-05-28 11:01:47] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-28 11:01:47] Dados brutos recebidos: {"id_servico":1,"nome":"Fluoruracil","dose":2400,"unidade_medida":"Mgm2","via_administracao":"1","dias_aplicacao":"D1,D2,D3","frequencia":"1x","observacoes":""}
+[2025-05-28 11:01:48] ID do protocolo: 32
+[2025-05-28 11:01:48] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-28 11:01:49] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                32, 
+                1, 
+                'Fluoruracil', 
+                2400, 
+                'Mgm2', 
+                1, 
+                'D1,D2,D3', 
+                '1x', 
+                ''
+            )
+[2025-05-28 11:01:49] Medicamento inserido com sucesso. ID: 47
+[2025-05-28 11:01:49] ==== FIM DA REQUISIÇÃO ====
+[2025-05-28 11:01:49] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-28 11:01:49] Dados brutos recebidos: {"id_servico":1,"nome":"Bevacizumabe","dose":5,"unidade_medida":"MgKg","via_administracao":"1","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-05-28 11:01:50] ID do protocolo: 32
+[2025-05-28 11:01:50] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-28 11:01:51] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                32, 
+                1, 
+                'Bevacizumabe', 
+                5, 
+                'MgKg', 
+                1, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-05-28 11:01:51] Medicamento inserido com sucesso. ID: 48
+[2025-05-28 11:01:51] ==== FIM DA REQUISIÇÃO ====
+[2025-05-28 11:06:03] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-28 11:06:03] Dados brutos recebidos: {"id_servico":1,"nome":"Golimumabe","dose":2,"unidade_medida":"MgKg","via_administracao":"1","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-05-28 11:06:04] ID do protocolo: 33
+[2025-05-28 11:06:05] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-28 11:06:05] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                33, 
+                1, 
+                'Golimumabe', 
+                2, 
+                'MgKg', 
+                1, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-05-28 11:06:05] Medicamento inserido com sucesso. ID: 49
+[2025-05-28 11:06:05] ==== FIM DA REQUISIÇÃO ====
+[2025-05-29 13:49:11] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-29 13:49:11] Dados brutos recebidos: {"id_servico":1,"nome":"Ramucirumabe","dose":10,"unidade_medida":"MgKg","via_administracao":"1","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-05-29 13:49:12] ID do protocolo: 34
+[2025-05-29 13:49:13] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-29 13:49:13] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                34, 
+                1, 
+                'Ramucirumabe', 
+                10, 
+                'MgKg', 
+                1, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-05-29 13:49:13] Medicamento inserido com sucesso. ID: 50
+[2025-05-29 13:49:13] ==== FIM DA REQUISIÇÃO ====
+[2025-05-29 13:49:14] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-29 13:49:14] Dados brutos recebidos: {"id_servico":1,"nome":"Docetaxel","dose":75,"unidade_medida":"Mgm2","via_administracao":"1","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-05-29 13:49:15] ID do protocolo: 34
+[2025-05-29 13:49:15] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-29 13:49:15] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                34, 
+                1, 
+                'Docetaxel', 
+                75, 
+                'Mgm2', 
+                1, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-05-29 13:49:15] Medicamento inserido com sucesso. ID: 51
+[2025-05-29 13:49:15] ==== FIM DA REQUISIÇÃO ====
+[2025-05-29 13:59:32] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-29 13:59:32] Dados brutos recebidos: {"id_servico":1,"nome":"PEGFILGRASTIM ","dose":6,"unidade_medida":"Mg","via_administracao":"5","dias_aplicacao":"D2","frequencia":"1x","observacoes":""}
+[2025-05-29 13:59:33] ID do protocolo: 35
+[2025-05-29 13:59:33] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-29 13:59:34] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                35, 
+                1, 
+                'PEGFILGRASTIM ', 
+                6, 
+                'Mg', 
+                5, 
+                'D2', 
+                '1x', 
+                ''
+            )
+[2025-05-29 13:59:34] Medicamento inserido com sucesso. ID: 52
+[2025-05-29 13:59:34] ==== FIM DA REQUISIÇÃO ====
+[2025-05-29 15:53:08] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-29 15:53:08] Dados brutos recebidos: {"id_servico":1,"nome":"Fulvestranto","dose":500,"unidade_medida":"Mg","via_administracao":"7","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-05-29 15:53:09] ID do protocolo: 36
+[2025-05-29 15:53:09] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-29 15:53:10] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                36, 
+                1, 
+                'Fulvestranto', 
+                500, 
+                'Mg', 
+                7, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-05-29 15:53:10] Medicamento inserido com sucesso. ID: 53
+[2025-05-29 15:53:10] ==== FIM DA REQUISIÇÃO ====
+[2025-05-29 17:17:36] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-29 17:17:36] Dados brutos recebidos: {"id_servico":1,"nome":"Pembrolizumabe","dose":200,"unidade_medida":"Mg","via_administracao":"1","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-05-29 17:17:37] ID do protocolo: 37
+[2025-05-29 17:17:37] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-29 17:17:38] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                37, 
+                1, 
+                'Pembrolizumabe', 
+                200, 
+                'Mg', 
+                1, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-05-29 17:17:38] Medicamento inserido com sucesso. ID: 54
+[2025-05-29 17:17:38] ==== FIM DA REQUISIÇÃO ====
+[2025-05-29 17:17:38] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-05-29 17:17:38] Dados brutos recebidos: {"id_servico":1,"nome":"Pemetrexede","dose":500,"unidade_medida":"Mgm2","via_administracao":"1","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-05-29 17:17:39] ID do protocolo: 37
+[2025-05-29 17:17:39] Verificando estrutura da tabela Protocolo_Servico
+[2025-05-29 17:17:40] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                37, 
+                1, 
+                'Pemetrexede', 
+                500, 
+                'Mgm2', 
+                1, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-05-29 17:17:40] Medicamento inserido com sucesso. ID: 55
+[2025-05-29 17:17:40] ==== FIM DA REQUISIÇÃO ====
+[2025-06-03 17:08:47] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-06-03 17:08:47] Dados brutos recebidos: {"id_servico":1,"nome":"TOCILIZUMABE ","dose":8,"unidade_medida":"MgKg","via_administracao":"1","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-06-03 17:08:48] ID do protocolo: 38
+[2025-06-03 17:08:49] Verificando estrutura da tabela Protocolo_Servico
+[2025-06-03 17:08:49] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                38, 
+                1, 
+                'TOCILIZUMABE ', 
+                8, 
+                'MgKg', 
+                1, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-06-03 17:08:50] Medicamento inserido com sucesso. ID: 56
+[2025-06-03 17:08:50] ==== FIM DA REQUISIÇÃO ====
+[2025-06-05 02:54:12] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-06-05 02:54:12] Dados brutos recebidos: {"id_servico":1,"nome":"ENFORTUMABE VEDOTINA","dose":1.25,"unidade_medida":"MgKg","via_administracao":"1","dias_aplicacao":"D1,D8,D15","frequencia":"1x","observacoes":""}
+[2025-06-05 02:54:13] ID do protocolo: 39
+[2025-06-05 02:54:13] Verificando estrutura da tabela Protocolo_Servico
+[2025-06-05 02:54:14] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                39, 
+                1, 
+                'ENFORTUMABE VEDOTINA', 
+                1.25, 
+                'MgKg', 
+                1, 
+                'D1,D8,D15', 
+                '1x', 
+                ''
+            )
+[2025-06-05 02:54:14] Medicamento inserido com sucesso. ID: 57
+[2025-06-05 02:54:14] ==== FIM DA REQUISIÇÃO ====
+[2025-06-05 11:56:20] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-06-05 11:56:20] Dados brutos recebidos: {"id_servico":1,"nome":"ALFAEPOETINA","dose":40000,"unidade_medida":"UI","via_administracao":"5","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-06-05 11:56:21] ID do protocolo: 40
+[2025-06-05 11:56:21] Verificando estrutura da tabela Protocolo_Servico
+[2025-06-05 11:56:22] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                40, 
+                1, 
+                'ALFAEPOETINA', 
+                40000, 
+                'UI', 
+                5, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-06-05 11:56:22] Medicamento inserido com sucesso. ID: 58
+[2025-06-05 11:56:22] ==== FIM DA REQUISIÇÃO ====
+[2025-06-05 11:56:35] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-06-05 11:56:35] Dados brutos recebidos: {"id_servico":1,"nome":"ALFAEPOETINA","dose":4000,"unidade_medida":"UI","via_administracao":"5","dias_aplicacao":"","frequencia":"1x","observacoes":""}
+[2025-06-05 11:56:36] ID do protocolo: 15
+[2025-06-05 11:56:36] Verificando estrutura da tabela Protocolo_Servico
+[2025-06-05 11:56:36] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                15, 
+                1, 
+                'ALFAEPOETINA', 
+                4000, 
+                'UI', 
+                5, 
+                NULL, 
+                '1x', 
+                ''
+            )
+[2025-06-05 11:56:37] Medicamento inserido com sucesso. ID: 59
+[2025-06-05 11:56:37] ==== FIM DA REQUISIÇÃO ====
+[2025-06-06 09:26:51] ==== NOVA REQUISIÇÃO MEDICAMENTO ====
+[2025-06-06 09:26:51] Dados brutos recebidos: {"id_servico":1,"nome":"IMUNOGLOBULINA HUMANA","dose":400,"unidade_medida":"MgKg","via_administracao":"1","dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-06-06 09:26:52] ID do protocolo: 41
+[2025-06-06 09:26:53] Verificando estrutura da tabela Protocolo_Servico
+[2025-06-06 09:26:53] SQL: INSERT INTO Protocolo_Servico (
+                id_protocolo, 
+                id_servico, 
+                nome, 
+                dose, 
+                unidade_medida, 
+                via_administracao, 
+                dias_aplicacao, 
+                frequencia, 
+                observacoes
+            ) VALUES (
+                41, 
+                1, 
+                'IMUNOGLOBULINA HUMANA', 
+                400, 
+                'MgKg', 
+                1, 
+                'D1', 
+                '1x', 
+                ''
+            )
+[2025-06-06 09:26:53] Medicamento inserido com sucesso. ID: 60
+[2025-06-06 09:26:53] ==== FIM DA REQUISIÇÃO ====

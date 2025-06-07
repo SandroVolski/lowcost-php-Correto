@@ -1,0 +1,168 @@
+[2025-05-15 23:00:39] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:00:39] MÉTODO: OPTIONS
+[2025-05-15 23:00:39] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:00:39] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:00:39] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:00:39] MÉTODO: PUT
+[2025-05-15 23:00:39] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:00:39] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:00:39] DADOS RECEBIDOS: {"nome":"teste med","dose":2,"unidade_medida":"","via_administracao":1,"dias_aplicacao":"D0","frequencia":"1x","observacoes":""}
+[2025-05-15 23:00:40] CONFIG INCLUÍDO
+[2025-05-15 23:00:40] ID SERVIÇO: 29 | ID PROTOCOLO: 20
+[2025-05-15 23:00:40] SQL: UPDATE Protocolo_Servico SET nome = 'teste med', dose = 2, unidade_medida = NULL, via_administracao = 1, dias_aplicacao = 'D0', frequencia = '1x' WHERE id = 29
+[2025-05-15 23:00:40] LINHAS AFETADAS: 1
+[2025-05-15 23:00:40] RESPOSTA ENVIADA COM SUCESSO
+[2025-05-15 23:01:41] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:01:41] MÉTODO: OPTIONS
+[2025-05-15 23:01:41] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:01:41] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:01:42] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:01:42] MÉTODO: PUT
+[2025-05-15 23:01:42] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:01:42] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:01:42] DADOS RECEBIDOS: {"nome":"teste med","dose":2,"unidade_medida":"","via_administracao":1,"dias_aplicacao":"D0","frequencia":"1x","observacoes":""}
+[2025-05-15 23:01:43] CONFIG INCLUÍDO
+[2025-05-15 23:01:43] ID SERVIÇO: 29 | ID PROTOCOLO: 20
+[2025-05-15 23:01:43] SQL: UPDATE Protocolo_Servico SET nome = 'teste med', dose = 2, unidade_medida = NULL, via_administracao = 1, dias_aplicacao = 'D0', frequencia = '1x' WHERE id = 29
+[2025-05-15 23:01:43] LINHAS AFETADAS: 0
+[2025-05-15 23:01:43] RESPOSTA ENVIADA COM SUCESSO
+[2025-05-15 23:02:06] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:02:06] MÉTODO: OPTIONS
+[2025-05-15 23:02:06] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:02:06] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:02:06] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:02:06] MÉTODO: PUT
+[2025-05-15 23:02:06] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:02:06] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:02:06] DADOS RECEBIDOS: {"nome":"teste med","dose":2,"unidade_medida":"UI","via_administracao":1,"dias_aplicacao":"D0","frequencia":"1x","observacoes":""}
+[2025-05-15 23:02:07] CONFIG INCLUÍDO
+[2025-05-15 23:02:07] ID SERVIÇO: 29 | ID PROTOCOLO: 20
+[2025-05-15 23:02:07] SQL: UPDATE Protocolo_Servico SET nome = 'teste med', dose = 2, unidade_medida = 'UI', via_administracao = 1, dias_aplicacao = 'D0', frequencia = '1x' WHERE id = 29
+[2025-05-15 23:02:08] LINHAS AFETADAS: 1
+[2025-05-15 23:02:08] RESPOSTA ENVIADA COM SUCESSO
+[2025-05-15 23:03:13] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:03:13] MÉTODO: OPTIONS
+[2025-05-15 23:03:13] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:03:13] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:03:13] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:03:13] MÉTODO: PUT
+[2025-05-15 23:03:13] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:03:13] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:03:13] DADOS RECEBIDOS: {"nome":"teste med","dose":2,"unidade_medida":"","via_administracao":1,"dias_aplicacao":"D0","frequencia":"1x","observacoes":""}
+[2025-05-15 23:03:14] CONFIG INCLUÍDO
+[2025-05-15 23:03:14] ID SERVIÇO: 29 | ID PROTOCOLO: 20
+[2025-05-15 23:03:14] SQL: UPDATE Protocolo_Servico SET nome = 'teste med', dose = 2, unidade_medida = NULL, via_administracao = 1, dias_aplicacao = 'D0', frequencia = '1x' WHERE id = 29
+[2025-05-15 23:03:14] LINHAS AFETADAS: 1
+[2025-05-15 23:03:14] RESPOSTA ENVIADA COM SUCESSO
+[2025-05-15 23:04:19] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:04:19] MÉTODO: OPTIONS
+[2025-05-15 23:04:19] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:04:19] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:04:19] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:04:19] MÉTODO: PUT
+[2025-05-15 23:04:19] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:04:19] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:04:19] DADOS RECEBIDOS: {"nome":"teste med","dose":2,"unidade_medida":"","via_administracao":1,"dias_aplicacao":"D0","frequencia":"1x","observacoes":""}
+[2025-05-15 23:04:20] CONFIG INCLUÍDO
+[2025-05-15 23:04:20] ID SERVIÇO: 29 | ID PROTOCOLO: 20
+[2025-05-15 23:04:20] SQL: UPDATE Protocolo_Servico SET nome = 'teste med', dose = 2, unidade_medida = NULL, via_administracao = 1, dias_aplicacao = 'D0', frequencia = '1x' WHERE id = 29
+[2025-05-15 23:04:20] LINHAS AFETADAS: 0
+[2025-05-15 23:04:20] RESPOSTA ENVIADA COM SUCESSO
+[2025-05-15 23:07:10] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:07:10] MÉTODO: OPTIONS
+[2025-05-15 23:07:10] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:07:10] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:07:10] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:07:10] MÉTODO: PUT
+[2025-05-15 23:07:10] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:07:10] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:07:10] DADOS RECEBIDOS: {"nome":"teste med","dose":2,"unidade_medida":"Mgm2","via_administracao":1,"dias_aplicacao":"D0","frequencia":"1x","observacoes":""}
+[2025-05-15 23:07:11] CONFIG INCLUÍDO
+[2025-05-15 23:07:11] ID SERVIÇO: 29 | ID PROTOCOLO: 20
+[2025-05-15 23:07:11] SQL: UPDATE Protocolo_Servico SET nome = 'teste med', dose = 2, unidade_medida = 'Mgm2', via_administracao = 1, dias_aplicacao = 'D0', frequencia = '1x' WHERE id = 29
+[2025-05-15 23:07:11] LINHAS AFETADAS: 1
+[2025-05-15 23:07:12] RESPOSTA ENVIADA COM SUCESSO
+[2025-05-15 23:10:57] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:10:57] MÉTODO: OPTIONS
+[2025-05-15 23:10:57] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:10:57] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:10:57] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:10:57] MÉTODO: PUT
+[2025-05-15 23:10:57] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:10:57] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:10:57] DADOS RECEBIDOS: {"nome":"teste med","dose":2,"unidade_medida":"","via_administracao":1,"dias_aplicacao":"D0","frequencia":"1x","observacoes":""}
+[2025-05-15 23:10:58] CONFIG INCLUÍDO
+[2025-05-15 23:10:58] ID SERVIÇO: 29 | ID PROTOCOLO: 20
+[2025-05-15 23:10:58] SQL: UPDATE Protocolo_Servico SET nome = 'teste med', dose = 2, unidade_medida = NULL, via_administracao = 1, dias_aplicacao = 'D0', frequencia = '1x' WHERE id = 29
+[2025-05-15 23:10:58] LINHAS AFETADAS: 1
+[2025-05-15 23:10:58] RESPOSTA ENVIADA COM SUCESSO
+[2025-05-15 23:11:17] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:11:17] MÉTODO: OPTIONS
+[2025-05-15 23:11:17] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:11:17] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:11:17] ********************* ARQUIVO ACESSADO *********************
+[2025-05-15 23:11:17] MÉTODO: PUT
+[2025-05-15 23:11:17] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=20&id=29
+[2025-05-15 23:11:17] GET: {"id_protocolo":"20","id":"29"}
+[2025-05-15 23:11:17] DADOS RECEBIDOS: {"nome":"teste med","dose":2,"unidade_medida":"","via_administracao":1,"dias_aplicacao":"D0","frequencia":"1x","observacoes":""}
+[2025-05-15 23:11:18] CONFIG INCLUÍDO
+[2025-05-15 23:11:18] ID SERVIÇO: 29 | ID PROTOCOLO: 20
+[2025-05-15 23:11:18] SQL: UPDATE Protocolo_Servico SET nome = 'teste med', dose = 2, unidade_medida = NULL, via_administracao = 1, dias_aplicacao = 'D0', frequencia = '1x' WHERE id = 29
+[2025-05-15 23:11:18] LINHAS AFETADAS: 0
+[2025-05-15 23:11:18] RESPOSTA ENVIADA COM SUCESSO
+[2025-06-05 11:53:39] ********************* ARQUIVO ACESSADO *********************
+[2025-06-05 11:53:39] MÉTODO: OPTIONS
+[2025-06-05 11:53:39] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=15&id=24
+[2025-06-05 11:53:39] GET: {"id_protocolo":"15","id":"24"}
+[2025-06-05 11:53:39] ********************* ARQUIVO ACESSADO *********************
+[2025-06-05 11:53:39] MÉTODO: PUT
+[2025-06-05 11:53:39] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=15&id=24
+[2025-06-05 11:53:39] GET: {"id_protocolo":"15","id":"24"}
+[2025-06-05 11:53:39] DADOS RECEBIDOS: {"nome":"ERITROPOETINA ","dose":4000,"unidade_medida":"Mg","via_administracao":5,"dias_aplicacao":"","frequencia":"2x","observacoes":""}
+[2025-06-05 11:53:40] CONFIG INCLUÍDO
+[2025-06-05 11:53:40] ID SERVIÇO: 24 | ID PROTOCOLO: 15
+[2025-06-05 11:53:40] SQL: UPDATE Protocolo_Servico SET nome = 'ERITROPOETINA ', dose = 4000, unidade_medida = 'Mg', via_administracao = 5, dias_aplicacao = NULL, frequencia = '2x' WHERE id = 24
+[2025-06-05 11:53:40] LINHAS AFETADAS: 0
+[2025-06-05 11:53:40] RESPOSTA ENVIADA COM SUCESSO
+[2025-06-05 12:05:05] ********************* ARQUIVO ACESSADO *********************
+[2025-06-05 12:05:05] MÉTODO: OPTIONS
+[2025-06-05 12:05:05] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=40&id=58
+[2025-06-05 12:05:05] GET: {"id_protocolo":"40","id":"58"}
+[2025-06-05 12:05:06] ********************* ARQUIVO ACESSADO *********************
+[2025-06-05 12:05:06] MÉTODO: PUT
+[2025-06-05 12:05:06] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=40&id=58
+[2025-06-05 12:05:06] GET: {"id_protocolo":"40","id":"58"}
+[2025-06-05 12:05:06] DADOS RECEBIDOS: {"nome":"ALFAEPOETINA","dose":40000,"unidade_medida":"UI","via_administracao":5,"dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-06-05 12:05:07] CONFIG INCLUÍDO
+[2025-06-05 12:05:07] ID SERVIÇO: 58 | ID PROTOCOLO: 40
+[2025-06-05 12:05:07] SQL: UPDATE Protocolo_Servico SET nome = 'ALFAEPOETINA', dose = 40000, unidade_medida = 'UI', via_administracao = 5, dias_aplicacao = 'D1', frequencia = '1x' WHERE id = 58
+[2025-06-05 12:05:07] LINHAS AFETADAS: 0
+[2025-06-05 12:05:07] RESPOSTA ENVIADA COM SUCESSO
+[2025-06-06 08:57:27] ********************* ARQUIVO ACESSADO *********************
+[2025-06-06 08:57:27] MÉTODO: OPTIONS
+[2025-06-06 08:57:27] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=26&id=38
+[2025-06-06 08:57:27] GET: {"id_protocolo":"26","id":"38"}
+[2025-06-06 08:57:27] ********************* ARQUIVO ACESSADO *********************
+[2025-06-06 08:57:27] MÉTODO: PUT
+[2025-06-06 08:57:27] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=26&id=38
+[2025-06-06 08:57:27] GET: {"id_protocolo":"26","id":"38"}
+[2025-06-06 08:57:27] DADOS RECEBIDOS: {"nome":"GOSSERRELINA ","dose":3.6,"unidade_medida":"Mg","via_administracao":5,"dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-06-06 08:57:28] CONFIG INCLUÍDO
+[2025-06-06 08:57:28] ID SERVIÇO: 38 | ID PROTOCOLO: 26
+[2025-06-06 08:57:29] SQL: UPDATE Protocolo_Servico SET nome = 'GOSSERRELINA ', dose = 3.6, unidade_medida = 'Mg', via_administracao = 5, dias_aplicacao = 'D1', frequencia = '1x' WHERE id = 38
+[2025-06-06 08:57:29] LINHAS AFETADAS: 0
+[2025-06-06 08:57:29] RESPOSTA ENVIADA COM SUCESSO
+[2025-06-06 09:00:54] ********************* ARQUIVO ACESSADO *********************
+[2025-06-06 09:00:54] MÉTODO: OPTIONS
+[2025-06-06 09:00:54] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=10&id=15
+[2025-06-06 09:00:54] GET: {"id_protocolo":"10","id":"15"}
+[2025-06-06 09:00:54] ********************* ARQUIVO ACESSADO *********************
+[2025-06-06 09:00:54] MÉTODO: PUT
+[2025-06-06 09:00:54] URI: /backend-php/api/PacientesEmTratamento/update_servico_protocolo.php?id_protocolo=10&id=15
+[2025-06-06 09:00:54] GET: {"id_protocolo":"10","id":"15"}
+[2025-06-06 09:00:54] DADOS RECEBIDOS: {"nome":"Gosserrelina (Acetato)","dose":10.8,"unidade_medida":"Mg","via_administracao":5,"dias_aplicacao":"D1","frequencia":"1x","observacoes":""}
+[2025-06-06 09:00:55] CONFIG INCLUÍDO
+[2025-06-06 09:00:55] ID SERVIÇO: 15 | ID PROTOCOLO: 10
+[2025-06-06 09:00:55] SQL: UPDATE Protocolo_Servico SET nome = 'Gosserrelina (Acetato)', dose = 10.8, unidade_medida = 'Mg', via_administracao = 5, dias_aplicacao = 'D1', frequencia = '1x' WHERE id = 15
+[2025-06-06 09:00:55] LINHAS AFETADAS: 0
+[2025-06-06 09:00:55] RESPOSTA ENVIADA COM SUCESSO

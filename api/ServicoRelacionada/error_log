@@ -1,0 +1,982 @@
+[14-May-2025 14:18:16 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 123456789
+    [Codigo_TUSS] => 123456789
+    [Codigo_Celos] => 123456789
+    [Descricao_Padronizada] => 1234
+    [Descricao_Resumida] => 1234
+    [Descricao_Comercial] => 1234
+    [Descricao_Comercial_Completa] => 1234
+    [Descricao_TUSS] => 1234
+    [Concentracao] => 1
+    [Fracionamento] => 1
+    [Laboratorio] => 
+    [Uso] => 123456789
+    [Revisado_Farma] => 
+    [Revisado_ADM] => 1
+    [RegistroVisa] => 1234
+    [Cod_Ggrem] => 1234
+    [Lab] => 
+    [cnpj_lab] => 1234
+    [Classe_Terapeutica] => 1234
+    [Tipo_Porduto] => 1234
+    [Regime_Preco] => 1234
+    [Restricao_Hosp] => 1234
+    [Cap] => 1234
+    [Confaz87] => 1234
+    [Icms0] => 1234
+    [Lista] => 1234
+    [Status] => 1234
+    [classe_Jaragua_do_sul] => Outros Serviços
+    [classificacao_tipo] => Exame
+    [idRegistroVisa] => 
+    [idViaAdministracao] => 
+    [idClasseFarmaceutica] => 19
+    [idPrincipioAtivo] => 4
+    [idArmazenamento] => 88
+    [idMedicamento] => 
+    [idUnidadeFracionamento] => 9
+    [idFatorConversao] => 0
+    [idTaxas] => 19
+    [idTabela] => 11
+    [Via_administracao] => 
+    [Via_Administração] => 
+    [Princípio_Ativo] => 
+    [Princípio_Ativo_Classificado] => ACARBOSE
+    [FaseUGF] => 
+    [FaseuGF] => 
+    [Medicamento] => 
+    [Divisor] => Não
+    [ID Taxa] => 19
+    [fator] => 0
+    [id_taxa] => 19
+)
+
+[14-May-2025 14:18:17 America/Fortaleza] String de tipos: ssssssssssssssiiiiiiiiii
+[14-May-2025 14:18:17 America/Fortaleza] Comprimento da string de tipos: 24
+[14-May-2025 14:18:17 America/Fortaleza] idRegistroVisa: 1234 (tipo: string)
+[14-May-2025 14:18:17 America/Fortaleza] idRegistroVisa convertido para inteiro: 1234
+[14-May-2025 14:18:17 America/Fortaleza] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php:231
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php(231): mysqli_stmt->bind_param('ssssssssssssssi...', '123456789', '123456789', '123456789', NULL, '1234', '1234', '1234', '1234', '1', NULL, '1', NULL, '123456789', 0, 1, NULL, 19, 4, 88, NULL, 9, 0, 19, 1234, 11)
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php on line 231
+[14-May-2025 14:19:51 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 123456789
+    [Codigo_TUSS] => 123456789
+    [Codigo_Celos] => 123456789
+    [Descricao_Padronizada] => 123456789
+    [Descricao_Resumida] => 123456789
+    [Descricao_Comercial] => 123456789
+    [Descricao_Comercial_Completa] => 123456789
+    [Descricao_TUSS] => 123456789
+    [Concentracao] => 2
+    [Fracionamento] => 2
+    [Laboratorio] => 
+    [Uso] => 2123456789
+    [Revisado_Farma] => 
+    [Revisado_ADM] => 1
+    [RegistroVisa] => 
+    [Cod_Ggrem] => 
+    [Principio_Ativo] => 
+    [Lab] => 
+    [cnpj_lab] => 
+    [Classe_Terapeutica] => 
+    [Tipo_Porduto] => 
+    [Regime_Preco] => 
+    [Restricao_Hosp] => 
+    [Cap] => 
+    [Confaz87] => 
+    [Icms0] => 
+    [Lista] => 
+    [Status] => 
+    [classe_Jaragua_do_sul] => 
+    [classificacao_tipo] => 
+    [idRegistroVisa] => 
+    [idViaAdministracao] => 
+    [idClasseFarmaceutica] => 8
+    [idPrincipioAtivo] => 
+    [idArmazenamento] => 1
+    [idMedicamento] => 
+    [idUnidadeFracionamento] => 
+    [idFatorConversao] => 0
+    [idTaxas] => 
+    [idTabela] => 
+    [Via_administracao] => 
+    [Via_Administração] => 
+    [Princípio_Ativo] => 
+    [Princípio_Ativo_Classificado] => 
+    [FaseUGF] => 
+    [FaseuGF] => 
+    [Medicamento] => 
+    [Divisor] => 
+    [tipo taxa] => 
+    [ID Taxa] => 
+    [Tempo infusão] => 
+    [fator] => 0
+)
+
+[14-May-2025 14:19:51 America/Fortaleza] String de tipos: ssssssssssssssiiiiiiiiii
+[14-May-2025 14:19:51 America/Fortaleza] Comprimento da string de tipos: 24
+[14-May-2025 14:19:51 America/Fortaleza] idRegistroVisa é NULL
+[14-May-2025 14:19:51 America/Fortaleza] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php:231
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php(231): mysqli_stmt->bind_param('ssssssssssssssi...', '123456789', '123456789', '123456789', NULL, '123456789', '123456789', '123456789', '123456789', '2', NULL, '2', NULL, '2123456789', 0, 1, NULL, 8, NULL, 1, NULL, NULL, 0, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php on line 231
+[14-May-2025 14:25:21 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 123456789
+    [Codigo_TUSS] => 123456789
+    [Codigo_Celos] => 123456789
+    [Descricao_Padronizada] => 12345
+    [Descricao_Resumida] => 12345
+    [Descricao_Comercial] => 12345
+    [Descricao_Comercial_Completa] => 12345
+    [Descricao_TUSS] => 12345
+    [Concentracao] => 12345
+    [Fracionamento] => 12345
+    [Laboratorio] => 
+    [Uso] => 12345
+    [Revisado_Farma] => 
+    [Revisado_ADM] => 
+    [RegistroVisa] => 
+    [Cod_Ggrem] => 
+    [Principio_Ativo] => 
+    [Lab] => 
+    [cnpj_lab] => 
+    [Classe_Terapeutica] => 
+    [Tipo_Porduto] => 
+    [Regime_Preco] => 
+    [Restricao_Hosp] => 
+    [Cap] => 
+    [Confaz87] => 
+    [Icms0] => 
+    [Lista] => 
+    [Status] => 
+    [classe_Jaragua_do_sul] => 
+    [classificacao_tipo] => 
+    [idRegistroVisa] => 
+    [idViaAdministracao] => 
+    [idClasseFarmaceutica] => 13
+    [idPrincipioAtivo] => 
+    [idArmazenamento] => 3
+    [idMedicamento] => 
+    [idUnidadeFracionamento] => 
+    [idFatorConversao] => 0
+    [idTaxas] => 
+    [idTabela] => 
+    [Via_administracao] => 
+    [Via_Administração] => 
+    [Princípio_Ativo] => 
+    [Princípio_Ativo_Classificado] => 
+    [FaseUGF] => 
+    [FaseuGF] => 
+    [Medicamento] => 
+    [Divisor] => 
+    [tipo taxa] => 
+    [ID Taxa] => 
+    [Tempo infusão] => 
+    [fator] => 0
+)
+
+[14-May-2025 14:25:21 America/Fortaleza] String de tipos: ssssssssssssssiiiiiiiiii
+[14-May-2025 14:25:21 America/Fortaleza] Comprimento da string de tipos: 24
+[14-May-2025 14:25:21 America/Fortaleza] idRegistroVisa é NULL
+[14-May-2025 14:25:21 America/Fortaleza] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php:231
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php(231): mysqli_stmt->bind_param('ssssssssssssssi...', '123456789', 123456789, '123456789', NULL, '12345', '12345', '12345', '12345', '12345', NULL, '12345', NULL, '12345', 0, NULL, NULL, 13, NULL, 3, NULL, NULL, 0, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php on line 231
+[14-May-2025 14:26:42 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 123456789
+    [Codigo_TUSS] => 123456789
+    [Codigo_Celos] => 123456789
+    [Descricao_Padronizada] => 12345
+    [Descricao_Resumida] => 12345
+    [Descricao_Comercial] => 12345
+    [Descricao_Comercial_Completa] => 12345
+    [Descricao_TUSS] => 12345
+    [Concentracao] => 12345
+    [Fracionamento] => 12345
+    [Laboratorio] => 
+    [Uso] => 12345
+    [Revisado_Farma] => 
+    [Revisado_ADM] => 
+    [RegistroVisa] => 12345
+    [Cod_Ggrem] => 12345
+    [Lab] => 
+    [cnpj_lab] => 12345
+    [Classe_Terapeutica] => 12345
+    [Tipo_Porduto] => 12345
+    [Regime_Preco] => 12345
+    [Restricao_Hosp] => 12345
+    [Cap] => 12345
+    [Confaz87] => 12345
+    [Icms0] => 12345
+    [Lista] => 12345
+    [Status] => 12345
+    [classe_Jaragua_do_sul] => Procedimento/Infusões
+    [classificacao_tipo] => Honorário
+    [idRegistroVisa] => 
+    [idViaAdministracao] => 
+    [idClasseFarmaceutica] => 13
+    [idPrincipioAtivo] => 10
+    [idArmazenamento] => 3
+    [idMedicamento] => 
+    [idUnidadeFracionamento] => 19
+    [idFatorConversao] => 0
+    [idTaxas] => 18
+    [idTabela] => 27
+    [Via_administracao] => 
+    [Via_Administração] => 
+    [Princípio_Ativo] => 
+    [Princípio_Ativo_Classificado] => ACETATO DE ATOSIBANA
+    [FaseUGF] => 
+    [FaseuGF] => 
+    [Medicamento] => 
+    [Divisor] => 
+    [ID Taxa] => 18
+    [fator] => 0
+    [id_taxa] => 18
+)
+
+[14-May-2025 14:26:43 America/Fortaleza] String de tipos: ssssssssssssssiiiiiiiiii
+[14-May-2025 14:26:43 America/Fortaleza] Comprimento da string de tipos: 24
+[14-May-2025 14:26:43 America/Fortaleza] idRegistroVisa: 12345 (tipo: string)
+[14-May-2025 14:26:43 America/Fortaleza] idRegistroVisa convertido para inteiro: 12345
+[14-May-2025 14:26:43 America/Fortaleza] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php:231
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php(231): mysqli_stmt->bind_param('ssssssssssssssi...', '123456789', 123456789, '123456789', NULL, '12345', '12345', '12345', '12345', '12345', NULL, '12345', NULL, '12345', 0, NULL, NULL, 13, 10, 3, NULL, 19, 0, 18, 12345, 27)
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php on line 231
+[14-May-2025 14:36:21 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 123456789
+    [Codigo_TUSS] => 123456789
+    [Codigo_Celos] => 12345
+    [Descricao_Padronizada] => 12345
+    [Descricao_Resumida] => 12345
+    [Descricao_Comercial] => 12345
+    [Descricao_Comercial_Completa] => 12345
+    [Descricao_TUSS] => 12345
+    [Concentracao] => 12345
+    [Fracionamento] => 12345
+    [Laboratorio] => 
+    [Uso] => 12345
+    [Revisado_Farma] => 
+    [Revisado_ADM] => 
+    [idPrincipioAtivo] => 8
+    [idRegistroVisa] => 12345
+    [idViaAdministracao] => 
+    [idClasseFarmaceutica] => 21
+    [idArmazenamento] => 3
+    [idMedicamento] => 
+    [idUnidadeFracionamento] => 21
+    [idFatorConversao] => 
+    [idTaxas] => 6
+    [idTabela] => 40
+    [RegistroVisa] => 12345
+    [Cod_Ggrem] => 12345
+    [Principio_Ativo] => 
+    [Lab] => 
+    [cnpj_lab] => 12345
+    [Classe_Terapeutica] => 12345
+    [Tipo_Porduto] => 12345
+    [Regime_Preco] => 12345
+    [Restricao_Hosp] => 12345
+    [Cap] => 12345
+    [Confaz87] => 12345
+    [Icms0] => 12345
+    [Lista] => 12345
+    [Status] => 12345
+)
+
+[14-May-2025 14:36:22 America/Fortaleza] String de tipos: ssssssssssssssiiiiiiiiii
+[14-May-2025 14:36:22 America/Fortaleza] Comprimento da string de tipos: 24
+[14-May-2025 14:36:22 America/Fortaleza] idRegistroVisa: 12345 (tipo: string)
+[14-May-2025 14:36:22 America/Fortaleza] idRegistroVisa convertido para inteiro: 12345
+[14-May-2025 14:36:22 America/Fortaleza] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php:231
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php(231): mysqli_stmt->bind_param('ssssssssssssssi...', '123456789', 123456789, '12345', NULL, '12345', '12345', '12345', '12345', '12345', NULL, '12345', NULL, '12345', 0, NULL, NULL, 21, 8, 3, NULL, 21, NULL, 6, 12345, 40)
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php on line 231
+[14-May-2025 14:36:23 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 123456789
+    [Codigo_TUSS] => 123456789
+    [Codigo_Celos] => 12345
+    [Descricao_Padronizada] => 12345
+    [Descricao_Resumida] => 12345
+    [Descricao_Comercial] => 12345
+)
+
+[14-May-2025 14:36:23 America/Fortaleza] String de tipos: ssssssssssssssiiiiiiiiii
+[14-May-2025 14:36:23 America/Fortaleza] Comprimento da string de tipos: 24
+[14-May-2025 14:36:23 America/Fortaleza] idRegistroVisa é NULL
+[14-May-2025 14:36:23 America/Fortaleza] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php:231
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php(231): mysqli_stmt->bind_param('ssssssssssssssi...', '123456789', 123456789, '12345', NULL, '12345', '12345', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php on line 231
+[14-May-2025 14:37:40 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 123456789
+    [Codigo_TUSS] => 123456789
+    [Codigo_Celos] => 12345
+    [Descricao_Padronizada] => 12345
+    [Descricao_Resumida] => 12345
+    [Descricao_Comercial] => 12345
+    [Descricao_Comercial_Completa] => 12345
+    [Descricao_TUSS] => 12345
+    [Concentracao] => 12345
+    [Fracionamento] => 12345
+    [Laboratorio] => 
+    [Uso] => 12345
+    [Revisado_Farma] => 
+    [Revisado_ADM] => 1
+    [idPrincipioAtivo] => 6
+    [idRegistroVisa] => 12345
+    [idViaAdministracao] => 
+    [idClasseFarmaceutica] => 9
+    [idArmazenamento] => 3
+    [idMedicamento] => 
+    [idUnidadeFracionamento] => 16
+    [idFatorConversao] => 
+    [idTaxas] => 12
+    [idTabela] => 36
+    [RegistroVisa] => 12345
+    [Cod_Ggrem] => 12345
+    [Principio_Ativo] => 
+    [Lab] => 
+    [cnpj_lab] => 12345
+    [Classe_Terapeutica] => 12345
+    [Tipo_Porduto] => 12345
+    [Regime_Preco] => 12345
+    [Restricao_Hosp] => 12345
+    [Cap] => 12345
+    [Confaz87] => 12345
+    [Icms0] => 12345
+    [Lista] => 12345
+    [Status] => 12345
+)
+
+[14-May-2025 14:37:40 America/Fortaleza] String de tipos: ssssssssssssssiiiiiiiiii
+[14-May-2025 14:37:40 America/Fortaleza] Comprimento da string de tipos: 24
+[14-May-2025 14:37:40 America/Fortaleza] idRegistroVisa: 12345 (tipo: string)
+[14-May-2025 14:37:40 America/Fortaleza] idRegistroVisa convertido para inteiro: 12345
+[14-May-2025 14:37:40 America/Fortaleza] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php:231
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php(231): mysqli_stmt->bind_param('ssssssssssssssi...', '123456789', 123456789, '12345', NULL, '12345', '12345', '12345', '12345', '12345', NULL, '12345', NULL, '12345', 0, 1, NULL, 9, 6, 3, NULL, 16, NULL, 12, 12345, 36)
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php on line 231
+[14-May-2025 14:37:42 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 123456789
+    [Codigo_TUSS] => 123456789
+    [Codigo_Celos] => 12345
+    [Descricao_Padronizada] => 12345
+    [Descricao_Resumida] => 12345
+    [Descricao_Comercial] => 12345
+)
+
+[14-May-2025 14:37:42 America/Fortaleza] String de tipos: ssssssssssssssiiiiiiiiii
+[14-May-2025 14:37:42 America/Fortaleza] Comprimento da string de tipos: 24
+[14-May-2025 14:37:42 America/Fortaleza] idRegistroVisa é NULL
+[14-May-2025 14:37:42 America/Fortaleza] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php:231
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php(231): mysqli_stmt->bind_param('ssssssssssssssi...', '123456789', 123456789, '12345', NULL, '12345', '12345', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php on line 231
+[14-May-2025 14:48:11 America/Fortaleza] API get_fator_conversao.php foi chamada
+[14-May-2025 14:48:12 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[14-May-2025 14:48:12 America/Fortaleza] API get_fator_conversao.php foi chamada
+[14-May-2025 14:48:14 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[14-May-2025 14:48:54 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 123456789
+    [Codigo_TUSS] => 123456789
+    [Codigo_Celos] => 12345
+    [Descricao_Padronizada] => 12345
+    [Descricao_Resumida] => 12345
+    [Descricao_Comercial] => 12345
+    [Descricao_Comercial_Completa] => 12345
+    [Descricao_TUSS] => 12345
+    [Concentracao] => 12345
+    [Fracionamento] => 12345
+    [Laboratorio] => 
+    [Uso] => 12345
+    [Revisado_Farma] => 
+    [Revisado_ADM] => 1
+    [idPrincipioAtivo] => 7
+    [idRegistroVisa] => 12345
+    [idViaAdministracao] => 
+    [idClasseFarmaceutica] => 8
+    [idArmazenamento] => 3
+    [idMedicamento] => 
+    [idUnidadeFracionamento] => 16
+    [idFatorConversao] => 1
+    [idTaxas] => 14
+    [idTabela] => 32
+    [RegistroVisa] => 12345
+    [Cod_Ggrem] => 12345
+    [Principio_Ativo] => 
+    [Lab] => 
+    [cnpj_lab] => 12345
+    [Classe_Terapeutica] => 12345
+    [Tipo_Porduto] => 12345
+    [Regime_Preco] => 12345
+    [Restricao_Hosp] => 12345
+    [Cap] => 12345
+    [Confaz87] => 12345
+    [Icms0] => 12345
+    [Lista] => 12345
+    [Status] => 12345
+)
+
+[14-May-2025 14:48:55 America/Fortaleza] String de tipos: sssssssssssssssiiiiiiiii
+[14-May-2025 14:48:55 America/Fortaleza] Comprimento da string de tipos: 24
+[14-May-2025 14:48:55 America/Fortaleza] idRegistroVisa: 12345 (tipo: string)
+[14-May-2025 14:48:55 America/Fortaleza] idRegistroVisa convertido para inteiro: 12345
+[14-May-2025 14:48:55 America/Fortaleza] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php:231
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php(231): mysqli_stmt->bind_param('sssssssssssssss...', '123456789', 123456789, '12345', '12345', '12345', '12345', '12345', '12345', '12345', NULL, '12345', NULL, '12345', 0, 1, NULL, 8, 7, 3, NULL, 16, 1, 14, 12345, 32)
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php on line 231
+[14-May-2025 14:48:56 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 123456789
+    [Codigo_TUSS] => 123456789
+    [Codigo_Celos] => 12345
+    [Descricao_Padronizada] => 12345
+    [Descricao_Resumida] => 12345
+    [Descricao_Comercial] => 12345
+)
+
+[14-May-2025 14:48:56 America/Fortaleza] String de tipos: sssssssssssssssiiiiiiiii
+[14-May-2025 14:48:56 America/Fortaleza] Comprimento da string de tipos: 24
+[14-May-2025 14:48:56 America/Fortaleza] idRegistroVisa é NULL
+[14-May-2025 14:48:56 America/Fortaleza] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php:231
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php(231): mysqli_stmt->bind_param('sssssssssssssss...', '123456789', 123456789, '12345', '12345', '12345', '12345', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php on line 231
+[14-May-2025 14:57:01 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 123456789
+    [Codigo_TUSS] => 12345
+    [Codigo_Celos] => 12345
+    [Descricao_Padronizada] => 12345
+    [Descricao_Resumida] => 12345
+    [Descricao_Comercial] => 12345
+    [Descricao_Comercial_Completa] => 12345
+    [Descricao_TUSS] => 12345
+    [Concentracao] => 12345
+    [Fracionamento] => 12345
+    [Laboratorio] => 
+    [Uso] => 12345
+    [Revisado_Farma] => 
+    [Revisado_ADM] => 1
+    [idPrincipioAtivo] => 3
+    [idRegistroVisa] => 12345
+    [idViaAdministracao] => 
+    [idClasseFarmaceutica] => 9
+    [idArmazenamento] => 3
+    [idMedicamento] => 
+    [idUnidadeFracionamento] => 14
+    [idFatorConversao] => 
+    [idTaxas] => 13
+    [idTabela] => 63
+    [RegistroVisa] => 12345
+    [Cod_Ggrem] => 12345
+    [Principio_Ativo] => 
+    [Lab] => 
+    [cnpj_lab] => 12345
+    [Classe_Terapeutica] => 12345
+    [Tipo_Porduto] => 12345
+    [Regime_Preco] => 12345
+    [Restricao_Hosp] => 12345
+    [Cap] => 12345
+    [Confaz87] => 12345
+    [Icms0] => 12345
+    [Lista] => 12345
+    [Status] => 12345
+)
+
+[14-May-2025 14:57:01 America/Fortaleza] String de tipos (NOVA): ssssssssssssssssiiiiiiiii
+[14-May-2025 14:57:01 America/Fortaleza] Comprimento da string de tipos (NOVA): 25
+[14-May-2025 14:57:01 America/Fortaleza] Contagem de parâmetros esperada: 25
+[14-May-2025 14:57:01 America/Fortaleza] String de tipos: ssssssssssssssssiiiiiiiii
+[14-May-2025 14:57:01 America/Fortaleza] Comprimento da string de tipos: 25
+[14-May-2025 14:57:01 America/Fortaleza] idRegistroVisa: 12345 (tipo: string)
+[14-May-2025 14:57:01 America/Fortaleza] idRegistroVisa convertido para inteiro: 12345
+[14-May-2025 15:56:00 America/Fortaleza] Iniciando processamento do update_service.php
+[14-May-2025 15:56:01 America/Fortaleza] Query SQL: UPDATE dServicoRelacionada SET Cod = ?, Codigo_TUSS = ?, Codigo_Celos = ?, Descricao_Padronizada = ?, Descricao_Resumida = ?, Descricao_Comercial = ?, Descricao_Comercial_Completa = ?, Descricao_TUSS = ?, Concentracao = ?, Fracionamento = ?, Laboratorio = ?, Uso = ?, Revisado_Farma = ?, Revisado_ADM = ?, idClasseFarmaceutica = ?, idPrincipioAtivo = ?, idArmazenamento = ?, idUnidadeFracionamento = ?, idFatorConversao = ?, idTaxas = ?, idRegistroVisa = ?, idTabela = ? WHERE id = ?
+[14-May-2025 15:56:01 America/Fortaleza] Tipos para bind_param: ssssssssssssiiiiiiiiiii
+[14-May-2025 15:56:01 America/Fortaleza] Quantidade de valores: 23
+[14-May-2025 16:07:06 America/Fortaleza] Iniciando processamento do update_service.php
+[14-May-2025 16:07:08 America/Fortaleza] Query SQL: UPDATE dServicoRelacionada SET Cod = ?, Codigo_TUSS = ?, Codigo_Celos = ?, Descricao_Padronizada = ?, Descricao_Resumida = ?, Descricao_Comercial = ?, Descricao_Comercial_Completa = ?, Descricao_TUSS = ?, Concentracao = ?, Fracionamento = ?, Laboratorio = ?, Uso = ?, Revisado_Farma = ?, Revisado_ADM = ?, idClasseFarmaceutica = ?, idPrincipioAtivo = ?, idArmazenamento = ?, idMedicamento = ?, idUnidadeFracionamento = ?, idTaxas = ?, idRegistroVisa = ?, idTabela = ? WHERE id = ?
+[14-May-2025 16:07:08 America/Fortaleza] Tipos para bind_param: ssssssssssssiiiiiiiiiii
+[14-May-2025 16:07:08 America/Fortaleza] Quantidade de valores: 23
+[14-May-2025 16:14:42 America/Fortaleza] Iniciando processamento do update_service.php
+[14-May-2025 16:14:43 America/Fortaleza] Query SQL: UPDATE dServicoRelacionada SET Cod = ?, Codigo_TUSS = ?, Codigo_Celos = ?, Descricao_Padronizada = ?, Descricao_Resumida = ?, Descricao_Comercial = ?, Descricao_Comercial_Completa = ?, Descricao_TUSS = ?, Concentracao = ?, Fracionamento = ?, Laboratorio = ?, Uso = ?, Revisado_Farma = ?, Revisado_ADM = ?, idViaAdministracao = ?, idClasseFarmaceutica = ?, idPrincipioAtivo = ?, idArmazenamento = ?, idMedicamento = ?, idUnidadeFracionamento = ?, idTaxas = ?, idRegistroVisa = ?, idTabela = ? WHERE id = ?
+[14-May-2025 16:14:43 America/Fortaleza] Tipos para bind_param: ssssssssssssiiiiiiiiiiii
+[14-May-2025 16:14:43 America/Fortaleza] Quantidade de valores: 24
+[14-May-2025 16:15:19 America/Fortaleza] Iniciando processamento do update_service.php
+[14-May-2025 16:15:20 America/Fortaleza] Query SQL: UPDATE dServicoRelacionada SET Cod = ?, Codigo_TUSS = ?, Codigo_Celos = ?, Descricao_Padronizada = ?, Descricao_Resumida = ?, Descricao_Comercial = ?, Descricao_Comercial_Completa = ?, Descricao_TUSS = ?, Concentracao = ?, Fracionamento = ?, Laboratorio = ?, Uso = ?, Revisado_Farma = ?, Revisado_ADM = ?, idViaAdministracao = ?, idClasseFarmaceutica = ?, idPrincipioAtivo = ?, idArmazenamento = ?, idMedicamento = ?, idUnidadeFracionamento = ?, idTaxas = ?, idRegistroVisa = ?, idTabela = ? WHERE id = ?
+[14-May-2025 16:15:20 America/Fortaleza] Tipos para bind_param: ssssssssssssiiiiiiiiiiii
+[14-May-2025 16:15:20 America/Fortaleza] Quantidade de valores: 24
+[14-May-2025 16:31:07 America/Fortaleza] API get_fator_conversao.php foi chamada
+[14-May-2025 16:31:09 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[14-May-2025 16:31:09 America/Fortaleza] API get_fator_conversao.php foi chamada
+[14-May-2025 16:31:10 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[14-May-2025 16:48:58 America/Fortaleza] Iniciando processamento do update_service.php
+[14-May-2025 16:48:59 America/Fortaleza] Query SQL: UPDATE dServicoRelacionada SET Cod = ?, Codigo_TUSS = ?, Codigo_Celos = ?, Descricao_Padronizada = ?, Descricao_Resumida = ?, Descricao_Comercial = ?, Descricao_Comercial_Completa = ?, Descricao_TUSS = ?, Concentracao = ?, Fracionamento = ?, Laboratorio = ?, Uso = ?, Revisado_Farma = ?, Revisado_ADM = ?, idViaAdministracao = ?, idClasseFarmaceutica = ?, idPrincipioAtivo = ?, idArmazenamento = ?, idMedicamento = ?, idUnidadeFracionamento = ?, idTaxas = ?, idRegistroVisa = ?, idTabela = ? WHERE id = ?
+[14-May-2025 16:48:59 America/Fortaleza] Tipos para bind_param: ssssssssssssiiiiiiiiiiii
+[14-May-2025 16:48:59 America/Fortaleza] Quantidade de valores: 24
+[14-May-2025 17:01:29 America/Fortaleza] API get_fator_conversao.php foi chamada
+[14-May-2025 17:01:31 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[14-May-2025 17:01:31 America/Fortaleza] API get_fator_conversao.php foi chamada
+[14-May-2025 17:01:33 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[14-May-2025 18:33:20 America/Fortaleza] API get_fator_conversao.php foi chamada
+[14-May-2025 18:33:21 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[14-May-2025 18:33:21 America/Fortaleza] API get_fator_conversao.php foi chamada
+[14-May-2025 18:33:23 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[15-May-2025 16:34:01 America/Fortaleza] API get_fator_conversao.php foi chamada
+[15-May-2025 16:34:03 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[15-May-2025 16:34:03 America/Fortaleza] API get_fator_conversao.php foi chamada
+[15-May-2025 16:34:04 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[15-May-2025 22:46:56 America/Fortaleza] API get_fator_conversao.php foi chamada
+[15-May-2025 22:46:58 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[15-May-2025 22:46:58 America/Fortaleza] API get_fator_conversao.php foi chamada
+[15-May-2025 22:46:59 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[16-May-2025 16:17:35 America/Fortaleza] API get_fator_conversao.php foi chamada
+[16-May-2025 16:17:36 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[16-May-2025 16:17:37 America/Fortaleza] API get_fator_conversao.php foi chamada
+[16-May-2025 16:17:38 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[16-May-2025 16:56:36 America/Fortaleza] API get_fator_conversao.php foi chamada
+[16-May-2025 16:56:38 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[16-May-2025 16:56:38 America/Fortaleza] API get_fator_conversao.php foi chamada
+[16-May-2025 16:56:40 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[19-May-2025 11:02:54 America/Fortaleza] API get_fator_conversao.php foi chamada
+[19-May-2025 11:02:56 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[19-May-2025 11:02:56 America/Fortaleza] API get_fator_conversao.php foi chamada
+[19-May-2025 11:02:58 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[19-May-2025 11:39:21 America/Fortaleza] API get_fator_conversao.php foi chamada
+[19-May-2025 11:39:23 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[19-May-2025 11:39:23 America/Fortaleza] API get_fator_conversao.php foi chamada
+[19-May-2025 11:39:24 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[19-May-2025 14:18:27 America/Fortaleza] API get_fator_conversao.php foi chamada
+[19-May-2025 14:18:29 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[19-May-2025 14:18:29 America/Fortaleza] API get_fator_conversao.php foi chamada
+[19-May-2025 14:18:31 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[19-May-2025 15:04:04 America/Fortaleza] API get_fator_conversao.php foi chamada
+[19-May-2025 15:04:05 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[19-May-2025 15:04:05 America/Fortaleza] API get_fator_conversao.php foi chamada
+[19-May-2025 15:04:07 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[19-May-2025 15:24:41 America/Fortaleza] Iniciando processamento do update_service.php
+[19-May-2025 15:24:42 America/Fortaleza] Query SQL: UPDATE dServicoRelacionada SET Cod = ?, Codigo_TUSS = ?, Codigo_Celos = ?, Descricao_Padronizada = ?, Descricao_Resumida = ?, Descricao_Comercial = ?, Descricao_Comercial_Completa = ?, Descricao_TUSS = ?, Concentracao = ?, Fracionamento = ?, Laboratorio = ?, Uso = ?, Revisado_Farma = ?, Revisado_ADM = ?, idViaAdministracao = ?, idClasseFarmaceutica = ?, idPrincipioAtivo = ?, idArmazenamento = ?, idMedicamento = ?, idUnidadeFracionamento = ?, idTaxas = ?, idRegistroVisa = ?, idTabela = ? WHERE id = ?
+[19-May-2025 15:24:42 America/Fortaleza] Tipos para bind_param: ssssssssssssiiiiiiiiiiii
+[19-May-2025 15:24:42 America/Fortaleza] Quantidade de valores: 24
+[19-May-2025 15:27:23 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 1234567876542
+    [Codigo_TUSS] => 12345
+    [Codigo_Celos] => 12345
+    [Descricao_Padronizada] => 12345
+    [Descricao_Resumida] => 12345
+    [Descricao_Comercial] => 12345
+    [Descricao_Comercial_Completa] => 12345
+    [Descricao_TUSS] => 12345
+    [Concentracao] => 12345
+    [Fracionamento] => 12345
+    [Laboratorio] => 
+    [Uso] => 12345
+    [Revisado_Farma] => 1
+    [Revisado_ADM] => 1
+    [Unidade_Entrada] => AMP
+    [Quantidade_Entrada] => 2
+    [Unidade_Entrada_Convertida] => FA
+    [Quantidade_Convertida] => 1
+    [Unidade_Pagamento_Nao_Fracionado] => AMP
+    [Quantidade_Pagamento_Nao_Fracionado] => 2
+    [Unidade_Pagamento_Fracionado] => FA
+    [Quantidade_Pagamento_Fracionado] => 1
+    [idPrincipioAtivo] => 1
+    [idRegistroVisa] => 12345
+    [idViaAdministracao] => 1
+    [idClasseFarmaceutica] => 8
+    [idArmazenamento] => 3
+    [idMedicamento] => 2
+    [idUnidadeFracionamento] => 9
+    [idFatorConversao] => 
+    [idTaxas] => 4
+    [idTabela] => 63
+    [RegistroVisa] => 12345
+    [Cod_Ggrem] => 12345
+    [Principio_Ativo] => 
+    [Lab] => 
+    [cnpj_lab] => 12345
+    [Classe_Terapeutica] => 12345
+    [Tipo_Porduto] => 12345
+    [Regime_Preco] => 12345
+    [Restricao_Hosp] => 12345
+    [Cap] => 12345
+    [Confaz87] => 12345
+    [Icms0] => 12345
+    [Lista] => 12345
+    [Status] => 12345
+)
+
+[19-May-2025 15:27:23 America/Fortaleza] String de tipos (NOVA): ssssssssssssssssiiiiiiiii
+[19-May-2025 15:27:23 America/Fortaleza] Comprimento da string de tipos (NOVA): 25
+[19-May-2025 15:27:23 America/Fortaleza] Contagem de parâmetros esperada: 25
+[19-May-2025 15:27:23 America/Fortaleza] String de tipos: ssssssssssssssssiiiiiiiii
+[19-May-2025 15:27:23 America/Fortaleza] Comprimento da string de tipos: 25
+[19-May-2025 15:27:23 America/Fortaleza] idRegistroVisa: 12345 (tipo: string)
+[19-May-2025 15:27:23 America/Fortaleza] idRegistroVisa convertido para inteiro: 12345
+[19-May-2025 15:27:23 America/Fortaleza] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php:243
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php(243): mysqli_stmt->bind_param('sssssssssssssii...', '1234567876542', 12345, '12345', '12345', '12345', '12345', '12345', '12345', '12345', NULL, '12345', NULL, '12345', 1, 1, 1, 8, 1, 3, 2, 9, NULL, 4, 12345, 63, 'AMP', '2', 'FA', '1', 'AMP', '2', 'FA', '1')
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php on line 243
+[19-May-2025 15:27:25 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 1234567876542
+    [Codigo_TUSS] => 12345
+    [Codigo_Celos] => 12345
+    [Descricao_Padronizada] => 12345
+    [Descricao_Resumida] => 12345
+    [Descricao_Comercial] => 12345
+)
+
+[19-May-2025 15:27:25 America/Fortaleza] String de tipos (NOVA): ssssssssssssssssiiiiiiiii
+[19-May-2025 15:27:25 America/Fortaleza] Comprimento da string de tipos (NOVA): 25
+[19-May-2025 15:27:25 America/Fortaleza] Contagem de parâmetros esperada: 25
+[19-May-2025 15:27:25 America/Fortaleza] String de tipos: ssssssssssssssssiiiiiiiii
+[19-May-2025 15:27:25 America/Fortaleza] Comprimento da string de tipos: 25
+[19-May-2025 15:27:25 America/Fortaleza] idRegistroVisa é NULL
+[19-May-2025 15:27:25 America/Fortaleza] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php:243
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php(243): mysqli_stmt->bind_param('sssssssssssssii...', '1234567876542', 12345, '12345', '12345', '12345', '12345', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php on line 243
+[19-May-2025 15:28:55 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 2345678987654321
+    [Codigo_TUSS] => 1234567
+    [Codigo_Celos] => 123
+    [Descricao_Padronizada] => 123
+    [Descricao_Resumida] => 123
+    [Descricao_Comercial] => 123
+    [Descricao_Comercial_Completa] => 123
+    [Descricao_TUSS] => 123
+    [Concentracao] => 123
+    [Fracionamento] => 123
+    [Laboratorio] => 
+    [Uso] => 123
+    [Revisado_Farma] => 
+    [Revisado_ADM] => 1
+    [Unidade_Entrada] => ENV
+    [Quantidade_Entrada] => 2
+    [Unidade_Entrada_Convertida] => DRG
+    [Quantidade_Convertida] => 2
+    [Unidade_Pagamento_Nao_Fracionado] => ENV
+    [Quantidade_Pagamento_Nao_Fracionado] => 2
+    [Unidade_Pagamento_Fracionado] => DRG
+    [Quantidade_Pagamento_Fracionado] => 2
+    [idPrincipioAtivo] => 10
+    [idRegistroVisa] => 123
+    [idViaAdministracao] => 1
+    [idClasseFarmaceutica] => 7
+    [idArmazenamento] => 3
+    [idMedicamento] => 10
+    [idUnidadeFracionamento] => 15
+    [idFatorConversao] => 
+    [idTaxas] => 14
+    [idTabela] => 55
+    [RegistroVisa] => 123
+    [Cod_Ggrem] => 123
+    [Principio_Ativo] => 
+    [Lab] => 
+    [cnpj_lab] => 123
+    [Classe_Terapeutica] => 123
+    [Tipo_Porduto] => 123
+    [Regime_Preco] => 123
+    [Restricao_Hosp] => 123
+    [Cap] => 123
+    [Confaz87] => 123
+    [Icms0] => 123
+    [Lista] => 123
+    [Status] => 123
+)
+
+[19-May-2025 15:28:55 America/Fortaleza] String de tipos (NOVA): ssssssssssssssssiiiiiiiii
+[19-May-2025 15:28:55 America/Fortaleza] Comprimento da string de tipos (NOVA): 25
+[19-May-2025 15:28:55 America/Fortaleza] Contagem de parâmetros esperada: 25
+[19-May-2025 15:28:55 America/Fortaleza] String de tipos: ssssssssssssssssiiiiiiiii
+[19-May-2025 15:28:55 America/Fortaleza] Comprimento da string de tipos: 25
+[19-May-2025 15:28:55 America/Fortaleza] idRegistroVisa: 123 (tipo: string)
+[19-May-2025 15:28:55 America/Fortaleza] idRegistroVisa convertido para inteiro: 123
+[19-May-2025 15:28:55 America/Fortaleza] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php:243
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php(243): mysqli_stmt->bind_param('sssssssssssssii...', '234567898765432...', 1234567, '123', '123', '123', '123', '123', '123', '123', NULL, '123', NULL, '123', 0, 1, 1, 7, 10, 3, 10, 15, NULL, 14, 123, 55, 'ENV', '2', 'DRG', '2', 'ENV', '2', 'DRG', '2')
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php on line 243
+[19-May-2025 15:28:57 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 2345678987654321
+    [Codigo_TUSS] => 1234567
+    [Codigo_Celos] => 123
+    [Descricao_Padronizada] => 123
+    [Descricao_Resumida] => 123
+    [Descricao_Comercial] => 123
+)
+
+[19-May-2025 15:28:57 America/Fortaleza] String de tipos (NOVA): ssssssssssssssssiiiiiiiii
+[19-May-2025 15:28:57 America/Fortaleza] Comprimento da string de tipos (NOVA): 25
+[19-May-2025 15:28:57 America/Fortaleza] Contagem de parâmetros esperada: 25
+[19-May-2025 15:28:57 America/Fortaleza] String de tipos: ssssssssssssssssiiiiiiiii
+[19-May-2025 15:28:57 America/Fortaleza] Comprimento da string de tipos: 25
+[19-May-2025 15:28:57 America/Fortaleza] idRegistroVisa é NULL
+[19-May-2025 15:28:57 America/Fortaleza] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php:243
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php(243): mysqli_stmt->bind_param('sssssssssssssii...', '234567898765432...', 1234567, '123', '123', '123', '123', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/insert_service.php on line 243
+[19-May-2025 15:35:54 America/Fortaleza] API get_fator_conversao.php foi chamada
+[19-May-2025 15:35:56 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[19-May-2025 15:35:56 America/Fortaleza] API get_fator_conversao.php foi chamada
+[19-May-2025 15:35:57 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[19-May-2025 15:36:35 America/Fortaleza] Dados recebidos: stdClass Object
+(
+    [Cod] => 12345676543
+    [Codigo_TUSS] => 123452
+    [Codigo_Celos] => 12345
+    [Descricao_Padronizada] => 12345
+    [Descricao_Resumida] => 12345
+    [Descricao_Comercial] => 12345
+    [Descricao_Comercial_Completa] => 12345
+    [Descricao_TUSS] => 12345
+    [Concentracao] => 2
+    [Fracionamento] => 2
+    [Laboratorio] => 12345
+    [Uso] => 12345
+    [Revisado_Farma] => 1
+    [Revisado_ADM] => 1
+    [Unidade_Entrada] => ADES
+    [Quantidade_Entrada] => 2
+    [Unidade_Entrada_Convertida] => DOSE
+    [Quantidade_Convertida] => 4
+    [Unidade_Pagamento_Nao_Fracionado] => ADES
+    [Quantidade_Pagamento_Nao_Fracionado] => 2
+    [Unidade_Pagamento_Fracionado] => DOSE
+    [Quantidade_Pagamento_Fracionado] => 4
+    [idPrincipioAtivo] => 1
+    [idRegistroVisa] => 12345
+    [idViaAdministracao] => 6
+    [idClasseFarmaceutica] => 18
+    [idArmazenamento] => 3
+    [idMedicamento] => 2
+    [idUnidadeFracionamento] => 9
+    [idFatorConversao] => 1
+    [idTaxas] => 13
+    [idTabela] => 63
+    [RegistroVisa] => 12345
+    [Cod_Ggrem] => 12345
+    [Principio_Ativo] => 
+    [Lab] => 12345
+    [cnpj_lab] => 12345
+    [Classe_Terapeutica] => 12345
+    [Tipo_Porduto] => 12345
+    [Regime_Preco] => 12345
+    [Restricao_Hosp] => 12345
+    [Cap] => 12345
+    [Confaz87] => 12345
+    [Icms0] => 12345
+    [Lista] => 12345
+    [Status] => 12345
+)
+
+[19-May-2025 15:36:35 America/Fortaleza] String de tipos atualizada: ssssssssssssssssiiiiiiiiissssssss
+[19-May-2025 15:36:35 America/Fortaleza] Comprimento da string de tipos atualizada: 33
+[19-May-2025 15:36:35 America/Fortaleza] Contagem de parâmetros esperada: 33
+[19-May-2025 15:36:35 America/Fortaleza] idRegistroVisa: 12345 (tipo: string)
+[19-May-2025 15:36:35 America/Fortaleza] idRegistroVisa convertido para inteiro: 12345
+[19-May-2025 15:39:12 America/Fortaleza] Iniciando processamento do update_service.php
+[19-May-2025 15:39:14 America/Fortaleza] Query SQL: UPDATE dServicoRelacionada SET Cod = ?, Codigo_TUSS = ?, Codigo_Celos = ?, Descricao_Padronizada = ?, Descricao_Resumida = ?, Descricao_Comercial = ?, Descricao_Comercial_Completa = ?, Descricao_TUSS = ?, Concentracao = ?, Fracionamento = ?, Laboratorio = ?, Uso = ?, Revisado_Farma = ?, Revisado_ADM = ?, idViaAdministracao = ?, idClasseFarmaceutica = ?, idPrincipioAtivo = ?, idArmazenamento = ?, idMedicamento = ?, idUnidadeFracionamento = ?, idTaxas = ?, idRegistroVisa = ?, idTabela = ? WHERE id = ?
+[19-May-2025 15:39:14 America/Fortaleza] Tipos para bind_param: ssssssssssssiiiiiiiiiiii
+[19-May-2025 15:39:14 America/Fortaleza] Quantidade de valores: 24
+[19-May-2025 15:47:21 America/Fortaleza] Iniciando processamento do update_service_simple.php
+[19-May-2025 15:47:22 America/Fortaleza] Query SQL: UPDATE dServicoRelacionada SET Cod = ?, Codigo_TUSS = ?, Codigo_Celos = ?, Descricao_Padronizada = ?, Descricao_Resumida = ?, Descricao_Comercial = ?, Descricao_Comercial_Completa = ?, Descricao_TUSS = ?, Concentracao = ?, Fracionamento = ?, Laboratorio = ?, Uso = ?, Revisado_Farma = ?, Revisado_ADM = ?, idViaAdministracao = ?, idClasseFarmaceutica = ?, idPrincipioAtivo = ?, idArmazenamento = ?, idMedicamento = ?, idUnidadeFracionamento = ?, idTaxas = ?, idRegistroVisa = ?, idTabela = ?, Unidade_Entrada = ?, Quantidade_Entrada = ?, Unidade_Entrada_Convertida = ?, Quantidade_Convertida = ?, Unidade_Pagamento_Nao_Fracionado = ?, Quantidade_Pagamento_Nao_Fracionado = ?, Unidade_Pagamento_Fracionado = ?, Quantidade_Pagamento_Fracionado = ? WHERE id = ?
+[19-May-2025 15:47:22 America/Fortaleza] Tipos para bind_param: ssssssssssssiiiiiiiiiiissssssssi
+[19-May-2025 15:47:22 America/Fortaleza] Quantidade de valores: 32
+[21-May-2025 10:52:55 America/Fortaleza] API get_fator_conversao.php foi chamada
+[21-May-2025 10:52:56 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[21-May-2025 10:52:56 America/Fortaleza] API get_fator_conversao.php foi chamada
+[21-May-2025 10:52:58 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[21-May-2025 13:00:45 America/Fortaleza] API get_fator_conversao.php foi chamada
+[21-May-2025 13:00:46 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[21-May-2025 13:00:46 America/Fortaleza] API get_fator_conversao.php foi chamada
+[21-May-2025 13:00:48 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[21-May-2025 13:01:01 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:02 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:04 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:06 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:07 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:07 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:11 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:12 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:13 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:14 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:19 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:25 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:25 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:27 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:28 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:29 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:36 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:45 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:46 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:46 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:46 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:46 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:01:48 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Query execution was interrupted, maximum statement execution time exceeded in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php:492
+Stack trace:
+#0 /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php(492): mysqli_stmt->get_result()
+#1 {main}
+  thrown in /home1/abgest10/api.lowcostonco.com.br/backend-php/api/ServicoRelacionada/get_services.php on line 492
+[21-May-2025 13:50:05 America/Fortaleza] API get_fator_conversao.php foi chamada
+[21-May-2025 13:50:07 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[21-May-2025 13:50:07 America/Fortaleza] API get_fator_conversao.php foi chamada
+[21-May-2025 13:50:09 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[21-May-2025 14:35:16 America/Fortaleza] API get_fator_conversao.php foi chamada
+[21-May-2025 14:35:17 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[21-May-2025 14:35:17 America/Fortaleza] API get_fator_conversao.php foi chamada
+[21-May-2025 14:35:19 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[21-May-2025 14:38:13 America/Fortaleza] API get_fator_conversao.php foi chamada
+[21-May-2025 14:38:15 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[21-May-2025 15:33:07 America/Fortaleza] API get_fator_conversao.php foi chamada
+[21-May-2025 15:33:09 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[21-May-2025 15:33:36 America/Fortaleza] API get_fator_conversao.php foi chamada
+[21-May-2025 15:33:37 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[21-May-2025 15:33:37 America/Fortaleza] API get_fator_conversao.php foi chamada
+[21-May-2025 15:33:39 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[22-May-2025 12:37:51 America/Fortaleza] API get_fator_conversao.php foi chamada
+[22-May-2025 12:37:53 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[22-May-2025 14:49:55 America/Fortaleza] API get_fator_conversao.php foi chamada
+[22-May-2025 14:49:56 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[26-May-2025 01:20:53 America/Fortaleza] API get_fator_conversao.php foi chamada
+[26-May-2025 01:20:54 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[26-May-2025 12:38:19 America/Fortaleza] API get_fator_conversao.php foi chamada
+[26-May-2025 12:38:20 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[26-May-2025 19:19:13 America/Fortaleza] API get_fator_conversao.php foi chamada
+[26-May-2025 19:19:14 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[26-May-2025 19:19:14 America/Fortaleza] API get_fator_conversao.php foi chamada
+[26-May-2025 19:19:16 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[28-May-2025 10:23:32 America/Fortaleza] API get_fator_conversao.php foi chamada
+[28-May-2025 10:23:33 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[28-May-2025 10:37:11 America/Fortaleza] API get_fator_conversao.php foi chamada
+[28-May-2025 10:37:12 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[28-May-2025 10:37:12 America/Fortaleza] API get_fator_conversao.php foi chamada
+[28-May-2025 10:37:13 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[29-May-2025 15:38:47 America/Fortaleza] API get_fator_conversao.php foi chamada
+[29-May-2025 15:38:48 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[30-May-2025 23:32:01 America/Fortaleza] API get_fator_conversao.php foi chamada
+[30-May-2025 23:32:02 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[31-May-2025 18:57:57 America/Fortaleza] API get_fator_conversao.php foi chamada
+[31-May-2025 18:57:58 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[31-May-2025 20:34:59 America/Fortaleza] API get_fator_conversao.php foi chamada
+[31-May-2025 20:35:00 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao
+[31-May-2025 22:19:34 America/Fortaleza] API get_fator_conversao.php foi chamada
+[31-May-2025 22:19:35 America/Fortaleza] Colunas necessárias não existem na tabela dFatorConversao

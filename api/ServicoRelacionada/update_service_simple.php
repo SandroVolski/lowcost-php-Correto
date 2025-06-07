@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 ini_set('display_errors', 0);
 ini_set('log_errors', 1);
 error_reporting(E_ALL);
-error_log("Iniciando processamento do update_service.php");
+error_log("Iniciando processamento do update_service_simple.php");
 
 // Função para responder com erro em formato JSON
 function sendErrorResponse($message, $details = null, $statusCode = 500) {
@@ -82,9 +82,12 @@ try {
     $allowedFields = [
         'Cod' => 's',
         'Codigo_TUSS' => 's',
-        'Descricao_Apresentacao' => 's',
+        'Codigo_Celos' => 's',
+        'Descricao_Padronizada' => 's',
         'Descricao_Resumida' => 's',
         'Descricao_Comercial' => 's',
+        'Descricao_Comercial_Completa' => 's',
+        'Descricao_TUSS' => 's',
         'Concentracao' => 's',
         'UnidadeFracionamento' => 's',
         'Fracionamento' => 's',
@@ -101,7 +104,19 @@ try {
         'idFatorConversao' => 'i',
         'idTaxas' => 'i',
         'idRegistroVisa' => 'i',
-        'idTabela' => 'i'
+        'idTabela' => 'i',
+        
+        // Novos campos de Entrada
+        'Unidade_Entrada' => 's',
+        'Quantidade_Entrada' => 's', // Tratamos como string e convertemos para decimal no banco
+        'Unidade_Entrada_Convertida' => 's',
+        'Quantidade_Convertida' => 's',
+        
+        // Novos campos de Pagamento
+        'Unidade_Pagamento_Nao_Fracionado' => 's',
+        'Quantidade_Pagamento_Nao_Fracionado' => 's',
+        'Unidade_Pagamento_Fracionado' => 's',
+        'Quantidade_Pagamento_Fracionado' => 's'
     ];
     
     // Construir query de atualização dinamicamente
@@ -110,14 +125,25 @@ try {
     $values = [];
     
     foreach ($allowedFields as $field => $type) {
-        if (isset($data[$field])) {
+        if (array_key_exists($field, $data)) {
             $updateFields[] = "$field = ?";
             $types .= $type;
             
-            // Converter valor conforme tipo
+            // Formatação e conversão adequada de valores
             if ($type === 'i' && $data[$field] !== null) {
+                // Converter strings para inteiros
                 $values[] = intval($data[$field]);
-            } else {
+            } 
+            else if (($field === 'Quantidade_Entrada' || 
+                     $field === 'Quantidade_Convertida' || 
+                     $field === 'Quantidade_Pagamento_Nao_Fracionado' || 
+                     $field === 'Quantidade_Pagamento_Fracionado') && 
+                     $data[$field] !== null && $data[$field] !== '') {
+                // Formatar valores decimais (garantir que a string seja um número válido)
+                $values[] = is_numeric($data[$field]) ? $data[$field] : null;
+            } 
+            else {
+                // Outros campos são tratados como strings
                 $values[] = $data[$field];
             }
         }
@@ -142,18 +168,22 @@ try {
     $stmt = $conn->prepare($sql);
     if (!$stmt) {
         error_log("Erro ao preparar consulta de atualização: " . $conn->error);
-        sendErrorResponse("Erro interno do servidor");
+        sendErrorResponse("Erro interno do servidor: " . $conn->error);
     }
     
     // Usar reflection para fazer o bind_param com array dinâmico
-    $bindParams = array();
-    $bindParams[] = &$types;
-    
-    for ($i = 0; $i < count($values); $i++) {
-        $bindParams[] = &$values[$i];
+    if (!empty($values)) {
+        // Começamos com a string de tipos
+        $params = array($types);
+        
+        // Adicionamos cada valor como referência
+        foreach ($values as $key => $value) {
+            $params[] = &$values[$key];
+        }
+        
+        // Chamamos bind_param com os parâmetros
+        call_user_func_array(array($stmt, 'bind_param'), $params);
     }
-    
-    call_user_func_array(array($stmt, 'bind_param'), $bindParams);
     
     if (!$stmt->execute()) {
         error_log("Erro ao executar a atualização: " . $stmt->error);
@@ -173,7 +203,7 @@ try {
     $conn->close();
     
 } catch (Exception $e) {
-    error_log("Exceção no update_service.php: " . $e->getMessage());
+    error_log("Exceção no update_service_simple.php: " . $e->getMessage());
     sendErrorResponse("Erro interno do servidor: " . $e->getMessage());
 }
 ?>

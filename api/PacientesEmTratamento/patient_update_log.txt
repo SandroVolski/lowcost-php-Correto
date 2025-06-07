@@ -1,0 +1,33 @@
+[2025-05-21 16:36:18] === INÍCIO DA ATUALIZAÇÃO DE PACIENTE ===
+[2025-05-21 16:36:19] Conexão com banco de pacientes estabelecida
+[2025-05-21 16:36:19] Conexão com banco de serviço estabelecida
+[2025-05-21 16:36:19] Dados recebidos: {"Operadora":"Celos","Prestador":" Adrian Estrada Barber ","Paciente_Codigo":"123","Nome":"TESTE DA SILVA","Sexo":"M","Nascimento":"18/02/1980","Data_Inicio_Tratamento":"18/02/1999","CID":"A028","id":1305}
+[2025-05-21 16:36:19] ID do paciente a atualizar: 1305
+[2025-05-21 16:36:19] Paciente encontrado com ID: 1305
+[2025-05-21 16:36:20] Operadora ID resolvido: 5
+[2025-05-21 16:36:20] Prestador ID resolvido: 26676
+[2025-05-21 16:36:20] SQL de atualização: UPDATE Pacientes SET Operadora = 5, Prestador = 26676, Codigo = '123', Paciente_Nome = 'TESTE DA SILVA', Data_Nascimento = '1980-02-18', Sexo = 'M', Data_Inicio_Tratamento = '1999-02-18', Cid_Diagnostico = 'A028' WHERE id = 1305
+[2025-05-21 16:36:20] Paciente atualizado com sucesso. Linhas afetadas: 1
+[2025-05-21 16:36:20] === FIM DA ATUALIZAÇÃO DE PACIENTE ===
+[2025-05-27 10:19:17] === INÍCIO DA ATUALIZAÇÃO DE PACIENTE ===
+[2025-05-27 10:19:18] Conexão com banco de pacientes estabelecida
+[2025-05-27 10:19:18] Conexão com banco de serviço estabelecida
+[2025-05-27 10:19:18] Dados recebidos: {"Operadora":"Elosaúde","Prestador":"Ceof","Paciente_Codigo":"8236136","Nome":"LEONI BERGER","Sexo":"F","Nascimento":"02/12/1949","Data_Inicio_Tratamento":"27/11/2024","CID":"C439","id":1326}
+[2025-05-27 10:19:18] ID do paciente a atualizar: 1326
+[2025-05-27 10:19:19] Paciente encontrado com ID: 1326
+[2025-05-27 10:19:19] Operadora ID resolvido: 3
+[2025-05-27 10:19:19] Prestador ID resolvido: 30743
+[2025-05-27 10:19:19] SQL de atualização: UPDATE Pacientes SET Operadora = 3, Prestador = 30743, Codigo = '8236136', Paciente_Nome = 'LEONI BERGER', Data_Nascimento = '1949-12-02', Sexo = 'F', Data_Inicio_Tratamento = '2024-11-27', Cid_Diagnostico = 'C439' WHERE id = 1326
+[2025-05-27 10:19:19] Paciente atualizado com sucesso. Linhas afetadas: 1
+[2025-05-27 10:19:19] === FIM DA ATUALIZAÇÃO DE PACIENTE ===
+[2025-06-05 13:43:44] === INÍCIO DA ATUALIZAÇÃO DE PACIENTE ===
+[2025-06-05 13:43:45] Conexão com banco de pacientes estabelecida
+[2025-06-05 13:43:45] Conexão com banco de serviço estabelecida
+[2025-06-05 13:43:45] Dados recebidos: {"Operadora":"Celos","Prestador":"Noova","Paciente_Codigo":"010000582101","Nome":"MARIA TEREZINHA PEREIRA","Sexo":"F","Nascimento":"01/10/1952","Data_Inicio_Tratamento":"01/01/1900","CID":"C900","id":1253}
+[2025-06-05 13:43:45] ID do paciente a atualizar: 1253
+[2025-06-05 13:43:45] Paciente encontrado com ID: 1253
+[2025-06-05 13:43:45] Operadora ID resolvido: 5
+[2025-06-05 13:43:45] Prestador ID resolvido: 43576
+[2025-06-05 13:43:45] SQL de atualização: UPDATE Pacientes SET Operadora = 5, Prestador = 43576, Codigo = '010000582101', Paciente_Nome = 'MARIA TEREZINHA PEREIRA', Data_Nascimento = '1952-10-01', Sexo = 'F', Data_Inicio_Tratamento = '1900-01-01', Cid_Diagnostico = 'C900' WHERE id = 1253
+[2025-06-05 13:43:45] Paciente atualizado com sucesso. Linhas afetadas: 1
+[2025-06-05 13:43:45] === FIM DA ATUALIZAÇÃO DE PACIENTE ===

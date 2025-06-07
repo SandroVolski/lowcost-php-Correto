@@ -2,14 +2,24 @@ ID_PROTOCOLO	PROTOCOLO_NOME	PROTOCOLO_VIAADM	VIA_ADMINISTRACAO
 # Conexão com bd_pacientestto estabelecida
 # Conexão com bd_servico estabelecida
 # SQL: SELECT 
-                id_protocolo, 
-                Servico_Codigo, 
-                Protocolo_Nome, 
-                Protocolo_Sigla, 
-                Protocolo_Dose_M, 
-                Protocolo_Dose_Total, 
-                Protocolo_Dias_de_Aplicacao, 
-                Protocolo_ViaAdm, 
-                Linha, CID FROM Protocolo ORDER BY Protocolo_Nome
-# ERRO: Unknown column 'id_protocolo' in 'field list'
+            id_protocolo, 
+            Servico_Codigo, 
+            Protocolo_Nome, 
+            Protocolo_Sigla, 
+            Protocolo_Dose_M, 
+            Protocolo_Dose_Total, 
+            Protocolo_Dias_de_Aplicacao, 
+            Protocolo_ViaAdm, 
+            Linha,
+            Intervalo_Ciclos,
+            Ciclos_Previstos, CID FROM Protocolo ORDER BY Protocolo_Nome
+# Tabela dViaadministracao encontrada no banco bd_servico
+# Colunas encontradas na tabela dViaadministracao: id, idviaadministracao, Via_administracao
+# Consulta de via de administração preparada com sucesso
+
+# ESTATÍSTICAS:
+# Total de protocolos: 35
+# Protocolos com ViaAdm: 0
+# Vias encontradas: 0 (0%)
+# Retornados 35 protocolos com sucesso
 # Processamento finalizado

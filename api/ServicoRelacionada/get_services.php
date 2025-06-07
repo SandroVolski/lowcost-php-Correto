@@ -55,9 +55,12 @@ $allowedFields = [
     'id' => 's.id',
     'Cod' => 's.Cod',
     'Codigo_TUSS' => 's.Codigo_TUSS',
-    'Descricao_Apresentacao' => 's.Descricao_Apresentacao',
+    'Codigo_Celos' => 's.Codigo_Celos', // Adicionado
+    'Descricao_Padronizada' => 's.Descricao_Padronizada',
     'Descricao_Resumida' => 's.Descricao_Resumida',
     'Descricao_Comercial' => 's.Descricao_Comercial',
+    'Descricao_Comercial_Completa' => 's.Descricao_Comercial_Completa', // Novo campo
+    'Descricao_TUSS' => 's.Descricao_TUSS', // Novo campo
     'Concentracao' => 's.Concentracao',
     'UnidadeFracionamento' => 's.UnidadeFracionamento',
     'Fracionamento' => 's.Fracionamento',
@@ -120,9 +123,12 @@ $sqlBase = "SELECT DISTINCT
     s.id,
     s.Cod,
     s.Codigo_TUSS,
-    s.Descricao_Apresentacao,
+    s.Codigo_Celos,                  
+    s.Descricao_Padronizada,
     s.Descricao_Resumida,
     s.Descricao_Comercial,
+    s.Descricao_Comercial_Completa,  
+    s.Descricao_TUSS,                
     s.Concentracao,
     s.UnidadeFracionamento,
     s.Fracionamento,
@@ -131,6 +137,15 @@ $sqlBase = "SELECT DISTINCT
     s.Revisado_Farma,            
     s.Revisado_ADM, 
     s.idPrincipioAtivo,
+    -- Novos campos para Entrada e Pagamento
+    s.Unidade_Entrada,
+    s.Quantidade_Entrada,
+    s.Unidade_Entrada_Convertida,
+    s.Quantidade_Convertida,
+    s.Unidade_Pagamento_Nao_Fracionado,
+    s.Quantidade_Pagamento_Nao_Fracionado,
+    s.Unidade_Pagamento_Fracionado,
+    s.Quantidade_Pagamento_Fracionado,
     -- Registro Visa
     r.RegistroVisa,
     r.Cod_Ggrem,
@@ -201,7 +216,9 @@ if (!empty($searchTerm)) {
                 LOWER(s.Cod) = ? OR
                 LOWER(s.Cod) LIKE ? OR
                 LOWER(s.Codigo_TUSS) = ? OR
-                LOWER(s.Codigo_TUSS) LIKE ?
+                LOWER(s.Codigo_TUSS) LIKE ? OR
+                LOWER(s.Codigo_Celos) = ? OR
+                LOWER(s.Codigo_Celos) LIKE ?
             )";
             break;
             
@@ -223,9 +240,11 @@ if (!empty($searchTerm)) {
         case 'description':
             // Pesquisar apenas em descrições
             $sqlBase .= " WHERE (
-                LOWER(s.Descricao_Apresentacao) LIKE ? OR 
+                LOWER(s.Descricao_Padronizada) LIKE ? OR 
                 LOWER(s.Descricao_Resumida) LIKE ? OR
-                LOWER(s.Descricao_Comercial) LIKE ?
+                LOWER(s.Descricao_Comercial) LIKE ? OR
+                LOWER(s.Descricao_Comercial_Completa) LIKE ? OR
+                LOWER(s.Descricao_TUSS) LIKE ?
             )";
             break;
             
@@ -236,7 +255,9 @@ if (!empty($searchTerm)) {
                     LOWER(s.Cod) = ? OR
                     LOWER(s.Cod) LIKE ? OR
                     LOWER(s.Codigo_TUSS) = ? OR
-                    LOWER(s.Codigo_TUSS) LIKE ?
+                    LOWER(s.Codigo_TUSS) LIKE ? OR
+                    LOWER(s.Codigo_Celos) = ? OR
+                    LOWER(s.Codigo_Celos) LIKE ?
                 )";
             } 
             // Se contém letras, pesquisar em ambos os campos de Princípio Ativo
@@ -255,9 +276,12 @@ if (!empty($searchTerm)) {
                 LOWER(s.Cod) = ? OR
                 LOWER(s.Cod) LIKE ? OR
                 LOWER(s.Codigo_TUSS) LIKE ? OR
-                LOWER(s.Descricao_Apresentacao) LIKE ? OR 
+                LOWER(s.Codigo_Celos) LIKE ? OR
+                LOWER(s.Descricao_Padronizada) LIKE ? OR 
                 LOWER(s.Descricao_Resumida) LIKE ? OR
                 LOWER(s.Descricao_Comercial) LIKE ? OR
+                LOWER(s.Descricao_Comercial_Completa) LIKE ? OR
+                LOWER(s.Descricao_TUSS) LIKE ? OR
                 (p.PrincipioAtivo IS NOT NULL AND LOWER(p.PrincipioAtivo) LIKE ?) OR
                 (p.PrincipioAtivoClassificado IS NOT NULL AND LOWER(p.PrincipioAtivoClassificado) LIKE ?) OR
                 (r.PrincipioAtivo IS NOT NULL AND LOWER(r.PrincipioAtivo) LIKE ?)
@@ -268,11 +292,6 @@ if (!empty($searchTerm)) {
 
 // Adicionar a cláusula ORDER BY
 $sqlBase .= " ORDER BY $orderByField $order";
-
-// Debugging: Log da consulta SQL
-// error_log("Consulta SQL: " . $sqlBase);
-// error_log("Termo de pesquisa: " . $searchTerm);
-// error_log("Tipo de pesquisa: " . $searchType);
 
 // Preparar a consulta com ou sem limite
 if ($loadAll) {
@@ -289,11 +308,13 @@ if ($loadAll) {
     if (!empty($searchTerm)) {
         switch($searchType) {
             case 'code':
-                $stmt->bind_param("ssss", 
+                $stmt->bind_param("ssssss", 
                     $searchTermLower,      // Cod exato
                     $searchTermWildcard,   // Cod LIKE
                     $searchTermLower,      // Codigo_TUSS exato
-                    $searchTermWildcard    // Codigo_TUSS LIKE
+                    $searchTermWildcard,   // Codigo_TUSS LIKE
+                    $searchTermLower,      // Codigo_Celos exato
+                    $searchTermWildcard    // Codigo_Celos LIKE
                 );
                 break;
                 
@@ -311,21 +332,25 @@ if ($loadAll) {
                 break;
                 
             case 'description':
-                $stmt->bind_param("sss", 
-                    $searchTermWildcard,   // Descricao_Apresentacao
+                $stmt->bind_param("sssss", 
+                    $searchTermWildcard,   // Descricao_Padronizada
                     $searchTermWildcard,   // Descricao_Resumida
-                    $searchTermWildcard    // Descricao_Comercial
+                    $searchTermWildcard,   // Descricao_Comercial
+                    $searchTermWildcard,   // Descricao_Comercial_Completa
+                    $searchTermWildcard    // Descricao_TUSS
                 );
                 break;
                 
             case 'auto':
                 // Se contém apenas números, pesquisar por códigos
                 if (preg_match('/^[0-9.]+$/', $searchTerm)) {
-                    $stmt->bind_param("ssss", 
+                    $stmt->bind_param("ssssss", 
                         $searchTermLower,      // Cod exato
                         $searchTermWildcard,   // Cod LIKE
                         $searchTermLower,      // Codigo_TUSS exato
-                        $searchTermWildcard    // Codigo_TUSS LIKE
+                        $searchTermWildcard,   // Codigo_TUSS LIKE
+                        $searchTermLower,      // Codigo_Celos exato
+                        $searchTermWildcard    // Codigo_Celos LIKE
                     );
                 } 
                 // Se contém letras, pesquisar princípio ativo em ambas as tabelas
@@ -339,13 +364,16 @@ if ($loadAll) {
                 break;
                 
             default: // 'all'
-                $stmt->bind_param("sssssssss", 
+                $stmt->bind_param("ssssssssssss", 
                     $searchTermLower,      // Cod exato
                     $searchTermWildcard,   // Cod LIKE
                     $searchTermWildcard,   // Codigo_TUSS
-                    $searchTermWildcard,   // Descricao_Apresentacao
+                    $searchTermWildcard,   // Codigo_Celos
+                    $searchTermWildcard,   // Descricao_Padronizada
                     $searchTermWildcard,   // Descricao_Resumida
                     $searchTermWildcard,   // Descricao_Comercial
+                    $searchTermWildcard,   // Descricao_Comercial_Completa
+                    $searchTermWildcard,   // Descricao_TUSS
                     $searchTermWildcard,   // PrincipioAtivo
                     $searchTermWildcard,   // PrincipioAtivoClassificado
                     $searchTermWildcard    // PrincipioAtivo (Registro Visa)
@@ -367,11 +395,13 @@ if ($loadAll) {
     if (!empty($searchTerm)) {
         switch($searchType) {
             case 'code':
-                $stmt->bind_param("ssssii", 
+                $stmt->bind_param("ssssssii", 
                     $searchTermLower,      // Cod exato
                     $searchTermWildcard,   // Cod LIKE
                     $searchTermLower,      // Codigo_TUSS exato
                     $searchTermWildcard,   // Codigo_TUSS LIKE
+                    $searchTermLower,      // Codigo_Celos exato
+                    $searchTermWildcard,   // Codigo_Celos LIKE
                     $limit, 
                     $offset
                 );
@@ -395,10 +425,12 @@ if ($loadAll) {
                 break;
                 
             case 'description':
-                $stmt->bind_param("sssii", 
-                    $searchTermWildcard,   // Descricao_Apresentacao
+                $stmt->bind_param("sssssii", 
+                    $searchTermWildcard,   // Descricao_Padronizada
                     $searchTermWildcard,   // Descricao_Resumida
                     $searchTermWildcard,   // Descricao_Comercial
+                    $searchTermWildcard,   // Descricao_Comercial_Completa
+                    $searchTermWildcard,   // Descricao_TUSS
                     $limit, 
                     $offset
                 );
@@ -407,11 +439,13 @@ if ($loadAll) {
             case 'auto':
                 // Se contém apenas números, pesquisar por códigos
                 if (preg_match('/^[0-9.]+$/', $searchTerm)) {
-                    $stmt->bind_param("ssssii", 
+                    $stmt->bind_param("ssssssii", 
                         $searchTermLower,      // Cod exato
                         $searchTermWildcard,   // Cod LIKE
                         $searchTermLower,      // Codigo_TUSS exato
                         $searchTermWildcard,   // Codigo_TUSS LIKE
+                        $searchTermLower,      // Codigo_Celos exato
+                        $searchTermWildcard,   // Codigo_Celos LIKE
                         $limit, 
                         $offset
                     );
@@ -429,13 +463,16 @@ if ($loadAll) {
                 break;
                 
             default: // 'all'
-                $stmt->bind_param("sssssssssii", 
+                $stmt->bind_param("ssssssssssssii", 
                     $searchTermLower,      // Cod exato
                     $searchTermWildcard,   // Cod LIKE
                     $searchTermWildcard,   // Codigo_TUSS
-                    $searchTermWildcard,   // Descricao_Apresentacao
+                    $searchTermWildcard,   // Codigo_Celos
+                    $searchTermWildcard,   // Descricao_Padronizada
                     $searchTermWildcard,   // Descricao_Resumida
                     $searchTermWildcard,   // Descricao_Comercial
+                    $searchTermWildcard,   // Descricao_Comercial_Completa
+                    $searchTermWildcard,   // Descricao_TUSS
                     $searchTermWildcard,   // PrincipioAtivo
                     $searchTermWildcard,   // PrincipioAtivoClassificado
                     $searchTermWildcard,   // PrincipioAtivo (Registro Visa)
@@ -466,24 +503,8 @@ while ($row = $result->fetch_assoc()) {
     $services[] = $row;
 }
 
-// Adicionar informações de metadata para depuração (opcional)
-$meta = [
-    "count" => count($services),
-    "loadAll" => $loadAll,
-    "page" => $page,
-    "limit" => $limit,
-    "orderBy" => $orderBy,
-    "order" => $order,
-    "searchTerm" => $searchTerm,
-    "searchType" => $searchType,
-    "detectedSearchType" => $searchType // Mostra o tipo de pesquisa usado (incluindo detecção automática)
-];
-
 // Retornando apenas os dados
 echo json_encode($services);
-
-// Alternativa: retornar os dados com metadata
-// echo json_encode(["data" => $services, "meta" => $meta]);
 
 $stmt->close();
 $conn->close();

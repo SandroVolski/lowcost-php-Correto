@@ -1,0 +1,1092 @@
+[2025-05-27 08:50:39] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-27 08:50:40] Conexão com banco de pacientes estabelecida
+[2025-05-27 08:50:40] Conexão com banco de serviço estabelecida
+[2025-05-27 08:50:40] Dados recebidos: {"Operadora":"Elosaúde","Prestador":"Ceof","Paciente_Codigo":"8236136","Nome":"LEONI BERGER","Sexo":"F","Nascimento":"02/12/1949","Data_Inicio_Tratamento":"27/11/2024","CID":"C430"}
+[2025-05-27 08:50:40] Verificando estrutura da tabela Pacientes
+[2025-05-27 08:50:40] Coluna: id, Tipo: int
+[2025-05-27 08:50:40] Coluna: Paciente_Nome, Tipo: varchar(50)
+[2025-05-27 08:50:40] Coluna: Operadora, Tipo: int
+[2025-05-27 08:50:40] Coluna: Prestador, Tipo: int
+[2025-05-27 08:50:40] Coluna: Codigo, Tipo: varchar(50)
+[2025-05-27 08:50:40] Coluna: Data_Nascimento, Tipo: date
+[2025-05-27 08:50:40] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-27 08:50:40] Coluna: Cid_Diagnostico, Tipo: varchar(50)
+[2025-05-27 08:50:40] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-27 08:50:40] Operadora ID resolvido: 3
+[2025-05-27 08:50:40] Prestador ID resolvido: 30743
+[2025-05-27 08:50:40] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (3, 30743, '8236136', 'LEONI BERGER', '1949-12-02', 'F', '2024-11-27', 'C430')
+[2025-05-27 08:50:41] Paciente inserido com sucesso. ID: 1326
+[2025-05-27 08:50:41] === FIM DO PROCESSAMENTO ===
+[2025-05-27 14:02:23] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-27 14:02:24] Conexão com banco de pacientes estabelecida
+[2025-05-27 14:02:24] Conexão com banco de serviço estabelecida
+[2025-05-27 14:02:24] Dados recebidos: {"Operadora":"Elosaúde","Prestador":"Soma","Paciente_Codigo":"0400127","Nome":"LUIZ CARLOS BINS DE VASCONCELLOS","Sexo":"M","Nascimento":"","Data_Inicio_Tratamento":"25/04/2025","CID":"C900"}
+[2025-05-27 14:02:24] Verificando estrutura da tabela Pacientes
+[2025-05-27 14:02:24] Coluna: id, Tipo: int
+[2025-05-27 14:02:24] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-27 14:02:24] Coluna: Operadora, Tipo: int
+[2025-05-27 14:02:24] Coluna: Prestador, Tipo: int
+[2025-05-27 14:02:24] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-27 14:02:24] Coluna: Data_Nascimento, Tipo: date
+[2025-05-27 14:02:24] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-27 14:02:24] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-27 14:02:24] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-27 14:02:24] Operadora ID resolvido: 3
+[2025-05-27 14:02:25] Prestador ID resolvido: 46825
+[2025-05-27 14:02:25] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (3, 46825, '0400127', 'LUIZ CARLOS BINS DE VASCONCELLOS', NULL, 'M', '2025-04-25', 'C900')
+[2025-05-27 14:02:25] Paciente inserido com sucesso. ID: 1327
+[2025-05-27 14:02:25] === FIM DO PROCESSAMENTO ===
+[2025-05-28 09:33:17] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-28 09:33:18] Conexão com banco de pacientes estabelecida
+[2025-05-28 09:33:18] Conexão com banco de serviço estabelecida
+[2025-05-28 09:33:18] Dados recebidos: {"Operadora":"Casacaresc","Prestador":"Unimed Litoral","Paciente_Codigo":"0242.5974.003907.00-4","Nome":"MARIA APARECIDA SCHMITT","Sexo":"F","Nascimento":"12/05/1954","Data_Inicio_Tratamento":"15/05/2024","CID":"C900"}
+[2025-05-28 09:33:18] Verificando estrutura da tabela Pacientes
+[2025-05-28 09:33:18] Coluna: id, Tipo: int
+[2025-05-28 09:33:18] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-28 09:33:18] Coluna: Operadora, Tipo: int
+[2025-05-28 09:33:18] Coluna: Prestador, Tipo: int
+[2025-05-28 09:33:18] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-28 09:33:18] Coluna: Data_Nascimento, Tipo: date
+[2025-05-28 09:33:18] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-28 09:33:18] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-28 09:33:18] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-28 09:33:18] Operadora ID resolvido: 2
+[2025-05-28 09:33:18] Prestador ID resolvido: 4624
+[2025-05-28 09:33:18] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (2, 4624, '0242.5974.003907.00-4', 'MARIA APARECIDA SCHMITT', '1954-05-12', 'F', '2024-05-15', 'C900')
+[2025-05-28 09:33:19] Paciente inserido com sucesso. ID: 1328
+[2025-05-28 09:33:19] === FIM DO PROCESSAMENTO ===
+[2025-05-28 09:54:38] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-28 09:54:39] Conexão com banco de pacientes estabelecida
+[2025-05-28 09:54:39] Conexão com banco de serviço estabelecida
+[2025-05-28 09:54:39] Dados recebidos: {"Operadora":"Casacaresc","Prestador":"Unimed Litoral","Paciente_Codigo":"0242.5974.000155.01-0","Nome":"ANA MARIA SILGUERO DE ALFONSO ","Sexo":"F","Nascimento":"06/07/1950","Data_Inicio_Tratamento":"25/02/2025","CID":"C500,C504"}
+[2025-05-28 09:54:39] Verificando estrutura da tabela Pacientes
+[2025-05-28 09:54:39] Coluna: id, Tipo: int
+[2025-05-28 09:54:39] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-28 09:54:39] Coluna: Operadora, Tipo: int
+[2025-05-28 09:54:39] Coluna: Prestador, Tipo: int
+[2025-05-28 09:54:39] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-28 09:54:39] Coluna: Data_Nascimento, Tipo: date
+[2025-05-28 09:54:39] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-28 09:54:39] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-28 09:54:39] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-28 09:54:39] Operadora ID resolvido: 2
+[2025-05-28 09:54:39] Prestador ID resolvido: 4624
+[2025-05-28 09:54:39] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (2, 4624, '0242.5974.000155.01-0', 'ANA MARIA SILGUERO DE ALFONSO ', '1950-07-06', 'F', '2025-02-25', 'C500,C504')
+[2025-05-28 09:54:40] Paciente inserido com sucesso. ID: 1329
+[2025-05-28 09:54:40] === FIM DO PROCESSAMENTO ===
+[2025-05-28 10:31:36] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-28 10:31:37] Conexão com banco de pacientes estabelecida
+[2025-05-28 10:31:37] Conexão com banco de serviço estabelecida
+[2025-05-28 10:31:37] Dados recebidos: {"Operadora":"Sim Saúde","Prestador":"Ceof","Paciente_Codigo":"0201269600","Nome":"ANA CAROLINA DECKS MANTILLA","Sexo":"F","Nascimento":"23/04/1976","Data_Inicio_Tratamento":"01/08/2023","CID":"C189"}
+[2025-05-28 10:31:37] Verificando estrutura da tabela Pacientes
+[2025-05-28 10:31:37] Coluna: id, Tipo: int
+[2025-05-28 10:31:37] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-28 10:31:37] Coluna: Operadora, Tipo: int
+[2025-05-28 10:31:37] Coluna: Prestador, Tipo: int
+[2025-05-28 10:31:37] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-28 10:31:37] Coluna: Data_Nascimento, Tipo: date
+[2025-05-28 10:31:37] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-28 10:31:37] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-28 10:31:37] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-28 10:31:37] Operadora ID resolvido: 4
+[2025-05-28 10:31:37] Prestador ID resolvido: 30743
+[2025-05-28 10:31:37] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (4, 30743, '0201269600', 'ANA CAROLINA DECKS MANTILLA', '1976-04-23', 'F', '2023-08-01', 'C189')
+[2025-05-28 10:31:37] Paciente inserido com sucesso. ID: 1330
+[2025-05-28 10:31:37] === FIM DO PROCESSAMENTO ===
+[2025-05-28 10:55:48] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-28 10:55:49] Conexão com banco de pacientes estabelecida
+[2025-05-28 10:55:49] Conexão com banco de serviço estabelecida
+[2025-05-28 10:55:49] Dados recebidos: {"Operadora":"Casacaresc","Prestador":"Unimed Litoral","Paciente_Codigo":"0242.5974.045705.01-9","Nome":"ARCELI MARIA SEHN GARBIN","Sexo":"","Nascimento":"01/10/1973","Data_Inicio_Tratamento":"04/10/2024","CID":"M45"}
+[2025-05-28 10:55:49] Verificando estrutura da tabela Pacientes
+[2025-05-28 10:55:49] Coluna: id, Tipo: int
+[2025-05-28 10:55:49] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-28 10:55:49] Coluna: Operadora, Tipo: int
+[2025-05-28 10:55:49] Coluna: Prestador, Tipo: int
+[2025-05-28 10:55:49] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-28 10:55:49] Coluna: Data_Nascimento, Tipo: date
+[2025-05-28 10:55:49] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-28 10:55:49] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-28 10:55:49] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-28 10:55:49] Operadora ID resolvido: 2
+[2025-05-28 10:55:49] Prestador ID resolvido: 4624
+[2025-05-28 10:55:49] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (2, 4624, '0242.5974.045705.01-9', 'ARCELI MARIA SEHN GARBIN', '1973-10-01', NULL, '2024-10-04', 'M45')
+[2025-05-28 10:55:50] Paciente inserido com sucesso. ID: 1331
+[2025-05-28 10:55:50] === FIM DO PROCESSAMENTO ===
+[2025-05-28 16:17:20] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-28 16:17:21] Conexão com banco de pacientes estabelecida
+[2025-05-28 16:17:21] Conexão com banco de serviço estabelecida
+[2025-05-28 16:17:21] Dados recebidos: {"Operadora":"Casacaresc","Prestador":"Ceof","Paciente_Codigo":"","Nome":"Rodrigo F. Peixe","Sexo":"M","Nascimento":"+081019-01-01","Data_Inicio_Tratamento":"+030042-01-01","CID":"C341"}
+[2025-05-28 16:17:21] Verificando estrutura da tabela Pacientes
+[2025-05-28 16:17:21] Coluna: id, Tipo: int
+[2025-05-28 16:17:21] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-28 16:17:21] Coluna: Operadora, Tipo: int
+[2025-05-28 16:17:21] Coluna: Prestador, Tipo: int
+[2025-05-28 16:17:21] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-28 16:17:21] Coluna: Data_Nascimento, Tipo: date
+[2025-05-28 16:17:21] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-28 16:17:21] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-28 16:17:21] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-28 16:17:21] Operadora ID resolvido: 2
+[2025-05-28 16:17:21] Prestador ID resolvido: 30743
+[2025-05-28 16:17:21] Formato de data de nascimento inválido: +081019-01-01
+[2025-05-28 16:17:21] Formato de data de início de tratamento inválido: +030042-01-01
+[2025-05-28 16:17:21] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (2, 30743, NULL, 'Rodrigo F. Peixe', NULL, 'M', NULL, 'C341')
+[2025-05-28 16:17:22] Paciente inserido com sucesso. ID: 1332
+[2025-05-28 16:17:22] === FIM DO PROCESSAMENTO ===
+[2025-05-28 21:33:21] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-28 21:33:22] Conexão com banco de pacientes estabelecida
+[2025-05-28 21:33:22] Conexão com banco de serviço estabelecida
+[2025-05-28 21:33:22] Dados recebidos: {"Operadora":"Elosaúde","Prestador":"Ceof","Paciente_Codigo":"8239924","Nome":"MAGDA REGINA DA SILVA MAGRI","Sexo":"F","Nascimento":"10/11/1958","Data_Inicio_Tratamento":"11/12/2024","CID":"C509"}
+[2025-05-28 21:33:22] Verificando estrutura da tabela Pacientes
+[2025-05-28 21:33:22] Coluna: id, Tipo: int
+[2025-05-28 21:33:22] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-28 21:33:22] Coluna: Operadora, Tipo: int
+[2025-05-28 21:33:22] Coluna: Prestador, Tipo: int
+[2025-05-28 21:33:22] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-28 21:33:22] Coluna: Data_Nascimento, Tipo: date
+[2025-05-28 21:33:22] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-28 21:33:22] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-28 21:33:22] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-28 21:33:22] Operadora ID resolvido: 3
+[2025-05-28 21:33:22] Prestador ID resolvido: 30743
+[2025-05-28 21:33:22] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (3, 30743, '8239924', 'MAGDA REGINA DA SILVA MAGRI', '1958-11-10', 'F', '2024-12-11', 'C509')
+[2025-05-28 21:33:22] Paciente inserido com sucesso. ID: 1333
+[2025-05-28 21:33:22] === FIM DO PROCESSAMENTO ===
+[2025-05-29 09:09:01] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-29 09:09:02] Conexão com banco de pacientes estabelecida
+[2025-05-29 09:09:02] Conexão com banco de serviço estabelecida
+[2025-05-29 09:09:02] Dados recebidos: {"Operadora":"Elosaúde","Prestador":"Viver","Paciente_Codigo":"7091432","Nome":"VENILDA SELVINA RATH ALVES","Sexo":"F","Nascimento":"15/06/1948","Data_Inicio_Tratamento":"25/11/2024","CID":"C180"}
+[2025-05-29 09:09:02] Verificando estrutura da tabela Pacientes
+[2025-05-29 09:09:02] Coluna: id, Tipo: int
+[2025-05-29 09:09:02] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-29 09:09:02] Coluna: Operadora, Tipo: int
+[2025-05-29 09:09:02] Coluna: Prestador, Tipo: int
+[2025-05-29 09:09:02] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-29 09:09:02] Coluna: Data_Nascimento, Tipo: date
+[2025-05-29 09:09:02] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-29 09:09:02] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-29 09:09:02] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-29 09:09:02] Operadora ID resolvido: 3
+[2025-05-29 09:09:03] Prestador ID resolvido: 48277
+[2025-05-29 09:09:03] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (3, 48277, '7091432', 'VENILDA SELVINA RATH ALVES', '1948-06-15', 'F', '2024-11-25', 'C180')
+[2025-05-29 09:09:03] Paciente inserido com sucesso. ID: 1334
+[2025-05-29 09:09:03] === FIM DO PROCESSAMENTO ===
+[2025-05-29 13:36:46] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-29 13:36:47] Conexão com banco de pacientes estabelecida
+[2025-05-29 13:36:47] Conexão com banco de serviço estabelecida
+[2025-05-29 13:36:47] Dados recebidos: {"Operadora":"Sim Saúde","Prestador":"Ocf - Luiz Alberto","Paciente_Codigo":"9900578100","Nome":"ELIAS ANTÔNIO THOMAS","Sexo":"M","Nascimento":"01/01/1958","Data_Inicio_Tratamento":"14/11/2022","CID":"C340"}
+[2025-05-29 13:36:47] Verificando estrutura da tabela Pacientes
+[2025-05-29 13:36:47] Coluna: id, Tipo: int
+[2025-05-29 13:36:47] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-29 13:36:47] Coluna: Operadora, Tipo: int
+[2025-05-29 13:36:47] Coluna: Prestador, Tipo: int
+[2025-05-29 13:36:47] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-29 13:36:47] Coluna: Data_Nascimento, Tipo: date
+[2025-05-29 13:36:47] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-29 13:36:47] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-29 13:36:47] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-29 13:36:47] Operadora ID resolvido: 4
+[2025-05-29 13:36:48] Prestador ID resolvido: 43618
+[2025-05-29 13:36:48] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (4, 43618, '9900578100', 'ELIAS ANTÔNIO THOMAS', '1958-01-01', 'M', '2022-11-14', 'C340')
+[2025-05-29 13:36:48] Paciente inserido com sucesso. ID: 1335
+[2025-05-29 13:36:48] === FIM DO PROCESSAMENTO ===
+[2025-05-29 15:41:28] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-29 15:41:29] Conexão com banco de pacientes estabelecida
+[2025-05-29 15:41:29] Conexão com banco de serviço estabelecida
+[2025-05-29 15:41:29] Dados recebidos: {"Operadora":"Sim Saúde","Prestador":"Ocf - Luiz Alberto","Paciente_Codigo":"9900056600","Nome":"NILZA FERNANDES","Sexo":"F","Nascimento":"01/01/1945","Data_Inicio_Tratamento":"01/01/2019","CID":"C500"}
+[2025-05-29 15:41:29] Verificando estrutura da tabela Pacientes
+[2025-05-29 15:41:29] Coluna: id, Tipo: int
+[2025-05-29 15:41:29] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-29 15:41:29] Coluna: Operadora, Tipo: int
+[2025-05-29 15:41:29] Coluna: Prestador, Tipo: int
+[2025-05-29 15:41:29] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-29 15:41:29] Coluna: Data_Nascimento, Tipo: date
+[2025-05-29 15:41:29] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-29 15:41:29] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-29 15:41:29] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-29 15:41:29] Operadora ID resolvido: 4
+[2025-05-29 15:41:29] Prestador ID resolvido: 43618
+[2025-05-29 15:41:29] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (4, 43618, '9900056600', 'NILZA FERNANDES', '1945-01-01', 'F', '2019-01-01', 'C500')
+[2025-05-29 15:41:29] Paciente inserido com sucesso. ID: 1336
+[2025-05-29 15:41:29] === FIM DO PROCESSAMENTO ===
+[2025-05-29 16:59:47] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-29 16:59:48] Conexão com banco de pacientes estabelecida
+[2025-05-29 16:59:48] Conexão com banco de serviço estabelecida
+[2025-05-29 16:59:48] Dados recebidos: {"Operadora":"Sim Saúde","Prestador":"Ocf - Luiz Alberto","Paciente_Codigo":"9000126201","Nome":"SANDRA MARA DE ESPINDOLA","Sexo":"F","Nascimento":"01/01/1963","Data_Inicio_Tratamento":"","CID":"C500"}
+[2025-05-29 16:59:48] Verificando estrutura da tabela Pacientes
+[2025-05-29 16:59:48] Coluna: id, Tipo: int
+[2025-05-29 16:59:48] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-29 16:59:48] Coluna: Operadora, Tipo: int
+[2025-05-29 16:59:48] Coluna: Prestador, Tipo: int
+[2025-05-29 16:59:48] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-29 16:59:48] Coluna: Data_Nascimento, Tipo: date
+[2025-05-29 16:59:48] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-29 16:59:48] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-29 16:59:48] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-29 16:59:48] Operadora ID resolvido: 4
+[2025-05-29 16:59:48] Prestador ID resolvido: 43618
+[2025-05-29 16:59:48] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (4, 43618, '9000126201', 'SANDRA MARA DE ESPINDOLA', '1963-01-01', 'F', NULL, 'C500')
+[2025-05-29 16:59:48] Paciente inserido com sucesso. ID: 1337
+[2025-05-29 16:59:48] === FIM DO PROCESSAMENTO ===
+[2025-05-29 17:12:58] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-29 17:12:59] Conexão com banco de pacientes estabelecida
+[2025-05-29 17:12:59] Conexão com banco de serviço estabelecida
+[2025-05-29 17:12:59] Dados recebidos: {"Operadora":"Sim Saúde","Prestador":"Soma","Paciente_Codigo":"9900663601","Nome":"JOSÉ MACHADO","Sexo":"M","Nascimento":"01/01/1958","Data_Inicio_Tratamento":"19/08/2024","CID":"C340"}
+[2025-05-29 17:12:59] Verificando estrutura da tabela Pacientes
+[2025-05-29 17:12:59] Coluna: id, Tipo: int
+[2025-05-29 17:12:59] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-29 17:12:59] Coluna: Operadora, Tipo: int
+[2025-05-29 17:12:59] Coluna: Prestador, Tipo: int
+[2025-05-29 17:12:59] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-29 17:12:59] Coluna: Data_Nascimento, Tipo: date
+[2025-05-29 17:12:59] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-29 17:12:59] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-29 17:12:59] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-29 17:13:00] Operadora ID resolvido: 4
+[2025-05-29 17:13:00] Prestador ID resolvido: 46825
+[2025-05-29 17:13:00] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (4, 46825, '9900663601', 'JOSÉ MACHADO', '1958-01-01', 'M', '2024-08-19', 'C340')
+[2025-05-29 17:13:00] Paciente inserido com sucesso. ID: 1338
+[2025-05-29 17:13:00] === FIM DO PROCESSAMENTO ===
+[2025-05-29 17:28:08] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-29 17:28:09] Conexão com banco de pacientes estabelecida
+[2025-05-29 17:28:09] Conexão com banco de serviço estabelecida
+[2025-05-29 17:28:09] Dados recebidos: {"Operadora":"Sim Saúde","Prestador":"Ceof","Paciente_Codigo":"0400015000","Nome":"DENISE MARIA CORREA","Sexo":"F","Nascimento":"16/12/1960","Data_Inicio_Tratamento":"20/08/2024","CID":"C341"}
+[2025-05-29 17:28:09] Verificando estrutura da tabela Pacientes
+[2025-05-29 17:28:09] Coluna: id, Tipo: int
+[2025-05-29 17:28:09] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-29 17:28:09] Coluna: Operadora, Tipo: int
+[2025-05-29 17:28:09] Coluna: Prestador, Tipo: int
+[2025-05-29 17:28:09] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-29 17:28:09] Coluna: Data_Nascimento, Tipo: date
+[2025-05-29 17:28:09] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-29 17:28:09] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-29 17:28:09] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-29 17:28:10] Operadora ID resolvido: 4
+[2025-05-29 17:28:10] Prestador ID resolvido: 30743
+[2025-05-29 17:28:10] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (4, 30743, '0400015000', 'DENISE MARIA CORREA', '1960-12-16', 'F', '2024-08-20', 'C341')
+[2025-05-29 17:28:10] Paciente inserido com sucesso. ID: 1339
+[2025-05-29 17:28:10] === FIM DO PROCESSAMENTO ===
+[2025-05-30 14:04:45] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-30 14:04:46] Conexão com banco de pacientes estabelecida
+[2025-05-30 14:04:46] Conexão com banco de serviço estabelecida
+[2025-05-30 14:04:46] Dados recebidos: {"Operadora":"Sim Saúde","Prestador":"Ocf - Luiz Alberto","Paciente_Codigo":"0201457901","Nome":"MARIA ANDREA GARCIA","Sexo":"F","Nascimento":"01/01/1974","Data_Inicio_Tratamento":"04/11/2015","CID":"C500"}
+[2025-05-30 14:04:46] Verificando estrutura da tabela Pacientes
+[2025-05-30 14:04:46] Coluna: id, Tipo: int
+[2025-05-30 14:04:46] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-30 14:04:46] Coluna: Operadora, Tipo: int
+[2025-05-30 14:04:46] Coluna: Prestador, Tipo: int
+[2025-05-30 14:04:46] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-30 14:04:46] Coluna: Data_Nascimento, Tipo: date
+[2025-05-30 14:04:46] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-30 14:04:46] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-30 14:04:46] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-30 14:04:46] Operadora ID resolvido: 4
+[2025-05-30 14:04:47] Prestador ID resolvido: 43618
+[2025-05-30 14:04:47] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (4, 43618, '0201457901', 'MARIA ANDREA GARCIA', '1974-01-01', 'F', '2015-11-04', 'C500')
+[2025-05-30 14:04:47] Paciente inserido com sucesso. ID: 1340
+[2025-05-30 14:04:47] === FIM DO PROCESSAMENTO ===
+[2025-05-30 14:31:36] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-30 14:31:37] Conexão com banco de pacientes estabelecida
+[2025-05-30 14:31:37] Conexão com banco de serviço estabelecida
+[2025-05-30 14:31:37] Dados recebidos: {"Operadora":"Casacaresc","Prestador":"Oncomedi","Paciente_Codigo":"0025.5974.058777.10-3","Nome":"BERENICE FATIMA GODINHO","Sexo":"F","Nascimento":"22/11/1978","Data_Inicio_Tratamento":"21/03/2025","CID":"C340,C349"}
+[2025-05-30 14:31:37] Verificando estrutura da tabela Pacientes
+[2025-05-30 14:31:37] Coluna: id, Tipo: int
+[2025-05-30 14:31:37] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-30 14:31:37] Coluna: Operadora, Tipo: int
+[2025-05-30 14:31:37] Coluna: Prestador, Tipo: int
+[2025-05-30 14:31:37] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-30 14:31:37] Coluna: Data_Nascimento, Tipo: date
+[2025-05-30 14:31:37] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-30 14:31:37] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-30 14:31:37] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-30 14:31:37] Operadora ID resolvido: 2
+[2025-05-30 14:31:37] Prestador ID resolvido: 43697
+[2025-05-30 14:31:37] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (2, 43697, '0025.5974.058777.10-3', 'BERENICE FATIMA GODINHO', '1978-11-22', 'F', '2025-03-21', 'C340,C349')
+[2025-05-30 14:31:37] Paciente inserido com sucesso. ID: 1341
+[2025-05-30 14:31:37] === FIM DO PROCESSAMENTO ===
+[2025-05-30 14:35:47] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-30 14:35:48] Conexão com banco de pacientes estabelecida
+[2025-05-30 14:35:48] Conexão com banco de serviço estabelecida
+[2025-05-30 14:35:48] Dados recebidos: {"Operadora":"Casacaresc","Prestador":"Centro Catarinense De Imunoterapia Ltda","Paciente_Codigo":"","Nome":"EDILENE BOING SCHMIDT","Sexo":"F","Nascimento":"15/07/1976","Data_Inicio_Tratamento":"25/09/2024","CID":""}
+[2025-05-30 14:35:48] Verificando estrutura da tabela Pacientes
+[2025-05-30 14:35:48] Coluna: id, Tipo: int
+[2025-05-30 14:35:48] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-30 14:35:48] Coluna: Operadora, Tipo: int
+[2025-05-30 14:35:48] Coluna: Prestador, Tipo: int
+[2025-05-30 14:35:48] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-30 14:35:48] Coluna: Data_Nascimento, Tipo: date
+[2025-05-30 14:35:48] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-30 14:35:48] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-30 14:35:48] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-30 14:35:49] Operadora ID resolvido: 2
+[2025-05-30 14:35:49] Prestador ID resolvido: 30661
+[2025-05-30 14:35:49] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (2, 30661, NULL, 'EDILENE BOING SCHMIDT', '1976-07-15', 'F', '2024-09-25', NULL)
+[2025-05-30 14:35:49] Paciente inserido com sucesso. ID: 1342
+[2025-05-30 14:35:49] === FIM DO PROCESSAMENTO ===
+[2025-05-31 19:45:49] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-31 19:45:50] Conexão com banco de pacientes estabelecida
+[2025-05-31 19:45:50] Conexão com banco de serviço estabelecida
+[2025-05-31 19:45:50] Dados recebidos: {"Operadora":"Elosaúde","Prestador":"Ceof","Paciente_Codigo":"66090075","Nome":"JOSE CARLOS MARCKIORI DOS SANTOS","Sexo":"M","Nascimento":"06/01/1951","Data_Inicio_Tratamento":"07/11/2024","CID":"C509"}
+[2025-05-31 19:45:50] Verificando estrutura da tabela Pacientes
+[2025-05-31 19:45:50] Coluna: id, Tipo: int
+[2025-05-31 19:45:50] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-31 19:45:50] Coluna: Operadora, Tipo: int
+[2025-05-31 19:45:50] Coluna: Prestador, Tipo: int
+[2025-05-31 19:45:50] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-31 19:45:50] Coluna: Data_Nascimento, Tipo: date
+[2025-05-31 19:45:50] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-31 19:45:50] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-31 19:45:50] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-31 19:45:50] Operadora ID resolvido: 3
+[2025-05-31 19:45:50] Prestador ID resolvido: 30743
+[2025-05-31 19:45:50] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (3, 30743, '66090075', 'JOSE CARLOS MARCKIORI DOS SANTOS', '1951-01-06', 'M', '2024-11-07', 'C509')
+[2025-05-31 19:45:50] Paciente inserido com sucesso. ID: 1343
+[2025-05-31 19:45:50] === FIM DO PROCESSAMENTO ===
+[2025-05-31 20:15:02] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-31 20:15:03] Conexão com banco de pacientes estabelecida
+[2025-05-31 20:15:03] Conexão com banco de serviço estabelecida
+[2025-05-31 20:15:03] Dados recebidos: {"Operadora":"Elosaúde","Prestador":"Ceof","Paciente_Codigo":"8219207","Nome":"WALTAMIR BARREIROS","Sexo":"M","Nascimento":"04/08/1953","Data_Inicio_Tratamento":"06/11/2024","CID":"C349"}
+[2025-05-31 20:15:03] Verificando estrutura da tabela Pacientes
+[2025-05-31 20:15:03] Coluna: id, Tipo: int
+[2025-05-31 20:15:03] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-31 20:15:03] Coluna: Operadora, Tipo: int
+[2025-05-31 20:15:03] Coluna: Prestador, Tipo: int
+[2025-05-31 20:15:03] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-31 20:15:03] Coluna: Data_Nascimento, Tipo: date
+[2025-05-31 20:15:03] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-31 20:15:03] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-31 20:15:03] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-31 20:15:03] Operadora ID resolvido: 3
+[2025-05-31 20:15:04] Prestador ID resolvido: 30743
+[2025-05-31 20:15:04] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (3, 30743, '8219207', 'WALTAMIR BARREIROS', '1953-08-04', 'M', '2024-11-06', 'C349')
+[2025-05-31 20:15:04] Paciente inserido com sucesso. ID: 1344
+[2025-05-31 20:15:04] === FIM DO PROCESSAMENTO ===
+[2025-05-31 20:23:57] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-31 20:23:58] Conexão com banco de pacientes estabelecida
+[2025-05-31 20:23:58] Conexão com banco de serviço estabelecida
+[2025-05-31 20:23:58] Dados recebidos: {"Operadora":"Elosaúde","Prestador":"Ceof","Paciente_Codigo":"66030331","Nome":"NALZIRA ROSA DOS SANTOS","Sexo":"F","Nascimento":"03/04/1940","Data_Inicio_Tratamento":"29/05/2025","CID":"C509"}
+[2025-05-31 20:23:58] Verificando estrutura da tabela Pacientes
+[2025-05-31 20:23:58] Coluna: id, Tipo: int
+[2025-05-31 20:23:58] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-31 20:23:58] Coluna: Operadora, Tipo: int
+[2025-05-31 20:23:58] Coluna: Prestador, Tipo: int
+[2025-05-31 20:23:58] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-31 20:23:58] Coluna: Data_Nascimento, Tipo: date
+[2025-05-31 20:23:58] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-31 20:23:58] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-31 20:23:58] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-31 20:23:59] Operadora ID resolvido: 3
+[2025-05-31 20:23:59] Prestador ID resolvido: 30743
+[2025-05-31 20:23:59] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (3, 30743, '66030331', 'NALZIRA ROSA DOS SANTOS', '1940-04-03', 'F', '2025-05-29', 'C509')
+[2025-05-31 20:23:59] Paciente inserido com sucesso. ID: 1345
+[2025-05-31 20:23:59] === FIM DO PROCESSAMENTO ===
+[2025-05-31 20:40:56] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-31 20:40:57] Conexão com banco de pacientes estabelecida
+[2025-05-31 20:40:57] Conexão com banco de serviço estabelecida
+[2025-05-31 20:40:57] Dados recebidos: {"Operadora":"Casacaresc","Prestador":"Ceof","Paciente_Codigo":" 909002072002487000","Nome":"VILSON VIDI","Sexo":"M","Nascimento":"02/11/1952","Data_Inicio_Tratamento":"19/04/2024","CID":"C880"}
+[2025-05-31 20:40:57] Verificando estrutura da tabela Pacientes
+[2025-05-31 20:40:57] Coluna: id, Tipo: int
+[2025-05-31 20:40:57] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-31 20:40:57] Coluna: Operadora, Tipo: int
+[2025-05-31 20:40:57] Coluna: Prestador, Tipo: int
+[2025-05-31 20:40:57] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-31 20:40:57] Coluna: Data_Nascimento, Tipo: date
+[2025-05-31 20:40:57] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-31 20:40:57] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-31 20:40:57] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-31 20:40:58] Operadora ID resolvido: 2
+[2025-05-31 20:40:58] Prestador ID resolvido: 30743
+[2025-05-31 20:40:58] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (2, 30743, ' 909002072002487000', 'VILSON VIDI', '1952-11-02', 'M', '2024-04-19', 'C880')
+[2025-05-31 20:40:58] Paciente inserido com sucesso. ID: 1346
+[2025-05-31 20:40:58] === FIM DO PROCESSAMENTO ===
+[2025-05-31 20:49:08] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-31 20:49:09] Conexão com banco de pacientes estabelecida
+[2025-05-31 20:49:09] Conexão com banco de serviço estabelecida
+[2025-05-31 20:49:09] Dados recebidos: {"Operadora":"Elosaúde","Prestador":"Soma","Paciente_Codigo":"7045075","Nome":"SANDRA REGINA SOARES","Sexo":"F","Nascimento":"","Data_Inicio_Tratamento":"05/06/2024","CID":"C509"}
+[2025-05-31 20:49:09] Verificando estrutura da tabela Pacientes
+[2025-05-31 20:49:09] Coluna: id, Tipo: int
+[2025-05-31 20:49:09] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-31 20:49:09] Coluna: Operadora, Tipo: int
+[2025-05-31 20:49:09] Coluna: Prestador, Tipo: int
+[2025-05-31 20:49:09] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-31 20:49:09] Coluna: Data_Nascimento, Tipo: date
+[2025-05-31 20:49:09] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-31 20:49:09] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-31 20:49:09] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-31 20:49:09] Operadora ID resolvido: 3
+[2025-05-31 20:49:10] Prestador ID resolvido: 46825
+[2025-05-31 20:49:10] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (3, 46825, '7045075', 'SANDRA REGINA SOARES', NULL, 'F', '2024-06-05', 'C509')
+[2025-05-31 20:49:10] Paciente inserido com sucesso. ID: 1347
+[2025-05-31 20:49:10] === FIM DO PROCESSAMENTO ===
+[2025-05-31 21:24:56] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-31 21:24:57] Conexão com banco de pacientes estabelecida
+[2025-05-31 21:24:57] Conexão com banco de serviço estabelecida
+[2025-05-31 21:24:57] Dados recebidos: {"Operadora":"Elosaúde","Prestador":"Soma","Paciente_Codigo":"8343858","Nome":"RONALD JOAO ROUSSENQ JUNIOR","Sexo":"M","Nascimento":"22/07/1985","Data_Inicio_Tratamento":"30/05/2025","CID":"M468"}
+[2025-05-31 21:24:57] Verificando estrutura da tabela Pacientes
+[2025-05-31 21:24:57] Coluna: id, Tipo: int
+[2025-05-31 21:24:57] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-31 21:24:57] Coluna: Operadora, Tipo: int
+[2025-05-31 21:24:57] Coluna: Prestador, Tipo: int
+[2025-05-31 21:24:57] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-31 21:24:57] Coluna: Data_Nascimento, Tipo: date
+[2025-05-31 21:24:57] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-31 21:24:57] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-31 21:24:57] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-31 21:24:57] Operadora ID resolvido: 3
+[2025-05-31 21:24:58] Prestador ID resolvido: 46825
+[2025-05-31 21:24:58] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (3, 46825, '8343858', 'RONALD JOAO ROUSSENQ JUNIOR', '1985-07-22', 'M', '2025-05-30', 'M468')
+[2025-05-31 21:24:58] Paciente inserido com sucesso. ID: 1348
+[2025-05-31 21:24:58] === FIM DO PROCESSAMENTO ===
+[2025-05-31 22:08:32] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-31 22:08:33] Conexão com banco de pacientes estabelecida
+[2025-05-31 22:08:33] Conexão com banco de serviço estabelecida
+[2025-05-31 22:08:33] Dados recebidos: {"Operadora":"Casacaresc","Prestador":"Unimed Tubarão","Paciente_Codigo":"0221.5974.002843.01-9","Nome":"ADEMIR SCHLICKMANN ","Sexo":"M","Nascimento":"26/01/1956","Data_Inicio_Tratamento":"19/02/2025","CID":"C259,C160"}
+[2025-05-31 22:08:33] Verificando estrutura da tabela Pacientes
+[2025-05-31 22:08:33] Coluna: id, Tipo: int
+[2025-05-31 22:08:33] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-31 22:08:33] Coluna: Operadora, Tipo: int
+[2025-05-31 22:08:33] Coluna: Prestador, Tipo: int
+[2025-05-31 22:08:33] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-31 22:08:33] Coluna: Data_Nascimento, Tipo: date
+[2025-05-31 22:08:33] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-31 22:08:33] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-31 22:08:33] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-31 22:08:33] Operadora ID resolvido: 2
+[2025-05-31 22:08:33] Prestador ID resolvido: 4611
+[2025-05-31 22:08:33] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (2, 4611, '0221.5974.002843.01-9', 'ADEMIR SCHLICKMANN ', '1956-01-26', 'M', '2025-02-19', 'C259,C160')
+[2025-05-31 22:08:34] Paciente inserido com sucesso. ID: 1349
+[2025-05-31 22:08:34] === FIM DO PROCESSAMENTO ===
+[2025-05-31 22:18:58] === INÍCIO DO PROCESSAMENTO ===
+[2025-05-31 22:18:59] Conexão com banco de pacientes estabelecida
+[2025-05-31 22:18:59] Conexão com banco de serviço estabelecida
+[2025-05-31 22:18:59] Dados recebidos: {"Operadora":"Casacaresc","Prestador":"","Paciente_Codigo":"0025.5974.002956.53-3","Nome":" MARIANA VIEIRA DE OLIVEIRA ","Sexo":"F","Nascimento":"05/04/1982","Data_Inicio_Tratamento":"30/08/2024","CID":"M058"}
+[2025-05-31 22:18:59] Verificando estrutura da tabela Pacientes
+[2025-05-31 22:18:59] Coluna: id, Tipo: int
+[2025-05-31 22:18:59] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-05-31 22:18:59] Coluna: Operadora, Tipo: int
+[2025-05-31 22:18:59] Coluna: Prestador, Tipo: int
+[2025-05-31 22:18:59] Coluna: Codigo, Tipo: varchar(150)
+[2025-05-31 22:18:59] Coluna: Data_Nascimento, Tipo: date
+[2025-05-31 22:18:59] Coluna: Sexo, Tipo: varchar(50)
+[2025-05-31 22:18:59] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-05-31 22:18:59] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-05-31 22:19:00] Operadora ID resolvido: 2
+[2025-05-31 22:19:00] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (2, NULL, '0025.5974.002956.53-3', ' MARIANA VIEIRA DE OLIVEIRA ', '1982-04-05', 'F', '2024-08-30', 'M058')
+[2025-05-31 22:19:00] Paciente inserido com sucesso. ID: 1350
+[2025-05-31 22:19:00] === FIM DO PROCESSAMENTO ===
+[2025-06-02 13:59:52] === INÍCIO DO PROCESSAMENTO ===
+[2025-06-02 13:59:53] Conexão com banco de pacientes estabelecida
+[2025-06-02 13:59:53] Conexão com banco de serviço estabelecida
+[2025-06-02 13:59:53] Dados recebidos: {"Operadora":"Celos","Prestador":"Ceof","Paciente_Codigo":"010001866101","Nome":"ANA CLAUDIA VILVERT DE SOUZA ROSARIO","Sexo":"F","Nascimento":"12/05/0198","Data_Inicio_Tratamento":"23/05/2025","CID":"C508"}
+[2025-06-02 13:59:53] Verificando estrutura da tabela Pacientes
+[2025-06-02 13:59:54] Coluna: id, Tipo: int
+[2025-06-02 13:59:54] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-06-02 13:59:54] Coluna: Operadora, Tipo: int
+[2025-06-02 13:59:54] Coluna: Prestador, Tipo: int
+[2025-06-02 13:59:54] Coluna: Codigo, Tipo: varchar(150)
+[2025-06-02 13:59:54] Coluna: Data_Nascimento, Tipo: date
+[2025-06-02 13:59:54] Coluna: Sexo, Tipo: varchar(50)
+[2025-06-02 13:59:54] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-06-02 13:59:54] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-06-02 13:59:54] Operadora ID resolvido: 5
+[2025-06-02 13:59:54] Prestador ID resolvido: 30743
+[2025-06-02 13:59:54] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (5, 30743, '010001866101', 'ANA CLAUDIA VILVERT DE SOUZA ROSARIO', '0198-05-12', 'F', '2025-05-23', 'C508')
+[2025-06-02 13:59:54] Paciente inserido com sucesso. ID: 1351
+[2025-06-02 13:59:54] === FIM DO PROCESSAMENTO ===
+[2025-06-03 15:10:49] === INÍCIO DO PROCESSAMENTO ===
+[2025-06-03 15:10:50] Conexão com banco de pacientes estabelecida
+[2025-06-03 15:10:50] Conexão com banco de serviço estabelecida
+[2025-06-03 15:10:50] Dados recebidos: {"Operadora":"Celos","Prestador":"Noova","Paciente_Codigo":"010000643501","Nome":"MARIA TEREZINHA DA SILVA COELHO","Sexo":"F","Nascimento":"02/11/1956","Data_Inicio_Tratamento":"","CID":"C509"}
+[2025-06-03 15:10:50] Verificando estrutura da tabela Pacientes
+[2025-06-03 15:10:50] Coluna: id, Tipo: int
+[2025-06-03 15:10:50] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-06-03 15:10:50] Coluna: Operadora, Tipo: int
+[2025-06-03 15:10:50] Coluna: Prestador, Tipo: int
+[2025-06-03 15:10:50] Coluna: Codigo, Tipo: varchar(150)
+[2025-06-03 15:10:50] Coluna: Data_Nascimento, Tipo: date
+[2025-06-03 15:10:50] Coluna: Sexo, Tipo: varchar(50)
+[2025-06-03 15:10:50] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-06-03 15:10:50] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-06-03 15:10:50] Operadora ID resolvido: 5
+[2025-06-03 15:10:51] Prestador ID resolvido: 43576
+[2025-06-03 15:10:51] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (5, 43576, '010000643501', 'MARIA TEREZINHA DA SILVA COELHO', '1956-11-02', 'F', NULL, 'C509')
+[2025-06-03 15:10:51] Paciente inserido com sucesso. ID: 1352
+[2025-06-03 15:10:51] === FIM DO PROCESSAMENTO ===
+[2025-06-03 17:07:22] === INÍCIO DO PROCESSAMENTO ===
+[2025-06-03 17:07:23] Conexão com banco de pacientes estabelecida
+[2025-06-03 17:07:23] Conexão com banco de serviço estabelecida
+[2025-06-03 17:07:23] Dados recebidos: {"Operadora":"Celos","Prestador":"Soma","Paciente_Codigo":"010000673400","Nome":"MARIA DE LOURDES DA SILVA FOSSA","Sexo":"F","Nascimento":"03/03/1958","Data_Inicio_Tratamento":"","CID":"M058"}
+[2025-06-03 17:07:23] Verificando estrutura da tabela Pacientes
+[2025-06-03 17:07:23] Coluna: id, Tipo: int
+[2025-06-03 17:07:23] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-06-03 17:07:23] Coluna: Operadora, Tipo: int
+[2025-06-03 17:07:23] Coluna: Prestador, Tipo: int
+[2025-06-03 17:07:23] Coluna: Codigo, Tipo: varchar(150)
+[2025-06-03 17:07:23] Coluna: Data_Nascimento, Tipo: date
+[2025-06-03 17:07:23] Coluna: Sexo, Tipo: varchar(50)
+[2025-06-03 17:07:23] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-06-03 17:07:23] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-06-03 17:07:23] Operadora ID resolvido: 5
+[2025-06-03 17:07:23] Prestador ID resolvido: 46825
+[2025-06-03 17:07:23] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (5, 46825, '010000673400', 'MARIA DE LOURDES DA SILVA FOSSA', '1958-03-03', 'F', NULL, 'M058')
+[2025-06-03 17:07:24] Paciente inserido com sucesso. ID: 1353
+[2025-06-03 17:07:24] === FIM DO PROCESSAMENTO ===
+[2025-06-04 10:24:29] === INÍCIO DO PROCESSAMENTO ===
+[2025-06-04 10:24:30] Conexão com banco de pacientes estabelecida
+[2025-06-04 10:24:30] Conexão com banco de serviço estabelecida
+[2025-06-04 10:24:30] Dados recebidos: {"Operadora":"Celos","Prestador":"Noova","Paciente_Codigo":"010001730451","Nome":"IRIS REGINA MOREIRA DE MELO","Sexo":"F","Nascimento":"28/03/1963","Data_Inicio_Tratamento":"29/05/2025","CID":"C509"}
+[2025-06-04 10:24:30] Verificando estrutura da tabela Pacientes
+[2025-06-04 10:24:31] Coluna: id, Tipo: int
+[2025-06-04 10:24:31] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-06-04 10:24:31] Coluna: Operadora, Tipo: int
+[2025-06-04 10:24:31] Coluna: Prestador, Tipo: int
+[2025-06-04 10:24:31] Coluna: Codigo, Tipo: varchar(150)
+[2025-06-04 10:24:31] Coluna: Data_Nascimento, Tipo: date
+[2025-06-04 10:24:31] Coluna: Sexo, Tipo: varchar(50)
+[2025-06-04 10:24:31] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-06-04 10:24:31] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-06-04 10:24:31] Operadora ID resolvido: 5
+[2025-06-04 10:24:31] Prestador ID resolvido: 43576
+[2025-06-04 10:24:31] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (5, 43576, '010001730451', 'IRIS REGINA MOREIRA DE MELO', '1963-03-28', 'F', '2025-05-29', 'C509')
+[2025-06-04 10:24:31] Paciente inserido com sucesso. ID: 1354
+[2025-06-04 10:24:31] === FIM DO PROCESSAMENTO ===
+[2025-06-04 20:01:31] === INÍCIO DO PROCESSAMENTO ===
+[2025-06-04 20:01:32] Conexão com banco de pacientes estabelecida
+[2025-06-04 20:01:32] Conexão com banco de serviço estabelecida
+[2025-06-04 20:01:32] Dados recebidos: {"Operadora":"Sim Saúde","Prestador":"Ceof","Paciente_Codigo":"0201462500","Nome":"VANESSA DE SOUZA","Sexo":"F","Nascimento":"27/10/1985","Data_Inicio_Tratamento":"08/01/2020","CID":"C509"}
+[2025-06-04 20:01:32] Verificando estrutura da tabela Pacientes
+[2025-06-04 20:01:32] Coluna: id, Tipo: int
+[2025-06-04 20:01:32] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-06-04 20:01:32] Coluna: Operadora, Tipo: int
+[2025-06-04 20:01:32] Coluna: Prestador, Tipo: int
+[2025-06-04 20:01:32] Coluna: Codigo, Tipo: varchar(150)
+[2025-06-04 20:01:32] Coluna: Data_Nascimento, Tipo: date
+[2025-06-04 20:01:32] Coluna: Sexo, Tipo: varchar(50)
+[2025-06-04 20:01:32] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-06-04 20:01:32] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-06-04 20:01:33] Operadora ID resolvido: 4
+[2025-06-04 20:01:33] Prestador ID resolvido: 30743
+[2025-06-04 20:01:33] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (4, 30743, '0201462500', 'VANESSA DE SOUZA', '1985-10-27', 'F', '2020-01-08', 'C509')
+[2025-06-04 20:01:33] Paciente inserido com sucesso. ID: 1355
+[2025-06-04 20:01:33] === FIM DO PROCESSAMENTO ===
+[2025-06-04 20:07:21] === INÍCIO DO PROCESSAMENTO ===
+[2025-06-04 20:07:22] Conexão com banco de pacientes estabelecida
+[2025-06-04 20:07:22] Conexão com banco de serviço estabelecida
+[2025-06-04 20:07:22] Dados recebidos: {"Operadora":"Sim Saúde","Prestador":"Ceof","Paciente_Codigo":"9800383830","Nome":"RICARDO MULLER ARCARI","Sexo":"M","Nascimento":"19/06/1959","Data_Inicio_Tratamento":"06/04/2022","CID":"C61"}
+[2025-06-04 20:07:22] Verificando estrutura da tabela Pacientes
+[2025-06-04 20:07:22] Coluna: id, Tipo: int
+[2025-06-04 20:07:22] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-06-04 20:07:22] Coluna: Operadora, Tipo: int
+[2025-06-04 20:07:22] Coluna: Prestador, Tipo: int
+[2025-06-04 20:07:22] Coluna: Codigo, Tipo: varchar(150)
+[2025-06-04 20:07:22] Coluna: Data_Nascimento, Tipo: date
+[2025-06-04 20:07:22] Coluna: Sexo, Tipo: varchar(50)
+[2025-06-04 20:07:22] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-06-04 20:07:22] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-06-04 20:07:22] Operadora ID resolvido: 4
+[2025-06-04 20:07:22] Prestador ID resolvido: 30743
+[2025-06-04 20:07:22] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (4, 30743, '9800383830', 'RICARDO MULLER ARCARI', '1959-06-19', 'M', '2022-04-06', 'C61')
+[2025-06-04 20:07:22] Paciente inserido com sucesso. ID: 1356
+[2025-06-04 20:07:22] === FIM DO PROCESSAMENTO ===
+[2025-06-04 20:12:06] === INÍCIO DO PROCESSAMENTO ===
+[2025-06-04 20:12:07] Conexão com banco de pacientes estabelecida
+[2025-06-04 20:12:07] Conexão com banco de serviço estabelecida
+[2025-06-04 20:12:07] Dados recebidos: {"Operadora":"Sim Saúde","Prestador":"Ceof","Paciente_Codigo":"9900357700","Nome":"MARIA TEREZINHA DAMASCO JACQUES","Sexo":"F","Nascimento":"27/12/1956","Data_Inicio_Tratamento":"07/08/2009","CID":"C508"}
+[2025-06-04 20:12:07] Verificando estrutura da tabela Pacientes
+[2025-06-04 20:12:07] Coluna: id, Tipo: int
+[2025-06-04 20:12:07] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-06-04 20:12:07] Coluna: Operadora, Tipo: int
+[2025-06-04 20:12:07] Coluna: Prestador, Tipo: int
+[2025-06-04 20:12:07] Coluna: Codigo, Tipo: varchar(150)
+[2025-06-04 20:12:07] Coluna: Data_Nascimento, Tipo: date
+[2025-06-04 20:12:07] Coluna: Sexo, Tipo: varchar(50)
+[2025-06-04 20:12:07] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-06-04 20:12:07] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-06-04 20:12:07] Operadora ID resolvido: 4
+[2025-06-04 20:12:07] Prestador ID resolvido: 30743
+[2025-06-04 20:12:07] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (4, 30743, '9900357700', 'MARIA TEREZINHA DAMASCO JACQUES', '1956-12-27', 'F', '2009-08-07', 'C508')
+[2025-06-04 20:12:07] Paciente inserido com sucesso. ID: 1357
+[2025-06-04 20:12:07] === FIM DO PROCESSAMENTO ===
+[2025-06-04 20:34:30] === INÍCIO DO PROCESSAMENTO ===
+[2025-06-04 20:34:31] Conexão com banco de pacientes estabelecida
+[2025-06-04 20:34:31] Conexão com banco de serviço estabelecida
+[2025-06-04 20:34:31] Dados recebidos: {"Operadora":"Casacaresc","Prestador":"","Paciente_Codigo":"0976.5974.000774.01-0","Nome":" JANETE GUZZI PERUZZO","Sexo":"F","Nascimento":"19/02/1968","Data_Inicio_Tratamento":"27/05/2025","CID":""}
+[2025-06-04 20:34:31] Verificando estrutura da tabela Pacientes
+[2025-06-04 20:34:31] Coluna: id, Tipo: int
+[2025-06-04 20:34:31] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-06-04 20:34:31] Coluna: Operadora, Tipo: int
+[2025-06-04 20:34:31] Coluna: Prestador, Tipo: int
+[2025-06-04 20:34:31] Coluna: Codigo, Tipo: varchar(150)
+[2025-06-04 20:34:31] Coluna: Data_Nascimento, Tipo: date
+[2025-06-04 20:34:31] Coluna: Sexo, Tipo: varchar(50)
+[2025-06-04 20:34:31] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-06-04 20:34:31] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-06-04 20:34:31] Operadora ID resolvido: 2
+[2025-06-04 20:34:31] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (2, NULL, '0976.5974.000774.01-0', ' JANETE GUZZI PERUZZO', '1968-02-19', 'F', '2025-05-27', NULL)
+[2025-06-04 20:34:32] Paciente inserido com sucesso. ID: 1358
+[2025-06-04 20:34:32] === FIM DO PROCESSAMENTO ===
+[2025-06-05 02:50:38] === INÍCIO DO PROCESSAMENTO ===
+[2025-06-05 02:50:39] Conexão com banco de pacientes estabelecida
+[2025-06-05 02:50:39] Conexão com banco de serviço estabelecida
+[2025-06-05 02:50:39] Dados recebidos: {"Operadora":"Celos","Prestador":"Soma","Paciente_Codigo":"010010320100","Nome":"MARLENE NEVES GRAVIESKI PIAZZA","Sexo":"F","Nascimento":"30/10/1963","Data_Inicio_Tratamento":"","CID":"C670"}
+[2025-06-05 02:50:39] Verificando estrutura da tabela Pacientes
+[2025-06-05 02:50:39] Coluna: id, Tipo: int
+[2025-06-05 02:50:39] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-06-05 02:50:39] Coluna: Operadora, Tipo: int
+[2025-06-05 02:50:39] Coluna: Prestador, Tipo: int
+[2025-06-05 02:50:39] Coluna: Codigo, Tipo: varchar(150)
+[2025-06-05 02:50:39] Coluna: Data_Nascimento, Tipo: date
+[2025-06-05 02:50:39] Coluna: Sexo, Tipo: varchar(50)
+[2025-06-05 02:50:39] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-06-05 02:50:39] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-06-05 02:50:39] Operadora ID resolvido: 5
+[2025-06-05 02:50:40] Prestador ID resolvido: 46825
+[2025-06-05 02:50:40] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (5, 46825, '010010320100', 'MARLENE NEVES GRAVIESKI PIAZZA', '1963-10-30', 'F', NULL, 'C670')
+[2025-06-05 02:50:40] Paciente inserido com sucesso. ID: 1359
+[2025-06-05 02:50:40] === FIM DO PROCESSAMENTO ===
+[2025-06-05 03:03:22] === INÍCIO DO PROCESSAMENTO ===
+[2025-06-05 03:03:23] Conexão com banco de pacientes estabelecida
+[2025-06-05 03:03:23] Conexão com banco de serviço estabelecida
+[2025-06-05 03:03:23] Dados recebidos: {"Operadora":"Celos","Prestador":"Soma","Paciente_Codigo":"010000943351","Nome":"SHEILA MARIA SOARES GOMES","Sexo":"F","Nascimento":"20/08/1945","Data_Inicio_Tratamento":"","CID":""}
+[2025-06-05 03:03:23] Verificando estrutura da tabela Pacientes
+[2025-06-05 03:03:23] Coluna: id, Tipo: int
+[2025-06-05 03:03:23] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-06-05 03:03:23] Coluna: Operadora, Tipo: int
+[2025-06-05 03:03:23] Coluna: Prestador, Tipo: int
+[2025-06-05 03:03:23] Coluna: Codigo, Tipo: varchar(150)
+[2025-06-05 03:03:23] Coluna: Data_Nascimento, Tipo: date
+[2025-06-05 03:03:23] Coluna: Sexo, Tipo: varchar(50)
+[2025-06-05 03:03:23] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-06-05 03:03:23] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-06-05 03:03:23] Operadora ID resolvido: 5
+[2025-06-05 03:03:24] Prestador ID resolvido: 46825
+[2025-06-05 03:03:24] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (5, 46825, '010000943351', 'SHEILA MARIA SOARES GOMES', '1945-08-20', 'F', NULL, NULL)
+[2025-06-05 03:03:24] Paciente inserido com sucesso. ID: 1360
+[2025-06-05 03:03:24] === FIM DO PROCESSAMENTO ===
+[2025-06-05 11:48:57] === INÍCIO DO PROCESSAMENTO ===
+[2025-06-05 11:48:58] Conexão com banco de pacientes estabelecida
+[2025-06-05 11:48:58] Conexão com banco de serviço estabelecida
+[2025-06-05 11:48:58] Dados recebidos: {"Operadora":"Casacaresc","Prestador":"Viver","Paciente_Codigo":"909002072000051019","Nome":" ELCINDA NAZARE BAHIA LOSSO","Sexo":"F","Nascimento":"28/10/1951","Data_Inicio_Tratamento":"12/08/2024","CID":"C900"}
+[2025-06-05 11:48:58] Verificando estrutura da tabela Pacientes
+[2025-06-05 11:48:58] Coluna: id, Tipo: int
+[2025-06-05 11:48:58] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-06-05 11:48:58] Coluna: Operadora, Tipo: int
+[2025-06-05 11:48:58] Coluna: Prestador, Tipo: int
+[2025-06-05 11:48:58] Coluna: Codigo, Tipo: varchar(150)
+[2025-06-05 11:48:58] Coluna: Data_Nascimento, Tipo: date
+[2025-06-05 11:48:58] Coluna: Sexo, Tipo: varchar(50)
+[2025-06-05 11:48:58] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-06-05 11:48:58] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-06-05 11:48:58] Operadora ID resolvido: 2
+[2025-06-05 11:48:58] Prestador ID resolvido: 48277
+[2025-06-05 11:48:58] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (2, 48277, '909002072000051019', ' ELCINDA NAZARE BAHIA LOSSO', '1951-10-28', 'F', '2024-08-12', 'C900')
+[2025-06-05 11:48:59] Paciente inserido com sucesso. ID: 1361
+[2025-06-05 11:48:59] === FIM DO PROCESSAMENTO ===
+[2025-06-05 14:34:15] === INÍCIO DO PROCESSAMENTO ===
+[2025-06-05 14:34:16] Conexão com banco de pacientes estabelecida
+[2025-06-05 14:34:16] Conexão com banco de serviço estabelecida
+[2025-06-05 14:34:16] Dados recebidos: {"Operadora":"Casacaresc","Prestador":"Soma","Paciente_Codigo":"909002074002012505","Nome":"ELZA GALINA DALLAZEM","Sexo":"F","Nascimento":"","Data_Inicio_Tratamento":"17/04/2024","CID":"D469"}
+[2025-06-05 14:34:16] Verificando estrutura da tabela Pacientes
+[2025-06-05 14:34:16] Coluna: id, Tipo: int
+[2025-06-05 14:34:16] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-06-05 14:34:16] Coluna: Operadora, Tipo: int
+[2025-06-05 14:34:16] Coluna: Prestador, Tipo: int
+[2025-06-05 14:34:16] Coluna: Codigo, Tipo: varchar(150)
+[2025-06-05 14:34:16] Coluna: Data_Nascimento, Tipo: date
+[2025-06-05 14:34:16] Coluna: Sexo, Tipo: varchar(50)
+[2025-06-05 14:34:16] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-06-05 14:34:16] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-06-05 14:34:16] Operadora ID resolvido: 2
+[2025-06-05 14:34:16] Prestador ID resolvido: 46825
+[2025-06-05 14:34:16] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (2, 46825, '909002074002012505', 'ELZA GALINA DALLAZEM', NULL, 'F', '2024-04-17', 'D469')
+[2025-06-05 14:34:16] Paciente inserido com sucesso. ID: 1362
+[2025-06-05 14:34:16] === FIM DO PROCESSAMENTO ===
+[2025-06-05 16:52:15] === INÍCIO DO PROCESSAMENTO ===
+[2025-06-05 16:52:16] Conexão com banco de pacientes estabelecida
+[2025-06-05 16:52:16] Conexão com banco de serviço estabelecida
+[2025-06-05 16:52:16] Dados recebidos: {"Operadora":"Celos","Prestador":"Ceof","Paciente_Codigo":"010100320053","Nome":"NEIVA HORN MACHADO","Sexo":"F","Nascimento":"03/11/1974","Data_Inicio_Tratamento":"","CID":"C508"}
+[2025-06-05 16:52:16] Verificando estrutura da tabela Pacientes
+[2025-06-05 16:52:16] Coluna: id, Tipo: int
+[2025-06-05 16:52:16] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-06-05 16:52:16] Coluna: Operadora, Tipo: int
+[2025-06-05 16:52:16] Coluna: Prestador, Tipo: int
+[2025-06-05 16:52:16] Coluna: Codigo, Tipo: varchar(150)
+[2025-06-05 16:52:16] Coluna: Data_Nascimento, Tipo: date
+[2025-06-05 16:52:16] Coluna: Sexo, Tipo: varchar(50)
+[2025-06-05 16:52:16] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-06-05 16:52:16] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-06-05 16:52:16] Operadora ID resolvido: 5
+[2025-06-05 16:52:17] Prestador ID resolvido: 30743
+[2025-06-05 16:52:17] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (5, 30743, '010100320053', 'NEIVA HORN MACHADO', '1974-11-03', 'F', NULL, 'C508')
+[2025-06-05 16:52:17] Paciente inserido com sucesso. ID: 1363
+[2025-06-05 16:52:17] === FIM DO PROCESSAMENTO ===
+[2025-06-06 08:54:25] === INÍCIO DO PROCESSAMENTO ===
+[2025-06-06 08:54:26] Conexão com banco de pacientes estabelecida
+[2025-06-06 08:54:26] Conexão com banco de serviço estabelecida
+[2025-06-06 08:54:26] Dados recebidos: {"Operadora":"Casacaresc","Prestador":"Unimed Litoral","Paciente_Codigo":"0242.5974.009043.54-0","Nome":" ELIZANGELA REGINA CARDOSO FIAMONCINI CORDEIRO","Sexo":"F","Nascimento":"30/08/1978","Data_Inicio_Tratamento":"28/06/2023","CID":"C500,C509"}
+[2025-06-06 08:54:26] Verificando estrutura da tabela Pacientes
+[2025-06-06 08:54:26] Coluna: id, Tipo: int
+[2025-06-06 08:54:26] Coluna: Paciente_Nome, Tipo: varchar(150)
+[2025-06-06 08:54:26] Coluna: Operadora, Tipo: int
+[2025-06-06 08:54:26] Coluna: Prestador, Tipo: int
+[2025-06-06 08:54:26] Coluna: Codigo, Tipo: varchar(150)
+[2025-06-06 08:54:26] Coluna: Data_Nascimento, Tipo: date
+[2025-06-06 08:54:26] Coluna: Sexo, Tipo: varchar(50)
+[2025-06-06 08:54:26] Coluna: Cid_Diagnostico, Tipo: varchar(150)
+[2025-06-06 08:54:26] Coluna: Data_Inicio_Tratamento, Tipo: date
+[2025-06-06 08:54:26] Operadora ID resolvido: 2
+[2025-06-06 08:54:26] Prestador ID resolvido: 4624
+[2025-06-06 08:54:26] SQL: INSERT INTO Pacientes (
+        Operadora,
+        Prestador,
+        Codigo,
+        Paciente_Nome,
+        Data_Nascimento,
+        Sexo,
+        Data_Inicio_Tratamento,
+        Cid_Diagnostico
+    ) VALUES (2, 4624, '0242.5974.009043.54-0', ' ELIZANGELA REGINA CARDOSO FIAMONCINI CORDEIRO', '1978-08-30', 'F', '2023-06-28', 'C500,C509')
+[2025-06-06 08:54:26] Paciente inserido com sucesso. ID: 1364
+[2025-06-06 08:54:26] === FIM DO PROCESSAMENTO ===

@@ -440,3 +440,20 @@
 [2025-04-14 16:48:38] Conexão bd_pacientestto fechada
 [2025-04-14 16:48:38] ===== DIAGNÓSTICO FINALIZADO =====
 
+[2025-05-20 17:29:33] ===== NOVO DIAGNÓSTICO INICIADO =====
+[2025-05-20 17:29:33] Método HTTP: GET
+[2025-05-20 17:29:33] Configurações PHP: {"version":"8.2.23","max_execution_time":"60","memory_limit":"512M","post_max_size":"516M","upload_max_filesize":"512M","display_errors":"1"}
+[2025-05-20 17:29:33] Tentando incluir config.php...
+[2025-05-20 17:29:35] config.php incluído com sucesso
+[2025-05-20 17:29:35] Variáveis de config: {"host":"definido","user":"definido","pass":"definido","database":"indefinido","port":"3306"}
+[2025-05-20 17:29:35] Tentando conectar ao banco de dados principal...
+[2025-05-20 17:29:35] Conexão com banco principal estabelecida com sucesso
+[2025-05-20 17:29:35] Tentando conectar ao banco bd_pacientestto...
+[2025-05-20 17:29:35] Conexão com bd_pacientestto estabelecida com sucesso
+[2025-05-20 17:29:36] Tabela 'Protocolo' encontrada
+[2025-05-20 17:29:36] Estrutura da tabela Protocolo: [{"Field":"id_protocolo","Type":"int","Null":"NO","Key":"PRI","Default":null},{"Field":"Servico_Codigo","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Nome","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Sigla","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_M","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dose_Total","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_Dias_de_Aplicacao","Type":"varchar(50)","Null":"YES","Key":"","Default":null},{"Field":"Protocolo_ViaAdm","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Linha","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Intervalo_Ciclos","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"Ciclos_Previstos","Type":"int","Null":"YES","Key":"","Default":null},{"Field":"CID","Type":"varchar(20)","Null":"YES","Key":"","Default":null}]
+[2025-05-20 17:29:36] Diagnóstico concluído para requisição GET
+[2025-05-20 17:29:36] Conexão principal fechada
+[2025-05-20 17:29:36] Conexão bd_pacientestto fechada
+[2025-05-20 17:29:36] ===== DIAGNÓSTICO FINALIZADO =====
+
