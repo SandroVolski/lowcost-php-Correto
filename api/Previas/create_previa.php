@@ -29,7 +29,7 @@ try {
     $numeroSequencial = ($seqRow['max_seq'] ?? 0) + 1;
     $codigoComposto = $data['paciente_id'] . '-' . str_pad($numeroSequencial, 3, '0', STR_PAD_LEFT);
 
-    // Preparar a inserção da prévia com os novos campos
+    // Preparar a inserção da prévia com o novo campo finalizacao
     $sql = "INSERT INTO previas (
         paciente_id, 
         numero_sequencial, 
@@ -44,10 +44,11 @@ try {
         peso, 
         altura, 
         parecer_guia, 
+        finalizacao,
         inconsistencia, 
         data_parecer_registrado, 
         tempo_analise
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     $stmt = $conn_pacientes->prepare($sql);
 
@@ -69,7 +70,23 @@ try {
     $dataSolicitacao = convertDateToMysql($data['data_solicitacao'] ?? '');
     $dataParecerRegistrado = convertDateToMysql($data['data_parecer_registrado'] ?? '');
 
-    // CORREÇÃO: Definir inconsistencia como NULL se estiver vazio
+    // Validação para parecer_guia
+    $parecerGuia = NULL;
+    if (isset($data['parecer_guia']) && !empty($data['parecer_guia'])) {
+        if (in_array($data['parecer_guia'], ['Favorável', 'Favorável com Inconsistência', 'Inconclusivo', 'Desfavorável'])) {
+            $parecerGuia = $data['parecer_guia'];
+        }
+    }
+
+    // Validação para finalizacao
+    $finalizacao = NULL;
+    if (isset($data['finalizacao']) && !empty($data['finalizacao'])) {
+        if (in_array($data['finalizacao'], ['Favorável', 'Favorável com Inconsistência', 'Inconclusivo', 'Desfavorável'])) {
+            $finalizacao = $data['finalizacao'];
+        }
+    }
+
+    // Validação para inconsistencia
     $inconsistencia = NULL;
     if (isset($data['inconsistencia']) && !empty($data['inconsistencia'])) {
         if (in_array($data['inconsistencia'], ['Completa', 'Dados Faltantes', 'Requer Análise', 'Informações Inconsistentes'])) {
@@ -77,24 +94,27 @@ try {
         }
     }
 
+    // CORREÇÃO DO BIND_PARAM: 17 valores = 17 tipos
+    // i,i,s,s,s,s,s,s,s,s,d,d,s,s,s,s,i
     $stmt->bind_param(
-        "iissssssssddsssi",
-        $data['paciente_id'],
-        $numeroSequencial,
-        $codigoComposto,
-        $data['guia'],
-        $data['protocolo'],
-        $data['cid'],
-        $dataEmissaoGuia,
-        $dataEncaminhamentoAF,
-        $dataSolicitacao,
-        $data['parecer'],
-        $data['peso'],
-        $data['altura'],
-        $data['parecer_guia'],
-        $inconsistencia,
-        $dataParecerRegistrado,
-        $data['tempo_analise']
+        "iissssssssddssssi",
+        $data['paciente_id'],          // i
+        $numeroSequencial,             // i  
+        $codigoComposto,               // s
+        $data['guia'],                 // s
+        $data['protocolo'],            // s
+        $data['cid'],                  // s
+        $dataEmissaoGuia,              // s
+        $dataEncaminhamentoAF,         // s
+        $dataSolicitacao,              // s
+        $data['parecer'],              // s
+        $data['peso'],                 // d
+        $data['altura'],               // d
+        $parecerGuia,                  // s
+        $finalizacao,                  // s
+        $inconsistencia,               // s
+        $dataParecerRegistrado,        // s
+        $data['tempo_analise']         // i
     );
 
     $stmt->execute();

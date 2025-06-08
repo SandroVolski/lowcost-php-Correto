@@ -24,16 +24,19 @@ try {
         throw new Exception("Dados inválidos ou ID da prévia não fornecido");
     }
     
-    // Preparar a atualização da prévia
+    // Preparar a atualização da prévia com o novo campo finalizacao
     $sql = "UPDATE previas SET
         guia = ?, 
         protocolo = ?, 
         cid = ?, 
+        data_emissao_guia = ?,
+        data_encaminhamento_af = ?,
         data_solicitacao = ?, 
         parecer = ?, 
         peso = ?, 
         altura = ?, 
         parecer_guia = ?, 
+        finalizacao = ?,
         inconsistencia = ?, 
         data_parecer_registrado = ?, 
         tempo_analise = ?
@@ -41,44 +44,63 @@ try {
     
     $stmt = $conn_pacientes->prepare($sql);
     
-    // Formatação de data: converter de DD/MM/YYYY para YYYY-MM-DD para MySQL
-    $dataSolicitacao = NULL;
-    if (isset($data['data_solicitacao']) && !empty($data['data_solicitacao'])) {
-        $dateParts = explode('/', $data['data_solicitacao']);
+    // Função helper para converter data DD/MM/YYYY para YYYY-MM-DD
+    function convertDateToMysql($dateString) {
+        if (!$dateString || empty($dateString)) {
+            return NULL;
+        }
+        $dateParts = explode('/', $dateString);
         if (count($dateParts) === 3) {
-            $dataSolicitacao = $dateParts[2] . '-' . $dateParts[1] . '-' . $dateParts[0];
+            return $dateParts[2] . '-' . $dateParts[1] . '-' . $dateParts[0];
+        }
+        return NULL;
+    }
+    
+    // Converter as datas para formato MySQL
+    $dataEmissaoGuia = convertDateToMysql($data['data_emissao_guia'] ?? '');
+    $dataEncaminhamentoAF = convertDateToMysql($data['data_encaminhamento_af'] ?? '');
+    $dataSolicitacao = convertDateToMysql($data['data_solicitacao'] ?? '');
+    $dataParecerRegistrado = convertDateToMysql($data['data_parecer_registrado'] ?? '');
+    
+    // Validação para parecer_guia
+    $parecerGuia = NULL;
+    if (isset($data['parecer_guia']) && !empty($data['parecer_guia'])) {
+        if (in_array($data['parecer_guia'], ['Favorável', 'Favorável com Inconsistência', 'Inconclusivo', 'Desfavorável'])) {
+            $parecerGuia = $data['parecer_guia'];
+        }
+    }
+
+    // NOVO: Validação para finalizacao
+    $finalizacao = NULL;
+    if (isset($data['finalizacao']) && !empty($data['finalizacao'])) {
+        if (in_array($data['finalizacao'], ['Favorável', 'Favorável com Inconsistência', 'Inconclusivo', 'Desfavorável'])) {
+            $finalizacao = $data['finalizacao'];
         }
     }
     
-    $dataParecerRegistrado = NULL;
-    if (isset($data['data_parecer_registrado']) && !empty($data['data_parecer_registrado'])) {
-        $dateParts = explode('/', $data['data_parecer_registrado']);
-        if (count($dateParts) === 3) {
-            $dataParecerRegistrado = $dateParts[2] . '-' . $dateParts[1] . '-' . $dateParts[0];
-        }
-    }
-    
-    // CORREÇÃO: Definir inconsistencia como NULL se estiver vazio
+    // Validação para inconsistencia
     $inconsistencia = NULL;
     if (isset($data['inconsistencia']) && !empty($data['inconsistencia'])) {
-        // Somente atribua um valor se for um dos valores válidos do ENUM
         if (in_array($data['inconsistencia'], ['Completa', 'Dados Faltantes', 'Requer Análise', 'Informações Inconsistentes'])) {
             $inconsistencia = $data['inconsistencia'];
         }
     }
     
-    // Corrigido o bind_param para incluir corretamente todos os parâmetros
+    // Bind dos parâmetros incluindo o novo campo finalizacao
     $stmt->bind_param(
-        "ssssddsssis",
+        "ssssssssddsssssi",
         $data['guia'],
         $data['protocolo'],
         $data['cid'],
+        $dataEmissaoGuia,
+        $dataEncaminhamentoAF,
         $dataSolicitacao,
         $data['parecer'],
         $data['peso'],
         $data['altura'],
-        $data['parecer_guia'],
-        $inconsistencia, // Aqui usamos a variável corrigida em vez de $data['inconsistencia']
+        $parecerGuia,
+        $finalizacao,          // NOVO CAMPO
+        $inconsistencia,
         $dataParecerRegistrado,
         $data['tempo_analise'],
         $data['id']
