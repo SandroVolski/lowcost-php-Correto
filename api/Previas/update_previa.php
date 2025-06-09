@@ -24,7 +24,12 @@ try {
         throw new Exception("Dados inválidos ou ID da prévia não fornecido");
     }
     
-    // Preparar a atualização da prévia com o novo campo finalizacao
+    // NOVO: Verificar se o ID do usuário foi fornecido
+    if (!isset($data['usuario_alteracao_id'])) {
+        throw new Exception("ID do usuário que está alterando não fornecido");
+    }
+    
+    // MODIFICADO: Preparar a atualização da prévia com o campo usuario_alteracao_id
     $sql = "UPDATE previas SET
         guia = ?, 
         protocolo = ?, 
@@ -39,7 +44,9 @@ try {
         finalizacao = ?,
         inconsistencia = ?, 
         data_parecer_registrado = ?, 
-        tempo_analise = ?
+        tempo_analise = ?,
+        usuario_alteracao_id = ?,
+        data_atualizacao = NOW()
     WHERE id = ?";
     
     $stmt = $conn_pacientes->prepare($sql);
@@ -70,7 +77,7 @@ try {
         }
     }
 
-    // NOVO: Validação para finalizacao
+    // Validação para finalizacao
     $finalizacao = NULL;
     if (isset($data['finalizacao']) && !empty($data['finalizacao'])) {
         if (in_array($data['finalizacao'], ['Favorável', 'Favorável com Inconsistência', 'Inconclusivo', 'Desfavorável'])) {
@@ -86,9 +93,9 @@ try {
         }
     }
     
-    // Bind dos parâmetros incluindo o novo campo finalizacao
+    // MODIFICADO: Bind dos parâmetros incluindo o novo campo usuario_alteracao_id
     $stmt->bind_param(
-        "ssssssssddsssssi",
+        "ssssssssddssssiii",
         $data['guia'],
         $data['protocolo'],
         $data['cid'],
@@ -99,10 +106,11 @@ try {
         $data['peso'],
         $data['altura'],
         $parecerGuia,
-        $finalizacao,          // NOVO CAMPO
+        $finalizacao,
         $inconsistencia,
         $dataParecerRegistrado,
         $data['tempo_analise'],
+        $data['usuario_alteracao_id'], // NOVO CAMPO
         $data['id']
     );
     

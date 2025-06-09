@@ -19,8 +19,14 @@ try {
     
     $previaId = intval($_GET['id']);
     
-    // Consulta para buscar detalhes da prévia
-    $sql = "SELECT * FROM previas WHERE id = ?";
+    // MODIFICADO: Consulta para buscar detalhes da prévia incluindo os nomes dos usuários
+    $sql = "SELECT p.*, 
+           uc.nome AS nome_usuario_criacao,
+           ua.nome AS nome_usuario_alteracao
+    FROM previas p
+    LEFT JOIN usuarios uc ON p.usuario_criacao_id = uc.id
+    LEFT JOIN usuarios ua ON p.usuario_alteracao_id = ua.id
+    WHERE p.id = ?";
     
     $stmt = $conn_pacientes->prepare($sql);
     $stmt->bind_param("i", $previaId);

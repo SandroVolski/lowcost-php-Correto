@@ -19,11 +19,15 @@ try {
     
     $pacienteId = intval($_GET['paciente_id']);
     
-    // Consulta para buscar todas as prévias do paciente
+    // MODIFICADO: Consulta para buscar todas as prévias do paciente incluindo os nomes dos usuários
     $sql = "SELECT p.*, 
-           COUNT(pa.id) AS qtd_anexos
+           COUNT(pa.id) AS qtd_anexos,
+           uc.nome AS nome_usuario_criacao,
+           ua.nome AS nome_usuario_alteracao
     FROM previas p
     LEFT JOIN previa_anexos pa ON p.id = pa.previa_id
+    LEFT JOIN usuarios uc ON p.usuario_criacao_id = uc.id
+    LEFT JOIN usuarios ua ON p.usuario_alteracao_id = ua.id
     WHERE p.paciente_id = ?
     GROUP BY p.id
     ORDER BY p.data_criacao DESC";

@@ -18,6 +18,11 @@ try {
         throw new Exception("Dados inválidos ou ID do paciente não fornecido");
     }
 
+    // NOVO: Verificar se o ID do usuário foi fornecido
+    if (!isset($data['usuario_criacao_id'])) {
+        throw new Exception("ID do usuário criador não fornecido");
+    }
+
     // Obter o próximo número sequencial para este paciente
     $seqQuery = "SELECT MAX(numero_sequencial) as max_seq FROM previas WHERE paciente_id = ?";
     $seqStmt = $conn_pacientes->prepare($seqQuery);
@@ -29,7 +34,7 @@ try {
     $numeroSequencial = ($seqRow['max_seq'] ?? 0) + 1;
     $codigoComposto = $data['paciente_id'] . '-' . str_pad($numeroSequencial, 3, '0', STR_PAD_LEFT);
 
-    // Preparar a inserção da prévia com o novo campo finalizacao
+    // MODIFICADO: Preparar a inserção da prévia com o campo usuario_criacao_id
     $sql = "INSERT INTO previas (
         paciente_id, 
         numero_sequencial, 
@@ -47,8 +52,9 @@ try {
         finalizacao,
         inconsistencia, 
         data_parecer_registrado, 
-        tempo_analise
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        tempo_analise,
+        usuario_criacao_id
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     $stmt = $conn_pacientes->prepare($sql);
 
@@ -94,10 +100,10 @@ try {
         }
     }
 
-    // CORREÇÃO DO BIND_PARAM: 17 valores = 17 tipos
-    // i,i,s,s,s,s,s,s,s,s,d,d,s,s,s,s,i
+    // MODIFICADO: BIND_PARAM com 18 valores agora (incluindo usuario_criacao_id)
+    // i,i,s,s,s,s,s,s,s,s,d,d,s,s,s,s,i,i
     $stmt->bind_param(
-        "iissssssssddssssi",
+        "iissssssssddssssii",
         $data['paciente_id'],          // i
         $numeroSequencial,             // i  
         $codigoComposto,               // s
@@ -114,7 +120,8 @@ try {
         $finalizacao,                  // s
         $inconsistencia,               // s
         $dataParecerRegistrado,        // s
-        $data['tempo_analise']         // i
+        $data['tempo_analise'],        // i
+        $data['usuario_criacao_id']    // i - NOVO
     );
 
     $stmt->execute();
